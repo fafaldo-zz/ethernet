@@ -1,0 +1,2 @@
+vhdl work "SMI_RXTX.vhd"
+vhdl work "rx_test.vhd"

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/fafik/Dropbox/infa/xilinx/ethernet4/MII_test3_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="mii_test3" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="18" />
+   <wvobject fp_name="/mii_test3/recv_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">recv_data[4:0]</obj_property>
+      <obj_property name="ObjectShortName">recv_data[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mii_test3/recv_strobe" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">recv_strobe</obj_property>
+      <obj_property name="ObjectShortName">recv_strobe</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mii_test3/recv_clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">recv_clock</obj_property>
+      <obj_property name="ObjectShortName">recv_clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mii_test3/recv_error" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">recv_error</obj_property>
+      <obj_property name="ObjectShortName">recv_error</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mii_test3/next_frame" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">next_frame</obj_property>
+      <obj_property name="ObjectShortName">next_frame</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mii_test3/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mii_test3/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mii_test3/ram_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ram_clk</obj_property>
+      <obj_property name="ObjectShortName">ram_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mii_test3/ram_enable" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ram_enable</obj_property>
+      <obj_property name="ObjectShortName">ram_enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mii_test3/data_received" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">data_received</obj_property>
+      <obj_property name="ObjectShortName">data_received</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mii_test3/busy" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">busy</obj_property>
+      <obj_property name="ObjectShortName">busy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mii_test3/ram_output" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ram_output[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_output[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mii_test3/recv_clock_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">recv_clock_period</obj_property>
+      <obj_property name="ObjectShortName">recv_clock_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mii_test3/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mii_test3/ram_clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">ram_clk_period</obj_property>
+      <obj_property name="ObjectShortName">ram_clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mii_test3/uut/ram" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ram[4095:0]</obj_property>
+      <obj_property name="ObjectShortName">ram[4095:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mii_test3/uut/address_counter" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">address_counter[12:0]</obj_property>
+      <obj_property name="ObjectShortName">address_counter[12:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mii_test3/uut/read_address_counter" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">read_address_counter[12:0]</obj_property>
+      <obj_property name="ObjectShortName">read_address_counter[12:0]</obj_property>
+   </wvobject>
+</wave_config>

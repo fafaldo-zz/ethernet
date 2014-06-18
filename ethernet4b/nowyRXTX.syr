@@ -1,0 +1,494 @@
+Release 14.6 - xst P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: nowyRXTX.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "nowyRXTX.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "nowyRXTX"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : nowyRXTX
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/fafik/Dropbox/infa/xilinx/ethernet2/nowyRXTX.vhd" in Library work.
+Architecture behavioral of Entity nowyrxtx is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <nowyRXTX> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <nowyRXTX> in library <work> (Architecture <behavioral>).
+INFO:Xst:2679 - Register <read_send_data<46>> in unit <nowyRXTX> has a constant value of 0 during circuit operation. The register is replaced by logic.
+Entity <nowyRXTX> analyzed. Unit <nowyRXTX> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <nowyRXTX>.
+    Related source file is "C:/Users/fafik/Dropbox/infa/xilinx/ethernet2/nowyRXTX.vhd".
+WARNING:Xst:1780 - Signal <write_load_enable> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <write_data_loaded> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <write_clock_enable> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <state> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <receive_clock_enable> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <read_send_data<46>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <read_load_enable> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <read_data_loaded> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <read_clock_enable> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <next_state> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <latch_data> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit tristate buffer for signal <MDC>.
+    Found 1-bit tristate buffer for signal <MDIO>.
+    Found 8-bit up counter for signal <bit_counter>.
+    Found 1-bit register for signal <busy_in>.
+    Found 1-bit register for signal <clk_div>.
+    Found 8-bit up counter for signal <counter>.
+    Found 16-bit register for signal <latched_data>.
+    Found 5-bit register for signal <latched_phy_addr>.
+    Found 5-bit register for signal <latched_reg_addr>.
+    Found 1-bit register for signal <latched_write_read>.
+    Found 1-bit register for signal <Mtridata_MDC> created at line 191.
+    Found 1-bit register for signal <Mtridata_MDIO> created at line 178.
+    Found 1-bit register for signal <Mtrien_MDC> created at line 191.
+    Found 1-bit register for signal <Mtrien_MDIO> created at line 178.
+    Found 16-bit register for signal <read_receive_data>.
+    Found 9-bit comparator greater for signal <read_receive_data_0$cmp_gt0000> created at line 163.
+    Found 9-bit comparator less for signal <read_receive_data_0$cmp_lt0000> created at line 163.
+    Found 46-bit register for signal <read_send_data<45:0>>.
+    Found 9-bit comparator greater for signal <read_send_data_0$cmp_gt0000> created at line 152.
+    Found 9-bit comparator less for signal <read_send_data_0$cmp_lt0000> created at line 152.
+    Found 64-bit register for signal <write_send_data>.
+    Found 2-bit tristate buffer for signal <write_send_data$mux0000<17:16>>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred 159 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+	inferred   4 Tristate(s).
+Unit <nowyRXTX> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 8-bit up counter                                      : 2
+# Registers                                            : 73
+ 1-bit register                                        : 69
+ 16-bit register                                       : 1
+ 5-bit register                                        : 2
+ 64-bit register                                       : 1
+# Comparators                                          : 4
+ 9-bit comparator greater                              : 2
+ 9-bit comparator less                                 : 2
+# Tristates                                            : 4
+ 1-bit tristate buffer                                 : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 8-bit up counter                                      : 2
+# Registers                                            : 159
+ Flip-Flops                                            : 159
+# Comparators                                          : 4
+ 9-bit comparator greater                              : 2
+ 9-bit comparator less                                 : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2042 - Unit nowyRXTX: 2 internal tristates are replaced by logic (pull-up yes): write_send_data_index0001, write_send_data_index0003.
+
+Optimizing unit <nowyRXTX> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block nowyRXTX, actual ratio is 2.
+FlipFlop bit_counter_6 has been replicated 1 time(s)
+FlipFlop busy_in has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+Processing Unit <nowyRXTX> :
+INFO:Xst:741 - HDL ADVISOR - A 32-bit shift register was found for signal <read_send_data_45> and currently occupies 32 logic cells (16 slices). Removing the set/reset logic would take advantage of SRL16 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+Unit <nowyRXTX> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 177
+ Flip-Flops                                            : 177
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : nowyRXTX.ngr
+Top Level Output File Name         : nowyRXTX
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 49
+
+Cell Usage :
+# BELS                             : 160
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 14
+#      LUT2                        : 4
+#      LUT3                        : 40
+#      LUT3_D                      : 1
+#      LUT4                        : 59
+#      LUT4_D                      : 2
+#      LUT4_L                      : 1
+#      MUXCY                       : 14
+#      MUXF5                       : 3
+#      VCC                         : 1
+#      XORCY                       : 16
+# FlipFlops/Latches                : 177
+#      FD                          : 2
+#      FDC                         : 9
+#      FDE                         : 27
+#      FDR                         : 2
+#      FDRE                        : 25
+#      FDRE_1                      : 76
+#      FDRSE                       : 2
+#      FDRSE_1                     : 34
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 48
+#      IBUF                        : 29
+#      IOBUF                       : 1
+#      OBUF                        : 17
+#      OBUFT                       : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      111  out of   4656     2%  
+ Number of Slice Flip Flops:            159  out of   9312     1%  
+ Number of 4 input LUTs:                125  out of   9312     1%  
+ Number of IOs:                          49
+ Number of bonded IOBs:                  49  out of    232    21%  
+    IOB Flip Flops:                      18
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 42    |
+clk_div1                           | BUFG                   | 135   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+strt                               | IBUF                   | 9     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 9.940ns (Maximum Frequency: 100.604MHz)
+   Minimum input arrival time before clock: 4.918ns
+   Maximum output required time after clock: 4.310ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.232ns (frequency: 191.131MHz)
+  Total number of paths / destination ports: 130 / 30
+-------------------------------------------------------------------------
+Delay:               5.232ns (Levels of Logic = 3)
+  Source:            counter_0 (FF)
+  Destination:       counter_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: counter_0 to counter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             2   0.591   0.622  counter_0 (counter_0)
+     LUT4:I0->O            2   0.704   0.622  counter_cmp_eq000010 (counter_cmp_eq000010)
+     LUT4:I0->O            1   0.704   0.000  counter_or000011 (counter_or00001)
+     MUXF5:I0->O           8   0.321   0.757  counter_or00001_f5 (counter_or0000)
+     FDRE:R                    0.911          counter_0
+    ----------------------------------------
+    Total                      5.232ns (3.231ns logic, 2.001ns route)
+                                       (61.8% logic, 38.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_div1'
+  Clock period: 9.940ns (frequency: 100.604MHz)
+  Total number of paths / destination ports: 3062 / 296
+-------------------------------------------------------------------------
+Delay:               4.970ns (Levels of Logic = 2)
+  Source:            bit_counter_1 (FF)
+  Destination:       read_receive_data_0 (FF)
+  Source Clock:      clk_div1 falling
+  Destination Clock: clk_div1 rising
+
+  Data Path: bit_counter_1 to read_receive_data_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              7   0.591   0.883  bit_counter_1 (bit_counter_1)
+     LUT4:I0->O            1   0.704   0.499  read_receive_data_0_cmp_gt00001_1 (read_receive_data_0_cmp_gt000011)
+     LUT4:I1->O           16   0.704   1.034  read_receive_data_0_and0000 (read_receive_data_0_and0000)
+     FDRE:CE                   0.555          read_receive_data_0
+    ----------------------------------------
+    Total                      4.970ns (2.554ns logic, 2.416ns route)
+                                       (51.4% logic, 48.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 67 / 67
+-------------------------------------------------------------------------
+Offset:              4.918ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       counter_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: reset to counter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           129   1.218   1.293  reset_IBUF (reset_IBUF)
+     MUXF5:S->O            8   0.739   0.757  counter_or00001_f5 (counter_or0000)
+     FDRE:R                    0.911          counter_0
+    ----------------------------------------
+    Total                      4.918ns (2.868ns logic, 2.050ns route)
+                                       (58.3% logic, 41.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_div1'
+  Total number of paths / destination ports: 137 / 137
+-------------------------------------------------------------------------
+Offset:              4.577ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       read_send_data_10 (FF)
+  Destination Clock: clk_div1 falling
+
+  Data Path: reset to read_send_data_10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           129   1.218   1.297  reset_IBUF (reset_IBUF)
+     LUT4:I3->O            2   0.704   0.447  read_send_data_10_or00001 (read_send_data_10_or0000)
+     FDRE_1:R                  0.911          read_send_data_10
+    ----------------------------------------
+    Total                      4.577ns (2.833ns logic, 1.744ns route)
+                                       (61.9% logic, 38.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 5 / 3
+-------------------------------------------------------------------------
+Offset:              4.283ns (Levels of Logic = 1)
+  Source:            Mtridata_MDIO (FF)
+  Destination:       MDIO (PAD)
+  Source Clock:      clk rising
+
+  Data Path: Mtridata_MDIO to MDIO
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.591   0.420  Mtridata_MDIO (Mtridata_MDIO)
+     IOBUF:I->IO               3.272          MDIO_IOBUF (MDIO)
+    ----------------------------------------
+    Total                      4.283ns (3.863ns logic, 0.420ns route)
+                                       (90.2% logic, 9.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_div1'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              4.310ns (Levels of Logic = 1)
+  Source:            read_receive_data_14 (FF)
+  Destination:       data_out<14> (PAD)
+  Source Clock:      clk_div1 rising
+
+  Data Path: read_receive_data_14 to data_out<14>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             2   0.591   0.447  read_receive_data_14 (read_receive_data_14)
+     OBUF:I->O                 3.272          data_out_14_OBUF (data_out<14>)
+    ----------------------------------------
+    Total                      4.310ns (3.863ns logic, 0.447ns route)
+                                       (89.6% logic, 10.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.20 secs
+ 
+--> 
+
+Total memory usage is 275492 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   12 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

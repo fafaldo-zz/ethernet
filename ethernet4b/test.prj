@@ -1,0 +1,4 @@
+vhdl work "SMI_RXTX.vhd"
+vhdl work "SMI_divider.vhd"
+vhdl work "button.vhd"
+vhdl work "test.vhf"

@@ -1,0 +1,673 @@
+Release 14.6 - xst P.68d (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: MII_test3.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "MII_test3.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "MII_test3"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : MII_test3
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/XilinxPrj/ethernet4/header_display.vhd" in Library work.
+Architecture behavioral of Entity header_display is up to date.
+Compiling vhdl file "C:/XilinxPrj/ethernet4/MII_RX.vhd" in Library work.
+Entity <mii_rx> compiled.
+Entity <mii_rx> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/XilinxPrj/ethernet4/MII_test3.vhf" in Library work.
+Architecture behavioral of Entity mii_test3 is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <MII_test3> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <header_display> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <MII_RX> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <MII_test3> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "C:/XilinxPrj/ethernet4/MII_test3.vhf" line 133: Unconnected output port 'ram_clk' of component 'header_display'.
+WARNING:Xst:753 - "C:/XilinxPrj/ethernet4/MII_test3.vhf" line 133: Unconnected output port 'ram_enable' of component 'header_display'.
+WARNING:Xst:753 - "C:/XilinxPrj/ethernet4/MII_test3.vhf" line 146: Unconnected output port 'test' of component 'MII_RX'.
+WARNING:Xst:2211 - "C:/XilinxPrj/ethernet4/MII_test3.vhf" line 162: Instantiating black box module <VGAtxt48x20>.
+WARNING:Xst:2211 - "C:/XilinxPrj/ethernet4/MII_test3.vhf" line 178: Instantiating black box module <RotaryEnc>.
+Entity <MII_test3> analyzed. Unit <MII_test3> generated.
+
+Analyzing Entity <header_display> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/XilinxPrj/ethernet4/header_display.vhd" line 79: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <address_counter>, <ram_output>
+WARNING:Xst:819 - "C:/XilinxPrj/ethernet4/header_display.vhd" line 102: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <address_counter>
+Entity <header_display> analyzed. Unit <header_display> generated.
+
+Analyzing Entity <MII_RX> in library <work> (Architecture <behavioral>).
+WARNING:Xst:790 - "C:/XilinxPrj/ethernet4/MII_RX.vhd" line 106: Index value(s) does not match array range, simulation mismatch.
+INFO:Xst:1433 - Contents of array <ram> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+WARNING:Xst:790 - "C:/XilinxPrj/ethernet4/MII_RX.vhd" line 109: Index value(s) does not match array range, simulation mismatch.
+INFO:Xst:1433 - Contents of array <ram> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+Entity <MII_RX> analyzed. Unit <MII_RX> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <header_display>.
+    Related source file is "C:/XilinxPrj/ethernet4/header_display.vhd".
+WARNING:Xst:647 - Input <busy> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <busy_in> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+WARNING:Xst:737 - Found 12-bit latch for signal <address_counter>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 12-bit latch for signal <ram_address>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <ram_enable>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <char_we>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 8-bit latch for signal <char>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <ram_clk>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 12-bit adder for signal <address_counter$addsub0000> created at line 98.
+    Found 13-bit comparator less for signal <state$cmp_lt0000> created at line 116.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <header_display> synthesized.
+
+
+Synthesizing Unit <MII_RX>.
+    Related source file is "C:/XilinxPrj/ethernet4/MII_RX.vhd".
+WARNING:Xst:647 - Input <recv_error> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <recv_data<4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <next_frame> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ram_address> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1305 - Output <test> is never assigned. Tied to value 00000000.
+WARNING:Xst:646 - Signal <ram<255:18>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ram<16:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <busy_in> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+    Found 8-bit register for signal <ram_output>.
+    Found 12-bit up counter for signal <address_counter>.
+    Found 1-bit register for signal <data_received_in>.
+    Found 1-bit register for signal <upper_four>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  18 D-type flip-flop(s).
+Unit <MII_RX> synthesized.
+
+
+Synthesizing Unit <MII_test3>.
+    Related source file is "C:/XilinxPrj/ethernet4/MII_test3.vhf".
+WARNING:Xst:646 - Signal <led2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <led1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <XLXN_24> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXN_20> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXN_19> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_1_ram_output_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
+Unit <MII_test3> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 12-bit adder                                          : 1
+# Counters                                             : 1
+ 12-bit up counter                                     : 1
+# Registers                                            : 11
+ 1-bit register                                        : 10
+ 8-bit register                                        : 1
+# Latches                                              : 6
+ 1-bit latch                                           : 3
+ 12-bit latch                                          : 2
+ 8-bit latch                                           : 1
+# Comparators                                          : 1
+ 13-bit comparator less                                : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <XLXI_1/state/FSM> on signal <state[1:2]> with gray encoding.
+--------------------------------
+ State              | Encoding
+--------------------------------
+ idle               | 00
+ get_data           | 01
+ start_rising_edge  | 11
+ start_falling_edge | 10
+--------------------------------
+Reading core <VGAtxt48x20.ngc>.
+Reading core <VGAtxt48x20_2.ngc>.
+Reading core <RotaryEnc.ngc>.
+Loading core <VGAtxt48x20_2> for timing and area information for instance <XLXI_146>.
+Loading core <VGAtxt48x20> for timing and area information for instance <XLXI_3>.
+Loading core <RotaryEnc> for timing and area information for instance <XLXI_5>.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <7>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Adders/Subtractors                                   : 1
+ 12-bit adder                                          : 1
+# Counters                                             : 1
+ 12-bit up counter                                     : 1
+# Registers                                            : 18
+ Flip-Flops                                            : 18
+# Latches                                              : 6
+ 1-bit latch                                           : 3
+ 12-bit latch                                          : 2
+ 8-bit latch                                           : 1
+# Comparators                                          : 1
+ 13-bit comparator less                                : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <address_counter_8> of sequential type is unconnected in block <MII_RX>.
+WARNING:Xst:2677 - Node <address_counter_9> of sequential type is unconnected in block <MII_RX>.
+WARNING:Xst:2677 - Node <address_counter_10> of sequential type is unconnected in block <MII_RX>.
+WARNING:Xst:2677 - Node <address_counter_11> of sequential type is unconnected in block <MII_RX>.
+WARNING:Xst:1293 - FF/Latch <char_0> has a constant value of 0 in block <header_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <char_1> has a constant value of 0 in block <header_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <char_2> has a constant value of 0 in block <header_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <char_3> has a constant value of 0 in block <header_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <char_4> has a constant value of 0 in block <header_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <char_5> has a constant value of 0 in block <header_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <char_6> has a constant value of 0 in block <header_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <char_7> has a constant value of 0 in block <header_display>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <MII_test3> ...
+
+Optimizing unit <MII_RX> ...
+
+Optimizing unit <header_display> ...
+WARNING:Xst:2677 - Node <XLXI_1/ram_address_11> of sequential type is unconnected in block <MII_test3>.
+WARNING:Xst:2677 - Node <XLXI_1/ram_address_10> of sequential type is unconnected in block <MII_test3>.
+WARNING:Xst:2677 - Node <XLXI_1/ram_address_9> of sequential type is unconnected in block <MII_test3>.
+WARNING:Xst:2677 - Node <XLXI_1/ram_address_8> of sequential type is unconnected in block <MII_test3>.
+WARNING:Xst:2677 - Node <XLXI_1/ram_address_7> of sequential type is unconnected in block <MII_test3>.
+WARNING:Xst:2677 - Node <XLXI_1/ram_address_6> of sequential type is unconnected in block <MII_test3>.
+WARNING:Xst:2677 - Node <XLXI_1/ram_address_5> of sequential type is unconnected in block <MII_test3>.
+WARNING:Xst:2677 - Node <XLXI_1/ram_address_4> of sequential type is unconnected in block <MII_test3>.
+WARNING:Xst:2677 - Node <XLXI_1/ram_address_3> of sequential type is unconnected in block <MII_test3>.
+WARNING:Xst:2677 - Node <XLXI_1/ram_address_2> of sequential type is unconnected in block <MII_test3>.
+WARNING:Xst:2677 - Node <XLXI_1/ram_address_1> of sequential type is unconnected in block <MII_test3>.
+WARNING:Xst:2677 - Node <XLXI_1/ram_address_0> of sequential type is unconnected in block <MII_test3>.
+WARNING:Xst:2677 - Node <XLXI_1/ram_enable> of sequential type is unconnected in block <MII_test3>.
+WARNING:Xst:2677 - Node <XLXI_1/ram_clk> of sequential type is unconnected in block <MII_test3>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block MII_test3, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 28
+ Flip-Flops                                            : 28
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : MII_test3.ngr
+Top Level Output File Name         : MII_test3
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 23
+
+Cell Usage :
+# BELS                             : 463
+#      AND2                        : 1
+#      AND3                        : 4
+#      AND3B1                      : 4
+#      BUF                         : 3
+#      GND                         : 4
+#      INV                         : 13
+#      LUT1                        : 61
+#      LUT2                        : 43
+#      LUT2_L                      : 3
+#      LUT3                        : 27
+#      LUT3_D                      : 2
+#      LUT3_L                      : 6
+#      LUT4                        : 100
+#      LUT4_D                      : 6
+#      LUT4_L                      : 9
+#      MUXCY                       : 71
+#      MUXF5                       : 18
+#      MUXF5_L                     : 2
+#      MUXF6                       : 5
+#      OR2                         : 5
+#      VCC                         : 4
+#      XOR2                        : 1
+#      XORCY                       : 71
+# FlipFlops/Latches                : 146
+#      FD                          : 40
+#      FDE                         : 38
+#      FDR                         : 14
+#      FDR_1                       : 1
+#      FDRE                        : 37
+#      FDRS                        : 2
+#      FDSE                        : 1
+#      LD_1                        : 1
+#      LDCE                        : 12
+# RAMS                             : 2
+#      RAMB16_S9_S9                : 2
+# Shift Registers                  : 5
+#      SRL16                       : 5
+# Clock Buffers                    : 3
+#      BUFG                        : 1
+#      BUFGP                       : 2
+# IO Buffers                       : 20
+#      IBUF                        : 7
+#      OBUF                        : 13
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      157  out of   4656     3%  
+ Number of Slice Flip Flops:            138  out of   9312     1%  
+ Number of 4 input LUTs:                275  out of   9312     2%  
+    Number used as logic:               270
+    Number used as Shift registers:       5
+ Number of IOs:                          23
+ Number of bonded IOBs:                  22  out of    232     9%  
+    IOB Flip Flops:                       8
+ Number of BRAMs:                         2  out of     20    10%  
+ Number of GCLKs:                         3  out of     24    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------------------------------------+-------------------------------------------------------------------------------------------------+-------+
+Clock Signal                                                     | Clock buffer(FF name)                                                                           | Load  |
+-----------------------------------------------------------------+-------------------------------------------------------------------------------------------------+-------+
+Clk_50MHz                                                        | BUFGP                                                                                           | 114   |
+XLXI_3/XLXI_146/BU2/dbiterr                                      | NONE(XLXI_3/XLXI_146/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v2_init.ram/dp9x9.ram)| 1     |
+E_RX_CLK                                                         | BUFGP                                                                                           | 17    |
+XLXI_5/RotR                                                      | NONE(XLXI_2/ram_output_7)                                                                       | 8     |
+E_RX_DV                                                          | IBUF+BUFG                                                                                       | 1     |
+XLXI_1/address_counter_not0003(XLXI_1/address_counter_not00031:O)| NONE(*)(XLXI_1/address_counter_11)                                                              | 12    |
+XLXI_1/state_cmp_eq0002(XLXI_1/state_FSM_Out21:O)                | NONE(*)(XLXI_1/char_we)                                                                         | 1     |
+-----------------------------------------------------------------+-------------------------------------------------------------------------------------------------+-------+
+(*) These 2 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-------------------------------------------------+-------------------------------+-------+
+Control Signal                                   | Buffer(FF name)               | Load  |
+-------------------------------------------------+-------------------------------+-------+
+XLXI_1/state_cmp_eq0001(XLXI_1/state_FSM_Out11:O)| NONE(XLXI_1/address_counter_0)| 12    |
+-------------------------------------------------+-------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 9.574ns (Maximum Frequency: 104.450MHz)
+   Minimum input arrival time before clock: 5.009ns
+   Maximum output required time after clock: 5.518ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clk_50MHz'
+  Clock period: 9.574ns (frequency: 104.450MHz)
+  Total number of paths / destination ports: 2561 / 258
+-------------------------------------------------------------------------
+Delay:               9.574ns (Levels of Logic = 10)
+  Source:            XLXI_3/XLXI_146/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v2_init.ram/dp9x9.ram (RAM)
+  Destination:       XLXI_3/XLXI_115/XLXI_155/PixOut (FF)
+  Source Clock:      Clk_50MHz rising
+  Destination Clock: Clk_50MHz rising
+
+  Data Path: XLXI_3/XLXI_146/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v2_init.ram/dp9x9.ram to XLXI_3/XLXI_115/XLXI_155/PixOut
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16_S9_S9:CLKA->DOA6    1   2.800   0.420  U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v2_init.ram/dp9x9.ram (douta(6))
+     end scope: 'BU2'
+     end scope: 'XLXI_146'
+     begin scope: 'XLXI_115/XLXI_1'
+     begin scope: 'I_M01'
+     AND3:I0->O            1   0.704   0.420  I_36_30 (M1)
+     OR2:I0->O             1   0.704   0.000  I_36_38 (O)
+     end scope: 'I_M01'
+     MUXF5_L:I0->LO        1   0.321   0.000  I_M03 (M03)
+     MUXF6:I0->O           1   0.521   0.420  I_O (O)
+     end scope: 'XLXI_115/XLXI_1'
+     XOR2:I0->O            1   0.704   0.420  XLXI_115/XLXI_141 (XLXI_115/XLXN_727)
+     AND2:I1->O            1   0.704   0.424  XLXI_115/XLXI_154 (XLXI_115/XLXN_762)
+     LUT4:I3->O            1   0.704   0.000  XLXI_115/XLXI_155/iPixOut103 (XLXI_115/XLXI_155/iPixOut)
+     FD:D                      0.308          XLXI_115/XLXI_155/PixOut
+    ----------------------------------------
+    Total                      9.574ns (7.470ns logic, 2.104ns route)
+                                       (78.0% logic, 22.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'E_RX_CLK'
+  Clock period: 4.385ns (frequency: 228.050MHz)
+  Total number of paths / destination ports: 117 / 25
+-------------------------------------------------------------------------
+Delay:               4.385ns (Levels of Logic = 2)
+  Source:            XLXI_2/address_counter_0 (FF)
+  Destination:       XLXI_2/ram<17>_6 (FF)
+  Source Clock:      E_RX_CLK rising
+  Destination Clock: E_RX_CLK rising
+
+  Data Path: XLXI_2/address_counter_0 to XLXI_2/ram<17>_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.591   0.622  XLXI_2/address_counter_0 (XLXI_2/address_counter_0)
+     LUT4:I0->O            2   0.704   0.622  XLXI_2/not0000_and000011 (XLXI_2/not0000_and000011)
+     LUT4:I0->O            4   0.704   0.587  XLXI_2/ram<17>_4_not00001 (XLXI_2/ram<17>_4_not0000)
+     FDE:CE                    0.555          XLXI_2/ram<17>_4
+    ----------------------------------------
+    Total                      4.385ns (2.554ns logic, 1.831ns route)
+                                       (58.2% logic, 41.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_1/address_counter_not0003'
+  Clock period: 5.262ns (frequency: 190.042MHz)
+  Total number of paths / destination ports: 90 / 12
+-------------------------------------------------------------------------
+Delay:               5.262ns (Levels of Logic = 12)
+  Source:            XLXI_1/address_counter_2 (LATCH)
+  Destination:       XLXI_1/address_counter_11 (LATCH)
+  Source Clock:      XLXI_1/address_counter_not0003 falling
+  Destination Clock: XLXI_1/address_counter_not0003 falling
+
+  Data Path: XLXI_1/address_counter_2 to XLXI_1/address_counter_11
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCE:G->Q             3   0.676   0.706  XLXI_1/address_counter_2 (XLXI_1/address_counter_2)
+     LUT1:I0->O            1   0.704   0.000  XLXI_1/Madd_address_counter_addsub0000_cy<2>_rt (XLXI_1/Madd_address_counter_addsub0000_cy<2>_rt)
+     MUXCY:S->O            1   0.464   0.000  XLXI_1/Madd_address_counter_addsub0000_cy<2> (XLXI_1/Madd_address_counter_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_1/Madd_address_counter_addsub0000_cy<3> (XLXI_1/Madd_address_counter_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_1/Madd_address_counter_addsub0000_cy<4> (XLXI_1/Madd_address_counter_addsub0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_1/Madd_address_counter_addsub0000_cy<5> (XLXI_1/Madd_address_counter_addsub0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_1/Madd_address_counter_addsub0000_cy<6> (XLXI_1/Madd_address_counter_addsub0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_1/Madd_address_counter_addsub0000_cy<7> (XLXI_1/Madd_address_counter_addsub0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_1/Madd_address_counter_addsub0000_cy<8> (XLXI_1/Madd_address_counter_addsub0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_1/Madd_address_counter_addsub0000_cy<9> (XLXI_1/Madd_address_counter_addsub0000_cy<9>)
+     MUXCY:CI->O           0   0.059   0.000  XLXI_1/Madd_address_counter_addsub0000_cy<10> (XLXI_1/Madd_address_counter_addsub0000_cy<10>)
+     XORCY:CI->O           1   0.804   0.424  XLXI_1/Madd_address_counter_addsub0000_xor<11> (XLXI_1/address_counter_addsub0000<11>)
+     LUT4:I3->O            1   0.704   0.000  XLXI_1/address_counter_mux0003<11>1 (XLXI_1/address_counter_mux0003<11>)
+     LDCE:D                    0.308          XLXI_1/address_counter_11
+    ----------------------------------------
+    Total                      5.262ns (4.132ns logic, 1.130ns route)
+                                       (78.5% logic, 21.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk_50MHz'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              2.059ns (Levels of Logic = 2)
+  Source:            ROT_A (PAD)
+  Destination:       XLXI_5/Mshreg_regRotary_0 (FF)
+  Destination Clock: Clk_50MHz rising
+
+  Data Path: ROT_A to XLXI_5/Mshreg_regRotary_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.218   0.420  ROT_A_IBUF (ROT_A_IBUF)
+     begin scope: 'XLXI_5'
+     SRL16:D                   0.421          Mshreg_regRotary_0
+    ----------------------------------------
+    Total                      2.059ns (1.639ns logic, 0.420ns route)
+                                       (79.6% logic, 20.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'E_RX_CLK'
+  Total number of paths / destination ports: 25 / 25
+-------------------------------------------------------------------------
+Offset:              5.009ns (Levels of Logic = 3)
+  Source:            E_RX_DV (PAD)
+  Destination:       XLXI_2/ram<17>_6 (FF)
+  Destination Clock: E_RX_CLK rising
+
+  Data Path: E_RX_DV to XLXI_2/ram<17>_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.218   0.706  E_RX_DV_IBUF (E_RX_DV_IBUF1)
+     LUT2:I0->O            3   0.704   0.535  XLXI_2/ram<17>_4_not000011 (XLXI_2/upper_four_not0001)
+     LUT4:I3->O            4   0.704   0.587  XLXI_2/ram<17>_0_not00001 (XLXI_2/ram<17>_0_not0000)
+     FDE:CE                    0.555          XLXI_2/ram<17>_1
+    ----------------------------------------
+    Total                      5.009ns (3.181ns logic, 1.828ns route)
+                                       (63.5% logic, 36.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk_50MHz'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              5.518ns (Levels of Logic = 3)
+  Source:            XLXI_3/XLXI_115/XLXI_155/PixOut (FF)
+  Destination:       VGA_B (PAD)
+  Source Clock:      Clk_50MHz rising
+
+  Data Path: XLXI_3/XLXI_115/XLXI_155/PixOut to VGA_B
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.591   0.531  XLXI_115/XLXI_155/PixOut (VGA_RGB)
+     end scope: 'XLXI_3'
+     BUF:I->O              1   0.704   0.420  XLXI_7 (VGA_R_OBUF)
+     OBUF:I->O                 3.272          VGA_R_OBUF (VGA_R)
+    ----------------------------------------
+    Total                      5.518ns (4.567ns logic, 0.951ns route)
+                                       (82.8% logic, 17.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_5/RotR'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              4.283ns (Levels of Logic = 1)
+  Source:            XLXI_2/ram_output_7 (FF)
+  Destination:       dane2<7> (PAD)
+  Source Clock:      XLXI_5/RotR rising
+
+  Data Path: XLXI_2/ram_output_7 to dane2<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.591   0.420  XLXI_2/ram_output_7 (XLXI_2/ram_output_7)
+     OBUF:I->O                 3.272          dane2_7_OBUF (dane2<7>)
+    ----------------------------------------
+    Total                      4.283ns (3.863ns logic, 0.420ns route)
+                                       (90.2% logic, 9.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.16 secs
+ 
+--> 
+
+Total memory usage is 225932 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   66 (   0 filtered)
+Number of infos    :    8 (   0 filtered)
+

@@ -1,0 +1,4 @@
+vhdl work "C:\XilinxPrj\ethernet4\MII_RX.vhd"
+vhdl work "C:\XilinxPrj\ethernet4\header_display.vhd"
+vhdl work "C:\XilinxPrj\ethernet4\MII_schem.vhf"
+vhdl work "C:\XilinxPrj\ethernet4\MII_test3.vhf"

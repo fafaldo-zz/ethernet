@@ -1,0 +1,4 @@
+vhdl work "C:\XilinxPrj\ethernet\SMI_RXTX.vhd"
+vhdl work "C:\XilinxPrj\ethernet\SMI_divider.vhd"
+vhdl work "C:\XilinxPrj\ethernet\button.vhd"
+vhdl work "C:\XilinxPrj\ethernet\test.vhf"

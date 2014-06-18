@@ -1,0 +1,2 @@
+vhdl work "header_display.vhd"
+vhdl work "disp_test.vhd"

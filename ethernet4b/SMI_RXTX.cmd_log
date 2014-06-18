@@ -1,0 +1,4 @@
+vhdtdtfi -lib work SMI_RXTX.vhd -prj ethernet -o SMI_RXTX.spl -module SMI_RXTX -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e SMI_RXTX.spl C:/Users/fafik/Dropbox/infa/xilinx/ethernet/SMI_RXTX.sym 
+vhdtdtfi -lib work SMI_RXTX.vhd -prj ethernet -o SMI_RXTX.spl -module SMI_RXTX -template C:/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e SMI_RXTX.spl C:/XilinxPrj/ethernet/SMI_RXTX.sym 

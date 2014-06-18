@@ -1,0 +1,74 @@
+vhdtdtfi -lib work MII_RX.vhd -prj ethernet -o MII_RX.spl -module MII_RX -template C:/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MII_RX.spl C:/XilinxPrj/ethernet4/MII_RX.sym 
+vhdtdtfi -lib work MII_RX.vhd -prj ethernet -o MII_RX.spl -module MII_RX -template C:/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MII_RX.spl C:/XilinxPrj/ethernet4/MII_RX.sym 
+vhdtdtfi -lib work MII_RX.vhd -prj ethernet -o MII_RX.spl -module MII_RX -template C:/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MII_RX.spl C:/XilinxPrj/ethernet4/MII_RX.sym 
+vhdtdtfi -lib work MII_RX.vhd -prj ethernet -o MII_RX.spl -module MII_RX -template C:/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MII_RX.spl C:/XilinxPrj/ethernet4/MII_RX.sym 
+vhdtdtfi -lib work MII_RX.vhd -prj ethernet -o MII_RX.spl -module MII_RX -template C:/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MII_RX.spl C:/XilinxPrj/ethernet4/MII_RX.sym 
+vhdtdtfi -lib work MII_RX.vhd -prj ethernet -o MII_RX.spl -module MII_RX -template C:/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MII_RX.spl C:/XilinxPrj/ethernet4/MII_RX.sym 
+vhdtdtfi -lib work MII_RX.vhd -prj ethernet -o MII_RX.spl -module MII_RX -template C:/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MII_RX.spl C:/XilinxPrj/ethernet4/MII_RX.sym 
+vhdtdtfi -lib work MII_RX.vhd -prj ethernet -o MII_RX.spl -module MII_RX -template C:/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MII_RX.spl C:/XilinxPrj/ethernet4/MII_RX.sym 
+vhdtdtfi -lib work MII_RX.vhd -prj ethernet -o MII_RX.spl -module MII_RX -template C:/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MII_RX.spl C:/XilinxPrj/ethernet4/MII_RX.sym 
+vhdtdtfi -lib work MII_RX.vhd -prj ethernet -o MII_RX.spl -module MII_RX -template C:/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MII_RX.spl C:/XilinxPrj/ethernet4/MII_RX.sym 
+vhdtdtfi -lib work MII_RX.vhd -prj ethernet -o MII_RX.spl -module MII_RX -template C:/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MII_RX.spl C:/XilinxPrj/ethernet4/MII_RX.sym 
+vhdtdtfi -lib work MII_RX.vhd -prj ethernet -o MII_RX.spl -module MII_RX -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MII_RX.spl C:/Users/fafik/Dropbox/infa/xilinx/ethernet4/MII_RX.sym 
+vhdtdtfi -lib work MII_RX.vhd -prj ethernet -o MII_RX.spl -module MII_RX -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MII_RX.spl C:/Users/fafik/Dropbox/infa/xilinx/ethernet4/MII_RX.sym 
+vhdtdtfi -lib work MII_RX.vhd -prj ethernet -o MII_RX.spl -module MII_RX -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MII_RX.spl C:/Users/fafik/Dropbox/infa/xilinx/ethernet4/MII_RX.sym 
+vhdtdtfi -lib work MII_RX.vhd -prj ethernet -o MII_RX.spl -module MII_RX -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MII_RX.spl C:/Users/fafik/Dropbox/infa/xilinx/ethernet4/MII_RX.sym 
+vhdtdtfi -lib work MII_RX.vhd -prj ethernet -o MII_RX.spl -module MII_RX -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MII_RX.spl C:/Users/fafik/Dropbox/infa/xilinx/ethernet4/MII_RX.sym 
+vhdtdtfi -lib work MII_RX.vhd -prj ethernet -o MII_RX.spl -module MII_RX -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MII_RX.spl C:/Users/fafik/Dropbox/infa/xilinx/ethernet4/MII_RX.sym 
+vhdtdtfi -lib work MII_RX.vhd -prj ethernet -o MII_RX.spl -module MII_RX -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MII_RX.spl C:/Users/fafik/Dropbox/infa/xilinx/ethernet4/MII_RX.sym 
+vhdtdtfi -lib work MII_RX.vhd -prj ethernet -o MII_RX.spl -module MII_RX -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MII_RX.spl C:/Users/fafik/Dropbox/infa/xilinx/ethernet4/MII_RX.sym 
+vhdtdtfi -lib work MII_RX.vhd -prj ethernet -o MII_RX.spl -module MII_RX -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MII_RX.spl C:/Users/fafik/Dropbox/infa/xilinx/ethernet4/MII_RX.sym 
+vhdtdtfi -lib work MII_RX.vhd -prj ethernet -o MII_RX.spl -module MII_RX -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MII_RX.spl C:/Users/fafik/Dropbox/infa/xilinx/ethernet4/MII_RX.sym 
+vhdtdtfi -lib work MII_RX.vhd -prj ethernet -o MII_RX.spl -module MII_RX -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MII_RX.spl C:/Users/fafik/Dropbox/infa/xilinx/ethernet4/MII_RX.sym 
+vhdtdtfi -lib work MII_RX.vhd -prj ethernet -o MII_RX.spl -module MII_RX -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MII_RX.spl C:/Users/fafik/Dropbox/infa/xilinx/ethernet4/MII_RX.sym 
+vhdtdtfi -lib work MII_RX.vhd -prj ethernet -o MII_RX.spl -module MII_RX -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MII_RX.spl C:/Users/fafik/Dropbox/infa/xilinx/ethernet4/MII_RX.sym 
+vhdtdtfi -lib work MII_RX.vhd -prj ethernet -o MII_RX.spl -module MII_RX -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MII_RX.spl C:/Users/fafik/Dropbox/infa/xilinx/ethernet4/MII_RX.sym 
+vhdtdtfi -lib work MII_RX.vhd -prj ethernet -o MII_RX.spl -module MII_RX -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MII_RX.spl C:/Users/fafik/Dropbox/infa/xilinx/ethernet4/MII_RX.sym 
+vhdtdtfi -lib work MII_RX.vhd -prj ethernet -o MII_RX.spl -module MII_RX -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MII_RX.spl C:/Users/fafik/Dropbox/infa/xilinx/ethernet4/MII_RX.sym 
+vhdtdtfi -lib work MII_RX.vhd -prj ethernet -o MII_RX.spl -module MII_RX -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MII_RX.spl C:/Users/fafik/Dropbox/infa/xilinx/ethernet4/MII_RX.sym 
+vhdtdtfi -lib work MII_RX.vhd -prj ethernet -o MII_RX.spl -module MII_RX -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MII_RX.spl C:/Users/fafik/Dropbox/infa/xilinx/ethernet4/MII_RX.sym 
+vhdtdtfi -lib work MII_RX.vhd -prj ethernet -o MII_RX.spl -module MII_RX -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MII_RX.spl C:/Users/fafik/Dropbox/infa/xilinx/ethernet4/MII_RX.sym 
+vhdtdtfi -lib work MII_RX.vhd -prj ethernet -o MII_RX.spl -module MII_RX -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MII_RX.spl C:/Users/fafik/Dropbox/infa/xilinx/ethernet4/MII_RX.sym 
+vhdtdtfi -lib work MII_RX.vhd -prj ethernet -o MII_RX.spl -module MII_RX -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MII_RX.spl C:/Users/fafik/Dropbox/infa/xilinx/ethernet4/MII_RX.sym 
+vhdtdtfi -lib work MII_RX.vhd -prj ethernet -o MII_RX.spl -module MII_RX -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MII_RX.spl C:/Users/fafik/Dropbox/infa/xilinx/ethernet4/MII_RX.sym 
+vhdtdtfi -lib work MII_RX.vhd -prj ethernet -o MII_RX.spl -module MII_RX -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MII_RX.spl C:/Users/fafik/Dropbox/infa/xilinx/ethernet4/MII_RX.sym 
+vhdtdtfi -lib work MII_RX.vhd -prj ethernet -o MII_RX.spl -module MII_RX -template C:/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MII_RX.spl C:/XilinxPrj/ethernet4/MII_RX.sym 
+vhdtdtfi -lib work MII_RX.vhd -prj ethernet -o MII_RX.spl -module MII_RX -template C:/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MII_RX.spl C:/XilinxPrj/ethernet4/MII_RX.sym 
+vhdtdtfi -lib work MII_RX.vhd -prj ethernet -o MII_RX.spl -module MII_RX -template C:/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MII_RX.spl C:/XilinxPrj/ethernet4/MII_RX.sym 

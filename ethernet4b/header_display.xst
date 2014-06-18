@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/fafik/Dropbox/infa/xilinx/ethernet4/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/fafik/Dropbox/infa/xilinx/ethernet4/xst"
+elaborate
+-ifn header_display.prj
+-ifmt mixed

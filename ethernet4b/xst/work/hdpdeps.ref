@@ -1,0 +1,58 @@
+V3 44
+FL C:/Users/fafik/Dropbox/infa/xilinx/ethernet2/nowyRXTX.vhd 2014/03/13.17:03:06 P.68d
+EN work/nowyRXTX 1394726643 \
+      FL C:/Users/fafik/Dropbox/infa/xilinx/ethernet2/nowyRXTX.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/nowyRXTX/Behavioral 1394726644 \
+      FL C:/Users/fafik/Dropbox/infa/xilinx/ethernet2/nowyRXTX.vhd \
+      EN work/nowyRXTX 1394726643
+FL C:/Users/fafik/Dropbox/infa/xilinx/ethernet4/header_display.vhd 2014/04/02.10:39:12 P.68d
+FL C:/Users/fafik/Dropbox/infa/xilinx/ethernet4/MII_RX.vhd 2014/04/28.20:07:58 P.68d
+FL C:/Users/fafik/Dropbox/infa/xilinx/ethernet4/MII_schem.vhf 2014/04/28.20:25:27 P.68d
+FL C:/Users/fafik/Dropbox/infa/xilinx/ethernet4/MII_test3.vhf 2014/03/25.13:16:06 P.68d
+FL C:/XilinxPrj/ethernet/button.vhd 2014/03/10.10:24:47 P.68d
+EN work/button 1394445769 FL C:/XilinxPrj/ethernet/button.vhd \
+      PB ieee/std_logic_1164 1370735607
+AR work/button/Behavioral 1394445770 \
+      FL C:/XilinxPrj/ethernet/button.vhd EN work/button 1394445769
+FL C:/XilinxPrj/ethernet/SMI_divider.vhd 2014/03/10.10:31:18 P.68d
+EN work/SMI_divider 1394445765 FL C:/XilinxPrj/ethernet/SMI_divider.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/SMI_divider/Behavioral 1394445766 \
+      FL C:/XilinxPrj/ethernet/SMI_divider.vhd EN work/SMI_divider 1394445765
+FL C:/XilinxPrj/ethernet/SMI_RXTX.vhd 2014/03/10.11:00:22 P.68d
+EN work/SMI_RXTX 1394445767 FL C:/XilinxPrj/ethernet/SMI_RXTX.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/SMI_RXTX/Behavioral 1394445768 \
+      FL C:/XilinxPrj/ethernet/SMI_RXTX.vhd EN work/SMI_RXTX 1394445767
+FL C:/XilinxPrj/ethernet/test.vhf 2014/03/10.10:37:27 P.68d
+EN work/test 1394445771 FL C:/XilinxPrj/ethernet/test.vhf PB ieee/std_logic_1164 1370735607 \
+      PB ieee/NUMERIC_STD 1370735611 LB UNISIM PH unisim/VCOMPONENTS 1370735613
+AR work/test/BEHAVIORAL 1394445772 \
+      FL C:/XilinxPrj/ethernet/test.vhf EN work/test 1394445771 CP SMI_divider \
+      CP SMI_RXTX CP GND CP button
+FL C:/XilinxPrj/ethernet4/header_display.vhd 2014/04/30.16:35:39 P.68d
+EN work/header_display 1398868568 FL C:/XilinxPrj/ethernet4/header_display.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/header_display/Behavioral 1398868569 \
+      FL C:/XilinxPrj/ethernet4/header_display.vhd EN work/header_display 1398868568
+FL C:/XilinxPrj/ethernet4/MII_RX.vhd 2014/04/30.16:35:36 P.68d
+EN work/MII_RX 1398868570 FL C:/XilinxPrj/ethernet4/MII_RX.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611
+AR work/MII_RX/Behavioral 1398868571 \
+      FL C:/XilinxPrj/ethernet4/MII_RX.vhd EN work/MII_RX 1398868570
+FL C:/XilinxPrj/ethernet4/MII_schem.vhf 2014/04/30.16:36:05 P.68d
+EN work/MII_schem 1398868574 FL C:/XilinxPrj/ethernet4/MII_schem.vhf \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 LB UNISIM \
+      PH unisim/VCOMPONENTS 1370735613
+AR work/MII_schem/BEHAVIORAL 1398868575 \
+      FL C:/XilinxPrj/ethernet4/MII_schem.vhf EN work/MII_schem 1398868574 \
+      CP RotaryEnc CP header_display CP RS232 CP MII_RX
+FL C:/XilinxPrj/ethernet4/MII_test3.vhf 2014/03/25.13:16:06 P.68d
+EN work/MII_test3 1398868572 FL C:/XilinxPrj/ethernet4/MII_test3.vhf \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 LB UNISIM \
+      PH unisim/VCOMPONENTS 1370735613
+AR work/MII_test3/BEHAVIORAL 1398868573 \
+      FL C:/XilinxPrj/ethernet4/MII_test3.vhf EN work/MII_test3 1398868572 \
+      CP header_display CP MII_RX CP VGAtxt48x20 CP RotaryEnc CP GND CP BUF CP VCC
+FL G:/ethernet2/nowyRXTX.vhd 2014/03/12.16:40:00 P.68d

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="G:/ethernet2/nowy_test_isim_par.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="nowy_test" />
+            <top_module name="std_logic_1164" />
+            <top_module name="textio" />
+            <top_module name="vcomponents" />
+            <top_module name="vital_primitives" />
+            <top_module name="vital_timing" />
+            <top_module name="vpackage" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="19" />
+   <wvobject fp_name="/nowy_test/data_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_in[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nowy_test/phy_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">phy_addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">phy_addr[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nowy_test/reg_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_addr[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nowy_test/write_read" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">write_read</obj_property>
+      <obj_property name="ObjectShortName">write_read</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nowy_test/strt" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">strt</obj_property>
+      <obj_property name="ObjectShortName">strt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nowy_test/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nowy_test/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nowy_test/mdio" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mdio</obj_property>
+      <obj_property name="ObjectShortName">mdio</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nowy_test/data_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nowy_test/busy" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">busy</obj_property>
+      <obj_property name="ObjectShortName">busy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nowy_test/mdc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mdc</obj_property>
+      <obj_property name="ObjectShortName">mdc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nowy_test/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nowy_test/uut/latched_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">latched_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">latched_data[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nowy_test/uut/clk_div1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_div1</obj_property>
+      <obj_property name="ObjectShortName">clk_div1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nowy_test/uut/write_send_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">write_send_data[63:0]</obj_property>
+      <obj_property name="ObjectShortName">write_send_data[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nowy_test/uut/counter" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">counter[7:0]</obj_property>
+      <obj_property name="ObjectShortName">counter[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nowy_test/uut/bit_counter" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">bit_counter[7:0]</obj_property>
+      <obj_property name="ObjectShortName">bit_counter[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nowy_test/uut/read_clock_enable_1126" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">read_clock_enable_1126</obj_property>
+      <obj_property name="ObjectShortName">read_clock_enable_1126</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nowy_test/uut/read_send_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">read_send_data[45:0]</obj_property>
+      <obj_property name="ObjectShortName">read_send_data[45:0]</obj_property>
+   </wvobject>
+</wave_config>

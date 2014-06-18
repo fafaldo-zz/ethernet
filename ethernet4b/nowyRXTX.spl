@@ -1,0 +1,14 @@
+[Inputs]
+write_read
+strt
+reset
+clk
+=data_in[15:0]=
+=phy_addr[4:0]=
+=reg_addr[4:0]=
+[Outputs]
+busy
+MDC
+=data_out[15:0]=
+[BiDir]
+MDIO

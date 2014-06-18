@@ -1,0 +1,11 @@
+[Inputs]
+clk
+start
+reset
+=ram_output[3:0]=
+[Outputs]
+char_we
+ram_clk
+ram_enable
+=char[7:0]=
+[BiDir]

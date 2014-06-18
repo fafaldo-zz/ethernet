@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/fafik/Dropbox/infa/xilinx/ethernet/rx_test_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="rx_test" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="16" />
+   <wvobject fp_name="/rx_test/data_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_in[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rx_test/phy_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">phy_addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">phy_addr[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rx_test/reg_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_addr[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rx_test/write_read" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">write_read</obj_property>
+      <obj_property name="ObjectShortName">write_read</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rx_test/strt" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">strt</obj_property>
+      <obj_property name="ObjectShortName">strt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rx_test/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rx_test/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rx_test/clk_div" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_div</obj_property>
+      <obj_property name="ObjectShortName">clk_div</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rx_test/mdio" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mdio</obj_property>
+      <obj_property name="ObjectShortName">mdio</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rx_test/data_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rx_test/busy" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">busy</obj_property>
+      <obj_property name="ObjectShortName">busy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rx_test/mdc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mdc</obj_property>
+      <obj_property name="ObjectShortName">mdc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rx_test/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rx_test/clk_div_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_div_period</obj_property>
+      <obj_property name="ObjectShortName">clk_div_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rx_test/uut/state" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rx_test/uut/next_state" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">next_state</obj_property>
+      <obj_property name="ObjectShortName">next_state</obj_property>
+   </wvobject>
+</wave_config>

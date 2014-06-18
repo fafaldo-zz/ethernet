@@ -1,0 +1,27 @@
+vhdtdtfi -lib work header_display.vhd -prj ethernet -o header_display.spl -module header_display -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e header_display.spl C:/Users/fafik/Dropbox/infa/xilinx/ethernet4/header_display.sym 
+vhdtdtfi -prj ethernet -o C:/Users/fafik/Dropbox/infa/xilinx/ethernet4/header_display.vhi -module header_display -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work header_display.vhd 
+vhdtdtfi -lib work header_display.vhd -prj ethernet -o header_display.spl -module header_display -template C:/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e header_display.spl C:/XilinxPrj/ethernet4/header_display.sym 
+vhdtdtfi -lib work header_display.vhd -prj ethernet -o header_display.spl -module header_display -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e header_display.spl C:/Users/fafik/Dropbox/infa/xilinx/ethernet4/header_display.sym 
+vhdtdtfi -lib work header_display.vhd -prj ethernet -o header_display.spl -module header_display -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e header_display.spl C:/Users/fafik/Dropbox/infa/xilinx/ethernet4/header_display.sym 
+vhdtdtfi -lib work header_display.vhd -prj ethernet -o header_display.spl -module header_display -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e header_display.spl C:/Users/fafik/Dropbox/infa/xilinx/ethernet4/header_display.sym 
+vhdtdtfi -lib work header_display.vhd -prj ethernet -o header_display.spl -module header_display -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e header_display.spl C:/Users/fafik/Dropbox/infa/xilinx/ethernet4/header_display.sym 
+vhdtdtfi -lib work header_display.vhd -prj ethernet -o header_display.spl -module header_display -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e header_display.spl C:/Users/fafik/Dropbox/infa/xilinx/ethernet4/header_display.sym 
+vhdtdtfi -lib work header_display.vhd -prj ethernet -o header_display.spl -module header_display -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e header_display.spl C:/Users/fafik/Dropbox/infa/xilinx/ethernet4/header_display.sym 
+vhdtdtfi -lib work header_display.vhd -prj ethernet -o header_display.spl -module header_display -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e header_display.spl C:/Users/fafik/Dropbox/infa/xilinx/ethernet4/header_display.sym 
+vhdtdtfi -lib work header_display.vhd -prj ethernet -o header_display.spl -module header_display -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e header_display.spl C:/Users/fafik/Dropbox/infa/xilinx/ethernet4/header_display.sym 
+vhdtdtfi -lib work header_display.vhd -prj ethernet -o header_display.spl -module header_display -template C:/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e header_display.spl C:/XilinxPrj/ethernet4/header_display.sym 
+vhdtdtfi -lib work header_display.vhd -prj ethernet -o header_display.spl -module header_display -template C:/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e header_display.spl C:/XilinxPrj/ethernet4/header_display.sym 
+vhdtdtfi -lib work header_display.vhd -prj ethernet -o header_display.spl -module header_display -template C:/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e header_display.spl C:/XilinxPrj/ethernet4/header_display.sym 

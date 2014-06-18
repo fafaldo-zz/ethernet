@@ -1,0 +1,57 @@
+xst -intstyle ise -ifn "C:/XilinxPrj/ethernet4/MII_test3.xst" -ofn "C:/XilinxPrj/ethernet4/MII_test3.syr" 
+xst -intstyle ise -ifn "C:/XilinxPrj/ethernet4/MII_test3.xst" -ofn "C:/XilinxPrj/ethernet4/MII_test3.syr" 
+xst -intstyle ise -ifn "C:/XilinxPrj/ethernet4/MII_test3.xst" -ofn "C:/XilinxPrj/ethernet4/MII_test3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PHY.ucf -uc GenIO.ucf -p xc3s500e-fg320-4 MII_test3.ngc MII_test3.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PHY.ucf -uc GenIO.ucf -p xc3s500e-fg320-4 MII_test3.ngc MII_test3.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MII_test3_map.ncd MII_test3.ngd MII_test3.pcf 
+par -w -intstyle ise -ol high -t 1 MII_test3_map.ncd MII_test3.ncd MII_test3.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PHY.ucf -uc GenIO.ucf -p xc3s500e-fg320-4 MII_test3.ngc MII_test3.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MII_test3_map.ncd MII_test3.ngd MII_test3.pcf 
+par -w -intstyle ise -ol high -t 1 MII_test3_map.ncd MII_test3.ncd MII_test3.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PHY.ucf -uc GenIO.ucf -p xc3s500e-fg320-4 MII_test3.ngc MII_test3.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MII_test3_map.ncd MII_test3.ngd MII_test3.pcf 
+par -w -intstyle ise -ol high -t 1 MII_test3_map.ncd MII_test3.ncd MII_test3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MII_test3.twx MII_test3.ncd -o MII_test3.twr MII_test3.pcf -ucf PHY.ucf -ucf GenIO.ucf 
+bitgen -intstyle ise -f MII_test3.ut MII_test3.ncd 
+xst -intstyle ise -ifn "C:/XilinxPrj/ethernet4/MII_test3.xst" -ofn "C:/XilinxPrj/ethernet4/MII_test3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PHY.ucf -uc GenIO.ucf -p xc3s500e-fg320-4 MII_test3.ngc MII_test3.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MII_test3_map.ncd MII_test3.ngd MII_test3.pcf 
+par -w -intstyle ise -ol high -t 1 MII_test3_map.ncd MII_test3.ncd MII_test3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MII_test3.twx MII_test3.ncd -o MII_test3.twr MII_test3.pcf -ucf PHY.ucf -ucf GenIO.ucf 
+bitgen -intstyle ise -f MII_test3.ut MII_test3.ncd 
+xst -intstyle ise -ifn "C:/XilinxPrj/ethernet4/MII_test3.xst" -ofn "C:/XilinxPrj/ethernet4/MII_test3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PHY.ucf -uc GenIO.ucf -p xc3s500e-fg320-4 MII_test3.ngc MII_test3.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MII_test3_map.ncd MII_test3.ngd MII_test3.pcf 
+par -w -intstyle ise -ol high -t 1 MII_test3_map.ncd MII_test3.ncd MII_test3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MII_test3.twx MII_test3.ncd -o MII_test3.twr MII_test3.pcf -ucf PHY.ucf -ucf GenIO.ucf 
+bitgen -intstyle ise -f MII_test3.ut MII_test3.ncd 
+xst -intstyle ise -ifn "C:/XilinxPrj/ethernet4/MII_test3.xst" -ofn "C:/XilinxPrj/ethernet4/MII_test3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PHY.ucf -uc GenIO.ucf -p xc3s500e-fg320-4 MII_test3.ngc MII_test3.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MII_test3_map.ncd MII_test3.ngd MII_test3.pcf 
+par -w -intstyle ise -ol high -t 1 MII_test3_map.ncd MII_test3.ncd MII_test3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MII_test3.twx MII_test3.ncd -o MII_test3.twr MII_test3.pcf -ucf PHY.ucf -ucf GenIO.ucf 
+bitgen -intstyle ise -f MII_test3.ut MII_test3.ncd 
+xst -intstyle ise -ifn "C:/XilinxPrj/ethernet4/MII_test3.xst" -ofn "C:/XilinxPrj/ethernet4/MII_test3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PHY.ucf -uc GenIO.ucf -p xc3s500e-fg320-4 MII_test3.ngc MII_test3.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MII_test3_map.ncd MII_test3.ngd MII_test3.pcf 
+par -w -intstyle ise -ol high -t 1 MII_test3_map.ncd MII_test3.ncd MII_test3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MII_test3.twx MII_test3.ncd -o MII_test3.twr MII_test3.pcf -ucf PHY.ucf -ucf GenIO.ucf 
+bitgen -intstyle ise -f MII_test3.ut MII_test3.ncd 
+xst -intstyle ise -ifn "C:/XilinxPrj/ethernet4/MII_test3.xst" -ofn "C:/XilinxPrj/ethernet4/MII_test3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PHY.ucf -uc GenIO.ucf -p xc3s500e-fg320-4 MII_test3.ngc MII_test3.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MII_test3_map.ncd MII_test3.ngd MII_test3.pcf 
+par -w -intstyle ise -ol high -t 1 MII_test3_map.ncd MII_test3.ncd MII_test3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MII_test3.twx MII_test3.ncd -o MII_test3.twr MII_test3.pcf -ucf PHY.ucf -ucf GenIO.ucf 
+bitgen -intstyle ise -f MII_test3.ut MII_test3.ncd 
+xst -intstyle ise -ifn "C:/XilinxPrj/ethernet4/MII_test3.xst" -ofn "C:/XilinxPrj/ethernet4/MII_test3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PHY.ucf -uc GenIO.ucf -p xc3s500e-fg320-4 MII_test3.ngc MII_test3.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MII_test3_map.ncd MII_test3.ngd MII_test3.pcf 
+par -w -intstyle ise -ol high -t 1 MII_test3_map.ncd MII_test3.ncd MII_test3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MII_test3.twx MII_test3.ncd -o MII_test3.twr MII_test3.pcf -ucf PHY.ucf -ucf GenIO.ucf 
+bitgen -intstyle ise -f MII_test3.ut MII_test3.ncd 
+xst -intstyle ise -ifn "C:/XilinxPrj/ethernet4/MII_test3.xst" -ofn "C:/XilinxPrj/ethernet4/MII_test3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PHY.ucf -uc GenIO.ucf -p xc3s500e-fg320-4 MII_test3.ngc MII_test3.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MII_test3_map.ncd MII_test3.ngd MII_test3.pcf 
+par -w -intstyle ise -ol high -t 1 MII_test3_map.ncd MII_test3.ncd MII_test3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MII_test3.twx MII_test3.ncd -o MII_test3.twr MII_test3.pcf -ucf PHY.ucf -ucf GenIO.ucf 
+bitgen -intstyle ise -f MII_test3.ut MII_test3.ncd 

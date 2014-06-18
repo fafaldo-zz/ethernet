@@ -1,0 +1,4 @@
+vhdtdtfi -lib work SMI_divider.vhd -prj ethernet -o SMI_divider.spl -module SMI_divider -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e SMI_divider.spl C:/Users/fafik/Dropbox/infa/xilinx/ethernet/SMI_divider.sym 
+vhdtdtfi -lib work SMI_divider.vhd -prj ethernet -o SMI_divider.spl -module SMI_divider -template C:/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e SMI_divider.spl C:/XilinxPrj/ethernet/SMI_divider.sym 

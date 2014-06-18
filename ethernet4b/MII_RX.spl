@@ -1,0 +1,15 @@
+[Inputs]
+recv_strobe
+recv_clock
+recv_error
+clk
+reset
+ram_clk
+ram_enable
+=recv_data[3:0]=
+[Outputs]
+data_received
+busy
+=ram_output[3:0]=
+=test[7:0]=
+[BiDir]

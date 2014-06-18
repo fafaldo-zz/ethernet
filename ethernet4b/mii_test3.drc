@@ -1,0 +1,18 @@
+Release 14.6 Drc P.68d (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Tue Mar 25 12:29:38 2014
+
+drc -z MII_test3.ncd MII_test3.pcf
+
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_1/state_cmp_eq0002 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   XLXI_1/address_counter_not0003 is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:367 - The signal <E_RX_D<4>_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+DRC detected 0 errors and 3 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

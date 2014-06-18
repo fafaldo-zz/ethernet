@@ -1,0 +1,2 @@
+vhdl isim_temp "SMI_divider.vhd"
+vhdl isim_temp "smi_divider_test.vhd"

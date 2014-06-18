@@ -1,0 +1,2 @@
+vhdtdtfi -lib work button.vhd -prj ethernet -o button.spl -module button -template C:/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e button.spl C:/XilinxPrj/ethernet/button.sym 
