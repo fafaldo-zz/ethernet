@@ -1,13 +1,13 @@
-Release 14.6 - Bitgen P.68d (nt)
+Release 14.6 - Bitgen P.68d (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Loading device for application Rf_Device from file '3s500e.nph' in environment
-C:\Xilinx\14.6\ISE_DS\ISE\.
+D:\programy\Xilinx\14.6\ISE_DS\ISE\.
    "MII_schem" is an NCD, version 3.2, device xc3s500e, package fg320, speed -4
 Opened constraints file MII_schem.pcf.
 
-Wed Apr 30 16:36:49 2014
+Wed Jun 18 21:13:02 2014
 
-C:\Xilinx\14.6\ISE_DS\ISE\bin\nt\unwrapped\bitgen.exe -intstyle ise -w -g DebugBitstream:No -g Binary:no -g CRC:Enable -g ConfigRate:1 -g ProgPin:PullUp -g DonePin:PullUp -g TckPin:PullUp -g TdiPin:PullUp -g TdoPin:PullUp -g TmsPin:PullUp -g UnusedPin:PullDown -g UserID:0xFFFFFFFF -g DCMShutdown:Disable -g StartUpClk:CClk -g DONE_cycle:4 -g GTS_cycle:5 -g GWE_cycle:6 -g LCK_cycle:NoWait -g Security:None -g DonePipe:Yes -g DriveDone:No MII_schem.ncd 
+D:\programy\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\bitgen.exe -intstyle ise -w -g DebugBitstream:No -g Binary:no -g CRC:Enable -g ConfigRate:1 -g ProgPin:PullUp -g DonePin:PullUp -g TckPin:PullUp -g TdiPin:PullUp -g TdoPin:PullUp -g TmsPin:PullUp -g UnusedPin:PullDown -g UserID:0xFFFFFFFF -g DCMShutdown:Disable -g StartUpClk:CClk -g DONE_cycle:4 -g GTS_cycle:5 -g GWE_cycle:6 -g LCK_cycle:NoWait -g Security:None -g DonePipe:Yes -g DriveDone:No MII_schem.ncd 
 
 Summary of Bitgen Options:
 +----------------------+----------------------+
@@ -94,11 +94,6 @@ WARNING:PhysDesignRules:367 - The signal <E_RX_ERR_IBUF> is incomplete. The
    signal does not drive any load pins in the design.
 DRC detected 0 errors and 1 warnings.  Please see the previously displayed
 individual error or warning messages for more details.
-INFO:Security:54 - 'xc3s500e' is a WebPack part.
-WARNING:Security:42 - Your software subscription period has lapsed. Your current
-version of Xilinx tools will continue to function, but you no longer qualify for
-Xilinx software updates or new releases.
-
 Creating bit map...
 Saving bit stream in "mii_schem.bit".
 Bitstream generation is complete.

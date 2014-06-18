@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2014-06-10T11:21:07</DateModified>
+  <DateModified>2014-06-18T20:31:32</DateModified>
   <ModuleName>MII_schem</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>F:/znowu dziala/ethernet4b/iseconfig/MII_schem.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>F:/znowu dziala/ethernet4b\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/iseconfig/MII_schem.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b\</ImplementationReportsDirectory>
   <DateInitialized>2014-04-01T15:31:15</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

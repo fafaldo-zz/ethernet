@@ -37,7 +37,6 @@ entity MII_RX is
            recv_error : in  STD_LOGIC;
 			  clk : in STD_LOGIC;
 			  reset : in STD_LOGIC;
-			  ram_clk : in STD_LOGIC;
 			  ram_enable : in STD_LOGIC;
            data_received : out  STD_LOGIC := '0';
 			  busy : out STD_LOGIC;

@@ -1,0 +1,6 @@
+vhdtdtfi -lib work vga_display.vhd -prj ethernet -o vga_display.spl -module vga_display -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e vga_display.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/vga_display.sym 
+vhdtdtfi -lib work vga_display.vhd -prj ethernet -o vga_display.spl -module vga_display -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e vga_display.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/vga_display.sym 
+vhdtdtfi -lib work vga_display.vhd -prj ethernet -o vga_display.spl -module vga_display -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e vga_display.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/vga_display.sym 

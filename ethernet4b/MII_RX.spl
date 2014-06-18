@@ -4,7 +4,6 @@ recv_clock
 recv_error
 clk
 reset
-ram_clk
 ram_enable
 =recv_data[3:0]=
 [Outputs]

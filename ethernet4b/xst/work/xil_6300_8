@@ -1,36 +1,36 @@
 V3 50
 FL C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MII_RX.vhd 2014/06/18.20:12:06 P.68d
-EN work/MII_RX 1403118726 \
+EN work/MII_RX 1403117323 \
       FL C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MII_RX.vhd \
       PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611
-AR work/MII_RX/Behavioral 1403118727 \
+AR work/MII_RX/Behavioral 1403117324 \
       FL C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MII_RX.vhd \
-      EN work/MII_RX 1403118726
-FL C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MII_schem.vhf 2014/06/18.21:12:01 P.68d
-EN work/MII_schem 1403118732 \
+      EN work/MII_RX 1403117323
+FL C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MII_schem.vhf 2014/06/18.20:31:40 P.68d
+EN work/MII_schem 1403116449 \
       FL C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MII_schem.vhf \
       PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 LB UNISIM \
       PH unisim/VCOMPONENTS 1370735613
-AR work/MII_schem/BEHAVIORAL 1403118733 \
+AR work/MII_schem/BEHAVIORAL 1403116450 \
       FL C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MII_schem.vhf \
-      EN work/MII_schem 1403118732 CP RotaryEnc CP MII_RX CP VGAtxt48x20 \
+      EN work/MII_schem 1403116449 CP RotaryEnc CP MII_RX CP VGAtxt48x20 \
       CP vga_display CP GND CP BUF
 FL C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MII_test3.vhf 2014/03/25.13:16:06 P.68d
-EN work/MII_test3 1403118730 \
+EN work/MII_test3 1403116447 \
       FL C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MII_test3.vhf \
       PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 LB UNISIM \
       PH unisim/VCOMPONENTS 1370735613
-AR work/MII_test3/BEHAVIORAL 1403118731 \
+AR work/MII_test3/BEHAVIORAL 1403116448 \
       FL C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MII_test3.vhf \
-      EN work/MII_test3 1403118730 CP header_display CP MII_RX CP VGAtxt48x20 \
+      EN work/MII_test3 1403116447 CP header_display CP MII_RX CP VGAtxt48x20 \
       CP RotaryEnc CP GND CP BUF CP VCC
-FL C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/vga_display.vhd 2014/06/18.20:58:38 P.68d
-EN work/vga_display 1403118728 \
+FL C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/vga_display.vhd 2014/06/18.20:48:17 P.68d
+EN work/vga_display 1403117325 \
       FL C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/vga_display.vhd \
       PB ieee/std_logic_1164 1370735607 PB ieee/STD_LOGIC_UNSIGNED 1370735609
-AR work/vga_display/Behavioral 1403118729 \
+AR work/vga_display/Behavioral 1403117326 \
       FL C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/vga_display.vhd \
-      EN work/vga_display 1403118728
+      EN work/vga_display 1403117325
 FL C:/Users/fafik/Dropbox/infa/xilinx/ethernet2/nowyRXTX.vhd 2014/03/13.17:03:06 P.68d
 EN work/nowyRXTX 1394726643 \
       FL C:/Users/fafik/Dropbox/infa/xilinx/ethernet2/nowyRXTX.vhd \
