@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="vga_display">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2014-6-18T18:58:48</timestamp>
+    <timestamp>2014-6-26T18:35:37</timestamp>
     <pin polarity="Input" x="0" y="-224" name="clk" />
     <pin polarity="Input" x="0" y="-160" name="start" />
     <pin polarity="Input" x="0" y="-96" name="reset" />
-    <pin polarity="Input" x="0" y="-32" name="ram_output(3:0)" />
+    <pin polarity="Input" x="0" y="-32" name="ram_output(7:0)" />
     <pin polarity="Output" x="432" y="-224" name="char_we" />
     <pin polarity="Output" x="432" y="-128" name="ram_enable" />
     <pin polarity="Output" x="432" y="-32" name="char(7:0)" />
@@ -14,7 +14,7 @@
         <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-224" type="pin clk" />
         <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-160" type="pin start" />
         <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-96" type="pin reset" />
-        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-32" type="pin ram_output(3:0)" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-32" type="pin ram_output(7:0)" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="-224" type="pin char_we" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="-128" type="pin ram_enable" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="-32" type="pin char(7:0)" />

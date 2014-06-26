@@ -40,7 +40,7 @@ entity MII_RX is
 			  ram_enable : in STD_LOGIC;
            data_received : out  STD_LOGIC := '0';
 			  busy : out STD_LOGIC;
-			  ram_output : out STD_LOGIC_VECTOR(3 downto 0);
+			  ram_output : out STD_LOGIC_VECTOR(7 downto 0);
            test : out STD_LOGIC_VECTOR(7 downto 0));
 end MII_RX;
 
@@ -53,7 +53,7 @@ type frame_ram is array (2**ADDR_WIDTH-1 downto 0) of std_logic_vector (DATA_WID
 signal ram: frame_ram;
 
 signal data_received_in : STD_LOGIC := '0';
-signal address_counter : unsigned (ADDR_WIDTH-1 downto 0) := (others=>'0');
+signal write_address_counter : unsigned (ADDR_WIDTH-1 downto 0) := (others=>'0');
 signal read_address_counter : UNSIGNED(ADDR_WIDTH-1 downto 0) := (others=>'0');
 
 signal busy_in : STD_LOGIC := '0';
@@ -96,9 +96,9 @@ begin
 	begin
 		if rising_edge(recv_clock) then
 			if (recv_strobe = '1') then
-				if (address_counter = 0 and read_address_counter = 0) or address_counter /= (read_address_counter-1) then
-					ram(TO_INTEGER(address_counter)) <= recv_data;
-					address_counter <= address_counter + 1;
+				if (write_address_counter = 0 and read_address_counter = 0) or write_address_counter /= (read_address_counter-1) then
+					ram(TO_INTEGER(write_address_counter)) <= recv_data;
+					write_address_counter <= write_address_counter + 1;
 				end if;
 			end if;
 		end if;
@@ -108,9 +108,9 @@ begin
 	begin
 		if rising_edge(clk) then
 			if (ram_enable = '1') then
-				if read_address_counter /= address_counter then
-					ram_output <= ram(TO_INTEGER(read_address_counter));
-					read_address_counter <= read_address_counter+1;
+				if read_address_counter /= write_address_counter then
+					ram_output <= ram(TO_INTEGER(read_address_counter)) & ram(TO_INTEGER(read_address_counter+1));
+					read_address_counter <= read_address_counter+2;
 				end if;
 			end if;
 		end if;

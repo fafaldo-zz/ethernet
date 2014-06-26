@@ -1,0 +1,15 @@
+[Inputs]
+clkA
+clkB
+enA
+enB
+weA
+weB
+=addrA[11:0]=
+=addrB[10:0]=
+=diA[3:0]=
+=diB[7:0]=
+[Outputs]
+=doA[3:0]=
+=doB[7:0]=
+[BiDir]

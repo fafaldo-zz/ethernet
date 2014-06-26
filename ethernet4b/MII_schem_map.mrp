@@ -9,38 +9,41 @@ Target Device  : xc3s500e
 Target Package : fg320
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Wed Jun 18 21:12:20 2014
+Mapped Date    : Thu Jun 26 20:36:41 2014
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:    1
 Logic Utilization:
-  Number of Slice Flip Flops:           127 out of   9,312    1%
-  Number of 4 input LUTs:               198 out of   9,312    2%
+  Total Number Slice Registers:         153 out of   9,312    1%
+    Number used as Flip Flops:          145
+    Number used as Latches:               8
+  Number of 4 input LUTs:             5,661 out of   9,312   60%
 Logic Distribution:
-  Number of occupied Slices:            153 out of   4,656    3%
-    Number of Slices containing only related logic:     153 out of     153 100%
-    Number of Slices containing unrelated logic:          0 out of     153   0%
+  Number of occupied Slices:          2,894 out of   4,656   62%
+    Number of Slices containing only related logic:   2,894 out of   2,894 100%
+    Number of Slices containing unrelated logic:          0 out of   2,894   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:         269 out of   9,312    2%
-    Number used as logic:               193
-    Number used as a route-thru:         71
+  Total Number of 4 input LUTs:       5,731 out of   9,312   61%
+    Number used as logic:             1,560
+    Number used as a route-thru:         70
+    Number used for Dual Port RAMs:   4,096
+      (Two LUTs used per Dual Port RAM)
     Number used as Shift registers:       5
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
 
-  Number of bonded IOBs:                 17 out of     232    7%
-    IOB Flip Flops:                       1
-  Number of RAMB16s:                      3 out of      20   15%
-  Number of BUFGMUXs:                     3 out of      24   12%
+  Number of bonded IOBs:                 23 out of     232    9%
+  Number of RAMB16s:                      2 out of      20   10%
+  Number of BUFGMUXs:                     2 out of      24    8%
 
-Average Fanout of Non-Clock Nets:                2.95
+Average Fanout of Non-Clock Nets:                6.43
 
-Peak Memory Usage:  310 MB
-Total REAL time to MAP completion:  2 secs 
-Total CPU time to MAP completion:   1 secs 
+Peak Memory Usage:  353 MB
+Total REAL time to MAP completion:  5 secs 
+Total CPU time to MAP completion:   4 secs 
 
 NOTES:
 
@@ -81,15 +84,20 @@ Section 1 - Errors
 
 Section 2 - Warnings
 --------------------
-WARNING:PhysDesignRules:367 - The signal <E_RX_ERR_IBUF> is incomplete. The
-   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_7/ram_enable_or0000 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
 
 Section 3 - Informational
 -------------------------
-INFO:LIT:243 - Logical network E_RX_ERR_IBUF has no load.
-INFO:LIT:395 - The above info message is repeated 1 more times for the following
-   (max. 5 shown):
-   XLXI_2/RotL
+INFO:LIT:243 - Logical network XLXI_12/Mram_ram_ren1024/SPO has no load.
+INFO:LIT:395 - The above info message is repeated 2048 more times for the
+   following (max. 5 shown):
+   XLXI_12/Mram_ram_ren1023/SPO,
+   XLXI_12/Mram_ram_ren1022/SPO,
+   XLXI_12/Mram_ram_ren1021/SPO,
+   XLXI_12/Mram_ram_ren1020/SPO,
+   XLXI_12/Mram_ram_ren1019/SPO
    To see the details of these info messages, please use the -detail switch.
 INFO:MapLib:562 - No environment variables are currently set.
 INFO:MapLib:159 - Net Timing constraints on signal CLK are pushed forward
@@ -204,14 +212,12 @@ Section 6 - IOB Properties
 |                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
 | CLK                                | IBUF             | INPUT     | LVTTL                |       |          |      |              |          | 0 / 0    |
-| DATA_RECEIVED                      | IOB              | OUTPUT    | LVTTL                |       | 4        | SLOW | OFF1         |          | 0 / 0    |
 | E_RX_CLK                           | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
 | E_RX_D<0>                          | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
 | E_RX_D<1>                          | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
 | E_RX_D<2>                          | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
 | E_RX_D<3>                          | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
 | E_RX_DV                            | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
-| E_RX_ERR                           | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
 | RESET                              | IBUF             | INPUT     | LVTTL                |       |          |      |              | PULLDOWN | 0 / 0    |
 | ROT_A                              | IBUF             | INPUT     | LVTTL                |       |          |      |              | PULLUP   | 0 / 0    |
 | ROT_B                              | IBUF             | INPUT     | LVTTL                |       |          |      |              | PULLUP   | 0 / 0    |
@@ -220,6 +226,14 @@ Section 6 - IOB Properties
 | VGA_HS                             | IOB              | OUTPUT    | LVTTL                |       | 8        | FAST |              |          | 0 / 0    |
 | VGA_R                              | IOB              | OUTPUT    | LVTTL                |       | 8        | FAST |              |          | 0 / 0    |
 | VGA_VS                             | IOB              | OUTPUT    | LVTTL                |       | 8        | FAST |              |          | 0 / 0    |
+| test<0>                            | IOB              | OUTPUT    | LVTTL                |       | 4        | SLOW |              |          | 0 / 0    |
+| test<1>                            | IOB              | OUTPUT    | LVTTL                |       | 4        | SLOW |              |          | 0 / 0    |
+| test<2>                            | IOB              | OUTPUT    | LVTTL                |       | 4        | SLOW |              |          | 0 / 0    |
+| test<3>                            | IOB              | OUTPUT    | LVTTL                |       | 4        | SLOW |              |          | 0 / 0    |
+| test<4>                            | IOB              | OUTPUT    | LVTTL                |       | 4        | SLOW |              |          | 0 / 0    |
+| test<5>                            | IOB              | OUTPUT    | LVTTL                |       | 4        | SLOW |              |          | 0 / 0    |
+| test<6>                            | IOB              | OUTPUT    | LVTTL                |       | 4        | SLOW |              |          | 0 / 0    |
+| test<7>                            | IOB              | OUTPUT    | LVTTL                |       | 4        | SLOW |              |          | 0 / 0    |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Section 7 - RPMs

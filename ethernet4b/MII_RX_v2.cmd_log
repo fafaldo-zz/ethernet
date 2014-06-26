@@ -1,0 +1,4 @@
+vhdtdtfi -lib work MII_RX_v2.vhd -prj ethernet -o MII_RX_v2.spl -module MII_RX_v2 -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MII_RX_v2.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MII_RX_v2.sym 
+vhdtdtfi -lib work MII_RX_v2.vhd -prj ethernet -o MII_RX_v2.spl -module MII_RX_v2 -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MII_RX_v2.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MII_RX_v2.sym 

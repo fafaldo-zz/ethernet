@@ -1,20 +1,21 @@
-Running: D:\programy\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/fafik/Dropbox/infa/xilinx/ethernet4/disp_test_isim_beh.exe -prj C:/Users/fafik/Dropbox/infa/xilinx/ethernet4/disp_test_beh.prj work.disp_test 
+Running: D:\programy\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/fifo_control_unit_test1_isim_beh.exe -prj C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/fifo_control_unit_test1_beh.prj work.fifo_control_unit_test1 
 ISim P.68d (signature 0x7708f090)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Parsing VHDL file "C:/Users/fafik/Dropbox/infa/xilinx/ethernet4/header_display.vhd" into library work
-Parsing VHDL file "C:/Users/fafik/Dropbox/infa/xilinx/ethernet4/disp_test.vhd" into library work
+Parsing VHDL file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/fifo_control_unit.vhd" into library work
+Parsing VHDL file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/fifo_control_unit_test1.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package std_logic_arith
 Compiling package std_logic_unsigned
-Compiling architecture behavioral of entity header_display [header_display_default]
-Compiling architecture behavior of entity disp_test
+Compiling architecture behavioral of entity fifo_control_unit [fifo_control_unit_default]
+Compiling architecture behavior of entity fifo_control_unit_test1
 Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
 Compiled 7 VHDL Units
-Built simulation executable C:/Users/fafik/Dropbox/infa/xilinx/ethernet4/disp_test_isim_beh.exe
-Fuse Memory Usage: 33292 KB
-Fuse CPU Usage: 545 ms
+Built simulation executable C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/fifo_control_unit_test1_isim_beh.exe
+Fuse Memory Usage: 32932 KB
+Fuse CPU Usage: 499 ms

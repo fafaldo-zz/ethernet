@@ -1,0 +1,30 @@
+Command line:
+   MII_RX_v2_test1_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  6704
+
+Thu Jun 19 17:58:50 2014
+
+
+ Elaboration Time: 0.171601 sec
+
+ Current Memory Usage: 1325.99 Meg
+
+ Total Signals          : 29
+ Total Nets             : 16461
+ Total Signal Drivers   : 15
+ Total Blocks           : 5
+ Total Primitive Blocks : 4
+ Total Processes        : 12
+ Total Traceable Variables  : 16
+ Total Scalar Nets and Variables : 16845
+Total Line Count : 28
+Total Line Count : 28
+
+ Total Simulation Time: 0.249602 sec
+
+ Current Memory Usage: 696.816 Meg
+
+Thu Jun 19 20:52:06 2014
+

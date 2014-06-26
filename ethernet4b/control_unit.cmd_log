@@ -1,0 +1,4 @@
+vhdtdtfi -lib work control_unit.vhd -prj ethernet -o control_unit.spl -module control_unit -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e control_unit.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/control_unit.sym 
+vhdtdtfi -lib work control_unit.vhd -prj ethernet -o control_unit.spl -module control_unit -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e control_unit.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/control_unit.sym 

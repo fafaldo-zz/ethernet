@@ -1,0 +1,13 @@
+[Inputs]
+a_clk
+a_wr
+b_clk
+b_wr
+=a_addr[9:0]=
+=a_din[71:0]=
+=b_addr[9:0]=
+=b_din[71:0]=
+[Outputs]
+=a_dout[71:0]=
+=b_dout[71:0]=
+[BiDir]

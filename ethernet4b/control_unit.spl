@@ -1,0 +1,9 @@
+[Inputs]
+clk
+reset
+data_received_in
+interrupt
+=data_in[3:0]=
+[Outputs]
+crc_en
+[BiDir]

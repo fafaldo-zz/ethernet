@@ -2,7 +2,7 @@
 clk
 start
 reset
-=ram_output[3:0]=
+=ram_output[7:0]=
 [Outputs]
 char_we
 ram_enable

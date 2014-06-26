@@ -1,0 +1,2 @@
+vhdl work "fifo_control_unit.vhd"
+vhdl work "fifo_control_unit_test1.vhd"

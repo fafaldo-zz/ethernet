@@ -1,4 +1,5 @@
 vhdl work "C:\Users\fafik\Dropbox\infa\git\ethernet\ethernet4b\vga_display.vhd"
-vhdl work "C:\Users\fafik\Dropbox\infa\git\ethernet\ethernet4b\MII_RX.vhd"
+vhdl work "C:\Users\fafik\Dropbox\infa\git\ethernet\ethernet4b\frame_buffer.vhd"
+vhdl work "C:\Users\fafik\Dropbox\infa\git\ethernet\ethernet4b\fifo_control_unit.vhd"
 vhdl work "C:\Users\fafik\Dropbox\infa\git\ethernet\ethernet4b\MII_schem.vhf"
 vhdl work "C:\Users\fafik\Dropbox\infa\git\ethernet\ethernet4b\MII_test3.vhf"

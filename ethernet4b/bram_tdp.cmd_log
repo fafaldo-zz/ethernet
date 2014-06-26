@@ -1,0 +1,2 @@
+vhdtdtfi -lib work bram_tdp.vhd -prj ethernet -o bram_tdp.spl -module bram_tdp -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e bram_tdp.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/bram_tdp.sym 

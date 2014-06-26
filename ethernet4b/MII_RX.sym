@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="MII_RX">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2014-6-18T18:17:26</timestamp>
+    <timestamp>2014-6-19T10:12:25</timestamp>
     <pin polarity="Input" x="0" y="-608" name="recv_strobe" />
     <pin polarity="Input" x="0" y="-544" name="recv_clock" />
     <pin polarity="Input" x="0" y="-480" name="recv_error" />
@@ -11,7 +11,7 @@
     <pin polarity="Input" x="0" y="-96" name="recv_data(3:0)" />
     <pin polarity="Output" x="496" y="-608" name="data_received" />
     <pin polarity="Output" x="496" y="-320" name="busy" />
-    <pin polarity="Output" x="496" y="-32" name="ram_output(3:0)" />
+    <pin polarity="Output" x="496" y="-32" name="ram_output(7:0)" />
     <pin polarity="Output" x="496" y="32" name="test(7:0)" />
     <graph>
         <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="248" y="-648" type="symbol" />
@@ -24,7 +24,7 @@
         <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-96" type="pin recv_data(3:0)" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="424" y="-608" type="pin data_received" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="424" y="-320" type="pin busy" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="424" y="-32" type="pin ram_output(3:0)" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="424" y="-32" type="pin ram_output(7:0)" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="424" y="32" type="pin test(7:0)" />
         <rect width="64" x="432" y="20" height="24" />
         <line x2="496" y1="32" y2="32" x1="432" />

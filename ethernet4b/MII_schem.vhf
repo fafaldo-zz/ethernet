@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.6
 --  \   \         Application : sch2hdl
 --  /   /         Filename : MII_schem.vhf
--- /___/   /\     Timestamp : 06/18/2014 21:12:01
+-- /___/   /\     Timestamp : 06/26/2014 20:35:48
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -26,53 +26,49 @@ library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
 entity MII_schem is
-   port ( CLK           : in    std_logic; 
-          E_RX_CLK      : in    std_logic; 
-          E_RX_D        : in    std_logic_vector (3 downto 0); 
-          E_RX_DV       : in    std_logic; 
-          E_RX_ERR      : in    std_logic; 
-          RESET         : in    std_logic; 
-          ROT_A         : in    std_logic; 
-          ROT_B         : in    std_logic; 
-          DATA_RECEIVED : out   std_logic; 
-          VGA_B         : out   std_logic; 
-          VGA_G         : out   std_logic; 
-          VGA_HS        : out   std_logic; 
-          VGA_R         : out   std_logic; 
-          VGA_VS        : out   std_logic);
+   port ( CLK      : in    std_logic; 
+          E_RX_CLK : in    std_logic; 
+          E_RX_D   : in    std_logic_vector (3 downto 0); 
+          E_RX_DV  : in    std_logic; 
+          RESET    : in    std_logic; 
+          ROT_A    : in    std_logic; 
+          ROT_B    : in    std_logic; 
+          test     : out   std_logic_vector (7 downto 0); 
+          VGA_B    : out   std_logic; 
+          VGA_G    : out   std_logic; 
+          VGA_HS   : out   std_logic; 
+          VGA_R    : out   std_logic; 
+          VGA_VS   : out   std_logic);
 end MII_schem;
 
 architecture BEHAVIORAL of MII_schem is
    attribute BOX_TYPE   : string ;
-   signal BUSY          : std_logic;
-   signal test          : std_logic_vector (7 downto 0);
-   signal XLXN_21       : std_logic;
-   signal XLXN_23       : std_logic_vector (3 downto 0);
-   signal XLXN_26       : std_logic;
-   signal XLXN_28       : std_logic;
-   signal XLXN_29       : std_logic_vector (7 downto 0);
-   signal XLXN_30       : std_logic;
-   signal XLXN_35       : std_logic;
+   signal EMPTY                  : std_logic;
+   signal FULL                   : std_logic;
+   signal XLXN_21                : std_logic;
+   signal XLXN_26                : std_logic;
+   signal XLXN_28                : std_logic;
+   signal XLXN_29                : std_logic_vector (7 downto 0);
+   signal XLXN_30                : std_logic;
+   signal XLXN_35                : std_logic;
+   signal XLXN_36                : std_logic_vector (7 downto 0);
+   signal XLXN_46                : std_logic;
+   signal XLXN_47                : std_logic;
+   signal XLXN_48                : std_logic;
+   signal XLXN_49                : std_logic;
+   signal XLXN_50                : std_logic;
+   signal XLXN_51                : std_logic_vector (11 downto 0);
+   signal XLXN_52                : std_logic_vector (10 downto 0);
+   signal XLXN_53                : std_logic_vector (3 downto 0);
+   signal XLXN_54                : std_logic_vector (7 downto 0);
+   signal XLXI_12_diB_openSignal : std_logic_vector (7 downto 0);
+   signal XLXI_12_weB_openSignal : std_logic;
    component RotaryEnc
       port ( ROT_A : in    std_logic; 
              ROT_B : in    std_logic; 
              RotL  : out   std_logic; 
              RotR  : out   std_logic; 
              Clk   : in    std_logic);
-   end component;
-   
-   component MII_RX
-      port ( recv_strobe   : in    std_logic; 
-             recv_clock    : in    std_logic; 
-             recv_error    : in    std_logic; 
-             clk           : in    std_logic; 
-             reset         : in    std_logic; 
-             ram_enable    : in    std_logic; 
-             recv_data     : in    std_logic_vector (3 downto 0); 
-             data_received : out   std_logic; 
-             busy          : out   std_logic; 
-             ram_output    : out   std_logic_vector (3 downto 0); 
-             test          : out   std_logic_vector (7 downto 0));
    end component;
    
    component VGAtxt48x20
@@ -96,7 +92,7 @@ architecture BEHAVIORAL of MII_schem is
       port ( clk        : in    std_logic; 
              start      : in    std_logic; 
              reset      : in    std_logic; 
-             ram_output : in    std_logic_vector (3 downto 0); 
+             ram_output : in    std_logic_vector (7 downto 0); 
              char_we    : out   std_logic; 
              ram_enable : out   std_logic; 
              char       : out   std_logic_vector (7 downto 0));
@@ -113,6 +109,43 @@ architecture BEHAVIORAL of MII_schem is
    end component;
    attribute BOX_TYPE of BUF : component is "BLACK_BOX";
    
+   component frame_buffer
+      port ( clkA  : in    std_logic; 
+             clkB  : in    std_logic; 
+             enA   : in    std_logic; 
+             enB   : in    std_logic; 
+             weA   : in    std_logic; 
+             weB   : in    std_logic; 
+             addrA : in    std_logic_vector (11 downto 0); 
+             addrB : in    std_logic_vector (10 downto 0); 
+             diA   : in    std_logic_vector (3 downto 0); 
+             diB   : in    std_logic_vector (7 downto 0); 
+             doA   : out   std_logic_vector (3 downto 0); 
+             doB   : out   std_logic_vector (7 downto 0));
+   end component;
+   
+   component fifo_control_unit
+      port ( clk      : in    std_logic; 
+             Rx_Clk   : in    std_logic; 
+             Rx_DV    : in    std_logic; 
+             POP      : in    std_logic; 
+             doB      : in    std_logic_vector (7 downto 0); 
+             Rx_D     : in    std_logic_vector (3 downto 0); 
+             clkA     : out   std_logic; 
+             clkB     : out   std_logic; 
+             enA      : out   std_logic; 
+             enB      : out   std_logic; 
+             weA      : out   std_logic; 
+             empty    : out   std_logic; 
+             full     : out   std_logic; 
+             EOF      : out   std_logic; 
+             addrA    : out   std_logic_vector (11 downto 0); 
+             addrB    : out   std_logic_vector (10 downto 0); 
+             diA      : out   std_logic_vector (3 downto 0); 
+             data_out : out   std_logic_vector (7 downto 0); 
+             test     : out   std_logic_vector (7 downto 0));
+   end component;
+   
 begin
    XLXI_2 : RotaryEnc
       port map (Clk=>CLK,
@@ -120,19 +153,6 @@ begin
                 ROT_B=>ROT_B,
                 RotL=>open,
                 RotR=>XLXN_21);
-   
-   XLXI_5 : MII_RX
-      port map (clk=>CLK,
-                ram_enable=>XLXN_26,
-                recv_clock=>E_RX_CLK,
-                recv_data(3 downto 0)=>E_RX_D(3 downto 0),
-                recv_error=>E_RX_ERR,
-                recv_strobe=>E_RX_DV,
-                reset=>RESET,
-                busy=>BUSY,
-                data_received=>DATA_RECEIVED,
-                ram_output(3 downto 0)=>XLXN_23(3 downto 0),
-                test(7 downto 0)=>test(7 downto 0));
    
    XLXI_6 : VGAtxt48x20
       port map (Char_DI(7 downto 0)=>XLXN_29(7 downto 0),
@@ -152,7 +172,7 @@ begin
    
    XLXI_7 : vga_display
       port map (clk=>CLK,
-                ram_output(3 downto 0)=>XLXN_23(3 downto 0),
+                ram_output(7 downto 0)=>XLXN_36(7 downto 0),
                 reset=>RESET,
                 start=>XLXN_21,
                 char(7 downto 0)=>XLXN_29(7 downto 0),
@@ -173,6 +193,41 @@ begin
    XLXI_11 : BUF
       port map (I=>XLXN_35,
                 O=>VGA_B);
+   
+   XLXI_12 : frame_buffer
+      port map (addrA(11 downto 0)=>XLXN_51(11 downto 0),
+                addrB(10 downto 0)=>XLXN_52(10 downto 0),
+                clkA=>XLXN_46,
+                clkB=>XLXN_47,
+                diA(3 downto 0)=>XLXN_53(3 downto 0),
+                diB(7 downto 0)=>XLXI_12_diB_openSignal(7 downto 0),
+                enA=>XLXN_48,
+                enB=>XLXN_49,
+                weA=>XLXN_50,
+                weB=>XLXI_12_weB_openSignal,
+                doA=>open,
+                doB(7 downto 0)=>XLXN_54(7 downto 0));
+   
+   XLXI_15 : fifo_control_unit
+      port map (clk=>CLK,
+                doB(7 downto 0)=>XLXN_54(7 downto 0),
+                POP=>XLXN_26,
+                Rx_Clk=>E_RX_CLK,
+                Rx_D(3 downto 0)=>E_RX_D(3 downto 0),
+                Rx_DV=>E_RX_DV,
+                addrA(11 downto 0)=>XLXN_51(11 downto 0),
+                addrB(10 downto 0)=>XLXN_52(10 downto 0),
+                clkA=>XLXN_46,
+                clkB=>XLXN_47,
+                data_out(7 downto 0)=>XLXN_36(7 downto 0),
+                diA(3 downto 0)=>XLXN_53(3 downto 0),
+                empty=>EMPTY,
+                enA=>XLXN_48,
+                enB=>XLXN_49,
+                EOF=>open,
+                full=>FULL,
+                test(7 downto 0)=>test(7 downto 0),
+                weA=>XLXN_50);
    
 end BEHAVIORAL;
 

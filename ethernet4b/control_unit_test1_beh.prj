@@ -1,0 +1,2 @@
+vhdl work "control_unit.vhd"
+vhdl work "control_unit_test1.vhd"

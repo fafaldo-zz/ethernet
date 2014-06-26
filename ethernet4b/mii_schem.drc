@@ -1,11 +1,12 @@
 Release 14.6 Drc P.68d (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Wed Jun 18 21:13:02 2014
+Thu Jun 26 20:39:39 2014
 
 drc -z MII_schem.ncd MII_schem.pcf
 
-WARNING:PhysDesignRules:367 - The signal <E_RX_ERR_IBUF> is incomplete. The
-   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_7/ram_enable_or0000 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
 DRC detected 0 errors and 1 warnings.  Please see the previously displayed
 individual error or warning messages for more details.

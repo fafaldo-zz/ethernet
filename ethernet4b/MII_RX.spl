@@ -9,6 +9,6 @@ ram_enable
 [Outputs]
 data_received
 busy
-=ram_output[3:0]=
+=ram_output[7:0]=
 =test[7:0]=
 [BiDir]
