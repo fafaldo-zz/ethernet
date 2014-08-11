@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="vga_display">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2014-6-26T18:35:37</timestamp>
+    <timestamp>2014-8-10T15:28:40</timestamp>
     <pin polarity="Input" x="0" y="-224" name="clk" />
     <pin polarity="Input" x="0" y="-160" name="start" />
     <pin polarity="Input" x="0" y="-96" name="reset" />

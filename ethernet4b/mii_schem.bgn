@@ -1,13 +1,13 @@
-Release 14.6 - Bitgen P.68d (nt64)
+Release 14.6 - Bitgen P.68d (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Loading device for application Rf_Device from file '3s500e.nph' in environment
 D:\programy\Xilinx\14.6\ISE_DS\ISE\.
    "MII_schem" is an NCD, version 3.2, device xc3s500e, package fg320, speed -4
 Opened constraints file MII_schem.pcf.
 
-Thu Jun 26 20:39:39 2014
+Mon Jul 28 19:40:11 2014
 
-D:\programy\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\bitgen.exe -intstyle ise -w -g DebugBitstream:No -g Binary:no -g CRC:Enable -g ConfigRate:1 -g ProgPin:PullUp -g DonePin:PullUp -g TckPin:PullUp -g TdiPin:PullUp -g TdoPin:PullUp -g TmsPin:PullUp -g UnusedPin:PullDown -g UserID:0xFFFFFFFF -g DCMShutdown:Disable -g StartUpClk:CClk -g DONE_cycle:4 -g GTS_cycle:5 -g GWE_cycle:6 -g LCK_cycle:NoWait -g Security:None -g DonePipe:Yes -g DriveDone:No MII_schem.ncd 
+D:\programy\Xilinx\14.6\ISE_DS\ISE\bin\nt\unwrapped\bitgen.exe -intstyle ise -w -g DebugBitstream:No -g Binary:no -g CRC:Enable -g ConfigRate:1 -g ProgPin:PullUp -g DonePin:PullUp -g TckPin:PullUp -g TdiPin:PullUp -g TdoPin:PullUp -g TmsPin:PullUp -g UnusedPin:PullDown -g UserID:0xFFFFFFFF -g DCMShutdown:Disable -g StartUpClk:CClk -g DONE_cycle:4 -g GTS_cycle:5 -g GWE_cycle:6 -g LCK_cycle:NoWait -g Security:None -g DonePipe:Yes -g DriveDone:No MII_schem.ncd 
 
 Summary of Bitgen Options:
 +----------------------+----------------------+
@@ -93,7 +93,12 @@ Running DRC.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_7/ram_enable_or0000 is
    sourced by a combinatorial pin. This is not good design practice. Use the CE
    pin to control the loading of data into the flip-flop.
-DRC detected 0 errors and 1 warnings.  Please see the previously displayed
+WARNING:PhysDesignRules:1098 - BlockRAM has no data input.The Write Enable pin
+   WEA of comp
+   XLXI_16/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ram
+   loop[0].ram.r/s3_noinit.ram/dpram.dp4x9.ram.A has an active signal but no
+   data input pins are connected. Invalid data may be written to the BlockRAM.
+DRC detected 0 errors and 2 warnings.  Please see the previously displayed
 individual error or warning messages for more details.
 Creating bit map...
 Saving bit stream in "mii_schem.bit".

@@ -1,0 +1,261 @@
+Release 14.6 Map P.68d (nt64)
+Xilinx Mapping Report File for Design 'new_schem'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off
+-c 100 -o new_schem_map.ncd new_schem.ngd new_schem.pcf 
+Target Device  : xc3s500e
+Target Package : fg320
+Target Speed   : -4
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Mon Aug 11 21:06:09 2014
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    1
+Logic Utilization:
+  Total Number Slice Registers:         163 out of   9,312    1%
+    Number used as Flip Flops:          155
+    Number used as Latches:               8
+  Number of 4 input LUTs:               283 out of   9,312    3%
+Logic Distribution:
+  Number of occupied Slices:            195 out of   4,656    4%
+    Number of Slices containing only related logic:     195 out of     195 100%
+    Number of Slices containing unrelated logic:          0 out of     195   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:         335 out of   9,312    3%
+    Number used as logic:               278
+    Number used as a route-thru:         52
+    Number used as Shift registers:       5
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 17 out of     232    7%
+  Number of RAMB16s:                      4 out of      20   20%
+  Number of BUFGMUXs:                     2 out of      24    8%
+
+Average Fanout of Non-Clock Nets:                3.34
+
+Peak Memory Usage:  320 MB
+Total REAL time to MAP completion:  2 secs 
+Total CPU time to MAP completion:   1 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_4/ram_enable_or0000 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network XLXI_3/RotL has no load.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:MapLib:159 - Net Timing constraints on signal CLK are pushed forward
+   through input buffer.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+  15 block(s) removed
+  32 block(s) optimized away
+  13 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal "XLXI_3/RotL" is sourceless and has been removed.
+The signal "XLXI_5/I_CursorCnt/Result<4>1" is sourceless and has been removed.
+The signal "XLXI_5/I_CursorCnt/Result<3>1" is sourceless and has been removed.
+The signal "XLXI_5/I_CursorCnt/Result<2>1" is sourceless and has been removed.
+The signal "XLXI_5/I_CursorCnt/Result<1>1" is sourceless and has been removed.
+The signal "XLXI_5/I_CursorCnt/Result<0>1" is sourceless and has been removed.
+The signal "XLXI_5/I_CursorCnt/LineCnt_mux0001<2>15" is sourceless and has been
+removed.
+The signal "XLXI_5/I_CursorCnt/LineCnt_mux0001<2>123" is sourceless and has been
+removed.
+The signal "XLXI_5/N36" is sourceless and has been removed.
+ Sourceless block "XLXI_5/I_CursorCnt/LastLine52" (ROM) removed.
+  The signal "XLXI_5/I_CursorCnt/N5" is sourceless and has been removed.
+The signal "XLXI_5/N37" is sourceless and has been removed.
+The signal "XLXI_5/I_CursorCnt/Result<4>11" is sourceless and has been removed.
+ Sourceless block "XLXI_5/I_CursorCnt/Result<4>1_f5" (MUX) removed.
+The signal "XLXI_5/I_CursorCnt/Result<4>12" is sourceless and has been removed.
+Unused block "XLXI_3/RotL" (SFF) removed.
+Unused block "XLXI_5/I_CursorCnt/LastLine52_SW0" (ROM) removed.
+Unused block "XLXI_5/I_CursorCnt/LastLine52_SW1" (ROM) removed.
+Unused block "XLXI_5/I_CursorCnt/LineCnt_mux0001<2>123" (ROM) removed.
+Unused block "XLXI_5/I_CursorCnt/LineCnt_mux0001<2>15" (ROM) removed.
+Unused block "XLXI_5/I_CursorCnt/Mcount_ScrollBase_xor<0>11_INV_0" (BUF)
+removed.
+Unused block "XLXI_5/I_CursorCnt/Mcount_ScrollBase_xor<1>11" (ROM) removed.
+Unused block "XLXI_5/I_CursorCnt/Mcount_ScrollBase_xor<2>11" (ROM) removed.
+Unused block "XLXI_5/I_CursorCnt/Result<3>11" (ROM) removed.
+Unused block "XLXI_5/I_CursorCnt/Result<4>11" (ROM) removed.
+Unused block "XLXI_5/I_CursorCnt/Result<4>12" (ROM) removed.
+Unused block "XLXI_5/XLXI_146/GND" (ZERO) removed.
+Unused block "XLXI_5/XLXI_146/VCC" (ONE) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XLXI_3/XST_GND
+VCC 		XLXI_3/XST_VCC
+LUT3 		XLXI_5/I_CursorCnt/ColCnt_or0000_SW0
+   optimized to 0
+LUT2 		XLXI_5/I_CursorCnt/LastLine5111
+   optimized to 0
+LUT4 		XLXI_5/I_CursorCnt/LastLine524
+   optimized to 0
+LUT2 		XLXI_5/I_CursorCnt/LastLine529
+   optimized to 0
+LUT2 		XLXI_5/I_CursorCnt/LastLine597_SW0
+   optimized to 1
+LUT4 		XLXI_5/I_CursorCnt/LastLine597_SW1
+   optimized to 1
+LUT4_L 		XLXI_5/I_CursorCnt/LineCnt_mux0001<2>139_SW0
+   optimized to 1
+LOCALBUF 		XLXI_5/I_CursorCnt/LineCnt_mux0001<2>139_SW0/LUT4_L_BUF
+LUT3 		XLXI_5/I_CursorCnt/LineCnt_mux0001<2>139_SW1
+   optimized to 1
+LUT4_L 		XLXI_5/I_CursorCnt/LineCnt_mux0001<2>180_SW1
+   optimized to 0
+LOCALBUF 		XLXI_5/I_CursorCnt/LineCnt_mux0001<2>180_SW1/LUT4_L_BUF
+LUT4 		XLXI_5/I_CursorCnt/NextState_0_mux000031
+   optimized to 0
+LUT2 		XLXI_5/I_CursorCnt/RAM_DI_Out<7>1
+   optimized to 0
+FDE 		XLXI_5/I_CursorCnt/ScrollBase_0
+   optimized to 0
+FDE 		XLXI_5/I_CursorCnt/ScrollBase_1
+   optimized to 0
+FDE 		XLXI_5/I_CursorCnt/ScrollBase_2
+   optimized to 0
+FDE 		XLXI_5/I_CursorCnt/ScrollBase_3
+   optimized to 0
+FDE 		XLXI_5/I_CursorCnt/ScrollBase_4
+   optimized to 0
+LUT2 		XLXI_5/XLXI_113/CursorActive_and0001_SW0
+   optimized to 1
+VCC 		XLXI_5/XLXI_115/XLXI_89
+GND 		XLXI_5/XLXI_141
+GND 		XLXI_5/XLXI_146/BU2/XST_GND
+VCC 		XLXI_5/XLXI_146/BU2/XST_VCC
+GND 		XST_GND
+VCC 		XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CLK                                | IBUF             | INPUT     | LVTTL                |       |          |      |              |          | 0 / 0    |
+| EOF                                | IOB              | OUTPUT    | LVTTL                |       | 4        | SLOW |              |          | 0 / 0    |
+| E_RX_CLK                           | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| E_RX_D<0>                          | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| E_RX_D<1>                          | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| E_RX_D<2>                          | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| E_RX_D<3>                          | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| E_RX_DV                            | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| ROT_A                              | IBUF             | INPUT     | LVTTL                |       |          |      |              | PULLUP   | 0 / 0    |
+| ROT_B                              | IBUF             | INPUT     | LVTTL                |       |          |      |              | PULLUP   | 0 / 0    |
+| VGA_B                              | IOB              | OUTPUT    | LVTTL                |       | 8        | FAST |              |          | 0 / 0    |
+| VGA_G                              | IOB              | OUTPUT    | LVTTL                |       | 8        | FAST |              |          | 0 / 0    |
+| VGA_HS                             | IOB              | OUTPUT    | LVTTL                |       | 8        | FAST |              |          | 0 / 0    |
+| VGA_R                              | IOB              | OUTPUT    | LVTTL                |       | 8        | FAST |              |          | 0 / 0    |
+| VGA_VS                             | IOB              | OUTPUT    | LVTTL                |       | 8        | FAST |              |          | 0 / 0    |
+| empty                              | IOB              | OUTPUT    | LVTTL                |       | 4        | SLOW |              |          | 0 / 0    |
+| full                               | IOB              | OUTPUT    | LVTTL                |       | 4        | SLOW |              |          | 0 / 0    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

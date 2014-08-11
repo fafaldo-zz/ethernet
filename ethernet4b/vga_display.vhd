@@ -14,10 +14,11 @@ end vga_display;
 
 architecture Behavioral of vga_display is
 
-type state_type is (IDLE, GET_DATA, START_RISING_EDGE, KEEP_RISING_EDGE, START_FALLING_EDGE); 
+type state_type is (IDLE, GET_DATA, LATCH_DATA, START_RISING_EDGE, KEEP_RISING_EDGE, START_FALLING_EDGE); 
 signal state, next_state : state_type; 
 
 signal busy_in : STD_LOGIC := '0';
+--signal ram_output_latched : std_logic_vector(7 downto 0) := (others => '0');
 
 begin
 
@@ -46,6 +47,15 @@ begin
          end if;        
       end if;
    end process;
+	
+--	process(clk)
+--	begin
+--		if rising_edge(clk) then
+--			if state = LATCH_DATA then
+--				ram_output_latched <= ram_output;
+--			end if;
+--		end if;
+--	end process;
 
    OUTPUT_DECODE: process (state, ram_output)
    begin

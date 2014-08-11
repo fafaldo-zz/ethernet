@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.6
 --  \   \         Application : sch2hdl
 --  /   /         Filename : MII_schem.vhf
--- /___/   /\     Timestamp : 06/26/2014 20:35:48
+-- /___/   /\     Timestamp : 07/28/2014 19:39:27
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MII_schem.vhf -w C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MII_schem.sch
+--Command: sch2hdl -sympath C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/ipcore_dir -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/MII_schem.vhf -w C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/MII_schem.sch
 --Design Name: MII_schem
 --Device: spartan3e
 --Purpose:
@@ -43,26 +43,24 @@ end MII_schem;
 
 architecture BEHAVIORAL of MII_schem is
    attribute BOX_TYPE   : string ;
-   signal EMPTY                  : std_logic;
-   signal FULL                   : std_logic;
-   signal XLXN_21                : std_logic;
-   signal XLXN_26                : std_logic;
-   signal XLXN_28                : std_logic;
-   signal XLXN_29                : std_logic_vector (7 downto 0);
-   signal XLXN_30                : std_logic;
-   signal XLXN_35                : std_logic;
-   signal XLXN_36                : std_logic_vector (7 downto 0);
-   signal XLXN_46                : std_logic;
-   signal XLXN_47                : std_logic;
-   signal XLXN_48                : std_logic;
-   signal XLXN_49                : std_logic;
-   signal XLXN_50                : std_logic;
-   signal XLXN_51                : std_logic_vector (11 downto 0);
-   signal XLXN_52                : std_logic_vector (10 downto 0);
-   signal XLXN_53                : std_logic_vector (3 downto 0);
-   signal XLXN_54                : std_logic_vector (7 downto 0);
-   signal XLXI_12_diB_openSignal : std_logic_vector (7 downto 0);
-   signal XLXI_12_weB_openSignal : std_logic;
+   signal EMPTY    : std_logic;
+   signal FULL     : std_logic;
+   signal XLXN_21  : std_logic;
+   signal XLXN_26  : std_logic;
+   signal XLXN_28  : std_logic;
+   signal XLXN_29  : std_logic_vector (7 downto 0);
+   signal XLXN_30  : std_logic;
+   signal XLXN_35  : std_logic;
+   signal XLXN_36  : std_logic_vector (7 downto 0);
+   signal XLXN_56  : std_logic;
+   signal XLXN_57  : std_logic;
+   signal XLXN_58  : std_logic;
+   signal XLXN_59  : std_logic;
+   signal XLXN_60  : std_logic_vector (11 downto 0);
+   signal XLXN_61  : std_logic_vector (10 downto 0);
+   signal XLXN_62  : std_logic_vector (0 downto 0);
+   signal XLXN_63  : std_logic_vector (3 downto 0);
+   signal XLXN_65  : std_logic_vector (7 downto 0);
    component RotaryEnc
       port ( ROT_A : in    std_logic; 
              ROT_B : in    std_logic; 
@@ -109,21 +107,6 @@ architecture BEHAVIORAL of MII_schem is
    end component;
    attribute BOX_TYPE of BUF : component is "BLACK_BOX";
    
-   component frame_buffer
-      port ( clkA  : in    std_logic; 
-             clkB  : in    std_logic; 
-             enA   : in    std_logic; 
-             enB   : in    std_logic; 
-             weA   : in    std_logic; 
-             weB   : in    std_logic; 
-             addrA : in    std_logic_vector (11 downto 0); 
-             addrB : in    std_logic_vector (10 downto 0); 
-             diA   : in    std_logic_vector (3 downto 0); 
-             diB   : in    std_logic_vector (7 downto 0); 
-             doA   : out   std_logic_vector (3 downto 0); 
-             doB   : out   std_logic_vector (7 downto 0));
-   end component;
-   
    component fifo_control_unit
       port ( clk      : in    std_logic; 
              Rx_Clk   : in    std_logic; 
@@ -135,7 +118,6 @@ architecture BEHAVIORAL of MII_schem is
              clkB     : out   std_logic; 
              enA      : out   std_logic; 
              enB      : out   std_logic; 
-             weA      : out   std_logic; 
              empty    : out   std_logic; 
              full     : out   std_logic; 
              EOF      : out   std_logic; 
@@ -143,7 +125,20 @@ architecture BEHAVIORAL of MII_schem is
              addrB    : out   std_logic_vector (10 downto 0); 
              diA      : out   std_logic_vector (3 downto 0); 
              data_out : out   std_logic_vector (7 downto 0); 
-             test     : out   std_logic_vector (7 downto 0));
+             test     : out   std_logic_vector (7 downto 0); 
+             weA      : out   std_logic_vector (0 downto 0));
+   end component;
+   
+   component blk_mem_gen_v7_3
+      port ( addra : out   std_logic_vector (11 downto 0); 
+             dina  : out   std_logic_vector (3 downto 0); 
+             ena   : in    std_logic; 
+             wea   : out   std_logic_vector (0 downto 0); 
+             clka  : in    std_logic; 
+             addrb : out   std_logic_vector (10 downto 0); 
+             enb   : in    std_logic; 
+             clkb  : in    std_logic; 
+             doutb : out   std_logic_vector (7 downto 0));
    end component;
    
 begin
@@ -194,40 +189,37 @@ begin
       port map (I=>XLXN_35,
                 O=>VGA_B);
    
-   XLXI_12 : frame_buffer
-      port map (addrA(11 downto 0)=>XLXN_51(11 downto 0),
-                addrB(10 downto 0)=>XLXN_52(10 downto 0),
-                clkA=>XLXN_46,
-                clkB=>XLXN_47,
-                diA(3 downto 0)=>XLXN_53(3 downto 0),
-                diB(7 downto 0)=>XLXI_12_diB_openSignal(7 downto 0),
-                enA=>XLXN_48,
-                enB=>XLXN_49,
-                weA=>XLXN_50,
-                weB=>XLXI_12_weB_openSignal,
-                doA=>open,
-                doB(7 downto 0)=>XLXN_54(7 downto 0));
-   
    XLXI_15 : fifo_control_unit
       port map (clk=>CLK,
-                doB(7 downto 0)=>XLXN_54(7 downto 0),
+                doB(7 downto 0)=>XLXN_65(7 downto 0),
                 POP=>XLXN_26,
                 Rx_Clk=>E_RX_CLK,
                 Rx_D(3 downto 0)=>E_RX_D(3 downto 0),
                 Rx_DV=>E_RX_DV,
-                addrA(11 downto 0)=>XLXN_51(11 downto 0),
-                addrB(10 downto 0)=>XLXN_52(10 downto 0),
-                clkA=>XLXN_46,
-                clkB=>XLXN_47,
+                addrA(11 downto 0)=>XLXN_60(11 downto 0),
+                addrB(10 downto 0)=>XLXN_61(10 downto 0),
+                clkA=>XLXN_56,
+                clkB=>XLXN_57,
                 data_out(7 downto 0)=>XLXN_36(7 downto 0),
-                diA(3 downto 0)=>XLXN_53(3 downto 0),
+                diA(3 downto 0)=>XLXN_63(3 downto 0),
                 empty=>EMPTY,
-                enA=>XLXN_48,
-                enB=>XLXN_49,
+                enA=>XLXN_58,
+                enB=>XLXN_59,
                 EOF=>open,
                 full=>FULL,
                 test(7 downto 0)=>test(7 downto 0),
-                weA=>XLXN_50);
+                weA(0)=>XLXN_62(0));
+   
+   XLXI_16 : blk_mem_gen_v7_3
+      port map (clka=>XLXN_56,
+                clkb=>XLXN_57,
+                ena=>XLXN_58,
+                enb=>XLXN_59,
+                addra(11 downto 0)=>XLXN_60(11 downto 0),
+                addrb(10 downto 0)=>XLXN_61(10 downto 0),
+                dina(3 downto 0)=>XLXN_63(3 downto 0),
+                doutb(7 downto 0)=>XLXN_65(7 downto 0),
+                wea(0)=>XLXN_62(0));
    
 end BEHAVIORAL;
 

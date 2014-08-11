@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.68d on Thu Jun 26 20:36:45 2014
+// Written by: Map P.68d on Mon Jul 28 19:39:46 2014
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -9,10 +9,6 @@ PIN "E_RX_DV_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
 COMP "E_RX_CLK" LOCATE = SITE "V3" LEVEL 1;
 PIN E_RX_CLK_pin<0> = BEL "E_RX_CLK" PINNAME PAD;
 PIN "E_RX_CLK_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
-COMP "E_RX_D<0>" LOCATE = SITE "V8" LEVEL 1;
-COMP "E_RX_D<1>" LOCATE = SITE "T11" LEVEL 1;
-COMP "E_RX_D<2>" LOCATE = SITE "U11" LEVEL 1;
-COMP "E_RX_D<3>" LOCATE = SITE "V14" LEVEL 1;
 COMP "CLK" LOCATE = SITE "C9" LEVEL 1;
 COMP "RESET" LOCATE = SITE "K17" LEVEL 1;
 COMP "VGA_B" LOCATE = SITE "G15" LEVEL 1;

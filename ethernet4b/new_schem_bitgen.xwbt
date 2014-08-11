@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\fafik\Desktop\przyk\ethernet-master\ethernet-master\ethernet4b\new_schem.ncd
+OUTFILE=C:\Users\fafik\Desktop\przyk\ethernet-master\ethernet-master\ethernet4b\new_schem.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=C:\Users\fafik\Desktop\przyk\ethernet-master\ethernet-master\ethernet4b
+LICENSE=WebPack
+USER_INFO=210809379_0_0_079

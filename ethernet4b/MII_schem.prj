@@ -1,5 +1,4 @@
 vhdl work "vga_display.vhd"
-vhdl work "frame_buffer.vhd"
 vhdl work "fifo_control_unit.vhd"
 vhdl work "MII_schem.vhf"
 vhdl work "MII_test3.vhf"

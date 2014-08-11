@@ -1,0 +1,17 @@
+[Inputs]
+CLKA
+CLKB
+ENA
+ENB
+SSRA
+SSRB
+WEA
+WEB
+=ADDRA[13:0]=
+=ADDRB[12:0]=
+=DIA[0:0]=
+=DIB[1:0]=
+[Outputs]
+=DOA[0:0]=
+=DOB[1:0]=
+[BiDir]

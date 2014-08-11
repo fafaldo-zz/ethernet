@@ -4,6 +4,7 @@ Rx_Clk
 Rx_DV
 POP
 =doB[7:0]=
+=doEOFB[1:0]=
 =Rx_D[3:0]=
 [Outputs]
 clkA
@@ -11,12 +12,17 @@ clkB
 enA
 enB
 weA
+EOFenA
+EOFweA
 empty
 full
 EOF
 =addrA[11:0]=
 =addrB[10:0]=
 =diA[3:0]=
+=addrEOFA[13:0]=
+=addrEOFB[12:0]=
+=diEOFA[0:0]=
 =data_out[7:0]=
 =test[7:0]=
 [BiDir]

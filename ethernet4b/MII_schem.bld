@@ -1,18 +1,23 @@
-Release 14.6 ngdbuild P.68d (nt64)
+Release 14.6 ngdbuild P.68d (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Command Line: D:\programy\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
--intstyle ise -dd _ngo -nt timestamp -uc PHY.ucf -uc GenIO.ucf -p
+Command Line: D:\programy\Xilinx\14.6\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc PHY.ucf -uc GenIO.ucf -p
 xc3s500e-fg320-4 MII_schem.ngc MII_schem.ngd
 
 Reading NGO file
-"C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MII_schem.ngc" ...
+"C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/MII_sch
+em.ngc" ...
+Loading design module "ipcore_dir/blk_mem_gen_v7_3.ngc"...
 Loading design module
-"C:\Users\fafik\Dropbox\infa\git\ethernet\ethernet4b/RotaryEnc.ngc"...
+"C:\Users\fafik\Desktop\przyk\ethernet-master\ethernet-master\ethernet4b/RotaryE
+nc.ngc"...
 Loading design module
-"C:\Users\fafik\Dropbox\infa\git\ethernet\ethernet4b/VGAtxt48x20.ngc"...
+"C:\Users\fafik\Desktop\przyk\ethernet-master\ethernet-master\ethernet4b/VGAtxt4
+8x20.ngc"...
 Loading design module
-"C:\Users\fafik\Dropbox\infa\git\ethernet\ethernet4b/VGAtxt48x20_2.ngc"...
+"C:\Users\fafik\Desktop\przyk\ethernet-master\ethernet-master\ethernet4b/VGAtxt4
+8x20_2.ngc"...
 Gathering constraint information from source properties...
 Done.
 
@@ -20,6 +25,62 @@ Annotating constraints to design from ucf file "PHY.ucf" ...
 Annotating constraints to design from ucf file "GenIO.ucf" ...
 Resolving constraint associations...
 Checking Constraint Associations...
+WARNING:ConstraintSystem:119 - Constraint <NET "E_RX_D<0>" LOC = "V8" |>
+   [PHY.ucf(8)]: This constraint cannot be distributed from the design objects
+   matching 'NET "E_RX_D<0>"' because those design objects do not contain or
+   drive any instances of the correct type.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "E_RX_D<0>" LOC = "V8" |> [PHY.ucf(8)]' could not be found and so the
+   Locate constraint will be removed.
+
+WARNING:ConstraintSystem:119 - Constraint <IOSTANDARD = LVCMOS33 ;>
+   [PHY.ucf(8)]: This constraint cannot be distributed from the design objects
+   matching 'NET "E_RX_D<0>"' because those design objects do not contain or
+   drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "E_RX_D<1>" LOC = "T11" |>
+   [PHY.ucf(9)]: This constraint cannot be distributed from the design objects
+   matching 'NET "E_RX_D<1>"' because those design objects do not contain or
+   drive any instances of the correct type.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "E_RX_D<1>" LOC = "T11" |> [PHY.ucf(9)]' could not be found and so the
+   Locate constraint will be removed.
+
+WARNING:ConstraintSystem:119 - Constraint <IOSTANDARD = LVCMOS33 ;>
+   [PHY.ucf(9)]: This constraint cannot be distributed from the design objects
+   matching 'NET "E_RX_D<1>"' because those design objects do not contain or
+   drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "E_RX_D<2>" LOC = "U11" |>
+   [PHY.ucf(10)]: This constraint cannot be distributed from the design objects
+   matching 'NET "E_RX_D<2>"' because those design objects do not contain or
+   drive any instances of the correct type.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "E_RX_D<2>" LOC = "U11" |> [PHY.ucf(10)]' could not be found and so the
+   Locate constraint will be removed.
+
+WARNING:ConstraintSystem:119 - Constraint <IOSTANDARD = LVCMOS33 ;>
+   [PHY.ucf(10)]: This constraint cannot be distributed from the design objects
+   matching 'NET "E_RX_D<2>"' because those design objects do not contain or
+   drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "E_RX_D<3>" LOC = "V14" |>
+   [PHY.ucf(11)]: This constraint cannot be distributed from the design objects
+   matching 'NET "E_RX_D<3>"' because those design objects do not contain or
+   drive any instances of the correct type.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "E_RX_D<3>" LOC = "V14" |> [PHY.ucf(11)]' could not be found and so the
+   Locate constraint will be removed.
+
+WARNING:ConstraintSystem:119 - Constraint <IOSTANDARD = LVCMOS33 ;>
+   [PHY.ucf(11)]: This constraint cannot be distributed from the design objects
+   matching 'NET "E_RX_D<3>"' because those design objects do not contain or
+   drive any instances of the correct type.
+
 INFO:ConstraintSystem - The Period constraint <NET "CLK" PERIOD = 20.0ns HIGH
    50%;> [GenIO.ucf(3)], is specified using the Net Period method which is not
    recommended. Please use the Timespec PERIOD method.
@@ -37,12 +98,12 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings:   0
+  Number of warnings:  12
 
-Total memory usage is 180432 kilobytes
+Total memory usage is 130672 kilobytes
 
 Writing NGD file "MII_schem.ngd" ...
-Total REAL time to NGDBUILD completion:  5 sec
-Total CPU time to NGDBUILD completion:   5 sec
+Total REAL time to NGDBUILD completion:  2 sec
+Total CPU time to NGDBUILD completion:   2 sec
 
 Writing NGDBUILD log file "MII_schem.bld"...

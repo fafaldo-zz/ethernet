@@ -5,7 +5,7 @@ MODULE MII_schem
 		INSTANCE XLXI_6
 	SUBMODULE vga_display
 		INSTANCE XLXI_7
-	SUBMODULE frame_buffer
-		INSTANCE XLXI_12
 	SUBMODULE fifo_control_unit
 		INSTANCE XLXI_15
+	SUBMODULE blk_mem_gen_v7_3
+		INSTANCE XLXI_16

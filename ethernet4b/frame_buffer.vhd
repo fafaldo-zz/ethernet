@@ -53,8 +53,8 @@ architecture behavioral of frame_buffer is
   --   - the RAM has two write ports,
   --   - the RAM has only one write port whose data width is maxWIDTH
   -- In all other cases, <ram> can be a signal.
-  --shared variable <ram> : ramType := (others => (others => '0'));
-  signal ram : ramType := (others => (others => '0'));
+  shared variable ram : ramType := (others => (others => '0'));
+  --signal ram : ramType := (others => (others => '0'));
   
   signal readA : std_logic_vector(3 downto 0):= (others => '0');
   signal readB : std_logic_vector(7 downto 0):= (others => '0');
@@ -68,7 +68,7 @@ begin
     if rising_edge(clkA) then
       if enA = '1' then
         if weA = '1' then
-          ram(conv_integer(addrA)) <= diA;
+          ram(conv_integer(addrA)) := diA;
           readA <= diA;
         else
 			 readA <= ram(conv_integer(addrA));
@@ -83,10 +83,9 @@ begin
     if rising_edge(clkB) then
       if enB = '1' then        
         for i in 0 to RATIO-1 loop
---          if <weB> = '1' then
---            <ram>(conv_integer(<addrB> & conv_std_logic_vector(i,log2(RATIO))))
---	          := <diB>((i+1)*minWIDTH-1 downto i*minWIDTH);
---          end if;
+          if weB = '1' then
+            ram(conv_integer(addrB)) := diB(3 downto 0);
+          end if;
 		  -- The read statement below is placed after the write statement on purpose
 		  -- to ensure write-first synchronization through the variable mechanism
           readB((i+1)*4-1 downto i*4) <= ram(conv_integer(addrB & conv_std_logic_vector(i,log2(RATIO))));

@@ -1,4 +1,4 @@
-Release 14.6 Map P.68d (nt64)
+Release 14.6 Map P.68d (nt)
 Xilinx Map Application Log File for Design 'MII_schem'
 
 Design Information
@@ -9,9 +9,17 @@ Target Device  : xc3s500e
 Target Package : fg320
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Thu Jun 26 20:36:41 2014
+Mapped Date    : Mon Jul 28 19:39:44 2014
 
 Mapping design into LUTs...
+WARNING:MapLib:701 - Signal E_RX_D<3> connected to top level port E_RX_D<3> has
+   been removed.
+WARNING:MapLib:701 - Signal E_RX_D<2> connected to top level port E_RX_D<2> has
+   been removed.
+WARNING:MapLib:701 - Signal E_RX_D<1> connected to top level port E_RX_D<1> has
+   been removed.
+WARNING:MapLib:701 - Signal E_RX_D<0> connected to top level port E_RX_D<0> has
+   been removed.
 Running directed packing...
 Running delay-based LUT packing...
 Running related packing...
@@ -19,42 +27,45 @@ Updating timing models...
 WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_7/ram_enable_or0000 is
    sourced by a combinatorial pin. This is not good design practice. Use the CE
    pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:1098 - BlockRAM has no data input.The Write Enable pin
+   WEA of comp
+   XLXI_16/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ram
+   loop[0].ram.r/s3_noinit.ram/dpram.dp4x9.ram.A has an active signal but no
+   data input pins are connected. Invalid data may be written to the BlockRAM.
 
 Design Summary
 --------------
 
 Design Summary:
 Number of errors:      0
-Number of warnings:    1
+Number of warnings:    6
 Logic Utilization:
-  Total Number Slice Registers:         153 out of   9,312    1%
-    Number used as Flip Flops:          145
+  Total Number Slice Registers:         145 out of   9,312    1%
+    Number used as Flip Flops:          137
     Number used as Latches:               8
-  Number of 4 input LUTs:             5,661 out of   9,312   60%
+  Number of 4 input LUTs:               208 out of   9,312    2%
 Logic Distribution:
-  Number of occupied Slices:          2,894 out of   4,656   62%
-    Number of Slices containing only related logic:   2,894 out of   2,894 100%
-    Number of Slices containing unrelated logic:          0 out of   2,894   0%
+  Number of occupied Slices:            166 out of   4,656    3%
+    Number of Slices containing only related logic:     166 out of     166 100%
+    Number of Slices containing unrelated logic:          0 out of     166   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:       5,731 out of   9,312   61%
-    Number used as logic:             1,560
+  Total Number of 4 input LUTs:         278 out of   9,312    2%
+    Number used as logic:               203
     Number used as a route-thru:         70
-    Number used for Dual Port RAMs:   4,096
-      (Two LUTs used per Dual Port RAM)
     Number used as Shift registers:       5
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
 
-  Number of bonded IOBs:                 23 out of     232    9%
-  Number of RAMB16s:                      2 out of      20   10%
+  Number of bonded IOBs:                 19 out of     232    8%
+  Number of RAMB16s:                      3 out of      20   15%
   Number of BUFGMUXs:                     2 out of      24    8%
 
-Average Fanout of Non-Clock Nets:                6.43
+Average Fanout of Non-Clock Nets:                2.94
 
-Peak Memory Usage:  353 MB
-Total REAL time to MAP completion:  5 secs 
-Total CPU time to MAP completion:   4 secs 
+Peak Memory Usage:  215 MB
+Total REAL time to MAP completion:  2 secs 
+Total CPU time to MAP completion:   1 secs 
 
 NOTES:
 
