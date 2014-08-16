@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2014-08-11T20:30:17</DateModified>
+  <DateModified>2014-08-16T21:09:30</DateModified>
   <ModuleName>new_schem</ModuleName>
   <SummaryTimeStamp>2014-08-10T15:22:15</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/iseconfig/new_schem.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/iseconfig/new_schem.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b\</ImplementationReportsDirectory>
   <DateInitialized>2014-08-10T13:12:51</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

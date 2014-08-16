@@ -5,34 +5,76 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/new_schem.vhf</arg>&quot; line <arg fmt="%d" index="2">190</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">test</arg>&apos; of component &apos;<arg fmt="%s" index="4">fifo_control_unit</arg>&apos;.
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/MII_test3</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/MII_test3.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MII_test3.vhf</arg>&quot;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/new_schem.vhf</arg>&quot; line <arg fmt="%d" index="2">217</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">DOA</arg>&apos; of component &apos;<arg fmt="%s" index="4">new_frame_buffer</arg>&apos;.
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/MII_test3/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/MII_test3.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MII_test3.vhf</arg>&quot;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/new_schem.vhf</arg>&quot; line <arg fmt="%d" index="2">217</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">DOPB</arg>&apos; of component &apos;<arg fmt="%s" index="4">new_frame_buffer</arg>&apos;.
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/MII_schem</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/MII_schem.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MII_schem.vhf</arg>&quot;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/new_schem.vhf</arg>&quot; line <arg fmt="%d" index="2">235</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">RotL</arg>&apos; of component &apos;<arg fmt="%s" index="4">RotaryEnc</arg>&apos;.
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/MII_schem/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/MII_schem.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MII_schem.vhf</arg>&quot;.
 </msg>
 
-<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/new_schem.vhf</arg>&quot; line <arg fmt="%d" index="2">235</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RotaryEnc</arg>&gt;.
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/new_schem</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/new_schem.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf</arg>&quot;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/new_schem.vhf</arg>&quot; line <arg fmt="%d" index="2">251</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Busy</arg>&apos; of component &apos;<arg fmt="%s" index="4">VGAtxt48x20</arg>&apos;.
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/new_schem/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/new_schem.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf</arg>&quot;.
 </msg>
 
-<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/new_schem.vhf</arg>&quot; line <arg fmt="%d" index="2">251</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">VGAtxt48x20</arg>&gt;.
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/fifo_control_unit</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/fifo_control_unit.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/fifo_control_unit.vhd</arg>&quot;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/new_schem.vhf</arg>&quot; line <arg fmt="%d" index="2">279</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">DOA</arg>&apos; of component &apos;<arg fmt="%s" index="4">new_eof_buffer</arg>&apos;.
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/fifo_control_unit/behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/fifo_control_unit.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/fifo_control_unit.vhd</arg>&quot;.
 </msg>
 
-<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/vga_display.vhd</arg>&quot; line <arg fmt="%d" index="2">105</arg>: Mux is complete : default of case is discarded
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/new_eof_buffer</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/new_eof_buffer.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_eof_buffer.vhd</arg>&quot;.
 </msg>
 
-<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/vga_display.vhd</arg>&quot; line <arg fmt="%d" index="2">144</arg>: Mux is complete : default of case is discarded
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/new_eof_buffer/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/new_eof_buffer.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_eof_buffer.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/new_frame_buffer</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/new_frame_buffer.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_frame_buffer.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/new_frame_buffer/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/new_frame_buffer.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_frame_buffer.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/vga_display</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/vga_display.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/vga_display.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/vga_display/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/vga_display.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/vga_display.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf</arg>&quot; line <arg fmt="%d" index="2">190</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">test</arg>&apos; of component &apos;<arg fmt="%s" index="4">fifo_control_unit</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf</arg>&quot; line <arg fmt="%d" index="2">217</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">DOA</arg>&apos; of component &apos;<arg fmt="%s" index="4">new_frame_buffer</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf</arg>&quot; line <arg fmt="%d" index="2">217</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">DOPB</arg>&apos; of component &apos;<arg fmt="%s" index="4">new_frame_buffer</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf</arg>&quot; line <arg fmt="%d" index="2">235</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">RotL</arg>&apos; of component &apos;<arg fmt="%s" index="4">RotaryEnc</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf</arg>&quot; line <arg fmt="%d" index="2">235</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RotaryEnc</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf</arg>&quot; line <arg fmt="%d" index="2">251</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Busy</arg>&apos; of component &apos;<arg fmt="%s" index="4">VGAtxt48x20</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf</arg>&quot; line <arg fmt="%d" index="2">251</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">VGAtxt48x20</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf</arg>&quot; line <arg fmt="%d" index="2">279</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">DOA</arg>&apos; of component &apos;<arg fmt="%s" index="4">new_eof_buffer</arg>&apos;.
+</msg>
+
+<msg type="info" file="Xst" num="1561" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/vga_display.vhd</arg>&quot; line <arg fmt="%d" index="2">105</arg>: Mux is complete : default of case is discarded
+</msg>
+
+<msg type="info" file="Xst" num="1561" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/vga_display.vhd</arg>&quot; line <arg fmt="%d" index="2">144</arg>: Mux is complete : default of case is discarded
 </msg>
 
 <msg type="warning" file="Xst" num="1305" delta="old" >Output &lt;<arg fmt="%s" index="1">test</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">00000000</arg>.

@@ -65,6 +65,9 @@ architecture behavioral of fifo_control_unit is
 	
 	signal write_address_counter_minus_one : std_logic_vector(11 downto 0) := "100000000000";
 	signal write_address_counter_minus_one_temp : std_logic_vector(11 downto 0) := (others=>'0');
+	
+	signal read_address_counter_minus_one : std_logic_vector(10 downto 0) := "10000000000";
+	signal read_address_counter_minus_one_temp : std_logic_vector(10 downto 0) := (others=>'0');
 
 begin
 
@@ -124,7 +127,7 @@ begin
 	process (Rx_Clk)
 	begin
 		if rising_edge(Rx_Clk) then
-			if (write_address_counter(11 downto 1) = 0 and read_address_counter = 0) or write_address_counter(11 downto 1) /= (read_address_counter-1) then
+			if (write_address_counter(11 downto 1) = 0 and read_address_counter = 0) or write_address_counter(11 downto 1) /= read_address_counter_minus_one then
 				weA <= '1';
 --				wea_i <= '1';
 			else
@@ -170,7 +173,7 @@ begin
 	process (Rx_Clk)
 	begin
 		if rising_edge(Rx_Clk) then
-			if write_address_counter(11 downto 1) = (read_address_counter-1) then
+			if write_address_counter(11 downto 1) = read_address_counter_minus_one then
 				full <= '1';
 				full_i <= '1';
 			else
@@ -206,7 +209,7 @@ begin
 	begin
 		if rising_edge(Rx_Clk) then
 			if Rx_DV = '1' then
-				if (write_address_counter(11 downto 1) = 0 and read_address_counter = 0) or write_address_counter(11 downto 1) /= (read_address_counter-1) then
+				if (write_address_counter(11 downto 1) = 0 and read_address_counter = 0) or write_address_counter(11 downto 1) /= read_address_counter_minus_one then
 					write_add_simple <= not write_add_simple;
 				end if;
 			end if;
@@ -230,7 +233,7 @@ begin
 	begin
 		if rising_edge(Rx_Clk) then
 			if Rx_DV = '1' then
-				if (write_address_counter(11 downto 1) = 0 and read_address_counter = 0) or write_address_counter(11 downto 1) /= (read_address_counter-1) then
+				if (write_address_counter(11 downto 1) = 0 and read_address_counter = 0) or write_address_counter(11 downto 1) /= read_address_counter_minus_one then
 					if write_add_simple = '1' then
 						write_address_counter <= write_address_counter xor "000000000001";
 					else
@@ -306,11 +309,44 @@ begin
 	begin
 		if rising_edge(Rx_Clk) then
 			if Rx_DV = '1' then
-				if (write_address_counter(11 downto 1) = 0 and read_address_counter = 0) or write_address_counter(11 downto 1) /= (read_address_counter-1) then
+				if (write_address_counter(11 downto 1) = 0 and read_address_counter = 0) or write_address_counter(11 downto 1) /= read_address_counter_minus_one then
 					if write_add_simple = '0' then
 						write_address_counter_minus_one <= write_address_counter_minus_one xor "000000000001";
 					else
 						write_address_counter_minus_one <= write_address_counter_minus_one xor write_address_counter_minus_one_temp;
+					end if;
+				end if;
+			end if;
+		end if;
+	end process;
+	
+	
+	--
+	-- ZWIÊKSZANIE READ ADDRESS COUNTER'A MINUS ONE
+	--
+	-- minus one s³u¿y do porównywania przy sterowaniu zapisywaniem i odczytywaniem
+	--
+	read_address_counter_minus_one_temp <=  "10000000000" when (read_address_counter_minus_one(9) = '1' and read_address_counter_minus_one(8 downto 0) = "000000000") or (read_address_counter_minus_one = "10000000000") else
+							"01000000000" when read_address_counter_minus_one(8) = '1' and read_address_counter_minus_one(7 downto 0) = "00000000" else
+							"00100000000" when read_address_counter_minus_one(7) = '1' and read_address_counter_minus_one(6 downto 0) = "0000000" else
+							"00010000000" when read_address_counter_minus_one(6) = '1' and read_address_counter_minus_one(5 downto 0) = "000000" else
+							"00001000000" when read_address_counter_minus_one(5) = '1' and read_address_counter_minus_one(4 downto 0) = "00000" else
+							"00000100000" when read_address_counter_minus_one(4) = '1' and read_address_counter_minus_one(3 downto 0) = "0000" else
+							"00000010000" when read_address_counter_minus_one(3) = '1' and read_address_counter_minus_one(2 downto 0) = "000" else
+							"00000001000" when read_address_counter_minus_one(2) = '1' and read_address_counter_minus_one(1 downto 0) = "00" else
+							"00000000100" when read_address_counter_minus_one(1) = '1' and read_address_counter_minus_one(0 downto 0) = "0" else
+							"00000000010" when read_address_counter_minus_one(0) = '1' else
+							"00000000000";
+							
+	process(clk)
+	begin
+		if rising_edge(clk) then
+			if (POP = '1') then
+				if read_address_counter /= write_address_counter(11 downto 1) then
+					if read_add_simple = '0' then
+						read_address_counter_minus_one <= read_address_counter_minus_one xor "00000000001";
+					else
+						read_address_counter_minus_one <= read_address_counter_minus_one xor read_address_counter_minus_one_temp;
 					end if;
 				end if;
 			end if;

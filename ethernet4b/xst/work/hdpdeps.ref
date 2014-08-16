@@ -1,4 +1,4 @@
-V3 80
+V3 83
 FL "C:/Users/fafik/Desktop/New folder (3)/ethernet-master/ethernet-master/ethernet4b/fifo_control_unit.vhd" 2014/06/26.20:50:40 P.68d
 FL "C:/Users/fafik/Desktop/New folder (3)/ethernet-master/ethernet-master/ethernet4b/frame_buffer.vhd" 2014/07/27.21:50:29 P.68d
 EN work/frame_buffer 1406490725 \
@@ -12,62 +12,20 @@ FL "C:/Users/fafik/Desktop/New folder (3)/ethernet-master/ethernet-master/ethern
 FL "C:/Users/fafik/Desktop/New folder (3)/ethernet-master/ethernet-master/ethernet4b/MII_test3.vhf" 2014/06/26.20:50:40 P.68d
 FL "C:/Users/fafik/Desktop/New folder (3)/ethernet-master/ethernet-master/ethernet4b/vga_display.vhd" 2014/06/26.20:50:40 P.68d
 FL C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/fifo_control_unit.vhd 2014/08/11.21:05:26 P.68d
-EN work/fifo_control_unit 1407783951 \
-      FL C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/fifo_control_unit.vhd \
+FL C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/MII_schem.vhf 2014/07/28.19:39:27 P.68d
+FL C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/MII_test3.vhf 2014/06/26.20:50:40 P.68d
+FL C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/new_eof_buffer.vhd 2014/08/10.18:24:30 P.68d
+FL C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/new_frame_buffer.vhd 2014/08/10.18:25:02 P.68d
+FL C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/new_schem.vhf 2014/08/11.21:05:47 P.68d
+FL C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/vga_display.vhd 2014/08/10.17:28:34 P.68d
+FL C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/fifo_control_unit.vhd 2014/08/16.21:11:14 P.68d
+EN work/fifo_control_unit 1408216459 \
+      FL C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/fifo_control_unit.vhd \
       PB ieee/std_logic_1164 1370735607 PB ieee/STD_LOGIC_UNSIGNED 1370735609 \
       PB ieee/std_logic_arith 1370735608
-AR work/fifo_control_unit/behavioral 1407783952 \
-      FL C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/fifo_control_unit.vhd \
-      EN work/fifo_control_unit 1407783951
-FL C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/MII_schem.vhf 2014/07/28.19:39:27 P.68d
-EN work/MII_schem 1407783961 \
-      FL C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/MII_schem.vhf \
-      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 LB UNISIM \
-      PH unisim/VCOMPONENTS 1370735613
-AR work/MII_schem/BEHAVIORAL 1407783962 \
-      FL C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/MII_schem.vhf \
-      EN work/MII_schem 1407783961 CP RotaryEnc CP VGAtxt48x20 CP vga_display CP GND \
-      CP BUF CP fifo_control_unit CP blk_mem_gen_v7_3
-FL C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/MII_test3.vhf 2014/06/26.20:50:40 P.68d
-EN work/MII_test3 1407783959 \
-      FL C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/MII_test3.vhf \
-      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 LB UNISIM \
-      PH unisim/VCOMPONENTS 1370735613
-AR work/MII_test3/BEHAVIORAL 1407783960 \
-      FL C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/MII_test3.vhf \
-      EN work/MII_test3 1407783959 CP header_display CP MII_RX CP VGAtxt48x20 \
-      CP RotaryEnc CP GND CP BUF CP VCC
-FL C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/new_eof_buffer.vhd 2014/08/10.18:24:30 P.68d
-EN work/new_eof_buffer 1407783957 \
-      FL C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/new_eof_buffer.vhd \
-      PB ieee/std_logic_1164 1370735607 LB UNISIM PH unisim/VCOMPONENTS 1370735613
-AR work/new_eof_buffer/Behavioral 1407783958 \
-      FL C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/new_eof_buffer.vhd \
-      EN work/new_eof_buffer 1407783957 CP RAMB16_S1_S2
-FL C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/new_frame_buffer.vhd 2014/08/10.18:25:02 P.68d
-EN work/new_frame_buffer 1407783953 \
-      FL C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/new_frame_buffer.vhd \
-      PB ieee/std_logic_1164 1370735607 LB UNISIM PH unisim/VCOMPONENTS 1370735613
-AR work/new_frame_buffer/Behavioral 1407783954 \
-      FL C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/new_frame_buffer.vhd \
-      EN work/new_frame_buffer 1407783953 CP RAMB16_S4_S9
-FL C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/new_schem.vhf 2014/08/11.21:05:47 P.68d
-EN work/new_schem 1407783963 \
-      FL C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/new_schem.vhf \
-      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 LB UNISIM \
-      PH unisim/VCOMPONENTS 1370735613
-AR work/new_schem/BEHAVIORAL 1407783964 \
-      FL C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/new_schem.vhf \
-      EN work/new_schem 1407783963 CP fifo_control_unit CP new_frame_buffer \
-      CP RotaryEnc CP vga_display CP VGAtxt48x20 CP BUF CP new_eof_buffer
-FL C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/vga_display.vhd 2014/08/10.17:28:34 P.68d
-EN work/vga_display 1407783955 \
-      FL C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/vga_display.vhd \
-      PB ieee/std_logic_1164 1370735607 PB ieee/STD_LOGIC_UNSIGNED 1370735609
-AR work/vga_display/Behavioral 1407783956 \
-      FL C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/vga_display.vhd \
-      EN work/vga_display 1407783955
-FL C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/fifo_control_unit.vhd 2014/06/26.20:31:09 P.68d
+AR work/fifo_control_unit/behavioral 1408216460 \
+      FL C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/fifo_control_unit.vhd \
+      EN work/fifo_control_unit 1408216459
 FL C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/frame_buffer.vhd 2014/06/24.20:31:56 P.68d
 FL C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MII_RX.vhd 2014/06/19.12:12:19 P.68d
 EN work/MII_RX 1403173392 \
@@ -76,9 +34,54 @@ EN work/MII_RX 1403173392 \
 AR work/MII_RX/Behavioral 1403173393 \
       FL C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MII_RX.vhd \
       EN work/MII_RX 1403173392
-FL C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MII_schem.vhf 2014/06/26.20:35:48 P.68d
-FL C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MII_test3.vhf 2014/03/25.13:16:06 P.68d
-FL C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/vga_display.vhd 2014/06/26.20:35:30 P.68d
+FL C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MII_schem.vhf 2014/07/28.19:39:27 P.68d
+EN work/MII_schem 1408216469 \
+      FL C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MII_schem.vhf \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 LB UNISIM \
+      PH unisim/VCOMPONENTS 1370735613
+AR work/MII_schem/BEHAVIORAL 1408216470 \
+      FL C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MII_schem.vhf \
+      EN work/MII_schem 1408216469 CP RotaryEnc CP VGAtxt48x20 CP vga_display CP GND \
+      CP BUF CP fifo_control_unit CP blk_mem_gen_v7_3
+FL C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MII_test3.vhf 2014/06/26.20:50:40 P.68d
+EN work/MII_test3 1408216467 \
+      FL C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MII_test3.vhf \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 LB UNISIM \
+      PH unisim/VCOMPONENTS 1370735613
+AR work/MII_test3/BEHAVIORAL 1408216468 \
+      FL C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MII_test3.vhf \
+      EN work/MII_test3 1408216467 CP header_display CP MII_RX CP VGAtxt48x20 \
+      CP RotaryEnc CP GND CP BUF CP VCC
+FL C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_eof_buffer.vhd 2014/08/10.18:24:30 P.68d
+EN work/new_eof_buffer 1408216465 \
+      FL C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_eof_buffer.vhd \
+      PB ieee/std_logic_1164 1370735607 LB UNISIM PH unisim/VCOMPONENTS 1370735613
+AR work/new_eof_buffer/Behavioral 1408216466 \
+      FL C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_eof_buffer.vhd \
+      EN work/new_eof_buffer 1408216465 CP RAMB16_S1_S2
+FL C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_frame_buffer.vhd 2014/08/10.18:25:02 P.68d
+EN work/new_frame_buffer 1408216461 \
+      FL C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_frame_buffer.vhd \
+      PB ieee/std_logic_1164 1370735607 LB UNISIM PH unisim/VCOMPONENTS 1370735613
+AR work/new_frame_buffer/Behavioral 1408216462 \
+      FL C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_frame_buffer.vhd \
+      EN work/new_frame_buffer 1408216461 CP RAMB16_S4_S9
+FL C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf 2014/08/16.21:14:08 P.68d
+EN work/new_schem 1408216471 \
+      FL C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 LB UNISIM \
+      PH unisim/VCOMPONENTS 1370735613
+AR work/new_schem/BEHAVIORAL 1408216472 \
+      FL C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf \
+      EN work/new_schem 1408216471 CP fifo_control_unit CP new_frame_buffer \
+      CP RotaryEnc CP vga_display CP VGAtxt48x20 CP BUF CP new_eof_buffer
+FL C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/vga_display.vhd 2014/08/10.17:28:34 P.68d
+EN work/vga_display 1408216463 \
+      FL C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/vga_display.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/vga_display/Behavioral 1408216464 \
+      FL C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/vga_display.vhd \
+      EN work/vga_display 1408216463
 FL C:/Users/fafik/Dropbox/infa/xilinx/ethernet2/nowyRXTX.vhd 2014/03/13.17:03:06 P.68d
 EN work/nowyRXTX 1394726643 \
       FL C:/Users/fafik/Dropbox/infa/xilinx/ethernet2/nowyRXTX.vhd \

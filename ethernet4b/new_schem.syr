@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.70 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.70 secs
  
 --> Reading design: new_schem.prj
 
@@ -104,20 +104,34 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/fifo_control_unit.vhd" in Library work.
+WARNING:HDLParsers:3607 - Unit work/MII_test3 is now defined in a different file.  It was defined in "C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/MII_test3.vhf", and is now defined in "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MII_test3.vhf".
+WARNING:HDLParsers:3607 - Unit work/MII_test3/BEHAVIORAL is now defined in a different file.  It was defined in "C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/MII_test3.vhf", and is now defined in "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MII_test3.vhf".
+WARNING:HDLParsers:3607 - Unit work/MII_schem is now defined in a different file.  It was defined in "C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/MII_schem.vhf", and is now defined in "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MII_schem.vhf".
+WARNING:HDLParsers:3607 - Unit work/MII_schem/BEHAVIORAL is now defined in a different file.  It was defined in "C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/MII_schem.vhf", and is now defined in "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MII_schem.vhf".
+WARNING:HDLParsers:3607 - Unit work/new_schem is now defined in a different file.  It was defined in "C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/new_schem.vhf", and is now defined in "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf".
+WARNING:HDLParsers:3607 - Unit work/new_schem/BEHAVIORAL is now defined in a different file.  It was defined in "C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/new_schem.vhf", and is now defined in "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf".
+WARNING:HDLParsers:3607 - Unit work/fifo_control_unit is now defined in a different file.  It was defined in "C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/fifo_control_unit.vhd", and is now defined in "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/fifo_control_unit.vhd".
+WARNING:HDLParsers:3607 - Unit work/fifo_control_unit/behavioral is now defined in a different file.  It was defined in "C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/fifo_control_unit.vhd", and is now defined in "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/fifo_control_unit.vhd".
+WARNING:HDLParsers:3607 - Unit work/new_eof_buffer is now defined in a different file.  It was defined in "C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/new_eof_buffer.vhd", and is now defined in "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_eof_buffer.vhd".
+WARNING:HDLParsers:3607 - Unit work/new_eof_buffer/Behavioral is now defined in a different file.  It was defined in "C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/new_eof_buffer.vhd", and is now defined in "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_eof_buffer.vhd".
+WARNING:HDLParsers:3607 - Unit work/new_frame_buffer is now defined in a different file.  It was defined in "C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/new_frame_buffer.vhd", and is now defined in "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_frame_buffer.vhd".
+WARNING:HDLParsers:3607 - Unit work/new_frame_buffer/Behavioral is now defined in a different file.  It was defined in "C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/new_frame_buffer.vhd", and is now defined in "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_frame_buffer.vhd".
+WARNING:HDLParsers:3607 - Unit work/vga_display is now defined in a different file.  It was defined in "C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/vga_display.vhd", and is now defined in "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/vga_display.vhd".
+WARNING:HDLParsers:3607 - Unit work/vga_display/Behavioral is now defined in a different file.  It was defined in "C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/vga_display.vhd", and is now defined in "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/vga_display.vhd".
+Compiling vhdl file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/fifo_control_unit.vhd" in Library work.
 Entity <fifo_control_unit> compiled.
 Entity <fifo_control_unit> (Architecture <behavioral>) compiled.
-Compiling vhdl file "C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/new_frame_buffer.vhd" in Library work.
+Compiling vhdl file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_frame_buffer.vhd" in Library work.
 Architecture behavioral of Entity new_frame_buffer is up to date.
-Compiling vhdl file "C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/vga_display.vhd" in Library work.
+Compiling vhdl file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/vga_display.vhd" in Library work.
 Architecture behavioral of Entity vga_display is up to date.
-Compiling vhdl file "C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/new_eof_buffer.vhd" in Library work.
+Compiling vhdl file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_eof_buffer.vhd" in Library work.
 Architecture behavioral of Entity new_eof_buffer is up to date.
-Compiling vhdl file "C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/MII_test3.vhf" in Library work.
+Compiling vhdl file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MII_test3.vhf" in Library work.
 Architecture behavioral of Entity mii_test3 is up to date.
-Compiling vhdl file "C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/MII_schem.vhf" in Library work.
+Compiling vhdl file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MII_schem.vhf" in Library work.
 Architecture behavioral of Entity mii_schem is up to date.
-Compiling vhdl file "C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/new_schem.vhf" in Library work.
+Compiling vhdl file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" in Library work.
 Entity <new_schem> compiled.
 Entity <new_schem> (Architecture <behavioral>) compiled.
 
@@ -139,14 +153,14 @@ Analyzing hierarchy for entity <new_eof_buffer> in library <work> (architecture 
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <new_schem> in library <work> (Architecture <behavioral>).
-WARNING:Xst:753 - "C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/new_schem.vhf" line 190: Unconnected output port 'test' of component 'fifo_control_unit'.
-WARNING:Xst:753 - "C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/new_schem.vhf" line 217: Unconnected output port 'DOA' of component 'new_frame_buffer'.
-WARNING:Xst:753 - "C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/new_schem.vhf" line 217: Unconnected output port 'DOPB' of component 'new_frame_buffer'.
-WARNING:Xst:753 - "C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/new_schem.vhf" line 235: Unconnected output port 'RotL' of component 'RotaryEnc'.
-WARNING:Xst:2211 - "C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/new_schem.vhf" line 235: Instantiating black box module <RotaryEnc>.
-WARNING:Xst:753 - "C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/new_schem.vhf" line 251: Unconnected output port 'Busy' of component 'VGAtxt48x20'.
-WARNING:Xst:2211 - "C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/new_schem.vhf" line 251: Instantiating black box module <VGAtxt48x20>.
-WARNING:Xst:753 - "C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/new_schem.vhf" line 279: Unconnected output port 'DOA' of component 'new_eof_buffer'.
+WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 190: Unconnected output port 'test' of component 'fifo_control_unit'.
+WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 217: Unconnected output port 'DOA' of component 'new_frame_buffer'.
+WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 217: Unconnected output port 'DOPB' of component 'new_frame_buffer'.
+WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 235: Unconnected output port 'RotL' of component 'RotaryEnc'.
+WARNING:Xst:2211 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 235: Instantiating black box module <RotaryEnc>.
+WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 251: Unconnected output port 'Busy' of component 'VGAtxt48x20'.
+WARNING:Xst:2211 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 251: Instantiating black box module <VGAtxt48x20>.
+WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 279: Unconnected output port 'DOA' of component 'new_eof_buffer'.
 Entity <new_schem> analyzed. Unit <new_schem> generated.
 
 Analyzing Entity <fifo_control_unit> in library <work> (Architecture <behavioral>).
@@ -235,8 +249,8 @@ Analyzing Entity <new_frame_buffer> in library <work> (Architecture <behavioral>
 Entity <new_frame_buffer> analyzed. Unit <new_frame_buffer> generated.
 
 Analyzing Entity <vga_display> in library <work> (Architecture <behavioral>).
-INFO:Xst:1561 - "C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/vga_display.vhd" line 105: Mux is complete : default of case is discarded
-INFO:Xst:1561 - "C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/vga_display.vhd" line 144: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/vga_display.vhd" line 105: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/vga_display.vhd" line 144: Mux is complete : default of case is discarded
 Entity <vga_display> analyzed. Unit <vga_display> generated.
 
 Analyzing Entity <new_eof_buffer> in library <work> (Architecture <behavioral>).
@@ -321,7 +335,7 @@ Entity <new_eof_buffer> analyzed. Unit <new_eof_buffer> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <fifo_control_unit>.
-    Related source file is "C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/fifo_control_unit.vhd".
+    Related source file is "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/fifo_control_unit.vhd".
 WARNING:Xst:1305 - Output <test> is never assigned. Tied to value 00000000.
 WARNING:Xst:646 - Signal <full_i> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <empty_i> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
@@ -329,29 +343,29 @@ WARNING:Xst:646 - Signal <empty_i> is assigned but never used. This unconnected 
     Found 1-bit register for signal <weA>.
     Found 1-bit register for signal <full>.
     Found 8-bit register for signal <doB_latched>.
-    Found 11-bit comparator equal for signal <empty$cmp_eq0000> created at line 212.
+    Found 11-bit comparator equal for signal <empty$cmp_eq0000> created at line 189.
     Found 2-bit register for signal <EOF_latched>.
     Found 1-bit register for signal <frame_started>.
+    Found 11-bit comparator equal for signal <full$cmp_eq0000> created at line 176.
     Found 1-bit register for signal <read_add_simple>.
     Found 11-bit register for signal <read_address_counter>.
-    Found 11-bit xor2 for signal <read_address_counter$xor0001> created at line 296.
-    Found 11-bit comparator not equal for signal <weA$cmp_ne0000> created at line 127.
+    Found 11-bit xor2 for signal <read_address_counter$xor0001> created at line 282.
+    Found 11-bit register for signal <read_address_counter_minus_one>.
+    Found 11-bit xor2 for signal <read_address_counter_minus_one$xor0001> created at line 349.
+    Found 11-bit comparator not equal for signal <weA$cmp_ne0000> created at line 130.
     Found 1-bit register for signal <write_add_simple>.
-    Found 11-bit comparator equal for signal <write_add_simple$cmp_eq0000> created at line 229.
-    Found 11-bit subtractor for signal <write_add_simple$sub0000> created at line 229.
     Found 12-bit register for signal <write_address_counter>.
-    Found 12-bit xor2 for signal <write_address_counter$xor0001> created at line 257.
+    Found 12-bit xor2 for signal <write_address_counter$xor0001> created at line 240.
     Found 12-bit register for signal <write_address_counter_minus_one>.
-    Found 12-bit xor2 for signal <write_address_counter_minus_one$xor0001> created at line 324.
+    Found 12-bit xor2 for signal <write_address_counter_minus_one$xor0001> created at line 316.
     Summary:
-	inferred  51 D-type flip-flop(s).
-	inferred   1 Adder/Subtractor(s).
+	inferred  62 D-type flip-flop(s).
 	inferred   3 Comparator(s).
 Unit <fifo_control_unit> synthesized.
 
 
 Synthesizing Unit <vga_display>.
-    Related source file is "C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/vga_display.vhd".
+    Related source file is "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/vga_display.vhd".
 WARNING:Xst:646 - Signal <busy_in> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 INFO:Xst:1799 - State latch_data is never reached in FSM <state>.
     Found finite state machine <FSM_0> for signal <state>.
@@ -380,17 +394,17 @@ Unit <vga_display> synthesized.
 
 
 Synthesizing Unit <new_frame_buffer>.
-    Related source file is "C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/new_frame_buffer.vhd".
+    Related source file is "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_frame_buffer.vhd".
 Unit <new_frame_buffer> synthesized.
 
 
 Synthesizing Unit <new_eof_buffer>.
-    Related source file is "C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/new_eof_buffer.vhd".
+    Related source file is "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_eof_buffer.vhd".
 Unit <new_eof_buffer> synthesized.
 
 
 Synthesizing Unit <new_schem>.
-    Related source file is "C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/new_schem.vhf".
+    Related source file is "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf".
 WARNING:Xst:653 - Signal <XLXI_9_WEB_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:653 - Signal <XLXI_9_SSRB_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:653 - Signal <XLXI_9_SSRA_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
@@ -414,11 +428,9 @@ Unit <new_schem> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 1
- 11-bit subtractor                                     : 1
-# Registers                                            : 11
+# Registers                                            : 12
  1-bit register                                        : 6
- 11-bit register                                       : 1
+ 11-bit register                                       : 2
  12-bit register                                       : 2
  2-bit register                                        : 1
  8-bit register                                        : 1
@@ -428,8 +440,8 @@ Macro Statistics
 # Comparators                                          : 3
  11-bit comparator equal                               : 2
  11-bit comparator not equal                           : 1
-# Xors                                                 : 3
- 11-bit xor2                                           : 1
+# Xors                                                 : 4
+ 11-bit xor2                                           : 2
  12-bit xor2                                           : 2
 
 =========================================================================
@@ -463,18 +475,16 @@ Advanced HDL Synthesis Report
 
 Macro Statistics
 # FSMs                                                 : 1
-# Adders/Subtractors                                   : 1
- 11-bit subtractor                                     : 1
-# Registers                                            : 51
- Flip-Flops                                            : 51
+# Registers                                            : 62
+ Flip-Flops                                            : 62
 # Latches                                              : 3
  1-bit latch                                           : 2
  8-bit latch                                           : 1
 # Comparators                                          : 3
  11-bit comparator equal                               : 2
  11-bit comparator not equal                           : 1
-# Xors                                                 : 3
- 11-bit xor2                                           : 1
+# Xors                                                 : 4
+ 11-bit xor2                                           : 2
  12-bit xor2                                           : 2
 
 =========================================================================
@@ -501,8 +511,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 56
- Flip-Flops                                            : 56
+# Registers                                            : 67
+ Flip-Flops                                            : 67
 
 =========================================================================
 
@@ -531,34 +541,33 @@ Design Statistics
 # IOs                              : 17
 
 Cell Usage :
-# BELS                             : 554
+# BELS                             : 544
 #      AND2                        : 1
 #      AND3                        : 4
 #      AND3B1                      : 4
 #      BUF                         : 3
 #      GND                         : 4
-#      INV                         : 24
-#      LUT1                        : 44
-#      LUT2                        : 48
-#      LUT2_D                      : 1
-#      LUT2_L                      : 6
-#      LUT3                        : 56
-#      LUT3_D                      : 5
-#      LUT3_L                      : 7
-#      LUT4                        : 144
+#      INV                         : 14
+#      LUT1                        : 43
+#      LUT2                        : 51
+#      LUT2_L                      : 5
+#      LUT3                        : 65
+#      LUT3_D                      : 6
+#      LUT3_L                      : 8
+#      LUT4                        : 149
 #      LUT4_D                      : 10
-#      LUT4_L                      : 10
-#      MUXCY                       : 75
-#      MUXF5                       : 29
+#      LUT4_L                      : 13
+#      MUXCY                       : 65
+#      MUXF5                       : 31
 #      MUXF5_L                     : 2
 #      MUXF6                       : 5
 #      OR2                         : 5
 #      VCC                         : 4
 #      XOR2                        : 1
-#      XORCY                       : 62
-# FlipFlops/Latches                : 169
+#      XORCY                       : 51
+# FlipFlops/Latches                : 180
 #      FD                          : 40
-#      FDE                         : 60
+#      FDE                         : 71
 #      FDR                         : 21
 #      FDRE                        : 37
 #      FDS                         : 1
@@ -582,10 +591,10 @@ Device utilization summary:
 
 Selected Device : 3s500efg320-4 
 
- Number of Slices:                      205  out of   4656     4%  
- Number of Slice Flip Flops:            169  out of   9312     1%  
- Number of 4 input LUTs:                360  out of   9312     3%  
-    Number used as logic:               355
+ Number of Slices:                      211  out of   4656     4%  
+ Number of Slice Flip Flops:            180  out of   9312     1%  
+ Number of 4 input LUTs:                369  out of   9312     3%  
+    Number used as logic:               364
     Number used as Shift registers:       5
  Number of IOs:                          17
  Number of bonded IOBs:                  17  out of    232     7%  
@@ -613,7 +622,7 @@ Clock Information:
 -------------------------------------------------------+-------------------------------------------------------------------------------------------------+-------+
 Clock Signal                                           | Clock buffer(FF name)                                                                           | Load  |
 -------------------------------------------------------+-------------------------------------------------------------------------------------------------+-------+
-CLK                                                    | BUFGP                                                                                           | 142   |
+CLK                                                    | BUFGP                                                                                           | 153   |
 XLXI_5/XLXI_146/BU2/dbiterr                            | NONE(XLXI_5/XLXI_146/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v2_init.ram/dp9x9.ram)| 1     |
 E_RX_CLK                                               | BUFGP                                                                                           | 30    |
 XLXI_4/ram_enable_or0000(XLXI_4/ram_enable_or0000_f5:O)| NONE(*)(XLXI_4/char_6)                                                                          | 8     |
@@ -643,7 +652,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
   Clock period: 9.574ns (frequency: 104.450MHz)
-  Total number of paths / destination ports: 2855 / 314
+  Total number of paths / destination ports: 3054 / 336
 -------------------------------------------------------------------------
 Delay:               9.574ns (Levels of Logic = 10)
   Source:            XLXI_5/XLXI_146/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v2_init.ram/dp9x9.ram (RAM)
@@ -676,30 +685,29 @@ Delay:               9.574ns (Levels of Logic = 10)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'E_RX_CLK'
-  Clock period: 7.517ns (frequency: 133.032MHz)
-  Total number of paths / destination ports: 858 / 80
+  Clock period: 6.941ns (frequency: 144.071MHz)
+  Total number of paths / destination ports: 867 / 80
 -------------------------------------------------------------------------
-Delay:               7.517ns (Levels of Logic = 6)
-  Source:            XLXI_1/write_address_counter_minus_one_2 (FF)
-  Destination:       XLXI_1/write_address_counter_minus_one_11 (FF)
+Delay:               6.941ns (Levels of Logic = 5)
+  Source:            XLXI_1/write_address_counter_6 (FF)
+  Destination:       XLXI_1/write_address_counter_10 (FF)
   Source Clock:      E_RX_CLK rising
   Destination Clock: E_RX_CLK rising
 
-  Data Path: XLXI_1/write_address_counter_minus_one_2 to XLXI_1/write_address_counter_minus_one_11
+  Data Path: XLXI_1/write_address_counter_6 to XLXI_1/write_address_counter_10
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              5   0.591   0.808  XLXI_1/write_address_counter_minus_one_2 (XLXI_1/write_address_counter_minus_one_2)
-     LUT2_L:I0->LO         1   0.704   0.104  XLXI_1/write_address_counter_minus_one_mux0001<11>2_SW0 (N32)
-     LUT4:I3->O            6   0.704   0.748  XLXI_1/write_address_counter_minus_one_mux0001<11>2 (XLXI_1/N25)
-     LUT2_D:I1->LO         1   0.704   0.104  XLXI_1/write_address_counter_minus_one_mux0001<10>111 (N77)
-     LUT4:I3->O            2   0.704   0.526  XLXI_1/write_address_counter_minus_one_mux0001<10>121 (XLXI_1/N24)
-     LUT2_L:I1->LO         1   0.704   0.104  XLXI_1/write_address_counter_minus_one_mux0001<11>_SW1 (N43)
-     LUT4:I3->O            1   0.704   0.000  XLXI_1/write_address_counter_minus_one_mux0001<11> (XLXI_1/write_address_counter_minus_one_mux0001<11>)
-     FDE:D                     0.308          XLXI_1/write_address_counter_minus_one_11
+     FDE:C->Q             10   0.591   1.057  XLXI_1/write_address_counter_6 (XLXI_1/write_address_counter_6)
+     LUT3_D:I0->LO         1   0.704   0.104  XLXI_1/write_address_counter_mux0001<10>31 (N68)
+     LUT4:I3->O            1   0.704   0.424  XLXI_1/weA_cmp_eq00001_SW0 (N33)
+     LUT4_D:I3->O          2   0.704   0.482  XLXI_1/weA_cmp_eq00001 (XLXI_1/N35)
+     LUT4_D:I2->O          1   0.704   0.455  XLXI_1/write_add_temp_or00001 (XLXI_1/write_add_temp<11>)
+     LUT4:I2->O            1   0.704   0.000  XLXI_1/write_address_counter_mux0001<10>74 (XLXI_1/write_address_counter_mux0001<10>)
+     FDE:D                     0.308          XLXI_1/write_address_counter_10
     ----------------------------------------
-    Total                      7.517ns (5.123ns logic, 2.394ns route)
-                                       (68.2% logic, 31.8% route)
+    Total                      6.941ns (4.419ns logic, 2.522ns route)
+                                       (63.7% logic, 36.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
@@ -783,14 +791,14 @@ Offset:              4.283ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 8.95 secs
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 11.69 secs
  
 --> 
 
-Total memory usage is 286632 kilobytes
+Total memory usage is 288424 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   33 (   0 filtered)
+Number of warnings :   47 (   0 filtered)
 Number of infos    :    8 (   0 filtered)
 

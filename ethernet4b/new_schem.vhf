@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.6
 --  \   \         Application : sch2hdl
 --  /   /         Filename : new_schem.vhf
--- /___/   /\     Timestamp : 08/11/2014 21:05:47
+-- /___/   /\     Timestamp : 08/16/2014 21:14:08
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/new_schem.vhf -w C:/Users/fafik/Desktop/przyk/ethernet-master/ethernet-master/ethernet4b/new_schem.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf -w C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.sch
 --Design Name: new_schem
 --Device: spartan3e
 --Purpose:
