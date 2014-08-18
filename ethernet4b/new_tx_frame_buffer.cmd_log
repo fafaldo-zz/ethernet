@@ -1,0 +1,20 @@
+vhdtdtfi -lib work new_tx_frame_buffer.vhd -prj ethernet -o new_tx_frame_buffer.spl -module new_tx_frame_buffer -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e new_tx_frame_buffer.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_tx_frame_buffer.sym 
+vhdtdtfi -lib work new_tx_frame_buffer.vhd -prj ethernet -o new_tx_frame_buffer.spl -module new_tx_frame_buffer -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e new_tx_frame_buffer.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_tx_frame_buffer.sym 
+vhdtdtfi -lib work new_tx_frame_buffer.vhd -prj ethernet -o new_tx_frame_buffer.spl -module new_tx_frame_buffer -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e new_tx_frame_buffer.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_tx_frame_buffer.sym 
+vhdtdtfi -lib work new_tx_frame_buffer.vhd -prj ethernet -o new_tx_frame_buffer.spl -module new_tx_frame_buffer -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e new_tx_frame_buffer.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_tx_frame_buffer.sym 
+vhdtdtfi -lib work new_tx_frame_buffer.vhd -prj ethernet -o new_tx_frame_buffer.spl -module new_tx_frame_buffer -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e new_tx_frame_buffer.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_tx_frame_buffer.sym 
+vhdtdtfi -lib work new_tx_frame_buffer.vhd -prj ethernet -o new_tx_frame_buffer.spl -module new_tx_frame_buffer -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e new_tx_frame_buffer.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_tx_frame_buffer.sym 
+vhdtdtfi -lib work new_tx_frame_buffer.vhd -prj ethernet -o new_tx_frame_buffer.spl -module new_tx_frame_buffer -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e new_tx_frame_buffer.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_tx_frame_buffer.sym 
+vhdtdtfi -lib work new_tx_frame_buffer.vhd -prj ethernet -o new_tx_frame_buffer.spl -module new_tx_frame_buffer -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e new_tx_frame_buffer.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_tx_frame_buffer.sym 
+vhdtdtfi -lib work new_tx_frame_buffer.vhd -prj ethernet -o new_tx_frame_buffer.spl -module new_tx_frame_buffer -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e new_tx_frame_buffer.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_tx_frame_buffer.sym 
+vhdtdtfi -lib work new_tx_frame_buffer.vhd -prj ethernet -o new_tx_frame_buffer.spl -module new_tx_frame_buffer -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e new_tx_frame_buffer.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_tx_frame_buffer.sym 

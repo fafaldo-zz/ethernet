@@ -1,0 +1,223 @@
+Release 14.6 Map P.68d (nt64)
+Xilinx Mapping Report File for Design 'tx_schem'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off
+-c 100 -o tx_schem_map.ncd tx_schem.ngd tx_schem.pcf 
+Target Device  : xc3s500e
+Target Package : fg320
+Target Speed   : -4
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Mon Aug 18 22:22:41 2014
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    0
+Logic Utilization:
+  Number of Slice Flip Flops:           139 out of   9,312    1%
+  Number of 4 input LUTs:               240 out of   9,312    2%
+Logic Distribution:
+  Number of occupied Slices:            168 out of   4,656    3%
+    Number of Slices containing only related logic:     168 out of     168 100%
+    Number of Slices containing unrelated logic:          0 out of     168   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:         291 out of   9,312    3%
+    Number used as logic:               235
+    Number used as a route-thru:         51
+    Number used as Shift registers:       5
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 22 out of     232    9%
+  Number of RAMB16s:                      3 out of      20   15%
+  Number of BUFGMUXs:                     2 out of      24    8%
+
+Average Fanout of Non-Clock Nets:                3.36
+
+Peak Memory Usage:  319 MB
+Total REAL time to MAP completion:  2 secs 
+Total CPU time to MAP completion:   1 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network XLXI_2/gap_counter<5>1/LO has no load.
+INFO:LIT:395 - The above info message is repeated 4 more times for the following
+   (max. 5 shown):
+   XLXI_2/gap_counter<3>1/LO,
+   XLXI_2/gap_counter<7>/LO,
+   XLXI_2/gap_counter<4>/LO,
+   XLXI_3/RotL
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:MapLib:159 - Net Timing constraints on signal clk are pushed forward
+   through input buffer.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+   7 block(s) removed
+  18 block(s) optimized away
+   5 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal "XLXI_2/gap_counter<5>1/LO" is loadless and has been removed.
+ Loadless block "XLXI_2/gap_counter<5>1/LUT3_D_BUF" (BUF) removed.
+The signal "XLXI_2/gap_counter<3>1/LO" is loadless and has been removed.
+ Loadless block "XLXI_2/gap_counter<3>1/LUT4_D_BUF" (BUF) removed.
+The signal "XLXI_2/gap_counter<7>/LO" is loadless and has been removed.
+ Loadless block "XLXI_2/gap_counter<7>/LUT4_D_BUF" (BUF) removed.
+The signal "XLXI_2/gap_counter<4>/LO" is loadless and has been removed.
+ Loadless block "XLXI_2/gap_counter<4>/LUT4_D_BUF" (BUF) removed.
+The signal "XLXI_3/RotL" is sourceless and has been removed.
+Unused block "XLXI_3/RotL" (SFF) removed.
+Unused block "XLXI_4/XLXI_146/GND" (ZERO) removed.
+Unused block "XLXI_4/XLXI_146/VCC" (ONE) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XLXI_3/XST_GND
+VCC 		XLXI_3/XST_VCC
+LUT3 		XLXI_4/I_CursorCnt/ColCnt_or0000_SW0
+   optimized to 0
+LUT3 		XLXI_4/I_CursorCnt/LineCnt_mux0001<2>139_SW1
+   optimized to 1
+LUT2 		XLXI_4/I_CursorCnt/RAM_DI_Out<6>1
+   optimized to 0
+LUT2 		XLXI_4/I_CursorCnt/RAM_DI_Out<7>1
+   optimized to 0
+LUT2 		XLXI_4/XLXI_113/CursorActive_and0001_SW0
+   optimized to 1
+VCC 		XLXI_4/XLXI_115/XLXI_89
+GND 		XLXI_4/XLXI_141
+GND 		XLXI_4/XLXI_146/BU2/XST_GND
+VCC 		XLXI_4/XLXI_146/BU2/XST_VCC
+VCC 		XLXI_6
+GND 		XST_GND
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| E_TXD<0>                           | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW |              |          | 0 / 0    |
+| E_TXD<1>                           | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW |              |          | 0 / 0    |
+| E_TXD<2>                           | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW |              |          | 0 / 0    |
+| E_TXD<3>                           | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW |              |          | 0 / 0    |
+| E_TX_CLK                           | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| E_TX_EN                            | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW |              |          | 0 / 0    |
+| ROT_A                              | IBUF             | INPUT     | LVTTL                |       |          |      |              | PULLUP   | 0 / 0    |
+| ROT_B                              | IBUF             | INPUT     | LVTTL                |       |          |      |              | PULLUP   | 0 / 0    |
+| VGA_B                              | IOB              | OUTPUT    | LVTTL                |       | 8        | FAST |              |          | 0 / 0    |
+| VGA_G                              | IOB              | OUTPUT    | LVTTL                |       | 8        | FAST |              |          | 0 / 0    |
+| VGA_HS                             | IOB              | OUTPUT    | LVTTL                |       | 8        | FAST |              |          | 0 / 0    |
+| VGA_R                              | IOB              | OUTPUT    | LVTTL                |       | 8        | FAST |              |          | 0 / 0    |
+| VGA_VS                             | IOB              | OUTPUT    | LVTTL                |       | 8        | FAST |              |          | 0 / 0    |
+| clk                                | IBUF             | INPUT     | LVTTL                |       |          |      |              |          | 0 / 0    |
+| test<0>                            | IOB              | OUTPUT    | LVTTL                |       | 4        | SLOW |              |          | 0 / 0    |
+| test<1>                            | IOB              | OUTPUT    | LVTTL                |       | 4        | SLOW |              |          | 0 / 0    |
+| test<2>                            | IOB              | OUTPUT    | LVTTL                |       | 4        | SLOW |              |          | 0 / 0    |
+| test<3>                            | IOB              | OUTPUT    | LVTTL                |       | 4        | SLOW |              |          | 0 / 0    |
+| test<4>                            | IOB              | OUTPUT    | LVTTL                |       | 4        | SLOW |              |          | 0 / 0    |
+| test<5>                            | IOB              | OUTPUT    | LVTTL                |       | 4        | SLOW |              |          | 0 / 0    |
+| test<6>                            | IOB              | OUTPUT    | LVTTL                |       | 4        | SLOW |              |          | 0 / 0    |
+| test<7>                            | IOB              | OUTPUT    | LVTTL                |       | 4        | SLOW |              |          | 0 / 0    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

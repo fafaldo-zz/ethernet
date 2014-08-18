@@ -5,7 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="info" file="ConstraintSystem" num="0" >The Period constraint &lt;NET &quot;CLK&quot; PERIOD = 20.0ns HIGH 50%;&gt; [GenIO.ucf(3)], is specified using the Net Period method which is not recommended. Please use the Timespec PERIOD method.
+<msg type="info" file="ConstraintSystem" num="0" >The Period constraint &lt;NET &quot;clk&quot; PERIOD = 20.0ns HIGH 50%;&gt; [GenIO - Copy.ucf(3)], is specified using the Net Period method which is not recommended. Please use the Timespec PERIOD method.
 </msg>
 
 </messages>

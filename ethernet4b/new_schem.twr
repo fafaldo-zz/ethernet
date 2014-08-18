@@ -4,7 +4,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 D:\programy\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v
 3 -s 4 -n 3 -fastpaths -xml new_schem.twx new_schem.ncd -o new_schem.twr
-new_schem.pcf -ucf PHY.ucf -ucf GenIO.ucf
+new_schem.pcf -ucf GenIO.ucf -ucf PHY.ucf
 
 Design file:              new_schem.ncd
 Physical constraint file: new_schem.pcf
@@ -510,7 +510,7 @@ Design statistics:
 ------------------------------------Footnotes-----------------------------------
 1)  The minimum period statistic assumes all single cycle delays.
 
-Analysis completed Sat Aug 16 21:15:14 2014 
+Analysis completed Sat Aug 16 21:53:08 2014 
 --------------------------------------------------------------------------------
 
 Trace Settings:

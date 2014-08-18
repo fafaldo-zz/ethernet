@@ -1,0 +1,3 @@
+vhdl work "new_tx_fifo_control_unit.vhd"
+vhdl work "tx_test.vhd"
+vhdl work "MII_schem.vhf"

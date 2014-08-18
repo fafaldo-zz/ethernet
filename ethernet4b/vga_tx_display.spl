@@ -1,0 +1,10 @@
+[Inputs]
+clk
+E_TX_CLK
+E_TX_EN
+reset
+=E_TXD[3:0]=
+[Outputs]
+Char_WE
+=Char_DI[7:0]=
+[BiDir]

@@ -1,0 +1,11 @@
+MODULE tx_schem
+	SUBMODULE new_tx_frame_buffer
+		INSTANCE XLXI_1
+	SUBMODULE new_tx_fifo_control_unit
+		INSTANCE XLXI_2
+	SUBMODULE RotaryEnc
+		INSTANCE XLXI_3
+	SUBMODULE VGAtxt48x20
+		INSTANCE XLXI_4
+	SUBMODULE vga_tx_display
+		INSTANCE XLXI_5

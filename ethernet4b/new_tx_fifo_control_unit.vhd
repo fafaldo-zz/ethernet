@@ -41,11 +41,11 @@ architecture behavioral of new_tx_fifo_control_unit is
 	type state_type is (IDLE, TRANSMITTING, IDLE_GAP); 
    signal state, next_state : state_type;
 
-	signal write_address_counter : std_logic_vector(10 downto 0) := (others=>'0');
+	signal write_address_counter : std_logic_vector(10 downto 0) := "00001101100";
 	signal read_address_counter : std_logic_vector(11 downto 0) := (others=>'0');
   
-	signal empty_i : std_logic;
-	signal full_i : std_logic;
+	signal empty_i : std_logic := '0';
+	signal full_i : std_logic := '0';
 	
 	signal write_add_simple : std_logic := '1';
 	signal write_add_temp : std_logic_vector(10 downto 0) := (others=>'0');
@@ -58,10 +58,16 @@ architecture behavioral of new_tx_fifo_control_unit is
 	signal Tx_En_i : std_logic := '0';
 	
 	signal gap_counter : std_logic_vector(7 downto 0) := (others=>'0');
+	
+	signal reset : std_logic := '0';
+	
+	signal state_transmitting_reached : std_logic := '0';
+	signal cycles_in_transmitting_state : std_logic_vector(7 downto 0) := (others=>'0');
 
 begin
 
---	test <= second & first;
+--   test <= state_transmitting_reached & full_i & empty_i & "00000";
+	test <= "0000" & read_address_counter(3 downto 0);
 
 
 	--
@@ -77,11 +83,33 @@ begin
 	diB <= data_in;
 	Tx_D <= doA;
 	
+	process (clk)
+	begin
+		if rising_edge(clk) then
+			if state = TRANSMITTING then
+				state_transmitting_reached <= '1';
+			end if;
+		end if;
+	end process;
+	
+--	process (Tx_Clk)
+--	begin
+--		if rising_edge(Tx_Clk) then
+--			if state = TRANSMITTING then
+--				cycles_in_transmitting_state <= cycles_in_transmitting_state+1;
+--			end if;
+--		end if;
+--	end process;
+	
 	
 	process (clk)
    begin
       if rising_edge(clk) then
-         state <= next_state;      
+			if reset = '1' then
+				state <= IDLE;
+			else 
+				state <= next_state; 
+			end if;
       end if;
    end process;
 	
@@ -237,7 +265,7 @@ begin
 	process (Tx_Clk)
 	begin
 		if rising_edge(Tx_Clk) then
-			if (Tx_En_i = '1') then
+			if (state = TRANSMITTING) then
 				if read_address_counter(11 downto 1) /= write_address_counter then
 					read_add_simple <= not read_add_simple;
 				end if;
@@ -263,10 +291,13 @@ begin
 		if rising_edge(Tx_Clk) then
 			if (Tx_En_i = '1') then
 				if read_address_counter(11 downto 1) /= write_address_counter then
+					cycles_in_transmitting_state <= cycles_in_transmitting_state+1;
 					if read_add_simple = '1' then
 						read_address_counter <= read_address_counter xor "000000000001";
+						
 					else
 						read_address_counter <= read_address_counter xor read_add_temp;
+						
 					end if;
 				end if;
 			end if;
@@ -296,7 +327,7 @@ begin
 	process(Tx_Clk)
 	begin
 		if rising_edge(Tx_Clk) then
-			if (Tx_En_i = '1') then
+			if (state = TRANSMITTING) then
 				if read_address_counter(11 downto 1) /= write_address_counter then
 					if read_add_simple = '1' then
 						read_address_counter_minus_two <= read_address_counter_minus_two xor "000000000001";

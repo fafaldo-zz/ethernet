@@ -1,0 +1,682 @@
+--------------------------------------------------------------------------------
+Release 14.6 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\programy\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v
+3 -s 4 -n 3 -fastpaths -xml tx_schem.twx tx_schem.ncd -o tx_schem.twr
+tx_schem.pcf -ucf PHY - Copy.ucf -ucf GenIO - Copy.ucf
+
+Design file:              tx_schem.ncd
+Physical constraint file: tx_schem.pcf
+Device,package,speed:     xc3s500e,fg320,-4 (PRODUCTION 1.27 2013-06-08)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+8 logic loops found and disabled.
+
+  ----------------------------------------------------------------------
+ ! Warning: The following connections close logic loops, and some paths !
+ !          through these connections may not be analyzed. To better    !
+ !          understand the logic associated with these loops, run a     !
+ !          Analyze Against User-Defined End-Point Analysis inside      !
+ !          Timing Analyzer (timingan) with the listed signal as a      !
+ !          source NET (*signal_name). The Timing Report will display   !
+ !          all the paths associated with this signal and the logic     !
+ !          loop will be reported.                                      !
+ !                                                                      !
+ ! Signal                            Driver            Load             !
+ ! --------------------------------  ----------------  ---------------- !
+ ! dd_gap_counter_addsub0000_lut<4>  SLICE_X20Y55.X    SLICE_X20Y55.F4  !
+ ! dd_gap_counter_addsub0000_lut<3>  SLICE_X20Y54.X    SLICE_X20Y54.F2  !
+ ! add_gap_counter_addsub0000_cy<0>  SLICE_X21Y54.Y    SLICE_X21Y54.G4  !
+ ! dd_gap_counter_addsub0000_lut<1>  SLICE_X21Y55.Y    SLICE_X21Y55.G4  !
+ ! dd_gap_counter_addsub0000_lut<2>  SLICE_X20Y54.Y    SLICE_X20Y54.G3  !
+ ! dd_gap_counter_addsub0000_lut<5>  SLICE_X20Y53.X    SLICE_X20Y53.F2  !
+ ! dd_gap_counter_addsub0000_lut<6>  SLICE_X21Y52.Y    SLICE_X21Y52.G4  !
+ ! dd_gap_counter_addsub0000_lut<7>  SLICE_X21Y52.X    SLICE_X21Y52.F1  !
+  ---------------------------------------------------------------------- 
+
+
+================================================================================
+Timing constraint: NET "clk_BUFGP/IBUFG" PERIOD = 20 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 2844 paths analyzed, 438 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  10.543ns.
+--------------------------------------------------------------------------------
+
+Paths for end point XLXI_2/state_FSM_FFd1 (SLICE_X21Y53.F2), 144 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     9.457ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               XLXI_2/state_FSM_FFd1 (FF)
+  Destination:          XLXI_2/state_FSM_FFd1 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      10.543ns (Levels of Logic = 10)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: XLXI_2/state_FSM_FFd1 to XLXI_2/state_FSM_FFd1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X21Y53.XQ      Tcko                  0.591   XLXI_2/state_FSM_FFd1
+                                                       XLXI_2/state_FSM_FFd1
+    SLICE_X21Y54.G2      net (fanout=12)       0.653   XLXI_2/state_FSM_FFd1
+    SLICE_X21Y54.Y       Tilo                  0.704   XLXI_2/state_FSM_FFd1-In15
+                                                       XLXI_2/gap_counter<0>1
+    SLICE_X21Y55.G3      net (fanout=6)        0.150   XLXI_2/Madd_gap_counter_addsub0000_cy<0>
+    SLICE_X21Y55.Y       Tilo                  0.704   XLXI_2/Madd_gap_counter_addsub0000_cy<1>
+                                                       XLXI_2/gap_counter<1>1
+    SLICE_X21Y55.F4      net (fanout=5)        0.069   XLXI_2/Madd_gap_counter_addsub0000_lut<1>
+    SLICE_X21Y55.X       Tilo                  0.704   XLXI_2/Madd_gap_counter_addsub0000_cy<1>
+                                                       XLXI_2/Madd_gap_counter_addsub0000_cy<1>11
+    SLICE_X20Y54.F1      net (fanout=2)        0.712   XLXI_2/Madd_gap_counter_addsub0000_cy<1>
+    SLICE_X20Y54.X       Tilo                  0.759   XLXI_2/Madd_gap_counter_addsub0000_lut<3>
+                                                       XLXI_2/gap_counter<3>1
+    SLICE_X20Y55.F1      net (fanout=4)        0.177   XLXI_2/Madd_gap_counter_addsub0000_lut<3>
+    SLICE_X20Y55.X       Tilo                  0.759   XLXI_2/Madd_gap_counter_addsub0000_lut<4>
+                                                       XLXI_2/gap_counter<4>
+    SLICE_X20Y53.G3      net (fanout=3)        0.409   XLXI_2/Madd_gap_counter_addsub0000_lut<4>
+    SLICE_X20Y53.Y       Tilo                  0.759   XLXI_2/Madd_gap_counter_addsub0000_lut<5>
+                                                       XLXI_2/Madd_gap_counter_addsub0000_cy<4>11
+    SLICE_X20Y53.F3      net (fanout=3)        0.063   XLXI_2/Madd_gap_counter_addsub0000_cy<4>
+    SLICE_X20Y53.X       Tilo                  0.759   XLXI_2/Madd_gap_counter_addsub0000_lut<5>
+                                                       XLXI_2/gap_counter<5>1
+    SLICE_X20Y52.F2      net (fanout=4)        0.133   XLXI_2/Madd_gap_counter_addsub0000_lut<5>
+    SLICE_X20Y52.X       Tilo                  0.759   N10
+                                                       XLXI_2/gap_counter<7>_SW0
+    SLICE_X21Y52.F4      net (fanout=1)        0.023   N10
+    SLICE_X21Y52.X       Tilo                  0.704   XLXI_2/Madd_gap_counter_addsub0000_lut<7>
+                                                       XLXI_2/gap_counter<7>
+    SLICE_X21Y53.F2      net (fanout=2)        0.115   XLXI_2/Madd_gap_counter_addsub0000_lut<7>
+    SLICE_X21Y53.CLK     Tfck                  0.837   XLXI_2/state_FSM_FFd1
+                                                       XLXI_2/state_FSM_FFd1-In821
+                                                       XLXI_2/state_FSM_FFd1
+    -------------------------------------------------  ---------------------------
+    Total                                     10.543ns (8.039ns logic, 2.504ns route)
+                                                       (76.2% logic, 23.8% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     9.492ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               XLXI_2/state_FSM_FFd1 (FF)
+  Destination:          XLXI_2/state_FSM_FFd1 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      10.508ns (Levels of Logic = 10)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: XLXI_2/state_FSM_FFd1 to XLXI_2/state_FSM_FFd1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X21Y53.XQ      Tcko                  0.591   XLXI_2/state_FSM_FFd1
+                                                       XLXI_2/state_FSM_FFd1
+    SLICE_X21Y54.G2      net (fanout=12)       0.653   XLXI_2/state_FSM_FFd1
+    SLICE_X21Y54.Y       Tilo                  0.704   XLXI_2/state_FSM_FFd1-In15
+                                                       XLXI_2/gap_counter<0>1
+    SLICE_X21Y55.G3      net (fanout=6)        0.150   XLXI_2/Madd_gap_counter_addsub0000_cy<0>
+    SLICE_X21Y55.Y       Tilo                  0.704   XLXI_2/Madd_gap_counter_addsub0000_cy<1>
+                                                       XLXI_2/gap_counter<1>1
+    SLICE_X21Y55.F4      net (fanout=5)        0.069   XLXI_2/Madd_gap_counter_addsub0000_lut<1>
+    SLICE_X21Y55.X       Tilo                  0.704   XLXI_2/Madd_gap_counter_addsub0000_cy<1>
+                                                       XLXI_2/Madd_gap_counter_addsub0000_cy<1>11
+    SLICE_X20Y54.F1      net (fanout=2)        0.712   XLXI_2/Madd_gap_counter_addsub0000_cy<1>
+    SLICE_X20Y54.X       Tilo                  0.759   XLXI_2/Madd_gap_counter_addsub0000_lut<3>
+                                                       XLXI_2/gap_counter<3>1
+    SLICE_X20Y55.F1      net (fanout=4)        0.177   XLXI_2/Madd_gap_counter_addsub0000_lut<3>
+    SLICE_X20Y55.X       Tilo                  0.759   XLXI_2/Madd_gap_counter_addsub0000_lut<4>
+                                                       XLXI_2/gap_counter<4>
+    SLICE_X20Y53.G3      net (fanout=3)        0.409   XLXI_2/Madd_gap_counter_addsub0000_lut<4>
+    SLICE_X20Y53.Y       Tilo                  0.759   XLXI_2/Madd_gap_counter_addsub0000_lut<5>
+                                                       XLXI_2/Madd_gap_counter_addsub0000_cy<4>11
+    SLICE_X20Y53.F3      net (fanout=3)        0.063   XLXI_2/Madd_gap_counter_addsub0000_cy<4>
+    SLICE_X20Y53.X       Tilo                  0.759   XLXI_2/Madd_gap_counter_addsub0000_lut<5>
+                                                       XLXI_2/gap_counter<5>1
+    SLICE_X21Y52.G3      net (fanout=4)        0.118   XLXI_2/Madd_gap_counter_addsub0000_lut<5>
+    SLICE_X21Y52.Y       Tilo                  0.704   XLXI_2/Madd_gap_counter_addsub0000_lut<7>
+                                                       XLXI_2/gap_counter<6>1
+    SLICE_X21Y52.F3      net (fanout=3)        0.058   XLXI_2/Madd_gap_counter_addsub0000_lut<6>
+    SLICE_X21Y52.X       Tilo                  0.704   XLXI_2/Madd_gap_counter_addsub0000_lut<7>
+                                                       XLXI_2/gap_counter<7>
+    SLICE_X21Y53.F2      net (fanout=2)        0.115   XLXI_2/Madd_gap_counter_addsub0000_lut<7>
+    SLICE_X21Y53.CLK     Tfck                  0.837   XLXI_2/state_FSM_FFd1
+                                                       XLXI_2/state_FSM_FFd1-In821
+                                                       XLXI_2/state_FSM_FFd1
+    -------------------------------------------------  ---------------------------
+    Total                                     10.508ns (7.984ns logic, 2.524ns route)
+                                                       (76.0% logic, 24.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     9.913ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               XLXI_2/state_FSM_FFd1 (FF)
+  Destination:          XLXI_2/state_FSM_FFd1 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      10.087ns (Levels of Logic = 10)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: XLXI_2/state_FSM_FFd1 to XLXI_2/state_FSM_FFd1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X21Y53.XQ      Tcko                  0.591   XLXI_2/state_FSM_FFd1
+                                                       XLXI_2/state_FSM_FFd1
+    SLICE_X21Y54.G2      net (fanout=12)       0.653   XLXI_2/state_FSM_FFd1
+    SLICE_X21Y54.Y       Tilo                  0.704   XLXI_2/state_FSM_FFd1-In15
+                                                       XLXI_2/gap_counter<0>1
+    SLICE_X21Y55.G3      net (fanout=6)        0.150   XLXI_2/Madd_gap_counter_addsub0000_cy<0>
+    SLICE_X21Y55.Y       Tilo                  0.704   XLXI_2/Madd_gap_counter_addsub0000_cy<1>
+                                                       XLXI_2/gap_counter<1>1
+    SLICE_X20Y54.G1      net (fanout=5)        0.170   XLXI_2/Madd_gap_counter_addsub0000_lut<1>
+    SLICE_X20Y54.Y       Tilo                  0.759   XLXI_2/Madd_gap_counter_addsub0000_lut<3>
+                                                       XLXI_2/gap_counter<2>1
+    SLICE_X20Y54.F4      net (fanout=5)        0.100   XLXI_2/Madd_gap_counter_addsub0000_lut<2>
+    SLICE_X20Y54.X       Tilo                  0.759   XLXI_2/Madd_gap_counter_addsub0000_lut<3>
+                                                       XLXI_2/gap_counter<3>1
+    SLICE_X20Y55.F1      net (fanout=4)        0.177   XLXI_2/Madd_gap_counter_addsub0000_lut<3>
+    SLICE_X20Y55.X       Tilo                  0.759   XLXI_2/Madd_gap_counter_addsub0000_lut<4>
+                                                       XLXI_2/gap_counter<4>
+    SLICE_X20Y53.G3      net (fanout=3)        0.409   XLXI_2/Madd_gap_counter_addsub0000_lut<4>
+    SLICE_X20Y53.Y       Tilo                  0.759   XLXI_2/Madd_gap_counter_addsub0000_lut<5>
+                                                       XLXI_2/Madd_gap_counter_addsub0000_cy<4>11
+    SLICE_X20Y53.F3      net (fanout=3)        0.063   XLXI_2/Madd_gap_counter_addsub0000_cy<4>
+    SLICE_X20Y53.X       Tilo                  0.759   XLXI_2/Madd_gap_counter_addsub0000_lut<5>
+                                                       XLXI_2/gap_counter<5>1
+    SLICE_X20Y52.F2      net (fanout=4)        0.133   XLXI_2/Madd_gap_counter_addsub0000_lut<5>
+    SLICE_X20Y52.X       Tilo                  0.759   N10
+                                                       XLXI_2/gap_counter<7>_SW0
+    SLICE_X21Y52.F4      net (fanout=1)        0.023   N10
+    SLICE_X21Y52.X       Tilo                  0.704   XLXI_2/Madd_gap_counter_addsub0000_lut<7>
+                                                       XLXI_2/gap_counter<7>
+    SLICE_X21Y53.F2      net (fanout=2)        0.115   XLXI_2/Madd_gap_counter_addsub0000_lut<7>
+    SLICE_X21Y53.CLK     Tfck                  0.837   XLXI_2/state_FSM_FFd1
+                                                       XLXI_2/state_FSM_FFd1-In821
+                                                       XLXI_2/state_FSM_FFd1
+    -------------------------------------------------  ---------------------------
+    Total                                     10.087ns (8.094ns logic, 1.993ns route)
+                                                       (80.2% logic, 19.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point XLXI_2/state_FSM_FFd1 (SLICE_X21Y53.F3), 72 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     10.311ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               XLXI_2/state_FSM_FFd1 (FF)
+  Destination:          XLXI_2/state_FSM_FFd1 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      9.689ns (Levels of Logic = 9)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: XLXI_2/state_FSM_FFd1 to XLXI_2/state_FSM_FFd1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X21Y53.XQ      Tcko                  0.591   XLXI_2/state_FSM_FFd1
+                                                       XLXI_2/state_FSM_FFd1
+    SLICE_X21Y54.G2      net (fanout=12)       0.653   XLXI_2/state_FSM_FFd1
+    SLICE_X21Y54.Y       Tilo                  0.704   XLXI_2/state_FSM_FFd1-In15
+                                                       XLXI_2/gap_counter<0>1
+    SLICE_X21Y55.G3      net (fanout=6)        0.150   XLXI_2/Madd_gap_counter_addsub0000_cy<0>
+    SLICE_X21Y55.Y       Tilo                  0.704   XLXI_2/Madd_gap_counter_addsub0000_cy<1>
+                                                       XLXI_2/gap_counter<1>1
+    SLICE_X21Y55.F4      net (fanout=5)        0.069   XLXI_2/Madd_gap_counter_addsub0000_lut<1>
+    SLICE_X21Y55.X       Tilo                  0.704   XLXI_2/Madd_gap_counter_addsub0000_cy<1>
+                                                       XLXI_2/Madd_gap_counter_addsub0000_cy<1>11
+    SLICE_X20Y54.F1      net (fanout=2)        0.712   XLXI_2/Madd_gap_counter_addsub0000_cy<1>
+    SLICE_X20Y54.X       Tilo                  0.759   XLXI_2/Madd_gap_counter_addsub0000_lut<3>
+                                                       XLXI_2/gap_counter<3>1
+    SLICE_X20Y55.F1      net (fanout=4)        0.177   XLXI_2/Madd_gap_counter_addsub0000_lut<3>
+    SLICE_X20Y55.X       Tilo                  0.759   XLXI_2/Madd_gap_counter_addsub0000_lut<4>
+                                                       XLXI_2/gap_counter<4>
+    SLICE_X20Y53.G3      net (fanout=3)        0.409   XLXI_2/Madd_gap_counter_addsub0000_lut<4>
+    SLICE_X20Y53.Y       Tilo                  0.759   XLXI_2/Madd_gap_counter_addsub0000_lut<5>
+                                                       XLXI_2/Madd_gap_counter_addsub0000_cy<4>11
+    SLICE_X20Y53.F3      net (fanout=3)        0.063   XLXI_2/Madd_gap_counter_addsub0000_cy<4>
+    SLICE_X20Y53.X       Tilo                  0.759   XLXI_2/Madd_gap_counter_addsub0000_lut<5>
+                                                       XLXI_2/gap_counter<5>1
+    SLICE_X21Y52.G3      net (fanout=4)        0.118   XLXI_2/Madd_gap_counter_addsub0000_lut<5>
+    SLICE_X21Y52.Y       Tilo                  0.704   XLXI_2/Madd_gap_counter_addsub0000_lut<7>
+                                                       XLXI_2/gap_counter<6>1
+    SLICE_X21Y53.F3      net (fanout=3)        0.058   XLXI_2/Madd_gap_counter_addsub0000_lut<6>
+    SLICE_X21Y53.CLK     Tfck                  0.837   XLXI_2/state_FSM_FFd1
+                                                       XLXI_2/state_FSM_FFd1-In821
+                                                       XLXI_2/state_FSM_FFd1
+    -------------------------------------------------  ---------------------------
+    Total                                      9.689ns (7.280ns logic, 2.409ns route)
+                                                       (75.1% logic, 24.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     10.767ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               XLXI_2/state_FSM_FFd1 (FF)
+  Destination:          XLXI_2/state_FSM_FFd1 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      9.233ns (Levels of Logic = 9)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: XLXI_2/state_FSM_FFd1 to XLXI_2/state_FSM_FFd1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X21Y53.XQ      Tcko                  0.591   XLXI_2/state_FSM_FFd1
+                                                       XLXI_2/state_FSM_FFd1
+    SLICE_X21Y54.G2      net (fanout=12)       0.653   XLXI_2/state_FSM_FFd1
+    SLICE_X21Y54.Y       Tilo                  0.704   XLXI_2/state_FSM_FFd1-In15
+                                                       XLXI_2/gap_counter<0>1
+    SLICE_X21Y55.G3      net (fanout=6)        0.150   XLXI_2/Madd_gap_counter_addsub0000_cy<0>
+    SLICE_X21Y55.Y       Tilo                  0.704   XLXI_2/Madd_gap_counter_addsub0000_cy<1>
+                                                       XLXI_2/gap_counter<1>1
+    SLICE_X20Y54.G1      net (fanout=5)        0.170   XLXI_2/Madd_gap_counter_addsub0000_lut<1>
+    SLICE_X20Y54.Y       Tilo                  0.759   XLXI_2/Madd_gap_counter_addsub0000_lut<3>
+                                                       XLXI_2/gap_counter<2>1
+    SLICE_X20Y54.F4      net (fanout=5)        0.100   XLXI_2/Madd_gap_counter_addsub0000_lut<2>
+    SLICE_X20Y54.X       Tilo                  0.759   XLXI_2/Madd_gap_counter_addsub0000_lut<3>
+                                                       XLXI_2/gap_counter<3>1
+    SLICE_X20Y55.F1      net (fanout=4)        0.177   XLXI_2/Madd_gap_counter_addsub0000_lut<3>
+    SLICE_X20Y55.X       Tilo                  0.759   XLXI_2/Madd_gap_counter_addsub0000_lut<4>
+                                                       XLXI_2/gap_counter<4>
+    SLICE_X20Y53.G3      net (fanout=3)        0.409   XLXI_2/Madd_gap_counter_addsub0000_lut<4>
+    SLICE_X20Y53.Y       Tilo                  0.759   XLXI_2/Madd_gap_counter_addsub0000_lut<5>
+                                                       XLXI_2/Madd_gap_counter_addsub0000_cy<4>11
+    SLICE_X20Y53.F3      net (fanout=3)        0.063   XLXI_2/Madd_gap_counter_addsub0000_cy<4>
+    SLICE_X20Y53.X       Tilo                  0.759   XLXI_2/Madd_gap_counter_addsub0000_lut<5>
+                                                       XLXI_2/gap_counter<5>1
+    SLICE_X21Y52.G3      net (fanout=4)        0.118   XLXI_2/Madd_gap_counter_addsub0000_lut<5>
+    SLICE_X21Y52.Y       Tilo                  0.704   XLXI_2/Madd_gap_counter_addsub0000_lut<7>
+                                                       XLXI_2/gap_counter<6>1
+    SLICE_X21Y53.F3      net (fanout=3)        0.058   XLXI_2/Madd_gap_counter_addsub0000_lut<6>
+    SLICE_X21Y53.CLK     Tfck                  0.837   XLXI_2/state_FSM_FFd1
+                                                       XLXI_2/state_FSM_FFd1-In821
+                                                       XLXI_2/state_FSM_FFd1
+    -------------------------------------------------  ---------------------------
+    Total                                      9.233ns (7.335ns logic, 1.898ns route)
+                                                       (79.4% logic, 20.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     10.856ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               XLXI_2/state_FSM_FFd1 (FF)
+  Destination:          XLXI_2/state_FSM_FFd1 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      9.144ns (Levels of Logic = 9)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: XLXI_2/state_FSM_FFd1 to XLXI_2/state_FSM_FFd1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X21Y53.XQ      Tcko                  0.591   XLXI_2/state_FSM_FFd1
+                                                       XLXI_2/state_FSM_FFd1
+    SLICE_X21Y54.G2      net (fanout=12)       0.653   XLXI_2/state_FSM_FFd1
+    SLICE_X21Y54.Y       Tilo                  0.704   XLXI_2/state_FSM_FFd1-In15
+                                                       XLXI_2/gap_counter<0>1
+    SLICE_X21Y55.G3      net (fanout=6)        0.150   XLXI_2/Madd_gap_counter_addsub0000_cy<0>
+    SLICE_X21Y55.Y       Tilo                  0.704   XLXI_2/Madd_gap_counter_addsub0000_cy<1>
+                                                       XLXI_2/gap_counter<1>1
+    SLICE_X20Y54.G1      net (fanout=5)        0.170   XLXI_2/Madd_gap_counter_addsub0000_lut<1>
+    SLICE_X20Y54.Y       Tilo                  0.759   XLXI_2/Madd_gap_counter_addsub0000_lut<3>
+                                                       XLXI_2/gap_counter<2>1
+    SLICE_X20Y55.G4      net (fanout=5)        0.165   XLXI_2/Madd_gap_counter_addsub0000_lut<2>
+    SLICE_X20Y55.Y       Tilo                  0.759   XLXI_2/Madd_gap_counter_addsub0000_lut<4>
+                                                       XLXI_2/gap_counter<4>_SW0
+    SLICE_X20Y55.F3      net (fanout=1)        0.023   XLXI_2/gap_counter<4>_SW0/O
+    SLICE_X20Y55.X       Tilo                  0.759   XLXI_2/Madd_gap_counter_addsub0000_lut<4>
+                                                       XLXI_2/gap_counter<4>
+    SLICE_X20Y53.G3      net (fanout=3)        0.409   XLXI_2/Madd_gap_counter_addsub0000_lut<4>
+    SLICE_X20Y53.Y       Tilo                  0.759   XLXI_2/Madd_gap_counter_addsub0000_lut<5>
+                                                       XLXI_2/Madd_gap_counter_addsub0000_cy<4>11
+    SLICE_X20Y53.F3      net (fanout=3)        0.063   XLXI_2/Madd_gap_counter_addsub0000_cy<4>
+    SLICE_X20Y53.X       Tilo                  0.759   XLXI_2/Madd_gap_counter_addsub0000_lut<5>
+                                                       XLXI_2/gap_counter<5>1
+    SLICE_X21Y52.G3      net (fanout=4)        0.118   XLXI_2/Madd_gap_counter_addsub0000_lut<5>
+    SLICE_X21Y52.Y       Tilo                  0.704   XLXI_2/Madd_gap_counter_addsub0000_lut<7>
+                                                       XLXI_2/gap_counter<6>1
+    SLICE_X21Y53.F3      net (fanout=3)        0.058   XLXI_2/Madd_gap_counter_addsub0000_lut<6>
+    SLICE_X21Y53.CLK     Tfck                  0.837   XLXI_2/state_FSM_FFd1
+                                                       XLXI_2/state_FSM_FFd1-In821
+                                                       XLXI_2/state_FSM_FFd1
+    -------------------------------------------------  ---------------------------
+    Total                                      9.144ns (7.335ns logic, 1.809ns route)
+                                                       (80.2% logic, 19.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point XLXI_2/state_FSM_FFd1 (SLICE_X21Y53.F4), 70 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     10.346ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               XLXI_2/state_FSM_FFd1 (FF)
+  Destination:          XLXI_2/state_FSM_FFd1 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      9.654ns (Levels of Logic = 9)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: XLXI_2/state_FSM_FFd1 to XLXI_2/state_FSM_FFd1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X21Y53.XQ      Tcko                  0.591   XLXI_2/state_FSM_FFd1
+                                                       XLXI_2/state_FSM_FFd1
+    SLICE_X21Y54.G2      net (fanout=12)       0.653   XLXI_2/state_FSM_FFd1
+    SLICE_X21Y54.Y       Tilo                  0.704   XLXI_2/state_FSM_FFd1-In15
+                                                       XLXI_2/gap_counter<0>1
+    SLICE_X21Y55.G3      net (fanout=6)        0.150   XLXI_2/Madd_gap_counter_addsub0000_cy<0>
+    SLICE_X21Y55.Y       Tilo                  0.704   XLXI_2/Madd_gap_counter_addsub0000_cy<1>
+                                                       XLXI_2/gap_counter<1>1
+    SLICE_X21Y55.F4      net (fanout=5)        0.069   XLXI_2/Madd_gap_counter_addsub0000_lut<1>
+    SLICE_X21Y55.X       Tilo                  0.704   XLXI_2/Madd_gap_counter_addsub0000_cy<1>
+                                                       XLXI_2/Madd_gap_counter_addsub0000_cy<1>11
+    SLICE_X20Y54.F1      net (fanout=2)        0.712   XLXI_2/Madd_gap_counter_addsub0000_cy<1>
+    SLICE_X20Y54.X       Tilo                  0.759   XLXI_2/Madd_gap_counter_addsub0000_lut<3>
+                                                       XLXI_2/gap_counter<3>1
+    SLICE_X20Y55.F1      net (fanout=4)        0.177   XLXI_2/Madd_gap_counter_addsub0000_lut<3>
+    SLICE_X20Y55.X       Tilo                  0.759   XLXI_2/Madd_gap_counter_addsub0000_lut<4>
+                                                       XLXI_2/gap_counter<4>
+    SLICE_X20Y53.G3      net (fanout=3)        0.409   XLXI_2/Madd_gap_counter_addsub0000_lut<4>
+    SLICE_X20Y53.Y       Tilo                  0.759   XLXI_2/Madd_gap_counter_addsub0000_lut<5>
+                                                       XLXI_2/Madd_gap_counter_addsub0000_cy<4>11
+    SLICE_X20Y53.F3      net (fanout=3)        0.063   XLXI_2/Madd_gap_counter_addsub0000_cy<4>
+    SLICE_X20Y53.X       Tilo                  0.759   XLXI_2/Madd_gap_counter_addsub0000_lut<5>
+                                                       XLXI_2/gap_counter<5>1
+    SLICE_X21Y53.G3      net (fanout=4)        0.118   XLXI_2/Madd_gap_counter_addsub0000_lut<5>
+    SLICE_X21Y53.Y       Tilo                  0.704   XLXI_2/state_FSM_FFd1
+                                                       XLXI_2/state_FSM_FFd1-In42_SW0
+    SLICE_X21Y53.F4      net (fanout=1)        0.023   XLXI_2/state_FSM_FFd1-In42_SW0/O
+    SLICE_X21Y53.CLK     Tfck                  0.837   XLXI_2/state_FSM_FFd1
+                                                       XLXI_2/state_FSM_FFd1-In821
+                                                       XLXI_2/state_FSM_FFd1
+    -------------------------------------------------  ---------------------------
+    Total                                      9.654ns (7.280ns logic, 2.374ns route)
+                                                       (75.4% logic, 24.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     10.802ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               XLXI_2/state_FSM_FFd1 (FF)
+  Destination:          XLXI_2/state_FSM_FFd1 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      9.198ns (Levels of Logic = 9)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: XLXI_2/state_FSM_FFd1 to XLXI_2/state_FSM_FFd1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X21Y53.XQ      Tcko                  0.591   XLXI_2/state_FSM_FFd1
+                                                       XLXI_2/state_FSM_FFd1
+    SLICE_X21Y54.G2      net (fanout=12)       0.653   XLXI_2/state_FSM_FFd1
+    SLICE_X21Y54.Y       Tilo                  0.704   XLXI_2/state_FSM_FFd1-In15
+                                                       XLXI_2/gap_counter<0>1
+    SLICE_X21Y55.G3      net (fanout=6)        0.150   XLXI_2/Madd_gap_counter_addsub0000_cy<0>
+    SLICE_X21Y55.Y       Tilo                  0.704   XLXI_2/Madd_gap_counter_addsub0000_cy<1>
+                                                       XLXI_2/gap_counter<1>1
+    SLICE_X20Y54.G1      net (fanout=5)        0.170   XLXI_2/Madd_gap_counter_addsub0000_lut<1>
+    SLICE_X20Y54.Y       Tilo                  0.759   XLXI_2/Madd_gap_counter_addsub0000_lut<3>
+                                                       XLXI_2/gap_counter<2>1
+    SLICE_X20Y54.F4      net (fanout=5)        0.100   XLXI_2/Madd_gap_counter_addsub0000_lut<2>
+    SLICE_X20Y54.X       Tilo                  0.759   XLXI_2/Madd_gap_counter_addsub0000_lut<3>
+                                                       XLXI_2/gap_counter<3>1
+    SLICE_X20Y55.F1      net (fanout=4)        0.177   XLXI_2/Madd_gap_counter_addsub0000_lut<3>
+    SLICE_X20Y55.X       Tilo                  0.759   XLXI_2/Madd_gap_counter_addsub0000_lut<4>
+                                                       XLXI_2/gap_counter<4>
+    SLICE_X20Y53.G3      net (fanout=3)        0.409   XLXI_2/Madd_gap_counter_addsub0000_lut<4>
+    SLICE_X20Y53.Y       Tilo                  0.759   XLXI_2/Madd_gap_counter_addsub0000_lut<5>
+                                                       XLXI_2/Madd_gap_counter_addsub0000_cy<4>11
+    SLICE_X20Y53.F3      net (fanout=3)        0.063   XLXI_2/Madd_gap_counter_addsub0000_cy<4>
+    SLICE_X20Y53.X       Tilo                  0.759   XLXI_2/Madd_gap_counter_addsub0000_lut<5>
+                                                       XLXI_2/gap_counter<5>1
+    SLICE_X21Y53.G3      net (fanout=4)        0.118   XLXI_2/Madd_gap_counter_addsub0000_lut<5>
+    SLICE_X21Y53.Y       Tilo                  0.704   XLXI_2/state_FSM_FFd1
+                                                       XLXI_2/state_FSM_FFd1-In42_SW0
+    SLICE_X21Y53.F4      net (fanout=1)        0.023   XLXI_2/state_FSM_FFd1-In42_SW0/O
+    SLICE_X21Y53.CLK     Tfck                  0.837   XLXI_2/state_FSM_FFd1
+                                                       XLXI_2/state_FSM_FFd1-In821
+                                                       XLXI_2/state_FSM_FFd1
+    -------------------------------------------------  ---------------------------
+    Total                                      9.198ns (7.335ns logic, 1.863ns route)
+                                                       (79.7% logic, 20.3% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     10.891ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               XLXI_2/state_FSM_FFd1 (FF)
+  Destination:          XLXI_2/state_FSM_FFd1 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      9.109ns (Levels of Logic = 9)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: XLXI_2/state_FSM_FFd1 to XLXI_2/state_FSM_FFd1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X21Y53.XQ      Tcko                  0.591   XLXI_2/state_FSM_FFd1
+                                                       XLXI_2/state_FSM_FFd1
+    SLICE_X21Y54.G2      net (fanout=12)       0.653   XLXI_2/state_FSM_FFd1
+    SLICE_X21Y54.Y       Tilo                  0.704   XLXI_2/state_FSM_FFd1-In15
+                                                       XLXI_2/gap_counter<0>1
+    SLICE_X21Y55.G3      net (fanout=6)        0.150   XLXI_2/Madd_gap_counter_addsub0000_cy<0>
+    SLICE_X21Y55.Y       Tilo                  0.704   XLXI_2/Madd_gap_counter_addsub0000_cy<1>
+                                                       XLXI_2/gap_counter<1>1
+    SLICE_X20Y54.G1      net (fanout=5)        0.170   XLXI_2/Madd_gap_counter_addsub0000_lut<1>
+    SLICE_X20Y54.Y       Tilo                  0.759   XLXI_2/Madd_gap_counter_addsub0000_lut<3>
+                                                       XLXI_2/gap_counter<2>1
+    SLICE_X20Y55.G4      net (fanout=5)        0.165   XLXI_2/Madd_gap_counter_addsub0000_lut<2>
+    SLICE_X20Y55.Y       Tilo                  0.759   XLXI_2/Madd_gap_counter_addsub0000_lut<4>
+                                                       XLXI_2/gap_counter<4>_SW0
+    SLICE_X20Y55.F3      net (fanout=1)        0.023   XLXI_2/gap_counter<4>_SW0/O
+    SLICE_X20Y55.X       Tilo                  0.759   XLXI_2/Madd_gap_counter_addsub0000_lut<4>
+                                                       XLXI_2/gap_counter<4>
+    SLICE_X20Y53.G3      net (fanout=3)        0.409   XLXI_2/Madd_gap_counter_addsub0000_lut<4>
+    SLICE_X20Y53.Y       Tilo                  0.759   XLXI_2/Madd_gap_counter_addsub0000_lut<5>
+                                                       XLXI_2/Madd_gap_counter_addsub0000_cy<4>11
+    SLICE_X20Y53.F3      net (fanout=3)        0.063   XLXI_2/Madd_gap_counter_addsub0000_cy<4>
+    SLICE_X20Y53.X       Tilo                  0.759   XLXI_2/Madd_gap_counter_addsub0000_lut<5>
+                                                       XLXI_2/gap_counter<5>1
+    SLICE_X21Y53.G3      net (fanout=4)        0.118   XLXI_2/Madd_gap_counter_addsub0000_lut<5>
+    SLICE_X21Y53.Y       Tilo                  0.704   XLXI_2/state_FSM_FFd1
+                                                       XLXI_2/state_FSM_FFd1-In42_SW0
+    SLICE_X21Y53.F4      net (fanout=1)        0.023   XLXI_2/state_FSM_FFd1-In42_SW0/O
+    SLICE_X21Y53.CLK     Tfck                  0.837   XLXI_2/state_FSM_FFd1
+                                                       XLXI_2/state_FSM_FFd1-In821
+                                                       XLXI_2/state_FSM_FFd1
+    -------------------------------------------------  ---------------------------
+    Total                                      9.109ns (7.335ns logic, 1.774ns route)
+                                                       (80.5% logic, 19.5% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: NET "clk_BUFGP/IBUFG" PERIOD = 20 ns HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point XLXI_4/XLXI_115/XLXI_151/O (SLICE_X54Y53.BY), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.053ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               XLXI_4/XLXI_115/XLXI_151/Q (FF)
+  Destination:          XLXI_4/XLXI_115/XLXI_151/O (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.053ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 20.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: XLXI_4/XLXI_115/XLXI_151/Q to XLXI_4/XLXI_115/XLXI_151/O
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X54Y52.YQ      Tcko                  0.522   XLXI_4/XLXI_115/XLXI_151/Q
+                                                       XLXI_4/XLXI_115/XLXI_151/Q
+    SLICE_X54Y53.BY      net (fanout=1)        0.379   XLXI_4/XLXI_115/XLXI_151/Q
+    SLICE_X54Y53.CLK     Tckdi       (-Th)    -0.152   XLXI_4/XLXI_115/XLXI_151/O
+                                                       XLXI_4/XLXI_115/XLXI_151/O
+    -------------------------------------------------  ---------------------------
+    Total                                      1.053ns (0.674ns logic, 0.379ns route)
+                                                       (64.0% logic, 36.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point XLXI_4/I_CursorCnt/ScrollBase_0 (SLICE_X32Y35.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.062ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               XLXI_4/I_CursorCnt/ScrollBase_0 (FF)
+  Destination:          XLXI_4/I_CursorCnt/ScrollBase_0 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.062ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 20.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: XLXI_4/I_CursorCnt/ScrollBase_0 to XLXI_4/I_CursorCnt/ScrollBase_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X32Y35.XQ      Tcko                  0.474   XLXI_4/I_CursorCnt/ScrollBase<0>
+                                                       XLXI_4/I_CursorCnt/ScrollBase_0
+    SLICE_X32Y35.BX      net (fanout=10)       0.454   XLXI_4/I_CursorCnt/ScrollBase<0>
+    SLICE_X32Y35.CLK     Tckdi       (-Th)    -0.134   XLXI_4/I_CursorCnt/ScrollBase<0>
+                                                       XLXI_4/I_CursorCnt/ScrollBase_0
+    -------------------------------------------------  ---------------------------
+    Total                                      1.062ns (0.608ns logic, 0.454ns route)
+                                                       (57.3% logic, 42.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point XLXI_4/XLXI_115/XLXI_155/cntCol_3 (SLICE_X66Y70.CE), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.161ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               XLXI_4/XLXI_115/XLXI_155/ActiveX (FF)
+  Destination:          XLXI_4/XLXI_115/XLXI_155/cntCol_3 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.183ns (Levels of Logic = 0)
+  Clock Path Skew:      0.022ns (0.124 - 0.102)
+  Source Clock:         clk_BUFGP rising at 20.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: XLXI_4/XLXI_115/XLXI_155/ActiveX to XLXI_4/XLXI_115/XLXI_155/cntCol_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X66Y62.YQ      Tcko                  0.522   XLXI_4/XLXI_115/XLXI_155/ActiveX
+                                                       XLXI_4/XLXI_115/XLXI_155/ActiveX
+    SLICE_X66Y70.CE      net (fanout=5)        0.592   XLXI_4/XLXI_115/XLXI_155/ActiveX
+    SLICE_X66Y70.CLK     Tckce       (-Th)    -0.069   XLXI_4/XLXI_115/XLXI_155/cntCol<3>
+                                                       XLXI_4/XLXI_115/XLXI_155/cntCol_3
+    -------------------------------------------------  ---------------------------
+    Total                                      1.183ns (0.591ns logic, 0.592ns route)
+                                                       (50.0% logic, 50.0% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: NET "clk_BUFGP/IBUFG" PERIOD = 20 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 16.824ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 20.000ns
+  Low pulse: 10.000ns
+  Low pulse limit: 1.588ns (Tbpwl)
+  Physical resource: XLXI_4/XLXI_3/CLKA
+  Logical resource: XLXI_4/XLXI_3.A/CLKA
+  Location pin: RAMB16_X1Y4.CLKA
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 16.824ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 20.000ns
+  High pulse: 10.000ns
+  High pulse limit: 1.588ns (Tbpwh)
+  Physical resource: XLXI_4/XLXI_3/CLKA
+  Logical resource: XLXI_4/XLXI_3.A/CLKA
+  Location pin: RAMB16_X1Y4.CLKA
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 16.824ns (period - min period limit)
+  Period: 20.000ns
+  Min period limit: 3.176ns (314.861MHz) (Tbp)
+  Physical resource: XLXI_4/XLXI_3/CLKA
+  Logical resource: XLXI_4/XLXI_3.A/CLKA
+  Location pin: RAMB16_X1Y4.CLKA
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   10.543|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 2844 paths, 0 nets, and 906 connections
+
+Design statistics:
+   Minimum period:  10.543ns{1}   (Maximum frequency:  94.850MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Mon Aug 18 22:23:00 2014 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 165 MB
+
+
+

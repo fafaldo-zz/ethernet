@@ -1,0 +1,6 @@
+vhdl work "C:\Users\fafik\Dropbox\infa\git\ethernet\ethernet4b\vga_tx_display.vhd"
+vhdl work "C:\Users\fafik\Dropbox\infa\git\ethernet\ethernet4b\new_tx_frame_buffer.vhd"
+vhdl work "C:\Users\fafik\Dropbox\infa\git\ethernet\ethernet4b\new_tx_fifo_control_unit.vhd"
+vhdl work "C:\Users\fafik\Dropbox\infa\git\ethernet\ethernet4b\tx_schem.vhf"
+vhdl work "C:\Users\fafik\Dropbox\infa\git\ethernet\ethernet4b\MII_schem.vhf"
+vhdl work "C:\Users\fafik\Dropbox\infa\git\ethernet\ethernet4b\MII_test3.vhf"

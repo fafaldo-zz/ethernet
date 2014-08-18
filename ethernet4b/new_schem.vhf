@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.6
 --  \   \         Application : sch2hdl
 --  /   /         Filename : new_schem.vhf
--- /___/   /\     Timestamp : 08/16/2014 21:14:08
+-- /___/   /\     Timestamp : 08/16/2014 21:52:29
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -81,6 +81,13 @@ architecture BEHAVIORAL of new_schem is
    signal XLXI_9_SSRA_openSignal        : std_logic;
    signal XLXI_9_SSRB_openSignal        : std_logic;
    signal XLXI_9_WEB_openSignal         : std_logic;
+   signal XLXI_10_clk_openSignal        : std_logic;
+   signal XLXI_10_data_in_openSignal    : std_logic_vector (7 downto 0);
+   signal XLXI_10_doA_openSignal        : std_logic_vector (3 downto 0);
+   signal XLXI_10_EOF_openSignal        : std_logic;
+   signal XLXI_10_PUSH_openSignal       : std_logic;
+   signal XLXI_10_start_openSignal      : std_logic;
+   signal XLXI_10_Tx_Clk_openSignal     : std_logic;
    component fifo_control_unit
       port ( clk      : in    std_logic; 
              Rx_Clk   : in    std_logic; 
@@ -184,6 +191,30 @@ architecture BEHAVIORAL of new_schem is
              DIB   : in    std_logic_vector (1 downto 0); 
              DOA   : out   std_logic_vector (0 downto 0); 
              DOB   : out   std_logic_vector (1 downto 0));
+   end component;
+   
+   component new_tx_fifo_control_unit
+      port ( EOF     : in    std_logic; 
+             clk     : in    std_logic; 
+             Tx_Clk  : in    std_logic; 
+             PUSH    : in    std_logic; 
+             start   : in    std_logic; 
+             doA     : in    std_logic_vector (3 downto 0); 
+             data_in : in    std_logic_vector (7 downto 0); 
+             clkA    : out   std_logic; 
+             clkB    : out   std_logic; 
+             enA     : out   std_logic; 
+             enB     : out   std_logic; 
+             weB     : out   std_logic; 
+             empty   : out   std_logic; 
+             full    : out   std_logic; 
+             Tx_En   : out   std_logic; 
+             busy    : out   std_logic; 
+             addrA   : out   std_logic_vector (11 downto 0); 
+             addrB   : out   std_logic_vector (10 downto 0); 
+             diB     : out   std_logic_vector (7 downto 0); 
+             Tx_D    : out   std_logic_vector (3 downto 0); 
+             test    : out   std_logic_vector (7 downto 0));
    end component;
    
 begin
@@ -291,6 +322,29 @@ begin
                 WEB=>XLXI_9_WEB_openSignal,
                 DOA=>open,
                 DOB(1 downto 0)=>XLXN_24(1 downto 0));
+   
+   XLXI_10 : new_tx_fifo_control_unit
+      port map (clk=>XLXI_10_clk_openSignal,
+                data_in(7 downto 0)=>XLXI_10_data_in_openSignal(7 downto 0),
+                doA(3 downto 0)=>XLXI_10_doA_openSignal(3 downto 0),
+                EOF=>XLXI_10_EOF_openSignal,
+                PUSH=>XLXI_10_PUSH_openSignal,
+                start=>XLXI_10_start_openSignal,
+                Tx_Clk=>XLXI_10_Tx_Clk_openSignal,
+                addrA=>open,
+                addrB=>open,
+                busy=>open,
+                clkA=>open,
+                clkB=>open,
+                diB=>open,
+                empty=>open,
+                enA=>open,
+                enB=>open,
+                full=>open,
+                test=>open,
+                Tx_D=>open,
+                Tx_En=>open,
+                weB=>open);
    
 end BEHAVIORAL;
 
