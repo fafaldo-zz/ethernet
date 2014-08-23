@@ -1,0 +1,5 @@
+MODULE ethernetTX
+	SUBMODULE new_tx_frame_buffer
+		INSTANCE XLXI_1
+	SUBMODULE new_tx_fifo_control_unit
+		INSTANCE XLXI_2

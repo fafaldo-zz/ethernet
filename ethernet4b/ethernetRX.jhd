@@ -1,0 +1,7 @@
+MODULE ethernetRX
+	SUBMODULE fifo_control_unit
+		INSTANCE XLXI_1
+	SUBMODULE new_frame_buffer
+		INSTANCE XLXI_2
+	SUBMODULE new_eof_buffer
+		INSTANCE XLXI_3

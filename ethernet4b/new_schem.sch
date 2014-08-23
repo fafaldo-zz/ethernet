@@ -196,38 +196,6 @@
             <rect width="64" x="320" y="-44" height="24" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
-        <blockdef name="new_tx_fifo_control_unit">
-            <timestamp>2014-8-16T19:39:28</timestamp>
-            <rect width="256" x="64" y="-1024" height="1024" />
-            <line x2="0" y1="-992" y2="-992" x1="64" />
-            <line x2="0" y1="-752" y2="-752" x1="64" />
-            <line x2="0" y1="-512" y2="-512" x1="64" />
-            <line x2="0" y1="-272" y2="-272" x1="64" />
-            <line x2="0" y1="-32" y2="-32" x1="64" />
-            <line x2="384" y1="-992" y2="-992" x1="320" />
-            <line x2="384" y1="-928" y2="-928" x1="320" />
-            <line x2="384" y1="-864" y2="-864" x1="320" />
-            <line x2="384" y1="-800" y2="-800" x1="320" />
-            <line x2="384" y1="-736" y2="-736" x1="320" />
-            <line x2="384" y1="-672" y2="-672" x1="320" />
-            <line x2="384" y1="-608" y2="-608" x1="320" />
-            <line x2="384" y1="-544" y2="-544" x1="320" />
-            <line x2="384" y1="-480" y2="-480" x1="320" />
-            <rect width="64" x="320" y="-428" height="24" />
-            <line x2="384" y1="-416" y2="-416" x1="320" />
-            <rect width="64" x="320" y="-364" height="24" />
-            <line x2="384" y1="-352" y2="-352" x1="320" />
-            <rect width="64" x="320" y="-300" height="24" />
-            <line x2="384" y1="-288" y2="-288" x1="320" />
-            <rect width="64" x="320" y="-236" height="24" />
-            <line x2="384" y1="-224" y2="-224" x1="320" />
-            <rect width="64" x="320" y="-172" height="24" />
-            <line x2="384" y1="-160" y2="-160" x1="320" />
-            <rect width="64" x="320" y="-108" height="24" />
-            <line x2="384" y1="-96" y2="-96" x1="320" />
-            <rect width="64" x="320" y="-44" height="24" />
-            <line x2="384" y1="-32" y2="-32" x1="320" />
-        </blockdef>
         <block symbolname="fifo_control_unit" name="XLXI_1">
             <blockpin signalname="CLK" name="clk" />
             <blockpin signalname="E_RX_CLK" name="Rx_Clk" />
@@ -332,29 +300,6 @@
             <blockpin name="DIB(1:0)" />
             <blockpin name="DOA(0:0)" />
             <blockpin signalname="XLXN_24(1:0)" name="DOB(1:0)" />
-        </block>
-        <block symbolname="new_tx_fifo_control_unit" name="XLXI_10">
-            <blockpin name="EOF" />
-            <blockpin name="clk" />
-            <blockpin name="Tx_Clk" />
-            <blockpin name="PUSH" />
-            <blockpin name="start" />
-            <blockpin name="doA(3:0)" />
-            <blockpin name="data_in(7:0)" />
-            <blockpin name="clkA" />
-            <blockpin name="clkB" />
-            <blockpin name="enA" />
-            <blockpin name="enB" />
-            <blockpin name="weB" />
-            <blockpin name="empty" />
-            <blockpin name="full" />
-            <blockpin name="Tx_En" />
-            <blockpin name="busy" />
-            <blockpin name="addrA(11:0)" />
-            <blockpin name="addrB(10:0)" />
-            <blockpin name="diB(7:0)" />
-            <blockpin name="Tx_D(3:0)" />
-            <blockpin name="test(7:0)" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -557,7 +502,5 @@
             <wire x2="1344" y1="720" y2="720" x1="1312" />
         </branch>
         <iomarker fontsize="28" x="1344" y="720" name="EOF" orien="R0" />
-        <instance x="144" y="1488" name="XLXI_10" orien="R0">
-        </instance>
     </sheet>
 </drawing>

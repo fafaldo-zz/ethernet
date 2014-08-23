@@ -11,5 +11,3 @@ MODULE new_schem
 		INSTANCE XLXI_5
 	SUBMODULE new_eof_buffer
 		INSTANCE XLXI_9
-	SUBMODULE new_tx_fifo_control_unit
-		INSTANCE XLXI_10

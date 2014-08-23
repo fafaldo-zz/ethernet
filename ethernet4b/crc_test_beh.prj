@@ -1,0 +1,3 @@
+vhdl work "CRC32.vhd"
+vhdl work "crc_test.vhd"
+vhdl work "MII_schem.vhf"
