@@ -1,0 +1,8 @@
+vhdtdtfi -lib work CU.vhd -prj ethernet -o CU.spl -module CU -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e CU.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU.sym 
+vhdtdtfi -lib work CU.vhd -prj ethernet -o CU.spl -module CU -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e CU.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU.sym 
+vhdtdtfi -lib work CU.vhd -prj ethernet -o CU.spl -module CU -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e CU.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU.sym 
+vhdtdtfi -lib work CU.vhd -prj ethernet -o CU.spl -module CU -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e CU.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU.sym 

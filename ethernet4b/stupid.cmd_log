@@ -1,0 +1,13 @@
+xst -intstyle ise -ifn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/stupid.xst" -ofn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/stupid.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "GenIO - Copy.ucf" -uc "PHY - Copy.ucf" -p xc3s500e-fg320-4 stupid.ngc stupid.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "GenIO - Copy.ucf" -uc "PHY - Copy.ucf" -p xc3s500e-fg320-4 stupid.ngc stupid.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o stupid_map.ncd stupid.ngd stupid.pcf 
+par -w -intstyle ise -ol high -t 1 stupid_map.ncd stupid.ncd stupid.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml stupid.twx stupid.ncd -o stupid.twr stupid.pcf -ucf {GenIO - Copy.ucf} -ucf {PHY - Copy.ucf} 
+bitgen -intstyle ise -f stupid.ut stupid.ncd 
+xst -intstyle ise -ifn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/stupid.xst" -ofn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/stupid.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "GenIO - Copy.ucf" -uc "PHY - Copy.ucf" -p xc3s500e-fg320-4 stupid.ngc stupid.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o stupid_map.ncd stupid.ngd stupid.pcf 
+par -w -intstyle ise -ol high -t 1 stupid_map.ncd stupid.ncd stupid.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml stupid.twx stupid.ncd -o stupid.twr stupid.pcf -ucf {GenIO - Copy.ucf} -ucf {PHY - Copy.ucf} 
+bitgen -intstyle ise -f stupid.ut stupid.ncd 

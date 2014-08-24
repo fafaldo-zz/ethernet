@@ -5,21 +5,16 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">XLXI_2/gap_counter&lt;5&gt;1/LO</arg> has no load.
-</msg>
-
-<msg type="info" file="LIT" num="395" delta="old" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">4</arg> more times for the following (max. 5 shown):
-<arg fmt="%s" index="3">XLXI_2/gap_counter&lt;3&gt;1/LO,
-XLXI_2/gap_counter&lt;7&gt;/LO,
-XLXI_2/gap_counter&lt;4&gt;/LO,
-XLXI_3/RotL</arg>
-To see the details of these <arg fmt="%s" index="4">info</arg> messages, please use the -detail switch.
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">XLXI_4/RotL</arg> has no load.
 </msg>
 
 <msg type="info" file="MapLib" num="562" delta="old" >No environment variables are currently set.
 </msg>
 
 <msg type="info" file="MapLib" num="159" delta="old" >Net Timing constraints on signal <arg fmt="%s" index="1">clk</arg> are pushed forward through input buffer.
+</msg>
+
+<msg type="info" file="LIT" num="244" delta="old" >All of the single ended outputs in this design are using slew rate limited output drivers. The delay on speed critical single ended outputs can be dramatically reduced by designating them as fast outputs.
 </msg>
 
 </messages>

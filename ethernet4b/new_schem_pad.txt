@@ -1,7 +1,7 @@
 Release 14.6 - par P.68d (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Sat Aug 16 21:53:04 2014
+Sat Aug 23 23:25:20 2014
 
 
 INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:
@@ -103,7 +103,7 @@ Pinout by Pin Number:
 |E9        |           |DIFFM    |IO_L15P_0                |UNUSED   |           |0             |          |         |           |         |         |          |           |                |
 |E10       |           |DIFFS    |IO_L11N_0/GCLK5          |UNUSED   |           |0             |          |         |           |         |         |          |           |                |
 |E11       |EOF        |IOB      |IO_L08P_0                |OUTPUT   |LVTTL      |0             |4         |SLOW     |NONE**     |         |         |LOCATED   |NO         |NONE            |
-|E12       |full       |IOB      |IO_L06N_0                |OUTPUT   |LVTTL      |0             |4         |SLOW     |NONE**     |         |         |LOCATED   |NO         |NONE            |
+|E12       |empty      |IOB      |IO_L06N_0                |OUTPUT   |LVTTL      |0             |4         |SLOW     |NONE**     |         |         |LOCATED   |NO         |NONE            |
 |E13       |           |IOB      |IO                       |UNUSED   |           |0             |          |         |           |         |         |          |           |                |
 |E14       |           |         |VCCINT                   |         |           |              |          |         |           |         |1.2      |          |           |                |
 |E15       |           |         |NC                       |         |           |              |          |         |           |         |         |          |           |                |
@@ -121,7 +121,7 @@ Pinout by Pin Number:
 |F9        |           |DIFFS    |IO_L15N_0                |UNUSED   |           |0             |          |         |           |         |         |          |           |                |
 |F10       |           |DIFFMI   |IP_L10P_0                |UNUSED   |           |0             |          |         |           |         |         |          |           |                |
 |F11       |           |DIFFS    |IO_L08N_0                |UNUSED   |           |0             |          |         |           |         |         |          |           |                |
-|F12       |empty      |IOB      |IO_L06P_0                |OUTPUT   |LVTTL      |0             |4         |SLOW     |NONE**     |         |         |LOCATED   |NO         |NONE            |
+|F12       |full       |IOB      |IO_L06P_0                |OUTPUT   |LVTTL      |0             |4         |SLOW     |NONE**     |         |         |LOCATED   |NO         |NONE            |
 |F13       |           |         |VCCINT                   |         |           |              |          |         |           |         |1.2      |          |           |                |
 |F14       |VGA_VS     |IOB      |IO_L21N_1                |OUTPUT   |LVTTL      |1             |8         |FAST     |NONE**     |         |         |LOCATED   |NO         |NONE            |
 |F15       |VGA_HS     |IOB      |IO_L21P_1                |OUTPUT   |LVTTL      |1             |8         |FAST     |NONE**     |         |         |LOCATED   |NO         |NONE            |

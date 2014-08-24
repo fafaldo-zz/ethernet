@@ -43,7 +43,7 @@ end fifo_control_unit;
 
 architecture behavioral of fifo_control_unit is
 
-	signal write_address_counter : std_logic_vector(11 downto 0) := (others=>'0');
+	signal write_address_counter : std_logic_vector(11 downto 0) := "000000000000";
 	signal read_address_counter : std_logic_vector(10 downto 0) := (others=>'0');
   
 	signal empty_i : std_logic;
@@ -82,10 +82,11 @@ begin
 	
 	clkA <= Rx_Clk;
 	clkB <= clk;
-	enB <= '1';
+	enB <= POP;
 	enA <= Rx_DV;
 	diA <= Rx_D;
-	data_out <= doB_latched;
+	--data_out <= doB_latched;
+	data_out <= doB when read_add_simple = '0' else doB(3 downto 0) & doB(7 downto 4);
 	EOF <= EOF_latched(0) or EOF_latched(1);
 	
 	

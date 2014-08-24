@@ -1,1 +1,2 @@
 sch2sym -intstyle ise -family spartan3e -refsym ethernetTX C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ethernetTX.sch C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ethernetTX.sym 
+xst -intstyle ise -ifn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ethernetTX.xst" -ofn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ethernetTX.syr" 

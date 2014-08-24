@@ -1,6 +1,6 @@
 ISim log file
-Running: C:\Users\fafik\Dropbox\infa\git\ethernet\ethernet4b\crc_test_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/crc_test_isim_beh.wdb 
-ISim P.68d (signature 0x8ef4fb42)
+Running: C:\Users\fafik\Dropbox\infa\git\ethernet\ethernet4b\stupid_stupid_sch_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/stupid_stupid_sch_tb_isim_beh.wdb 
+ISim P.68d (signature 0x7708f090)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
 WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.

@@ -1,1 +1,15 @@
 sch2sym -intstyle ise -family spartan3e -refsym ethernetRX C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ethernetRX.sch C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ethernetRX.sym 
+sch2sym -intstyle ise -family spartan3e -refsym ethernetRX C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ethernetRX.sch C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ethernetRX.sym 
+sch2sym -intstyle ise -family spartan3e -refsym ethernetRX C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ethernetRX.sch C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ethernetRX.sym 
+sch2sym -intstyle ise -family spartan3e -refsym ethernetRX C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ethernetRX.sch C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ethernetRX.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym ethernetRX C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ethernetRX.sch C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ethernetRX.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym ethernetRX C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ethernetRX.sch C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ethernetRX.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym ethernetRX C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ethernetRX.sch C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ethernetRX.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym ethernetRX C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ethernetRX.sch C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ethernetRX.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym ethernetRX C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ethernetRX.sch C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ethernetRX.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym ethernetRX C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ethernetRX.sch C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ethernetRX.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym ethernetRX C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ethernetRX.sch C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ethernetRX.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym ethernetRX C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ethernetRX.sch C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ethernetRX.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym ethernetRX C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ethernetRX.sch C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ethernetRX.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym ethernetRX C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ethernetRX.sch C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ethernetRX.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym ethernetRX C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ethernetRX.sch C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ethernetRX.sym 

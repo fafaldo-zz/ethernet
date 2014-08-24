@@ -1,0 +1,10 @@
+[Inputs]
+clk
+start
+EOF
+reset
+=data_in[7:0]=
+[Outputs]
+enable
+POP
+[BiDir]

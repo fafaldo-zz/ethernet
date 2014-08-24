@@ -1,0 +1,22 @@
+vhdtdtfi -lib work MAC_source.vhd -prj ethernet -o MAC_source.spl -module MAC_source -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MAC_source.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MAC_source.sym 
+vhdtdtfi -lib work MAC_source.vhd -prj ethernet -o MAC_source.spl -module MAC_source -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MAC_source.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MAC_source.sym 
+vhdtdtfi -lib work MAC_source.vhd -prj ethernet -o MAC_source.spl -module MAC_source -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MAC_source.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MAC_source.sym 
+vhdtdtfi -lib work MAC_source.vhd -prj ethernet -o MAC_source.spl -module MAC_source -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w MAC_source.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MAC_source.sym 
+vhdtdtfi -lib work MAC_source.vhd -prj ethernet -o MAC_source.spl -module MAC_source -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w MAC_source.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MAC_source.sym 
+vhdtdtfi -lib work MAC_source.vhd -prj ethernet -o MAC_source.spl -module MAC_source -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w MAC_source.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MAC_source.sym 
+vhdtdtfi -lib work MAC_source.vhd -prj ethernet -o MAC_source.spl -module MAC_source -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w MAC_source.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MAC_source.sym 
+vhdtdtfi -lib work MAC_source.vhd -prj ethernet -o MAC_source.spl -module MAC_source -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w MAC_source.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MAC_source.sym 
+vhdtdtfi -lib work MAC_source.vhd -prj ethernet -o MAC_source.spl -module MAC_source -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w MAC_source.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MAC_source.sym 
+vhdtdtfi -lib work MAC_source.vhd -prj ethernet -o MAC_source.spl -module MAC_source -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w MAC_source.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MAC_source.sym 
+vhdtdtfi -lib work MAC_source.vhd -prj ethernet -o MAC_source.spl -module MAC_source -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w MAC_source.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MAC_source.sym 

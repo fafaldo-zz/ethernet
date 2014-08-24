@@ -105,67 +105,66 @@ Slice Utilization Ratio Delta      : 5
 *                          HDL Compilation                              *
 =========================================================================
 Compiling vhdl file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/fifo_control_unit.vhd" in Library work.
-Architecture behavioral of Entity fifo_control_unit is up to date.
+Entity <fifo_control_unit> compiled.
+Entity <fifo_control_unit> (Architecture <behavioral>) compiled.
 Compiling vhdl file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_frame_buffer.vhd" in Library work.
-Architecture behavioral of Entity new_frame_buffer is up to date.
+Entity <new_frame_buffer> compiled.
+Entity <new_frame_buffer> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_eof_buffer.vhd" in Library work.
+Entity <new_eof_buffer> compiled.
+Entity <new_eof_buffer> (Architecture <behavioral>) compiled.
 Compiling vhdl file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/vga_display.vhd" in Library work.
 Architecture behavioral of Entity vga_display is up to date.
-Compiling vhdl file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_eof_buffer.vhd" in Library work.
-Architecture behavioral of Entity new_eof_buffer is up to date.
-Compiling vhdl file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_tx_fifo_control_unit.vhd" in Library work.
-Entity <new_tx_fifo_control_unit> compiled.
-Entity <new_tx_fifo_control_unit> (Architecture <behavioral>) compiled.
 Compiling vhdl file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MII_test3.vhf" in Library work.
 Architecture behavioral of Entity mii_test3 is up to date.
 Compiling vhdl file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MII_schem.vhf" in Library work.
 Architecture behavioral of Entity mii_schem is up to date.
 Compiling vhdl file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" in Library work.
+Entity <ethernetrx_muser_new_schem> compiled.
+Entity <ethernetrx_muser_new_schem> (Architecture <behavioral>) compiled.
 Entity <new_schem> compiled.
 Entity <new_schem> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ethernetRX.vhf" in Library work.
+Entity <ethernetrx> compiled.
+Entity <ethernetrx> (Architecture <behavioral>) compiled.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
 Analyzing hierarchy for entity <new_schem> in library <work> (architecture <behavioral>).
 
+Analyzing hierarchy for entity <vga_display> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ethernetRX_MUSER_new_schem> in library <work> (architecture <behavioral>).
+
 Analyzing hierarchy for entity <fifo_control_unit> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <new_frame_buffer> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <vga_display> in library <work> (architecture <behavioral>).
-
 Analyzing hierarchy for entity <new_eof_buffer> in library <work> (architecture <behavioral>).
-
-Analyzing hierarchy for entity <new_tx_fifo_control_unit> in library <work> (architecture <behavioral>).
 
 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <new_schem> in library <work> (Architecture <behavioral>).
-WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 221: Unconnected output port 'test' of component 'fifo_control_unit'.
-WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 248: Unconnected output port 'DOA' of component 'new_frame_buffer'.
-WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 248: Unconnected output port 'DOPB' of component 'new_frame_buffer'.
-WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 266: Unconnected output port 'RotL' of component 'RotaryEnc'.
-WARNING:Xst:2211 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 266: Instantiating black box module <RotaryEnc>.
-WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 282: Unconnected output port 'Busy' of component 'VGAtxt48x20'.
-WARNING:Xst:2211 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 282: Instantiating black box module <VGAtxt48x20>.
-WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 310: Unconnected output port 'DOA' of component 'new_eof_buffer'.
-WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 326: Unconnected output port 'clkA' of component 'new_tx_fifo_control_unit'.
-WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 326: Unconnected output port 'clkB' of component 'new_tx_fifo_control_unit'.
-WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 326: Unconnected output port 'enA' of component 'new_tx_fifo_control_unit'.
-WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 326: Unconnected output port 'enB' of component 'new_tx_fifo_control_unit'.
-WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 326: Unconnected output port 'weB' of component 'new_tx_fifo_control_unit'.
-WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 326: Unconnected output port 'empty' of component 'new_tx_fifo_control_unit'.
-WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 326: Unconnected output port 'full' of component 'new_tx_fifo_control_unit'.
-WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 326: Unconnected output port 'Tx_En' of component 'new_tx_fifo_control_unit'.
-WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 326: Unconnected output port 'busy' of component 'new_tx_fifo_control_unit'.
-WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 326: Unconnected output port 'addrA' of component 'new_tx_fifo_control_unit'.
-WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 326: Unconnected output port 'addrB' of component 'new_tx_fifo_control_unit'.
-WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 326: Unconnected output port 'diB' of component 'new_tx_fifo_control_unit'.
-WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 326: Unconnected output port 'Tx_D' of component 'new_tx_fifo_control_unit'.
-WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 326: Unconnected output port 'test' of component 'new_tx_fifo_control_unit'.
+WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 297: Unconnected output port 'RotL' of component 'RotaryEnc'.
+WARNING:Xst:2211 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 297: Instantiating black box module <RotaryEnc>.
+WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 313: Unconnected output port 'Busy' of component 'VGAtxt48x20'.
+WARNING:Xst:2211 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 313: Instantiating black box module <VGAtxt48x20>.
 Entity <new_schem> analyzed. Unit <new_schem> generated.
+
+Analyzing Entity <vga_display> in library <work> (Architecture <behavioral>).
+INFO:Xst:1561 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/vga_display.vhd" line 105: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/vga_display.vhd" line 144: Mux is complete : default of case is discarded
+Entity <vga_display> analyzed. Unit <vga_display> generated.
+
+Analyzing Entity <ethernetRX_MUSER_new_schem> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 137: Unconnected output port 'test' of component 'fifo_control_unit'.
+WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 164: Unconnected output port 'DOA' of component 'new_frame_buffer'.
+WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 164: Unconnected output port 'DOPB' of component 'new_frame_buffer'.
+WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 182: Unconnected output port 'DOA' of component 'new_eof_buffer'.
+Entity <ethernetRX_MUSER_new_schem> analyzed. Unit <ethernetRX_MUSER_new_schem> generated.
 
 Analyzing Entity <fifo_control_unit> in library <work> (Architecture <behavioral>).
 Entity <fifo_control_unit> analyzed. Unit <fifo_control_unit> generated.
@@ -179,7 +178,7 @@ Analyzing Entity <new_frame_buffer> in library <work> (Architecture <behavioral>
     Set user-defined property "INITP_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
     Set user-defined property "INITP_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
     Set user-defined property "INITP_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
-    Set user-defined property "INIT_00 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_00 =  00000000000000000000000000000000000000000000000000000000333333D5" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
     Set user-defined property "INIT_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
     Set user-defined property "INIT_02 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
     Set user-defined property "INIT_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
@@ -252,13 +251,8 @@ Analyzing Entity <new_frame_buffer> in library <work> (Architecture <behavioral>
     Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
 Entity <new_frame_buffer> analyzed. Unit <new_frame_buffer> generated.
 
-Analyzing Entity <vga_display> in library <work> (Architecture <behavioral>).
-INFO:Xst:1561 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/vga_display.vhd" line 105: Mux is complete : default of case is discarded
-INFO:Xst:1561 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/vga_display.vhd" line 144: Mux is complete : default of case is discarded
-Entity <vga_display> analyzed. Unit <vga_display> generated.
-
 Analyzing Entity <new_eof_buffer> in library <work> (Architecture <behavioral>).
-    Set user-defined property "INIT_00 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_00 =  0000000000000000000000000000000000000000000000000000000000010000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
     Set user-defined property "INIT_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
     Set user-defined property "INIT_02 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
     Set user-defined property "INIT_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
@@ -331,53 +325,12 @@ Analyzing Entity <new_eof_buffer> in library <work> (Architecture <behavioral>).
     Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
 Entity <new_eof_buffer> analyzed. Unit <new_eof_buffer> generated.
 
-Analyzing Entity <new_tx_fifo_control_unit> in library <work> (Architecture <behavioral>).
-WARNING:Xst:819 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_tx_fifo_control_unit.vhd" line 95: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-   <start>, <empty_i>, <gap_counter>
-WARNING:Xst:819 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_tx_fifo_control_unit.vhd" line 116: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-   <state>
-WARNING:Xst:819 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_tx_fifo_control_unit.vhd" line 125: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-   <state>
-WARNING:Xst:819 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_tx_fifo_control_unit.vhd" line 136: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-   <state>
-Entity <new_tx_fifo_control_unit> analyzed. Unit <new_tx_fifo_control_unit> generated.
-
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Performing bidirectional port resolution...
-
-Synthesizing Unit <fifo_control_unit>.
-    Related source file is "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/fifo_control_unit.vhd".
-WARNING:Xst:1305 - Output <test> is never assigned. Tied to value 00000000.
-WARNING:Xst:646 - Signal <full_i> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <empty_i> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-    Found 1-bit register for signal <empty>.
-    Found 1-bit register for signal <weA>.
-    Found 1-bit register for signal <full>.
-    Found 8-bit register for signal <doB_latched>.
-    Found 11-bit comparator equal for signal <empty$cmp_eq0000> created at line 189.
-    Found 2-bit register for signal <EOF_latched>.
-    Found 1-bit register for signal <frame_started>.
-    Found 11-bit comparator equal for signal <full$cmp_eq0000> created at line 176.
-    Found 1-bit register for signal <read_add_simple>.
-    Found 11-bit register for signal <read_address_counter>.
-    Found 11-bit xor2 for signal <read_address_counter$xor0001> created at line 282.
-    Found 11-bit register for signal <read_address_counter_minus_one>.
-    Found 11-bit xor2 for signal <read_address_counter_minus_one$xor0001> created at line 349.
-    Found 11-bit comparator not equal for signal <weA$cmp_ne0000> created at line 130.
-    Found 1-bit register for signal <write_add_simple>.
-    Found 12-bit register for signal <write_address_counter>.
-    Found 12-bit xor2 for signal <write_address_counter$xor0001> created at line 240.
-    Found 12-bit register for signal <write_address_counter_minus_one>.
-    Found 12-bit xor2 for signal <write_address_counter_minus_one$xor0001> created at line 316.
-    Summary:
-	inferred  62 D-type flip-flop(s).
-	inferred   3 Comparator(s).
-Unit <fifo_control_unit> synthesized.
-
 
 Synthesizing Unit <vga_display>.
     Related source file is "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/vga_display.vhd".
@@ -408,49 +361,34 @@ INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and 
 Unit <vga_display> synthesized.
 
 
-Synthesizing Unit <new_tx_fifo_control_unit>.
-    Related source file is "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_tx_fifo_control_unit.vhd".
-WARNING:Xst:647 - Input <EOF> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Synthesizing Unit <fifo_control_unit>.
+    Related source file is "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/fifo_control_unit.vhd".
 WARNING:Xst:1305 - Output <test> is never assigned. Tied to value 00000000.
-WARNING:Xst:653 - Signal <reset> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:646 - Signal <full_i> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-    Register <empty_i> equivalent to <empty> has been removed
-    Found finite state machine <FSM_1> for signal <state>.
-    -----------------------------------------------------------------------
-    | States             | 3                                              |
-    | Transitions        | 6                                              |
-    | Inputs             | 3                                              |
-    | Outputs            | 3                                              |
-    | Clock              | clk                       (rising_edge)        |
-    | Reset              | reset                     (positive)           |
-    | Reset type         | synchronous                                    |
-    | Reset State        | idle                                           |
-    | Power Up State     | idle                                           |
-    | Encoding           | automatic                                      |
-    | Implementation     | LUT                                            |
-    -----------------------------------------------------------------------
+WARNING:Xst:646 - Signal <empty_i> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <doB_latched> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
     Found 1-bit register for signal <empty>.
-    Found 1-bit register for signal <weB>.
+    Found 1-bit register for signal <weA>.
     Found 1-bit register for signal <full>.
-    Found 11-bit comparator equal for signal <empty$cmp_eq0000> created at line 184.
-    Found 11-bit comparator equal for signal <full$cmp_eq0000> created at line 171.
-    Found 8-bit adder for signal <gap_counter$addsub0000> created at line 139.
+    Found 11-bit comparator equal for signal <empty$cmp_eq0000> created at line 190.
+    Found 2-bit register for signal <EOF_latched>.
+    Found 1-bit register for signal <frame_started>.
+    Found 11-bit comparator equal for signal <full$cmp_eq0000> created at line 177.
     Found 1-bit register for signal <read_add_simple>.
-    Found 12-bit register for signal <read_address_counter>.
-    Found 12-bit xor2 for signal <read_address_counter$xor0001> created at line 275.
-    Found 12-bit register for signal <read_address_counter_minus_two>.
-    Found 12-bit xor2 for signal <read_address_counter_minus_two$xor0001> created at line 310.
-    Found 9-bit comparator greater for signal <state$cmp_gt0000> created at line 108.
-    Found 11-bit comparator not equal for signal <weB$cmp_ne0000> created at line 153.
+    Found 11-bit register for signal <read_address_counter>.
+    Found 11-bit xor2 for signal <read_address_counter$xor0001> created at line 283.
+    Found 11-bit register for signal <read_address_counter_minus_one>.
+    Found 11-bit xor2 for signal <read_address_counter_minus_one$xor0001> created at line 350.
+    Found 11-bit comparator not equal for signal <weA$cmp_ne0000> created at line 131.
     Found 1-bit register for signal <write_add_simple>.
-    Found 11-bit register for signal <write_address_counter>.
-    Found 11-bit xor2 for signal <write_address_counter$xor0001> created at line 229.
+    Found 12-bit register for signal <write_address_counter>.
+    Found 12-bit xor2 for signal <write_address_counter$xor0001> created at line 241.
+    Found 12-bit register for signal <write_address_counter_minus_one>.
+    Found 12-bit xor2 for signal <write_address_counter_minus_one$xor0001> created at line 317.
     Summary:
-	inferred   1 Finite State Machine(s).
-	inferred  40 D-type flip-flop(s).
-	inferred   1 Adder/Subtractor(s).
-	inferred   4 Comparator(s).
-Unit <new_tx_fifo_control_unit> synthesized.
+	inferred  54 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+Unit <fifo_control_unit> synthesized.
 
 
 Synthesizing Unit <new_frame_buffer>.
@@ -463,12 +401,22 @@ Synthesizing Unit <new_eof_buffer>.
 Unit <new_eof_buffer> synthesized.
 
 
+Synthesizing Unit <ethernetRX_MUSER_new_schem>.
+    Related source file is "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf".
+WARNING:Xst:653 - Signal <XLXI_3_WEB_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_3_SSRB_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_3_SSRA_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_3_DIB_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00.
+WARNING:Xst:653 - Signal <XLXI_2_WEB_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_2_SSRB_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_2_SSRA_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_2_DIPB_openSignal<0>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_2_DIB_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
+Unit <ethernetRX_MUSER_new_schem> synthesized.
+
+
 Synthesizing Unit <new_schem>.
     Related source file is "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf".
-WARNING:Xst:653 - Signal <XLXI_9_WEB_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
-WARNING:Xst:653 - Signal <XLXI_9_SSRB_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
-WARNING:Xst:653 - Signal <XLXI_9_SSRA_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
-WARNING:Xst:653 - Signal <XLXI_9_DIB_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00.
 WARNING:Xst:653 - Signal <XLXI_5_ScrollEn_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:653 - Signal <XLXI_5_ScrollClear_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:653 - Signal <XLXI_5_NewLine_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
@@ -476,18 +424,6 @@ WARNING:Xst:653 - Signal <XLXI_5_Home_openSignal> is used but never assigned. Th
 WARNING:Xst:653 - Signal <XLXI_5_Goto00_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:653 - Signal <XLXI_5_CursorOn_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:653 - Signal <XLXI_4_reset_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
-WARNING:Xst:653 - Signal <XLXI_2_WEB_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
-WARNING:Xst:653 - Signal <XLXI_2_SSRB_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
-WARNING:Xst:653 - Signal <XLXI_2_SSRA_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
-WARNING:Xst:653 - Signal <XLXI_2_DIPB_openSignal<0>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
-WARNING:Xst:653 - Signal <XLXI_2_DIB_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
-WARNING:Xst:653 - Signal <XLXI_10_start_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
-WARNING:Xst:653 - Signal <XLXI_10_doA_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
-WARNING:Xst:653 - Signal <XLXI_10_data_in_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
-WARNING:Xst:653 - Signal <XLXI_10_clk_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
-WARNING:Xst:653 - Signal <XLXI_10_Tx_Clk_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
-WARNING:Xst:653 - Signal <XLXI_10_PUSH_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
-WARNING:Xst:653 - Signal <XLXI_10_EOF_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 Unit <new_schem> synthesized.
 
 
@@ -495,24 +431,20 @@ Unit <new_schem> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 1
- 8-bit adder                                           : 1
-# Registers                                            : 20
- 1-bit register                                        : 11
- 11-bit register                                       : 3
- 12-bit register                                       : 4
+# Registers                                            : 11
+ 1-bit register                                        : 6
+ 11-bit register                                       : 2
+ 12-bit register                                       : 2
  2-bit register                                        : 1
- 8-bit register                                        : 1
 # Latches                                              : 3
  1-bit latch                                           : 2
  8-bit latch                                           : 1
-# Comparators                                          : 7
- 11-bit comparator equal                               : 4
- 11-bit comparator not equal                           : 2
- 9-bit comparator greater                              : 1
-# Xors                                                 : 7
- 11-bit xor2                                           : 3
- 12-bit xor2                                           : 4
+# Comparators                                          : 3
+ 11-bit comparator equal                               : 2
+ 11-bit comparator not equal                           : 1
+# Xors                                                 : 4
+ 11-bit xor2                                           : 2
+ 12-bit xor2                                           : 2
 
 =========================================================================
 
@@ -520,15 +452,6 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-Analyzing FSM <FSM_1> for best encoding.
-Optimizing FSM <XLXI_10/state/FSM> on signal <state[1:2]> with user encoding.
---------------------------
- State        | Encoding
---------------------------
- idle         | 00
- transmitting | 01
- idle_gap     | 10
---------------------------
 Analyzing FSM <FSM_0> for best encoding.
 Optimizing FSM <XLXI_4/state/FSM> on signal <state[1:5]> with one-hot encoding.
 --------------------------------
@@ -547,29 +470,24 @@ Reading core <VGAtxt48x20_2.ngc>.
 Loading core <RotaryEnc> for timing and area information for instance <XLXI_3>.
 Loading core <VGAtxt48x20_2> for timing and area information for instance <XLXI_146>.
 Loading core <VGAtxt48x20> for timing and area information for instance <XLXI_5>.
-WARNING:Xst:1290 - Hierarchical block <XLXI_10> is unconnected in block <new_schem>.
-   It will be removed from the design.
 WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <7>. This FF/Latch will be trimmed during the optimization process.
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# FSMs                                                 : 2
-# Adders/Subtractors                                   : 1
- 8-bit adder                                           : 1
-# Registers                                            : 102
- Flip-Flops                                            : 102
+# FSMs                                                 : 1
+# Registers                                            : 54
+ Flip-Flops                                            : 54
 # Latches                                              : 3
  1-bit latch                                           : 2
  8-bit latch                                           : 1
-# Comparators                                          : 7
- 11-bit comparator equal                               : 4
- 11-bit comparator not equal                           : 2
- 9-bit comparator greater                              : 1
-# Xors                                                 : 7
- 11-bit xor2                                           : 3
- 12-bit xor2                                           : 4
+# Comparators                                          : 3
+ 11-bit comparator equal                               : 2
+ 11-bit comparator not equal                           : 1
+# Xors                                                 : 4
+ 11-bit xor2                                           : 2
+ 12-bit xor2                                           : 2
 
 =========================================================================
 
@@ -577,50 +495,6 @@ Macro Statistics
 *                         Low Level Synthesis                           *
 =========================================================================
 WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_3>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1426 - The value init of the FF/Latch weB hinder the constant cleaning in the block new_tx_fifo_control_unit.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1293 - FF/Latch <write_address_counter_7> has a constant value of 0 in block <new_tx_fifo_control_unit>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <write_address_counter_8> has a constant value of 0 in block <new_tx_fifo_control_unit>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <write_address_counter_9> has a constant value of 0 in block <new_tx_fifo_control_unit>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <write_address_counter_10> has a constant value of 0 in block <new_tx_fifo_control_unit>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <read_add_simple> has a constant value of 1 in block <new_tx_fifo_control_unit>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <read_address_counter_minus_two_0> has a constant value of 1 in block <new_tx_fifo_control_unit>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <read_address_counter_minus_two_1> has a constant value of 0 in block <new_tx_fifo_control_unit>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <read_address_counter_minus_two_2> has a constant value of 0 in block <new_tx_fifo_control_unit>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <read_address_counter_minus_two_3> has a constant value of 0 in block <new_tx_fifo_control_unit>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <read_address_counter_minus_two_4> has a constant value of 0 in block <new_tx_fifo_control_unit>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <read_address_counter_minus_two_5> has a constant value of 0 in block <new_tx_fifo_control_unit>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <read_address_counter_minus_two_6> has a constant value of 0 in block <new_tx_fifo_control_unit>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <read_address_counter_minus_two_7> has a constant value of 0 in block <new_tx_fifo_control_unit>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <read_address_counter_minus_two_8> has a constant value of 0 in block <new_tx_fifo_control_unit>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <read_address_counter_minus_two_9> has a constant value of 0 in block <new_tx_fifo_control_unit>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <read_address_counter_minus_two_10> has a constant value of 0 in block <new_tx_fifo_control_unit>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <read_address_counter_minus_two_11> has a constant value of 1 in block <new_tx_fifo_control_unit>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <full> (without init value) has a constant value of 0 in block <new_tx_fifo_control_unit>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <empty> (without init value) has a constant value of 0 in block <new_tx_fifo_control_unit>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <state_FSM_FFd1> has a constant value of 0 in block <new_tx_fifo_control_unit>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <state_FSM_FFd2> has a constant value of 0 in block <new_tx_fifo_control_unit>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <read_address_counter_0> has a constant value of 0 in block <new_tx_fifo_control_unit>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <read_address_counter_1> has a constant value of 0 in block <new_tx_fifo_control_unit>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <read_address_counter_2> has a constant value of 0 in block <new_tx_fifo_control_unit>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <read_address_counter_3> has a constant value of 0 in block <new_tx_fifo_control_unit>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <read_address_counter_4> has a constant value of 0 in block <new_tx_fifo_control_unit>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <read_address_counter_5> has a constant value of 0 in block <new_tx_fifo_control_unit>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <read_address_counter_6> has a constant value of 0 in block <new_tx_fifo_control_unit>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <read_address_counter_7> has a constant value of 0 in block <new_tx_fifo_control_unit>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <read_address_counter_8> has a constant value of 0 in block <new_tx_fifo_control_unit>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <read_address_counter_9> has a constant value of 0 in block <new_tx_fifo_control_unit>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <read_address_counter_10> has a constant value of 0 in block <new_tx_fifo_control_unit>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <read_address_counter_11> has a constant value of 0 in block <new_tx_fifo_control_unit>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <write_add_simple> has a constant value of 1 in block <new_tx_fifo_control_unit>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <weB> (without init value) has a constant value of 0 in block <new_tx_fifo_control_unit>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <write_address_counter_0> has a constant value of 0 in block <new_tx_fifo_control_unit>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <write_address_counter_1> has a constant value of 0 in block <new_tx_fifo_control_unit>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <write_address_counter_2> has a constant value of 0 in block <new_tx_fifo_control_unit>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <write_address_counter_3> has a constant value of 0 in block <new_tx_fifo_control_unit>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <write_address_counter_4> has a constant value of 0 in block <new_tx_fifo_control_unit>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <write_address_counter_5> has a constant value of 0 in block <new_tx_fifo_control_unit>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <write_address_counter_6> has a constant value of 0 in block <new_tx_fifo_control_unit>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <new_schem> ...
 
@@ -639,8 +513,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 67
- Flip-Flops                                            : 67
+# Registers                                            : 59
+ Flip-Flops                                            : 59
 
 =========================================================================
 
@@ -677,25 +551,26 @@ Cell Usage :
 #      GND                         : 4
 #      INV                         : 14
 #      LUT1                        : 43
-#      LUT2                        : 51
+#      LUT2                        : 54
+#      LUT2_D                      : 1
 #      LUT2_L                      : 5
-#      LUT3                        : 65
-#      LUT3_D                      : 6
-#      LUT3_L                      : 8
-#      LUT4                        : 149
-#      LUT4_D                      : 10
+#      LUT3                        : 59
+#      LUT3_D                      : 3
+#      LUT3_L                      : 10
+#      LUT4                        : 154
+#      LUT4_D                      : 14
 #      LUT4_L                      : 13
 #      MUXCY                       : 65
-#      MUXF5                       : 31
+#      MUXF5                       : 25
 #      MUXF5_L                     : 2
 #      MUXF6                       : 5
 #      OR2                         : 5
 #      VCC                         : 4
 #      XOR2                        : 1
 #      XORCY                       : 51
-# FlipFlops/Latches                : 180
+# FlipFlops/Latches                : 172
 #      FD                          : 40
-#      FDE                         : 71
+#      FDE                         : 63
 #      FDR                         : 21
 #      FDRE                        : 37
 #      FDS                         : 1
@@ -719,10 +594,10 @@ Device utilization summary:
 
 Selected Device : 3s500efg320-4 
 
- Number of Slices:                      211  out of   4656     4%  
- Number of Slice Flip Flops:            180  out of   9312     1%  
- Number of 4 input LUTs:                369  out of   9312     3%  
-    Number used as logic:               364
+ Number of Slices:                      212  out of   4656     4%  
+ Number of Slice Flip Flops:            172  out of   9312     1%  
+ Number of 4 input LUTs:                375  out of   9312     4%  
+    Number used as logic:               370
     Number used as Shift registers:       5
  Number of IOs:                          17
  Number of bonded IOBs:                  17  out of    232     7%  
@@ -750,7 +625,7 @@ Clock Information:
 -------------------------------------------------------+-------------------------------------------------------------------------------------------------+-------+
 Clock Signal                                           | Clock buffer(FF name)                                                                           | Load  |
 -------------------------------------------------------+-------------------------------------------------------------------------------------------------+-------+
-CLK                                                    | BUFGP                                                                                           | 153   |
+CLK                                                    | BUFGP                                                                                           | 145   |
 XLXI_5/XLXI_146/BU2/dbiterr                            | NONE(XLXI_5/XLXI_146/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v2_init.ram/dp9x9.ram)| 1     |
 E_RX_CLK                                               | BUFGP                                                                                           | 30    |
 XLXI_4/ram_enable_or0000(XLXI_4/ram_enable_or0000_f5:O)| NONE(*)(XLXI_4/char_6)                                                                          | 8     |
@@ -769,7 +644,7 @@ Timing Summary:
 Speed Grade: -4
 
    Minimum period: 9.574ns (Maximum Frequency: 104.450MHz)
-   Minimum input arrival time before clock: 4.499ns
+   Minimum input arrival time before clock: 4.403ns
    Maximum output required time after clock: 5.582ns
    Maximum combinational path delay: No path found
 
@@ -780,7 +655,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
   Clock period: 9.574ns (frequency: 104.450MHz)
-  Total number of paths / destination ports: 3054 / 336
+  Total number of paths / destination ports: 3030 / 328
 -------------------------------------------------------------------------
 Delay:               9.574ns (Levels of Logic = 10)
   Source:            XLXI_5/XLXI_146/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v2_init.ram/dp9x9.ram (RAM)
@@ -813,29 +688,30 @@ Delay:               9.574ns (Levels of Logic = 10)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'E_RX_CLK'
-  Clock period: 6.941ns (frequency: 144.071MHz)
-  Total number of paths / destination ports: 867 / 80
+  Clock period: 7.767ns (frequency: 128.750MHz)
+  Total number of paths / destination ports: 872 / 80
 -------------------------------------------------------------------------
-Delay:               6.941ns (Levels of Logic = 5)
-  Source:            XLXI_1/write_address_counter_6 (FF)
-  Destination:       XLXI_1/write_address_counter_10 (FF)
+Delay:               7.767ns (Levels of Logic = 6)
+  Source:            XLXI_10/XLXI_1/write_add_simple (FF)
+  Destination:       XLXI_10/XLXI_1/write_address_counter_11 (FF)
   Source Clock:      E_RX_CLK rising
   Destination Clock: E_RX_CLK rising
 
-  Data Path: XLXI_1/write_address_counter_6 to XLXI_1/write_address_counter_10
+  Data Path: XLXI_10/XLXI_1/write_add_simple to XLXI_10/XLXI_1/write_address_counter_11
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q             10   0.591   1.057  XLXI_1/write_address_counter_6 (XLXI_1/write_address_counter_6)
-     LUT3_D:I0->LO         1   0.704   0.104  XLXI_1/write_address_counter_mux0001<10>31 (N68)
-     LUT4:I3->O            1   0.704   0.424  XLXI_1/weA_cmp_eq00001_SW0 (N33)
-     LUT4_D:I3->O          2   0.704   0.482  XLXI_1/weA_cmp_eq00001 (XLXI_1/N35)
-     LUT4_D:I2->O          1   0.704   0.455  XLXI_1/write_add_temp_or00001 (XLXI_1/write_add_temp<11>)
-     LUT4:I2->O            1   0.704   0.000  XLXI_1/write_address_counter_mux0001<10>74 (XLXI_1/write_address_counter_mux0001<10>)
-     FDE:D                     0.308          XLXI_1/write_address_counter_10
+     FDE:C->Q             13   0.591   1.062  XLXI_10/XLXI_1/write_add_simple (XLXI_10/XLXI_1/write_add_simple)
+     LUT2_D:I1->O          1   0.704   0.424  XLXI_10/XLXI_1/write_address_counter_mux0001<2>21 (XLXI_10/XLXI_1/write_address_counter_mux0001<2>_bdd0)
+     LUT4_D:I3->LO         1   0.704   0.179  XLXI_10/XLXI_1/write_address_counter_mux0001<11>2 (N91)
+     LUT2:I1->O            2   0.704   0.451  XLXI_10/XLXI_1/write_address_counter_mux0001<10>111 (XLXI_10/XLXI_1/N27)
+     LUT4_D:I3->LO         1   0.704   0.104  XLXI_10/XLXI_1/write_address_counter_mux0001<10>121 (N90)
+     LUT4:I3->O            1   0.704   0.424  XLXI_10/XLXI_1/write_address_counter_mux0001<11>_SW0 (N45)
+     LUT4:I3->O            1   0.704   0.000  XLXI_10/XLXI_1/write_address_counter_mux0001<11> (XLXI_10/XLXI_1/write_address_counter_mux0001<11>)
+     FDE:D                     0.308          XLXI_10/XLXI_1/write_address_counter_11
     ----------------------------------------
-    Total                      6.941ns (4.419ns logic, 2.522ns route)
-                                       (63.7% logic, 36.3% route)
+    Total                      7.767ns (5.123ns logic, 2.644ns route)
+                                       (66.0% logic, 34.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
@@ -861,37 +737,37 @@ Offset:              2.059ns (Levels of Logic = 2)
 Timing constraint: Default OFFSET IN BEFORE for Clock 'E_RX_CLK'
   Total number of paths / destination ports: 33 / 33
 -------------------------------------------------------------------------
-Offset:              4.499ns (Levels of Logic = 2)
+Offset:              4.403ns (Levels of Logic = 2)
   Source:            E_RX_DV (PAD)
-  Destination:       XLXI_1/write_address_counter_11 (FF)
+  Destination:       XLXI_10/XLXI_1/write_address_counter_11 (FF)
   Destination Clock: E_RX_CLK rising
 
-  Data Path: E_RX_DV to XLXI_1/write_address_counter_11
+  Data Path: E_RX_DV to XLXI_10/XLXI_1/write_address_counter_11
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             4   1.218   0.762  E_RX_DV_IBUF (E_RX_DV_IBUF)
-     LUT4:I0->O           25   0.704   1.260  XLXI_1/write_add_simple_not000256 (XLXI_1/write_add_simple_not0002)
-     FDE:CE                    0.555          XLXI_1/write_add_simple
+     IBUF:I->O             4   1.218   0.666  E_RX_DV_IBUF (E_RX_DV_IBUF)
+     LUT4:I1->O           25   0.704   1.260  XLXI_10/XLXI_1/write_add_simple_not0002 (XLXI_10/XLXI_1/write_add_simple_not0002)
+     FDE:CE                    0.555          XLXI_10/XLXI_1/write_add_simple
     ----------------------------------------
-    Total                      4.499ns (2.477ns logic, 2.022ns route)
-                                       (55.1% logic, 44.9% route)
+    Total                      4.403ns (2.477ns logic, 1.926ns route)
+                                       (56.3% logic, 43.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
   Total number of paths / destination ports: 8 / 7
 -------------------------------------------------------------------------
 Offset:              5.582ns (Levels of Logic = 2)
-  Source:            XLXI_1/EOF_latched_0 (FF)
+  Source:            XLXI_10/XLXI_1/EOF_latched_0 (FF)
   Destination:       EOF (PAD)
   Source Clock:      CLK rising
 
-  Data Path: XLXI_1/EOF_latched_0 to EOF
+  Data Path: XLXI_10/XLXI_1/EOF_latched_0 to EOF
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              1   0.591   0.595  XLXI_1/EOF_latched_0 (XLXI_1/EOF_latched_0)
-     LUT2:I0->O            1   0.704   0.420  XLXI_1/EOF1 (EOF_OBUF)
+     FDE:C->Q              1   0.591   0.595  XLXI_10/XLXI_1/EOF_latched_0 (XLXI_10/XLXI_1/EOF_latched_0)
+     LUT2:I0->O            1   0.704   0.420  XLXI_10/XLXI_1/EOF1 (EOF_OBUF)
      OBUF:I->O                 3.272          EOF_OBUF (EOF)
     ----------------------------------------
     Total                      5.582ns (4.567ns logic, 1.015ns route)
@@ -902,15 +778,15 @@ Timing constraint: Default OFFSET OUT AFTER for Clock 'E_RX_CLK'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
 Offset:              4.283ns (Levels of Logic = 1)
-  Source:            XLXI_1/full (FF)
+  Source:            XLXI_10/XLXI_1/full (FF)
   Destination:       full (PAD)
   Source Clock:      E_RX_CLK rising
 
-  Data Path: XLXI_1/full to full
+  Data Path: XLXI_10/XLXI_1/full to full
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              1   0.591   0.420  XLXI_1/full (XLXI_1/full)
+     FDR:C->Q              1   0.591   0.420  XLXI_10/XLXI_1/full (XLXI_10/XLXI_1/full)
      OBUF:I->O                 3.272          full_OBUF (full)
     ----------------------------------------
     Total                      4.283ns (3.863ns logic, 0.420ns route)
@@ -920,13 +796,13 @@ Offset:              4.283ns (Levels of Logic = 1)
 
 
 Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 8.93 secs
+Total CPU time to Xst completion: 9.76 secs
  
 --> 
 
-Total memory usage is 295400 kilobytes
+Total memory usage is 288616 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  106 (   0 filtered)
+Number of warnings :   34 (   0 filtered)
 Number of infos    :    8 (   0 filtered)
 

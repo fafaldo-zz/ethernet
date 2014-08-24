@@ -30,12 +30,8 @@
         <signal name="VGA_R" />
         <signal name="XLXN_33" />
         <signal name="E_TX_EN" />
-        <signal name="XLXN_34(7:0)" />
-        <signal name="XLXN_36(3:0)" />
         <signal name="E_TXD(3:0)" />
-        <signal name="XLXN_38(7:0)" />
         <signal name="test(7:0)" />
-        <signal name="XLXN_40(3:0)" />
         <port polarity="Input" name="clk" />
         <port polarity="Input" name="E_TX_CLK" />
         <port polarity="Input" name="ROT_A" />

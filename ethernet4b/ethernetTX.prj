@@ -1,0 +1,5 @@
+vhdl work "new_tx_frame_buffer.vhd"
+vhdl work "new_tx_fifo_control_unit.vhd"
+vhdl work "ethernetTX.vhf"
+vhdl work "MII_schem.vhf"
+vhdl work "MII_test3.vhf"

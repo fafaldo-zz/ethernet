@@ -9,7 +9,7 @@ Target Device  : xc3s500e
 Target Package : fg320
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Sat Aug 16 21:52:50 2014
+Mapped Date    : Sat Aug 23 23:24:58 2014
 
 Design Summary
 --------------
@@ -39,9 +39,9 @@ Logic Distribution:
 
 Average Fanout of Non-Clock Nets:                3.48
 
-Peak Memory Usage:  321 MB
-Total REAL time to MAP completion:  2 secs 
-Total CPU time to MAP completion:   1 secs 
+Peak Memory Usage:  320 MB
+Total REAL time to MAP completion:  8 secs 
+Total CPU time to MAP completion:   2 secs 
 
 NOTES:
 
@@ -146,6 +146,7 @@ Unused block "XLXI_5/XLXI_146/VCC" (ONE) removed.
 
 Optimized Block(s):
 TYPE 		BLOCK
+VCC 		XLXI_10/XLXI_4
 GND 		XLXI_3/XST_GND
 VCC 		XLXI_3/XST_VCC
 LUT3 		XLXI_5/I_CursorCnt/ColCnt_or0000_SW0
@@ -189,7 +190,6 @@ GND 		XLXI_5/XLXI_141
 GND 		XLXI_5/XLXI_146/BU2/XST_GND
 VCC 		XLXI_5/XLXI_146/BU2/XST_VCC
 GND 		XST_GND
-VCC 		XST_VCC
 
 To enable printing of redundant blocks removed and signals merged, set the
 detailed map report option and rerun map.

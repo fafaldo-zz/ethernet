@@ -5,209 +5,202 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/tx_schem.vhf</arg>&quot; line <arg fmt="%d" index="2">167</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">DOB</arg>&apos; of component &apos;<arg fmt="%s" index="4">new_tx_frame_buffer</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/stupid.vhf</arg>&quot; line <arg fmt="%d" index="2">268</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">empty</arg>&apos; of component &apos;<arg fmt="%s" index="4">ethernetRX_MUSER_stupid</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/tx_schem.vhf</arg>&quot; line <arg fmt="%d" index="2">167</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">DOPB</arg>&apos; of component &apos;<arg fmt="%s" index="4">new_tx_frame_buffer</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/stupid.vhf</arg>&quot; line <arg fmt="%d" index="2">268</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">full</arg>&apos; of component &apos;<arg fmt="%s" index="4">ethernetRX_MUSER_stupid</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/tx_schem.vhf</arg>&quot; line <arg fmt="%d" index="2">185</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">empty</arg>&apos; of component &apos;<arg fmt="%s" index="4">new_tx_fifo_control_unit</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/stupid.vhf</arg>&quot; line <arg fmt="%d" index="2">279</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">source_MAC</arg>&apos; of component &apos;<arg fmt="%s" index="4">MAC_source</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/tx_schem.vhf</arg>&quot; line <arg fmt="%d" index="2">185</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">full</arg>&apos; of component &apos;<arg fmt="%s" index="4">new_tx_fifo_control_unit</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/stupid.vhf</arg>&quot; line <arg fmt="%d" index="2">296</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">RotL</arg>&apos; of component &apos;<arg fmt="%s" index="4">RotaryEnc</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/tx_schem.vhf</arg>&quot; line <arg fmt="%d" index="2">185</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">busy</arg>&apos; of component &apos;<arg fmt="%s" index="4">new_tx_fifo_control_unit</arg>&apos;.
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/stupid.vhf</arg>&quot; line <arg fmt="%d" index="2">296</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RotaryEnc</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/tx_schem.vhf</arg>&quot; line <arg fmt="%d" index="2">208</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">RotL</arg>&apos; of component &apos;<arg fmt="%s" index="4">RotaryEnc</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/stupid.vhf</arg>&quot; line <arg fmt="%d" index="2">137</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">test</arg>&apos; of component &apos;<arg fmt="%s" index="4">fifo_control_unit</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/tx_schem.vhf</arg>&quot; line <arg fmt="%d" index="2">208</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RotaryEnc</arg>&gt;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/stupid.vhf</arg>&quot; line <arg fmt="%d" index="2">164</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">DOA</arg>&apos; of component &apos;<arg fmt="%s" index="4">new_frame_buffer</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/tx_schem.vhf</arg>&quot; line <arg fmt="%d" index="2">215</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Busy</arg>&apos; of component &apos;<arg fmt="%s" index="4">VGAtxt48x20</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/stupid.vhf</arg>&quot; line <arg fmt="%d" index="2">164</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">DOPB</arg>&apos; of component &apos;<arg fmt="%s" index="4">new_frame_buffer</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/tx_schem.vhf</arg>&quot; line <arg fmt="%d" index="2">215</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">VGAtxt48x20</arg>&gt;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/stupid.vhf</arg>&quot; line <arg fmt="%d" index="2">182</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">DOA</arg>&apos; of component &apos;<arg fmt="%s" index="4">new_eof_buffer</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_tx_fifo_control_unit.vhd</arg>&quot; line <arg fmt="%d" index="2">117</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-<arg fmt="%s" index="3">&lt;start&gt;, &lt;empty_i&gt;, &lt;gap_counter&gt;</arg>
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">data_in</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_tx_fifo_control_unit.vhd</arg>&quot; line <arg fmt="%d" index="2">138</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-<arg fmt="%s" index="3">&lt;state&gt;</arg>
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">address_counter</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_tx_fifo_control_unit.vhd</arg>&quot; line <arg fmt="%d" index="2">147</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-<arg fmt="%s" index="3">&lt;state&gt;</arg>
-</msg>
-
-<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_tx_fifo_control_unit.vhd</arg>&quot; line <arg fmt="%d" index="2">158</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-<arg fmt="%s" index="3">&lt;state&gt;</arg>
-</msg>
-
-<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/vga_tx_display.vhd</arg>&quot; line <arg fmt="%d" index="2">71</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-<arg fmt="%s" index="3">&lt;latched_data&gt;</arg>
-</msg>
-
-<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/vga_tx_display.vhd</arg>&quot; line <arg fmt="%d" index="2">88</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-<arg fmt="%s" index="3">&lt;E_TX_EN&gt;</arg>
-</msg>
-
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">EOF</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-</msg>
-
-<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">state_transmitting_reached</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">reset</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+<msg type="warning" file="Xst" num="1305" delta="old" >Output &lt;<arg fmt="%s" index="1">test</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">00000000</arg>.
 </msg>
 
 <msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">full_i</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">keep_rising_edge</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">empty_i</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_5_reset_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">doB_latched</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_4_ScrollClear_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_3_WEB_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_4_NewLine_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_3_SSRB_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_4_Home_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_3_SSRA_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_4_Goto00_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_3_DIB_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_4_CursorOn_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_2_WEB_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_2_data_in_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00000000</arg>.
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_2_SSRB_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_2_PUSH_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_2_SSRA_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_2_EOF_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_2_DIPB_openSignal&lt;0&gt;</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_1_WEA_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_2_DIB_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00000000</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_1_SSRB_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_2/temp_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stupid</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_1_SSRA_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_2/temp_39</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stupid</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_1_DIPB_openSignal&lt;0&gt;</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_2/temp_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stupid</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_1_DIA_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0000</arg>.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_2/temp_38</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stupid</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">write_add_simple</arg>&gt; has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">XLXI_2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_2/temp_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stupid</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">write_address_counter_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">XLXI_2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_2/temp_37</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stupid</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">write_address_counter_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">XLXI_2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_2/temp_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stupid</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">write_address_counter_2</arg>&gt; has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">XLXI_2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_2/temp_36</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stupid</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">write_address_counter_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">XLXI_2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_2/temp_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stupid</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">write_address_counter_4</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">XLXI_2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_2/temp_35</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stupid</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">write_address_counter_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">XLXI_2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_2/temp_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stupid</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">write_address_counter_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">XLXI_2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_2/temp_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stupid</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">write_address_counter_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">XLXI_2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_2/temp_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stupid</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">write_address_counter_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">XLXI_2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_2/temp_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stupid</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">write_address_counter_9</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">XLXI_2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_2/temp_34</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stupid</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">write_address_counter_10</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">XLXI_2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_2/temp_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stupid</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">empty_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">new_tx_fifo_control_unit</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;empty&gt; </arg>
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_2/temp_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stupid</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">write_address_counter_10</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">new_tx_fifo_control_unit</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_2/temp_33</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stupid</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">write_add_simple</arg>&gt; has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">new_tx_fifo_control_unit</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_2/temp_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stupid</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">write_address_counter_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">new_tx_fifo_control_unit</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_2/temp_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stupid</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">write_address_counter_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">new_tx_fifo_control_unit</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_2/temp_32</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stupid</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">write_address_counter_2</arg>&gt; has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">new_tx_fifo_control_unit</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_2/temp_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stupid</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">write_address_counter_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">new_tx_fifo_control_unit</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_2/temp_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stupid</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">write_address_counter_4</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">new_tx_fifo_control_unit</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_2/temp_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stupid</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">write_address_counter_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">new_tx_fifo_control_unit</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_2/temp_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stupid</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">write_address_counter_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">new_tx_fifo_control_unit</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_2/temp_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stupid</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">write_address_counter_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">new_tx_fifo_control_unit</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_2/temp_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stupid</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">write_address_counter_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">new_tx_fifo_control_unit</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_2/temp_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stupid</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">write_address_counter_9</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">new_tx_fifo_control_unit</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_2/temp_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stupid</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2170" delta="old" >Unit <arg fmt="%s" index="1">new_tx_fifo_control_unit</arg> : the following signal(s) form a combinatorial loop: </msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_2/full</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">tx_schem</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_2/temp_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stupid</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2170" delta="old" >Unit <arg fmt="%s" index="1">tx_schem</arg> : the following signal(s) form a combinatorial loop: </msg>
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_2/temp_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stupid</arg>&gt;.
+</msg>
 
-<msg type="warning" file="Xst" num="2170" delta="old" >Unit <arg fmt="%s" index="1">tx_schem</arg> : the following signal(s) form a combinatorial loop: </msg>
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_2/temp_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stupid</arg>&gt;.
+</msg>
 
-<msg type="warning" file="Xst" num="2170" delta="old" >Unit <arg fmt="%s" index="1">tx_schem</arg> : the following signal(s) form a combinatorial loop: </msg>
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_2/temp_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stupid</arg>&gt;.
+</msg>
 
-<msg type="warning" file="Xst" num="2170" delta="old" >Unit <arg fmt="%s" index="1">tx_schem</arg> : the following signal(s) form a combinatorial loop: </msg>
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_2/temp_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stupid</arg>&gt;.
+</msg>
 
-<msg type="warning" file="Xst" num="2170" delta="old" >Unit <arg fmt="%s" index="1">tx_schem</arg> : the following signal(s) form a combinatorial loop: </msg>
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_2/temp_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stupid</arg>&gt;.
+</msg>
 
-<msg type="warning" file="Xst" num="2170" delta="old" >Unit <arg fmt="%s" index="1">tx_schem</arg> : the following signal(s) form a combinatorial loop: </msg>
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_2/temp_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stupid</arg>&gt;.
+</msg>
 
-<msg type="warning" file="Xst" num="2170" delta="old" >Unit <arg fmt="%s" index="1">tx_schem</arg> : the following signal(s) form a combinatorial loop: </msg>
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_2/temp_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stupid</arg>&gt;.
+</msg>
 
-<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_2/temp_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stupid</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_2/temp_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stupid</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_2/temp_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stupid</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_1/XLXI_1/empty</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stupid</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_1/XLXI_1/full</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stupid</arg>&gt;.
 </msg>
 
 </messages>

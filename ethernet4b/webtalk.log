@@ -3,7 +3,7 @@ Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
 
 Project Information
 --------------------
-ProjectID=d68498edc3a84266a80187bc2cc3d422
+ProjectID=aa2cf94b07914535b1e8ee123c15689d
 ProjectIteration=1
 
 WebTalk Summary
@@ -13,4 +13,4 @@ INFO:WebTalk:2 - WebTalk is enabled.
 INFO:WebTalk:8 - WebTalk Install setting is ON.
 INFO:WebTalk:6 - WebTalk User setting is ON.
 
-INFO:WebTalk:4 - C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/usage_statistics_webtalk.html WebTalk report has been successfully sent to Xilinx on 2014-08-18T22:56:30.  For additional details about this file, please refer to the WebTalk help file at D:/programy/Xilinx/14.6/ISE_DS/ISE/data/reports/webtalk_introduction.html
+INFO:WebTalk:4 - C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/usage_statistics_webtalk.html WebTalk report has been successfully sent to Xilinx on 2014-08-24T11:34:13.  For additional details about this file, please refer to the WebTalk help file at D:/programy/Xilinx/14.6/ISE_DS/ISE/data/reports/webtalk_introduction.html

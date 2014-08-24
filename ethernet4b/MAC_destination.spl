@@ -1,0 +1,8 @@
+[Inputs]
+enable
+reset
+clk
+=data_in[7:0]=
+[Outputs]
+=destination_MAC[47:0]=
+[BiDir]

@@ -7,8 +7,6 @@
     </attr>
     <netlist>
         <signal name="RX_D(3:0)" />
-        <signal name="XLXN_2" />
-        <signal name="XLXN_3" />
         <signal name="XLXN_4" />
         <signal name="XLXN_5" />
         <signal name="XLXN_6(11:0)" />
@@ -32,6 +30,7 @@
         <signal name="EOF" />
         <signal name="data_out(7:0)" />
         <signal name="XLXN_27(7:0)" />
+        <signal name="XLXN_28" />
         <port polarity="Input" name="RX_D(3:0)" />
         <port polarity="Input" name="clk" />
         <port polarity="Input" name="RX_CLK" />
@@ -42,7 +41,7 @@
         <port polarity="Output" name="EOF" />
         <port polarity="Output" name="data_out(7:0)" />
         <blockdef name="fifo_control_unit">
-            <timestamp>2014-8-16T19:11:19</timestamp>
+            <timestamp>2014-8-24T8:46:7</timestamp>
             <rect width="64" x="0" y="212" height="24" />
             <line x2="0" y1="224" y2="224" x1="64" />
             <line x2="384" y1="224" y2="224" x1="320" />
@@ -82,7 +81,7 @@
             <rect width="256" x="64" y="-768" height="1280" />
         </blockdef>
         <blockdef name="new_frame_buffer">
-            <timestamp>2014-8-10T16:25:8</timestamp>
+            <timestamp>2014-8-24T8:45:43</timestamp>
             <rect width="256" x="64" y="-832" height="832" />
             <line x2="0" y1="-800" y2="-800" x1="64" />
             <line x2="0" y1="-736" y2="-736" x1="64" />
@@ -110,7 +109,7 @@
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
         <blockdef name="new_eof_buffer">
-            <timestamp>2014-8-10T16:24:37</timestamp>
+            <timestamp>2014-8-24T8:45:54</timestamp>
             <rect width="256" x="64" y="-768" height="768" />
             <line x2="0" y1="-736" y2="-736" x1="64" />
             <line x2="0" y1="-672" y2="-672" x1="64" />
@@ -132,6 +131,12 @@
             <line x2="384" y1="-736" y2="-736" x1="320" />
             <rect width="64" x="320" y="-44" height="24" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
+        </blockdef>
+        <blockdef name="vcc">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="64" y1="-32" y2="-64" x1="64" />
+            <line x2="64" y1="0" y2="-32" x1="64" />
+            <line x2="32" y1="-64" y2="-64" x1="96" />
         </blockdef>
         <block symbolname="fifo_control_unit" name="XLXI_1">
             <blockpin signalname="clk" name="clk" />
@@ -182,7 +187,7 @@
             <blockpin signalname="XLXN_10" name="CLKA" />
             <blockpin signalname="XLXN_11" name="CLKB" />
             <blockpin signalname="XLXN_12" name="ENA" />
-            <blockpin name="ENB" />
+            <blockpin signalname="XLXN_28" name="ENB" />
             <blockpin name="SSRA" />
             <blockpin name="SSRB" />
             <blockpin signalname="XLXN_13" name="WEA" />
@@ -193,6 +198,9 @@
             <blockpin name="DIB(1:0)" />
             <blockpin name="DOA(0:0)" />
             <blockpin signalname="XLXN_17(1:0)" name="DOB(1:0)" />
+        </block>
+        <block symbolname="vcc" name="XLXI_4">
+            <blockpin signalname="XLXN_28" name="P" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -322,6 +330,11 @@
             <wire x2="320" y1="176" y2="1248" x1="320" />
             <wire x2="624" y1="1248" y2="1248" x1="320" />
             <wire x2="2400" y1="752" y2="752" x1="2336" />
+        </branch>
+        <instance x="1792" y="1408" name="XLXI_4" orien="R0" />
+        <branch name="XLXN_28">
+            <wire x2="1856" y1="1408" y2="1664" x1="1856" />
+            <wire x2="1952" y1="1664" y2="1664" x1="1856" />
         </branch>
     </sheet>
 </drawing>

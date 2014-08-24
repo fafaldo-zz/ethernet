@@ -1,22 +1,4 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date:    20:08:00 08/21/2014 
--- Design Name: 
--- Module Name:    CRC32 - Behavioral 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
--- Description: 
---
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
-----------------------------------------------------------------------------------
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
@@ -44,7 +26,7 @@ architecture Behavioral of CRC32 is
 type state_type is (IDLE, BEFORE_BUFFER_FULL, WORKING, FINISHED); 
 signal state, next_state : state_type; 
 
-signal temp_buffer : std_logic_vector(39 downto 0) := "1010101010101010101010101010101010101010";
+signal temp_buffer : std_logic_vector(39 downto 0) := "0000000000000000000000000000000000000000";
 signal address_counter : std_logic_vector(10 downto 0) := (others=>'0');
 
 signal wielomian : std_logic_vector(32 downto 0) := "100000100110000010001110110110111";

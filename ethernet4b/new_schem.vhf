@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.6
 --  \   \         Application : sch2hdl
 --  /   /         Filename : new_schem.vhf
--- /___/   /\     Timestamp : 08/16/2014 21:52:29
+-- /___/   /\     Timestamp : 08/24/2014 10:50:59
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -25,69 +25,45 @@ use ieee.numeric_std.ALL;
 library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
-entity new_schem is
-   port ( CLK      : in    std_logic; 
-          E_RX_CLK : in    std_logic; 
-          E_RX_D   : in    std_logic_vector (3 downto 0); 
-          E_RX_DV  : in    std_logic; 
-          ROT_A    : in    std_logic; 
-          ROT_B    : in    std_logic; 
+entity ethernetRX_MUSER_new_schem is
+   port ( clk      : in    std_logic; 
+          POP      : in    std_logic; 
+          RX_CLK   : in    std_logic; 
+          RX_D     : in    std_logic_vector (3 downto 0); 
+          RX_DV    : in    std_logic; 
+          data_out : out   std_logic_vector (7 downto 0); 
           empty    : out   std_logic; 
           EOF      : out   std_logic; 
-          full     : out   std_logic; 
-          VGA_B    : out   std_logic; 
-          VGA_G    : out   std_logic; 
-          VGA_HS   : out   std_logic; 
-          VGA_R    : out   std_logic; 
-          VGA_VS   : out   std_logic);
-end new_schem;
+          full     : out   std_logic);
+end ethernetRX_MUSER_new_schem;
 
-architecture BEHAVIORAL of new_schem is
+architecture BEHAVIORAL of ethernetRX_MUSER_new_schem is
    attribute BOX_TYPE   : string ;
-   signal XLXN_1                        : std_logic;
-   signal XLXN_2                        : std_logic;
-   signal XLXN_3                        : std_logic;
-   signal XLXN_4                        : std_logic;
-   signal XLXN_6                        : std_logic_vector (11 downto 0);
-   signal XLXN_7                        : std_logic_vector (10 downto 0);
-   signal XLXN_8                        : std_logic_vector (3 downto 0);
-   signal XLXN_10                       : std_logic;
-   signal XLXN_11                       : std_logic_vector (7 downto 0);
-   signal XLXN_12                       : std_logic_vector (7 downto 0);
-   signal XLXN_13                       : std_logic;
-   signal XLXN_14                       : std_logic;
-   signal XLXN_15                       : std_logic;
-   signal XLXN_16                       : std_logic_vector (7 downto 0);
-   signal XLXN_18                       : std_logic;
-   signal XLXN_19                       : std_logic;
-   signal XLXN_20                       : std_logic;
-   signal XLXN_21                       : std_logic_vector (13 downto 0);
-   signal XLXN_22                       : std_logic_vector (12 downto 0);
-   signal XLXN_23                       : std_logic_vector (0 downto 0);
-   signal XLXN_24                       : std_logic_vector (1 downto 0);
-   signal XLXI_2_DIB_openSignal         : std_logic_vector (7 downto 0);
-   signal XLXI_2_DIPB_openSignal        : std_logic_vector (0 downto 0);
-   signal XLXI_2_SSRA_openSignal        : std_logic;
-   signal XLXI_2_SSRB_openSignal        : std_logic;
-   signal XLXI_2_WEB_openSignal         : std_logic;
-   signal XLXI_4_reset_openSignal       : std_logic;
-   signal XLXI_5_CursorOn_openSignal    : std_logic;
-   signal XLXI_5_Goto00_openSignal      : std_logic;
-   signal XLXI_5_Home_openSignal        : std_logic;
-   signal XLXI_5_NewLine_openSignal     : std_logic;
-   signal XLXI_5_ScrollClear_openSignal : std_logic;
-   signal XLXI_5_ScrollEn_openSignal    : std_logic;
-   signal XLXI_9_DIB_openSignal         : std_logic_vector (1 downto 0);
-   signal XLXI_9_SSRA_openSignal        : std_logic;
-   signal XLXI_9_SSRB_openSignal        : std_logic;
-   signal XLXI_9_WEB_openSignal         : std_logic;
-   signal XLXI_10_clk_openSignal        : std_logic;
-   signal XLXI_10_data_in_openSignal    : std_logic_vector (7 downto 0);
-   signal XLXI_10_doA_openSignal        : std_logic_vector (3 downto 0);
-   signal XLXI_10_EOF_openSignal        : std_logic;
-   signal XLXI_10_PUSH_openSignal       : std_logic;
-   signal XLXI_10_start_openSignal      : std_logic;
-   signal XLXI_10_Tx_Clk_openSignal     : std_logic;
+   signal XLXN_4                 : std_logic;
+   signal XLXN_5                 : std_logic;
+   signal XLXN_6                 : std_logic_vector (11 downto 0);
+   signal XLXN_7                 : std_logic_vector (10 downto 0);
+   signal XLXN_8                 : std_logic_vector (3 downto 0);
+   signal XLXN_9                 : std_logic;
+   signal XLXN_10                : std_logic;
+   signal XLXN_11                : std_logic;
+   signal XLXN_12                : std_logic;
+   signal XLXN_13                : std_logic;
+   signal XLXN_14                : std_logic_vector (13 downto 0);
+   signal XLXN_15                : std_logic_vector (12 downto 0);
+   signal XLXN_16                : std_logic_vector (0 downto 0);
+   signal XLXN_17                : std_logic_vector (1 downto 0);
+   signal XLXN_27                : std_logic_vector (7 downto 0);
+   signal XLXN_28                : std_logic;
+   signal XLXI_2_DIB_openSignal  : std_logic_vector (7 downto 0);
+   signal XLXI_2_DIPB_openSignal : std_logic_vector (0 downto 0);
+   signal XLXI_2_SSRA_openSignal : std_logic;
+   signal XLXI_2_SSRB_openSignal : std_logic;
+   signal XLXI_2_WEB_openSignal  : std_logic;
+   signal XLXI_3_DIB_openSignal  : std_logic_vector (1 downto 0);
+   signal XLXI_3_SSRA_openSignal : std_logic;
+   signal XLXI_3_SSRB_openSignal : std_logic;
+   signal XLXI_3_WEB_openSignal  : std_logic;
    component fifo_control_unit
       port ( clk      : in    std_logic; 
              Rx_Clk   : in    std_logic; 
@@ -135,6 +111,135 @@ architecture BEHAVIORAL of new_schem is
              DOPB  : out   std_logic_vector (0 downto 0));
    end component;
    
+   component new_eof_buffer
+      port ( CLKA  : in    std_logic; 
+             CLKB  : in    std_logic; 
+             ENA   : in    std_logic; 
+             ENB   : in    std_logic; 
+             SSRA  : in    std_logic; 
+             SSRB  : in    std_logic; 
+             WEA   : in    std_logic; 
+             WEB   : in    std_logic; 
+             ADDRA : in    std_logic_vector (13 downto 0); 
+             ADDRB : in    std_logic_vector (12 downto 0); 
+             DIA   : in    std_logic_vector (0 downto 0); 
+             DIB   : in    std_logic_vector (1 downto 0); 
+             DOA   : out   std_logic_vector (0 downto 0); 
+             DOB   : out   std_logic_vector (1 downto 0));
+   end component;
+   
+   component VCC
+      port ( P : out   std_logic);
+   end component;
+   attribute BOX_TYPE of VCC : component is "BLACK_BOX";
+   
+begin
+   XLXI_1 : fifo_control_unit
+      port map (clk=>clk,
+                doB(7 downto 0)=>XLXN_27(7 downto 0),
+                doEOFB(1 downto 0)=>XLXN_17(1 downto 0),
+                POP=>POP,
+                Rx_Clk=>RX_CLK,
+                Rx_D(3 downto 0)=>RX_D(3 downto 0),
+                Rx_DV=>RX_DV,
+                addrA(11 downto 0)=>XLXN_6(11 downto 0),
+                addrB(10 downto 0)=>XLXN_7(10 downto 0),
+                addrEOFA(13 downto 0)=>XLXN_14(13 downto 0),
+                addrEOFB(12 downto 0)=>XLXN_15(12 downto 0),
+                clkA=>XLXN_10,
+                clkB=>XLXN_11,
+                data_out(7 downto 0)=>data_out(7 downto 0),
+                diA(3 downto 0)=>XLXN_8(3 downto 0),
+                diEOFA(0)=>XLXN_16(0),
+                empty=>empty,
+                enA=>XLXN_4,
+                enB=>XLXN_5,
+                EOF=>EOF,
+                EOFenA=>XLXN_12,
+                EOFweA=>XLXN_13,
+                full=>full,
+                test=>open,
+                weA=>XLXN_9);
+   
+   XLXI_2 : new_frame_buffer
+      port map (ADDRA(11 downto 0)=>XLXN_6(11 downto 0),
+                ADDRB(10 downto 0)=>XLXN_7(10 downto 0),
+                CLKA=>XLXN_10,
+                CLKB=>XLXN_11,
+                DIA(3 downto 0)=>XLXN_8(3 downto 0),
+                DIB(7 downto 0)=>XLXI_2_DIB_openSignal(7 downto 0),
+                DIPB(0)=>XLXI_2_DIPB_openSignal(0),
+                ENA=>XLXN_4,
+                ENB=>XLXN_5,
+                SSRA=>XLXI_2_SSRA_openSignal,
+                SSRB=>XLXI_2_SSRB_openSignal,
+                WEA=>XLXN_9,
+                WEB=>XLXI_2_WEB_openSignal,
+                DOA=>open,
+                DOB(7 downto 0)=>XLXN_27(7 downto 0),
+                DOPB=>open);
+   
+   XLXI_3 : new_eof_buffer
+      port map (ADDRA(13 downto 0)=>XLXN_14(13 downto 0),
+                ADDRB(12 downto 0)=>XLXN_15(12 downto 0),
+                CLKA=>XLXN_10,
+                CLKB=>XLXN_11,
+                DIA(0)=>XLXN_16(0),
+                DIB(1 downto 0)=>XLXI_3_DIB_openSignal(1 downto 0),
+                ENA=>XLXN_12,
+                ENB=>XLXN_28,
+                SSRA=>XLXI_3_SSRA_openSignal,
+                SSRB=>XLXI_3_SSRB_openSignal,
+                WEA=>XLXN_13,
+                WEB=>XLXI_3_WEB_openSignal,
+                DOA=>open,
+                DOB(1 downto 0)=>XLXN_17(1 downto 0));
+   
+   XLXI_4 : VCC
+      port map (P=>XLXN_28);
+   
+end BEHAVIORAL;
+
+
+
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+library UNISIM;
+use UNISIM.Vcomponents.ALL;
+
+entity new_schem is
+   port ( CLK      : in    std_logic; 
+          E_RX_CLK : in    std_logic; 
+          E_RX_D   : in    std_logic_vector (3 downto 0); 
+          E_RX_DV  : in    std_logic; 
+          ROT_A    : in    std_logic; 
+          ROT_B    : in    std_logic; 
+          empty    : out   std_logic; 
+          EOF      : out   std_logic; 
+          full     : out   std_logic; 
+          VGA_B    : out   std_logic; 
+          VGA_G    : out   std_logic; 
+          VGA_HS   : out   std_logic; 
+          VGA_R    : out   std_logic; 
+          VGA_VS   : out   std_logic);
+end new_schem;
+
+architecture BEHAVIORAL of new_schem is
+   attribute BOX_TYPE   : string ;
+   signal XLXN_13                       : std_logic;
+   signal XLXN_15                       : std_logic;
+   signal XLXN_16                       : std_logic_vector (7 downto 0);
+   signal XLXN_18                       : std_logic;
+   signal XLXN_26                       : std_logic;
+   signal XLXN_27                       : std_logic_vector (7 downto 0);
+   signal XLXI_4_reset_openSignal       : std_logic;
+   signal XLXI_5_CursorOn_openSignal    : std_logic;
+   signal XLXI_5_Goto00_openSignal      : std_logic;
+   signal XLXI_5_Home_openSignal        : std_logic;
+   signal XLXI_5_NewLine_openSignal     : std_logic;
+   signal XLXI_5_ScrollClear_openSignal : std_logic;
+   signal XLXI_5_ScrollEn_openSignal    : std_logic;
    component RotaryEnc
       port ( ROT_A : in    std_logic; 
              ROT_B : in    std_logic; 
@@ -176,93 +281,19 @@ architecture BEHAVIORAL of new_schem is
    end component;
    attribute BOX_TYPE of BUF : component is "BLACK_BOX";
    
-   component new_eof_buffer
-      port ( CLKA  : in    std_logic; 
-             CLKB  : in    std_logic; 
-             ENA   : in    std_logic; 
-             ENB   : in    std_logic; 
-             SSRA  : in    std_logic; 
-             SSRB  : in    std_logic; 
-             WEA   : in    std_logic; 
-             WEB   : in    std_logic; 
-             ADDRA : in    std_logic_vector (13 downto 0); 
-             ADDRB : in    std_logic_vector (12 downto 0); 
-             DIA   : in    std_logic_vector (0 downto 0); 
-             DIB   : in    std_logic_vector (1 downto 0); 
-             DOA   : out   std_logic_vector (0 downto 0); 
-             DOB   : out   std_logic_vector (1 downto 0));
-   end component;
-   
-   component new_tx_fifo_control_unit
-      port ( EOF     : in    std_logic; 
-             clk     : in    std_logic; 
-             Tx_Clk  : in    std_logic; 
-             PUSH    : in    std_logic; 
-             start   : in    std_logic; 
-             doA     : in    std_logic_vector (3 downto 0); 
-             data_in : in    std_logic_vector (7 downto 0); 
-             clkA    : out   std_logic; 
-             clkB    : out   std_logic; 
-             enA     : out   std_logic; 
-             enB     : out   std_logic; 
-             weB     : out   std_logic; 
-             empty   : out   std_logic; 
-             full    : out   std_logic; 
-             Tx_En   : out   std_logic; 
-             busy    : out   std_logic; 
-             addrA   : out   std_logic_vector (11 downto 0); 
-             addrB   : out   std_logic_vector (10 downto 0); 
-             diB     : out   std_logic_vector (7 downto 0); 
-             Tx_D    : out   std_logic_vector (3 downto 0); 
-             test    : out   std_logic_vector (7 downto 0));
+   component ethernetRX_MUSER_new_schem
+      port ( RX_D     : in    std_logic_vector (3 downto 0); 
+             clk      : in    std_logic; 
+             RX_CLK   : in    std_logic; 
+             RX_DV    : in    std_logic; 
+             POP      : in    std_logic; 
+             empty    : out   std_logic; 
+             full     : out   std_logic; 
+             EOF      : out   std_logic; 
+             data_out : out   std_logic_vector (7 downto 0));
    end component;
    
 begin
-   XLXI_1 : fifo_control_unit
-      port map (clk=>CLK,
-                doB(7 downto 0)=>XLXN_11(7 downto 0),
-                doEOFB(1 downto 0)=>XLXN_24(1 downto 0),
-                POP=>XLXN_14,
-                Rx_Clk=>E_RX_CLK,
-                Rx_D(3 downto 0)=>E_RX_D(3 downto 0),
-                Rx_DV=>E_RX_DV,
-                addrA(11 downto 0)=>XLXN_6(11 downto 0),
-                addrB(10 downto 0)=>XLXN_7(10 downto 0),
-                addrEOFA(13 downto 0)=>XLXN_21(13 downto 0),
-                addrEOFB(12 downto 0)=>XLXN_22(12 downto 0),
-                clkA=>XLXN_1,
-                clkB=>XLXN_2,
-                data_out(7 downto 0)=>XLXN_12(7 downto 0),
-                diA(3 downto 0)=>XLXN_8(3 downto 0),
-                diEOFA(0)=>XLXN_23(0),
-                empty=>empty,
-                enA=>XLXN_3,
-                enB=>XLXN_4,
-                EOF=>EOF,
-                EOFenA=>XLXN_19,
-                EOFweA=>XLXN_20,
-                full=>full,
-                test=>open,
-                weA=>XLXN_10);
-   
-   XLXI_2 : new_frame_buffer
-      port map (ADDRA(11 downto 0)=>XLXN_6(11 downto 0),
-                ADDRB(10 downto 0)=>XLXN_7(10 downto 0),
-                CLKA=>XLXN_1,
-                CLKB=>XLXN_2,
-                DIA(3 downto 0)=>XLXN_8(3 downto 0),
-                DIB(7 downto 0)=>XLXI_2_DIB_openSignal(7 downto 0),
-                DIPB(0)=>XLXI_2_DIPB_openSignal(0),
-                ENA=>XLXN_3,
-                ENB=>XLXN_4,
-                SSRA=>XLXI_2_SSRA_openSignal,
-                SSRB=>XLXI_2_SSRB_openSignal,
-                WEA=>XLXN_10,
-                WEB=>XLXI_2_WEB_openSignal,
-                DOA=>open,
-                DOB(7 downto 0)=>XLXN_11(7 downto 0),
-                DOPB=>open);
-   
    XLXI_3 : RotaryEnc
       port map (Clk=>CLK,
                 ROT_A=>ROT_A,
@@ -272,12 +303,12 @@ begin
    
    XLXI_4 : vga_display
       port map (clk=>CLK,
-                ram_output(7 downto 0)=>XLXN_12(7 downto 0),
+                ram_output(7 downto 0)=>XLXN_27(7 downto 0),
                 reset=>XLXI_4_reset_openSignal,
                 start=>XLXN_13,
                 char(7 downto 0)=>XLXN_16(7 downto 0),
                 char_we=>XLXN_15,
-                ram_enable=>XLXN_14);
+                ram_enable=>XLXN_26);
    
    XLXI_5 : VGAtxt48x20
       port map (Char_DI(7 downto 0)=>XLXN_16(7 downto 0),
@@ -307,44 +338,16 @@ begin
       port map (I=>XLXN_18,
                 O=>VGA_B);
    
-   XLXI_9 : new_eof_buffer
-      port map (ADDRA(13 downto 0)=>XLXN_21(13 downto 0),
-                ADDRB(12 downto 0)=>XLXN_22(12 downto 0),
-                CLKA=>XLXN_1,
-                CLKB=>XLXN_2,
-                DIA(0)=>XLXN_23(0),
-                DIB(1 downto 0)=>XLXI_9_DIB_openSignal(1 downto 0),
-                ENA=>XLXN_19,
-                ENB=>XLXN_4,
-                SSRA=>XLXI_9_SSRA_openSignal,
-                SSRB=>XLXI_9_SSRB_openSignal,
-                WEA=>XLXN_20,
-                WEB=>XLXI_9_WEB_openSignal,
-                DOA=>open,
-                DOB(1 downto 0)=>XLXN_24(1 downto 0));
-   
-   XLXI_10 : new_tx_fifo_control_unit
-      port map (clk=>XLXI_10_clk_openSignal,
-                data_in(7 downto 0)=>XLXI_10_data_in_openSignal(7 downto 0),
-                doA(3 downto 0)=>XLXI_10_doA_openSignal(3 downto 0),
-                EOF=>XLXI_10_EOF_openSignal,
-                PUSH=>XLXI_10_PUSH_openSignal,
-                start=>XLXI_10_start_openSignal,
-                Tx_Clk=>XLXI_10_Tx_Clk_openSignal,
-                addrA=>open,
-                addrB=>open,
-                busy=>open,
-                clkA=>open,
-                clkB=>open,
-                diB=>open,
-                empty=>open,
-                enA=>open,
-                enB=>open,
-                full=>open,
-                test=>open,
-                Tx_D=>open,
-                Tx_En=>open,
-                weB=>open);
+   XLXI_10 : ethernetRX_MUSER_new_schem
+      port map (clk=>CLK,
+                POP=>XLXN_26,
+                RX_CLK=>E_RX_CLK,
+                RX_D(3 downto 0)=>E_RX_D(3 downto 0),
+                RX_DV=>E_RX_DV,
+                data_out(7 downto 0)=>XLXN_27(7 downto 0),
+                empty=>empty,
+                EOF=>EOF,
+                full=>full);
    
 end BEHAVIORAL;
 
