@@ -1,0 +1,49 @@
+Release 14.6 - xst P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU.vhd" in Library work.
+Entity <cu> compiled.
+Entity <cu> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/tx_schem.vhf" in Library work.
+Architecture behavioral of Entity tx_schem is up to date.
+Compiling vhdl file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/stupid.vhf" in Library work.
+Architecture behavioral of Entity ethernetrx_muser_stupid is up to date.
+Architecture behavioral of Entity stupid is up to date.
+Compiling vhdl file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" in Library work.
+Entity <ethernetrx_muser_new_schem> compiled.
+Entity <ethernetrx_muser_new_schem> (Architecture <behavioral>) compiled.
+Entity <new_schem> compiled.
+Entity <new_schem> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MII_test3.vhf" in Library work.
+Architecture behavioral of Entity mii_test3 is up to date.
+Compiling vhdl file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MII_schem.vhf" in Library work.
+Architecture behavioral of Entity mii_schem is up to date.
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.63 secs
+ 
+--> 
+
+Total memory usage is 221352 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

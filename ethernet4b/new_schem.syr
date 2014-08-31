@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Reading design: new_schem.prj
 
@@ -108,13 +108,13 @@ Compiling vhdl file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/fifo_co
 Entity <fifo_control_unit> compiled.
 Entity <fifo_control_unit> (Architecture <behavioral>) compiled.
 Compiling vhdl file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_frame_buffer.vhd" in Library work.
-Entity <new_frame_buffer> compiled.
-Entity <new_frame_buffer> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity new_frame_buffer is up to date.
 Compiling vhdl file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_eof_buffer.vhd" in Library work.
-Entity <new_eof_buffer> compiled.
-Entity <new_eof_buffer> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity new_eof_buffer is up to date.
 Compiling vhdl file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/vga_display.vhd" in Library work.
 Architecture behavioral of Entity vga_display is up to date.
+Compiling vhdl file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/tx_schem.vhf" in Library work.
+Architecture behavioral of Entity tx_schem is up to date.
 Compiling vhdl file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MII_test3.vhf" in Library work.
 Architecture behavioral of Entity mii_test3 is up to date.
 Compiling vhdl file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MII_schem.vhf" in Library work.
@@ -148,10 +148,10 @@ Analyzing hierarchy for entity <new_eof_buffer> in library <work> (architecture 
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <new_schem> in library <work> (Architecture <behavioral>).
-WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 297: Unconnected output port 'RotL' of component 'RotaryEnc'.
-WARNING:Xst:2211 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 297: Instantiating black box module <RotaryEnc>.
-WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 313: Unconnected output port 'Busy' of component 'VGAtxt48x20'.
-WARNING:Xst:2211 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 313: Instantiating black box module <VGAtxt48x20>.
+WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 290: Unconnected output port 'RotL' of component 'RotaryEnc'.
+WARNING:Xst:2211 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 290: Instantiating black box module <RotaryEnc>.
+WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 306: Unconnected output port 'Busy' of component 'VGAtxt48x20'.
+WARNING:Xst:2211 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 306: Instantiating black box module <VGAtxt48x20>.
 Entity <new_schem> analyzed. Unit <new_schem> generated.
 
 Analyzing Entity <vga_display> in library <work> (Architecture <behavioral>).
@@ -160,10 +160,10 @@ INFO:Xst:1561 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/vga_display
 Entity <vga_display> analyzed. Unit <vga_display> generated.
 
 Analyzing Entity <ethernetRX_MUSER_new_schem> in library <work> (Architecture <behavioral>).
-WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 137: Unconnected output port 'test' of component 'fifo_control_unit'.
-WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 164: Unconnected output port 'DOA' of component 'new_frame_buffer'.
-WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 164: Unconnected output port 'DOPB' of component 'new_frame_buffer'.
-WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 182: Unconnected output port 'DOA' of component 'new_eof_buffer'.
+WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 132: Unconnected output port 'test' of component 'fifo_control_unit'.
+WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 160: Unconnected output port 'DOA' of component 'new_frame_buffer'.
+WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 160: Unconnected output port 'DOPB' of component 'new_frame_buffer'.
+WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_schem.vhf" line 178: Unconnected output port 'DOA' of component 'new_eof_buffer'.
 Entity <ethernetRX_MUSER_new_schem> analyzed. Unit <ethernetRX_MUSER_new_schem> generated.
 
 Analyzing Entity <fifo_control_unit> in library <work> (Architecture <behavioral>).
@@ -178,7 +178,7 @@ Analyzing Entity <new_frame_buffer> in library <work> (Architecture <behavioral>
     Set user-defined property "INITP_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
     Set user-defined property "INITP_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
     Set user-defined property "INITP_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
-    Set user-defined property "INIT_00 =  00000000000000000000000000000000000000000000000000000000333333D5" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_00 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
     Set user-defined property "INIT_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
     Set user-defined property "INIT_02 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
     Set user-defined property "INIT_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
@@ -252,7 +252,7 @@ Analyzing Entity <new_frame_buffer> in library <work> (Architecture <behavioral>
 Entity <new_frame_buffer> analyzed. Unit <new_frame_buffer> generated.
 
 Analyzing Entity <new_eof_buffer> in library <work> (Architecture <behavioral>).
-    Set user-defined property "INIT_00 =  0000000000000000000000000000000000000000000000000000000000010000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_00 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
     Set user-defined property "INIT_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
     Set user-defined property "INIT_02 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
     Set user-defined property "INIT_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
@@ -367,26 +367,26 @@ WARNING:Xst:1305 - Output <test> is never assigned. Tied to value 00000000.
 WARNING:Xst:646 - Signal <full_i> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <empty_i> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <doB_latched> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-    Found 1-bit register for signal <empty>.
+WARNING:Xst:646 - Signal <EOF_latched> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
     Found 1-bit register for signal <weA>.
     Found 1-bit register for signal <full>.
-    Found 11-bit comparator equal for signal <empty$cmp_eq0000> created at line 190.
-    Found 2-bit register for signal <EOF_latched>.
+    Found 11-bit comparator equal for signal <empty$cmp_eq0000> created at line 208.
     Found 1-bit register for signal <frame_started>.
-    Found 11-bit comparator equal for signal <full$cmp_eq0000> created at line 177.
+    Found 11-bit comparator equal for signal <full$cmp_eq0000> created at line 185.
     Found 1-bit register for signal <read_add_simple>.
     Found 11-bit register for signal <read_address_counter>.
-    Found 11-bit xor2 for signal <read_address_counter$xor0001> created at line 283.
+    Found 11-bit xor2 for signal <read_address_counter$xor0001> created at line 294.
     Found 11-bit register for signal <read_address_counter_minus_one>.
-    Found 11-bit xor2 for signal <read_address_counter_minus_one$xor0001> created at line 350.
-    Found 11-bit comparator not equal for signal <weA$cmp_ne0000> created at line 131.
+    Found 11-bit xor2 for signal <read_address_counter_minus_one$xor0001> created at line 361.
+    Found 1-bit register for signal <wea_i>.
+    Found 11-bit comparator not equal for signal <wea_i$cmp_ne0000> created at line 139.
     Found 1-bit register for signal <write_add_simple>.
     Found 12-bit register for signal <write_address_counter>.
-    Found 12-bit xor2 for signal <write_address_counter$xor0001> created at line 241.
+    Found 12-bit xor2 for signal <write_address_counter$xor0001> created at line 252.
     Found 12-bit register for signal <write_address_counter_minus_one>.
-    Found 12-bit xor2 for signal <write_address_counter_minus_one$xor0001> created at line 317.
+    Found 12-bit xor2 for signal <write_address_counter_minus_one$xor0001> created at line 328.
     Summary:
-	inferred  54 D-type flip-flop(s).
+	inferred  52 D-type flip-flop(s).
 	inferred   3 Comparator(s).
 Unit <fifo_control_unit> synthesized.
 
@@ -431,11 +431,10 @@ Unit <new_schem> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Registers                                            : 11
+# Registers                                            : 10
  1-bit register                                        : 6
  11-bit register                                       : 2
  12-bit register                                       : 2
- 2-bit register                                        : 1
 # Latches                                              : 3
  1-bit latch                                           : 2
  8-bit latch                                           : 1
@@ -470,6 +469,7 @@ Reading core <VGAtxt48x20_2.ngc>.
 Loading core <RotaryEnc> for timing and area information for instance <XLXI_3>.
 Loading core <VGAtxt48x20_2> for timing and area information for instance <XLXI_146>.
 Loading core <VGAtxt48x20> for timing and area information for instance <XLXI_5>.
+INFO:Xst:2261 - The FF/Latch <weA> in Unit <XLXI_1> is equivalent to the following FF/Latch, which will be removed : <wea_i> 
 WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <7>. This FF/Latch will be trimmed during the optimization process.
 
 =========================================================================
@@ -477,8 +477,8 @@ Advanced HDL Synthesis Report
 
 Macro Statistics
 # FSMs                                                 : 1
-# Registers                                            : 54
- Flip-Flops                                            : 54
+# Registers                                            : 52
+ Flip-Flops                                            : 52
 # Latches                                              : 3
  1-bit latch                                           : 2
  8-bit latch                                           : 1
@@ -494,6 +494,7 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+INFO:Xst:2261 - The FF/Latch <weA> in Unit <fifo_control_unit> is equivalent to the following FF/Latch, which will be removed : <wea_i> 
 WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_3>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <new_schem> ...
@@ -513,8 +514,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 59
- Flip-Flops                                            : 59
+# Registers                                            : 56
+ Flip-Flops                                            : 56
 
 =========================================================================
 
@@ -549,29 +550,28 @@ Cell Usage :
 #      AND3B1                      : 4
 #      BUF                         : 3
 #      GND                         : 4
-#      INV                         : 14
+#      INV                         : 13
 #      LUT1                        : 43
 #      LUT2                        : 54
-#      LUT2_D                      : 1
 #      LUT2_L                      : 5
-#      LUT3                        : 59
-#      LUT3_D                      : 3
-#      LUT3_L                      : 10
-#      LUT4                        : 154
-#      LUT4_D                      : 14
-#      LUT4_L                      : 13
+#      LUT3                        : 67
+#      LUT3_D                      : 5
+#      LUT3_L                      : 7
+#      LUT4                        : 146
+#      LUT4_D                      : 12
+#      LUT4_L                      : 14
 #      MUXCY                       : 65
-#      MUXF5                       : 25
+#      MUXF5                       : 29
 #      MUXF5_L                     : 2
 #      MUXF6                       : 5
 #      OR2                         : 5
 #      VCC                         : 4
 #      XOR2                        : 1
 #      XORCY                       : 51
-# FlipFlops/Latches                : 172
+# FlipFlops/Latches                : 169
 #      FD                          : 40
-#      FDE                         : 63
-#      FDR                         : 21
+#      FDE                         : 61
+#      FDR                         : 20
 #      FDRE                        : 37
 #      FDS                         : 1
 #      FDSE                        : 2
@@ -594,10 +594,10 @@ Device utilization summary:
 
 Selected Device : 3s500efg320-4 
 
- Number of Slices:                      212  out of   4656     4%  
- Number of Slice Flip Flops:            172  out of   9312     1%  
- Number of 4 input LUTs:                375  out of   9312     4%  
-    Number used as logic:               370
+ Number of Slices:                      211  out of   4656     4%  
+ Number of Slice Flip Flops:            169  out of   9312     1%  
+ Number of 4 input LUTs:                371  out of   9312     3%  
+    Number used as logic:               366
     Number used as Shift registers:       5
  Number of IOs:                          17
  Number of bonded IOBs:                  17  out of    232     7%  
@@ -625,7 +625,7 @@ Clock Information:
 -------------------------------------------------------+-------------------------------------------------------------------------------------------------+-------+
 Clock Signal                                           | Clock buffer(FF name)                                                                           | Load  |
 -------------------------------------------------------+-------------------------------------------------------------------------------------------------+-------+
-CLK                                                    | BUFGP                                                                                           | 145   |
+CLK                                                    | BUFGP                                                                                           | 142   |
 XLXI_5/XLXI_146/BU2/dbiterr                            | NONE(XLXI_5/XLXI_146/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v2_init.ram/dp9x9.ram)| 1     |
 E_RX_CLK                                               | BUFGP                                                                                           | 30    |
 XLXI_4/ram_enable_or0000(XLXI_4/ram_enable_or0000_f5:O)| NONE(*)(XLXI_4/char_6)                                                                          | 8     |
@@ -644,8 +644,8 @@ Timing Summary:
 Speed Grade: -4
 
    Minimum period: 9.574ns (Maximum Frequency: 104.450MHz)
-   Minimum input arrival time before clock: 4.403ns
-   Maximum output required time after clock: 5.582ns
+   Minimum input arrival time before clock: 4.485ns
+   Maximum output required time after clock: 7.791ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -655,7 +655,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
   Clock period: 9.574ns (frequency: 104.450MHz)
-  Total number of paths / destination ports: 3030 / 328
+  Total number of paths / destination ports: 3017 / 325
 -------------------------------------------------------------------------
 Delay:               9.574ns (Levels of Logic = 10)
   Source:            XLXI_5/XLXI_146/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v2_init.ram/dp9x9.ram (RAM)
@@ -688,30 +688,30 @@ Delay:               9.574ns (Levels of Logic = 10)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'E_RX_CLK'
-  Clock period: 7.767ns (frequency: 128.750MHz)
-  Total number of paths / destination ports: 872 / 80
+  Clock period: 7.679ns (frequency: 130.225MHz)
+  Total number of paths / destination ports: 867 / 82
 -------------------------------------------------------------------------
-Delay:               7.767ns (Levels of Logic = 6)
-  Source:            XLXI_10/XLXI_1/write_add_simple (FF)
+Delay:               7.679ns (Levels of Logic = 6)
+  Source:            XLXI_10/XLXI_1/write_address_counter_1 (FF)
   Destination:       XLXI_10/XLXI_1/write_address_counter_11 (FF)
   Source Clock:      E_RX_CLK rising
   Destination Clock: E_RX_CLK rising
 
-  Data Path: XLXI_10/XLXI_1/write_add_simple to XLXI_10/XLXI_1/write_address_counter_11
+  Data Path: XLXI_10/XLXI_1/write_address_counter_1 to XLXI_10/XLXI_1/write_address_counter_11
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q             13   0.591   1.062  XLXI_10/XLXI_1/write_add_simple (XLXI_10/XLXI_1/write_add_simple)
-     LUT2_D:I1->O          1   0.704   0.424  XLXI_10/XLXI_1/write_address_counter_mux0001<2>21 (XLXI_10/XLXI_1/write_address_counter_mux0001<2>_bdd0)
-     LUT4_D:I3->LO         1   0.704   0.179  XLXI_10/XLXI_1/write_address_counter_mux0001<11>2 (N91)
+     FDE:C->Q              9   0.591   0.899  XLXI_10/XLXI_1/write_address_counter_1 (XLXI_10/XLXI_1/write_address_counter_1)
+     LUT2:I1->O            1   0.704   0.424  XLXI_10/XLXI_1/write_address_counter_mux0001<11>2_SW0 (N38)
+     LUT4_D:I3->LO         1   0.704   0.179  XLXI_10/XLXI_1/write_address_counter_mux0001<11>2 (N75)
      LUT2:I1->O            2   0.704   0.451  XLXI_10/XLXI_1/write_address_counter_mux0001<10>111 (XLXI_10/XLXI_1/N27)
-     LUT4_D:I3->LO         1   0.704   0.104  XLXI_10/XLXI_1/write_address_counter_mux0001<10>121 (N90)
-     LUT4:I3->O            1   0.704   0.424  XLXI_10/XLXI_1/write_address_counter_mux0001<11>_SW0 (N45)
+     LUT4_D:I3->LO         1   0.704   0.179  XLXI_10/XLXI_1/write_address_counter_mux0001<10>121 (N74)
+     LUT2:I1->O            1   0.704   0.424  XLXI_10/XLXI_1/write_address_counter_mux0001<11>_SW1 (N45)
      LUT4:I3->O            1   0.704   0.000  XLXI_10/XLXI_1/write_address_counter_mux0001<11> (XLXI_10/XLXI_1/write_address_counter_mux0001<11>)
      FDE:D                     0.308          XLXI_10/XLXI_1/write_address_counter_11
     ----------------------------------------
-    Total                      7.767ns (5.123ns logic, 2.644ns route)
-                                       (66.0% logic, 34.0% route)
+    Total                      7.679ns (5.123ns logic, 2.556ns route)
+                                       (66.7% logic, 33.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
@@ -735,9 +735,9 @@ Offset:              2.059ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'E_RX_CLK'
-  Total number of paths / destination ports: 33 / 33
+  Total number of paths / destination ports: 35 / 35
 -------------------------------------------------------------------------
-Offset:              4.403ns (Levels of Logic = 2)
+Offset:              4.485ns (Levels of Logic = 2)
   Source:            E_RX_DV (PAD)
   Destination:       XLXI_10/XLXI_1/write_address_counter_11 (FF)
   Destination Clock: E_RX_CLK rising
@@ -746,63 +746,70 @@ Offset:              4.403ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             4   1.218   0.666  E_RX_DV_IBUF (E_RX_DV_IBUF)
+     IBUF:I->O             6   1.218   0.748  E_RX_DV_IBUF (E_RX_DV_IBUF)
      LUT4:I1->O           25   0.704   1.260  XLXI_10/XLXI_1/write_add_simple_not0002 (XLXI_10/XLXI_1/write_add_simple_not0002)
      FDE:CE                    0.555          XLXI_10/XLXI_1/write_add_simple
     ----------------------------------------
-    Total                      4.403ns (2.477ns logic, 1.926ns route)
-                                       (56.3% logic, 43.7% route)
+    Total                      4.485ns (2.477ns logic, 2.008ns route)
+                                       (55.2% logic, 44.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
-  Total number of paths / destination ports: 8 / 7
+  Total number of paths / destination ports: 18 / 7
 -------------------------------------------------------------------------
-Offset:              5.582ns (Levels of Logic = 2)
-  Source:            XLXI_10/XLXI_1/EOF_latched_0 (FF)
+Offset:              7.791ns (Levels of Logic = 2)
+  Source:            XLXI_10/XLXI_3/RAMB16_S1_S2_inst (RAM)
   Destination:       EOF (PAD)
   Source Clock:      CLK rising
 
-  Data Path: XLXI_10/XLXI_1/EOF_latched_0 to EOF
+  Data Path: XLXI_10/XLXI_3/RAMB16_S1_S2_inst to EOF
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              1   0.591   0.595  XLXI_10/XLXI_1/EOF_latched_0 (XLXI_10/XLXI_1/EOF_latched_0)
+     RAMB16_S1_S2:CLKB->DOB0    1   2.800   0.595  XLXI_10/XLXI_3/RAMB16_S1_S2_inst (XLXI_10/XLXN_17<0>)
      LUT2:I0->O            1   0.704   0.420  XLXI_10/XLXI_1/EOF1 (EOF_OBUF)
      OBUF:I->O                 3.272          EOF_OBUF (EOF)
     ----------------------------------------
-    Total                      5.582ns (4.567ns logic, 1.015ns route)
-                                       (81.8% logic, 18.2% route)
+    Total                      7.791ns (6.776ns logic, 1.015ns route)
+                                       (87.0% logic, 13.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'E_RX_CLK'
-  Total number of paths / destination ports: 1 / 1
+  Total number of paths / destination ports: 12 / 2
 -------------------------------------------------------------------------
-Offset:              4.283ns (Levels of Logic = 1)
-  Source:            XLXI_10/XLXI_1/full (FF)
-  Destination:       full (PAD)
+Offset:              7.072ns (Levels of Logic = 8)
+  Source:            XLXI_10/XLXI_1/write_address_counter_1 (FF)
+  Destination:       empty (PAD)
   Source Clock:      E_RX_CLK rising
 
-  Data Path: XLXI_10/XLXI_1/full to full
+  Data Path: XLXI_10/XLXI_1/write_address_counter_1 to empty
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              1   0.591   0.420  XLXI_10/XLXI_1/full (XLXI_10/XLXI_1/full)
-     OBUF:I->O                 3.272          full_OBUF (full)
+     FDE:C->Q              9   0.591   0.899  XLXI_10/XLXI_1/write_address_counter_1 (XLXI_10/XLXI_1/write_address_counter_1)
+     LUT4:I1->O            1   0.704   0.000  XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_lut<0> (XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<0> (XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<1> (XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<2> (XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<3> (XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<4> (XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<4>)
+     MUXCY:CI->O           2   0.459   0.447  XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<5> (empty_OBUF)
+     OBUF:I->O                 3.272          empty_OBUF (empty)
     ----------------------------------------
-    Total                      4.283ns (3.863ns logic, 0.420ns route)
-                                       (90.2% logic, 9.8% route)
+    Total                      7.072ns (5.726ns logic, 1.346ns route)
+                                       (81.0% logic, 19.0% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 9.76 secs
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 10.27 secs
  
 --> 
 
-Total memory usage is 288616 kilobytes
+Total memory usage is 290032 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   34 (   0 filtered)
-Number of infos    :    8 (   0 filtered)
+Number of warnings :   35 (   0 filtered)
+Number of infos    :   10 (   0 filtered)
 

@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2014-08-17T14:19:22</DateModified>
-  <ModuleName>tx_schem</ModuleName>
+  <DateModified>2014-08-31T10:00:58</DateModified>
+  <ModuleName>new_schem</ModuleName>
   <SummaryTimeStamp>2014-08-17T14:14:41</SummaryTimeStamp>
   <SavedFilePath>C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/iseconfig/new_schem.xreport</SavedFilePath>
   <ImplementationReportsDirectory>C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b\</ImplementationReportsDirectory>

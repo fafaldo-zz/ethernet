@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="ethernetRX">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2014-8-24T8:46:51</timestamp>
+    <timestamp>2014-8-30T9:45:0</timestamp>
     <pin polarity="Input" x="0" y="-288" name="RX_D(3:0)" />
     <pin polarity="Input" x="0" y="-224" name="clk" />
     <pin polarity="Input" x="0" y="-160" name="RX_CLK" />

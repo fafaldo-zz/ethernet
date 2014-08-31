@@ -1,0 +1,8 @@
+[Inputs]
+enable
+reset
+clk
+=data_in[7:0]=
+[Outputs]
+=protocol[7:0]=
+[BiDir]

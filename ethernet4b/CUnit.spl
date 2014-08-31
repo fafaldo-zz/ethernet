@@ -1,0 +1,13 @@
+[Inputs]
+clk
+empty
+EOF
+ICMP_recognized
+reset
+=data_in[7:0]=
+[Outputs]
+frame_reset
+enable
+POP
+=test[7:0]=
+[BiDir]

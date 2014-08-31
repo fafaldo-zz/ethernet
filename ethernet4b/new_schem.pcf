@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.68d on Sat Aug 23 23:25:06 2014
+// Written by: Map P.68d on Sat Aug 30 10:21:34 2014
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -15,13 +15,13 @@ COMP "E_RX_D<2>" LOCATE = SITE "U11" LEVEL 1;
 COMP "E_RX_D<3>" LOCATE = SITE "V14" LEVEL 1;
 COMP "CLK" LOCATE = SITE "C9" LEVEL 1;
 COMP "EOF" LOCATE = SITE "E11" LEVEL 1;
-COMP "full" LOCATE = SITE "F12" LEVEL 1;
+COMP "full" LOCATE = SITE "E12" LEVEL 1;
 COMP "VGA_B" LOCATE = SITE "G15" LEVEL 1;
 COMP "VGA_G" LOCATE = SITE "H15" LEVEL 1;
 COMP "VGA_R" LOCATE = SITE "H14" LEVEL 1;
 COMP "ROT_A" LOCATE = SITE "K18" LEVEL 1;
 COMP "ROT_B" LOCATE = SITE "G18" LEVEL 1;
-COMP "empty" LOCATE = SITE "E12" LEVEL 1;
+COMP "empty" LOCATE = SITE "F12" LEVEL 1;
 COMP "VGA_HS" LOCATE = SITE "F15" LEVEL 1;
 COMP "VGA_VS" LOCATE = SITE "F14" LEVEL 1;
 NET "CLK_BUFGP/IBUFG" BEL "CLK_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;

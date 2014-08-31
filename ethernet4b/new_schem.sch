@@ -90,7 +90,7 @@
             <line x2="64" y1="-64" y2="0" x1="64" />
         </blockdef>
         <blockdef name="ethernetRX">
-            <timestamp>2014-8-24T8:46:51</timestamp>
+            <timestamp>2014-8-30T9:45:0</timestamp>
             <rect width="256" x="64" y="-320" height="320" />
             <rect width="64" x="0" y="-300" height="24" />
             <line x2="0" y1="-288" y2="-288" x1="64" />

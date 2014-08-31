@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_testbench1_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="cu_testbench1" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="12" />
+   <wvobject fp_name="/cu_testbench1/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cu_testbench1/data_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cu_testbench1/empty" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">empty</obj_property>
+      <obj_property name="ObjectShortName">empty</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cu_testbench1/eof" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">eof</obj_property>
+      <obj_property name="ObjectShortName">eof</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cu_testbench1/icmp_recognized" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">icmp_recognized</obj_property>
+      <obj_property name="ObjectShortName">icmp_recognized</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cu_testbench1/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cu_testbench1/frame_reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">frame_reset</obj_property>
+      <obj_property name="ObjectShortName">frame_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cu_testbench1/enable" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">enable</obj_property>
+      <obj_property name="ObjectShortName">enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cu_testbench1/pop" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pop</obj_property>
+      <obj_property name="ObjectShortName">pop</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cu_testbench1/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cu_testbench1/uut/state" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cu_testbench1/uut/next_state" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">next_state</obj_property>
+      <obj_property name="ObjectShortName">next_state</obj_property>
+   </wvobject>
+</wave_config>

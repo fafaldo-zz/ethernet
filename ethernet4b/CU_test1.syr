@@ -1,0 +1,784 @@
+Release 14.6 - xst P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: CU_test1.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "CU_test1.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "CU_test1"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : CU_test1
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Block
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/fifo_control_unit.vhd" in Library work.
+Architecture behavioral of Entity fifo_control_unit is up to date.
+Compiling vhdl file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_frame_buffer.vhd" in Library work.
+Architecture behavioral of Entity new_frame_buffer is up to date.
+Compiling vhdl file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_eof_buffer.vhd" in Library work.
+Architecture behavioral of Entity new_eof_buffer is up to date.
+Compiling vhdl file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ICMP_detector.vhd" in Library work.
+Architecture behavioral of Entity icmp_detector is up to date.
+Compiling vhdl file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CUnit.vhd" in Library work.
+Entity <cunit> compiled.
+Entity <cunit> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/tx_schem.vhf" in Library work.
+Architecture behavioral of Entity tx_schem is up to date.
+Compiling vhdl file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MII_test3.vhf" in Library work.
+Architecture behavioral of Entity mii_test3 is up to date.
+Compiling vhdl file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MII_schem.vhf" in Library work.
+Architecture behavioral of Entity mii_schem is up to date.
+Compiling vhdl file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.vhf" in Library work.
+Entity <ethernetrx_muser_cu_test1> compiled.
+Entity <ethernetrx_muser_cu_test1> (Architecture <behavioral>) compiled.
+Entity <cu_test1> compiled.
+Entity <cu_test1> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ethernetRX.vhf" in Library work.
+Architecture behavioral of Entity ethernetrx is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <CU_test1> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ethernetRX_MUSER_CU_test1> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ICMP_detector> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <CUnit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <fifo_control_unit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <new_frame_buffer> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <new_eof_buffer> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <CU_test1> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.vhf" line 268: Unconnected output port 'test' of component 'ICMP_detector'.
+Entity <CU_test1> analyzed. Unit <CU_test1> generated.
+
+Analyzing Entity <ethernetRX_MUSER_CU_test1> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.vhf" line 132: Unconnected output port 'test' of component 'fifo_control_unit'.
+WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.vhf" line 160: Unconnected output port 'DOA' of component 'new_frame_buffer'.
+WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.vhf" line 160: Unconnected output port 'DOPB' of component 'new_frame_buffer'.
+WARNING:Xst:753 - "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.vhf" line 178: Unconnected output port 'DOA' of component 'new_eof_buffer'.
+Entity <ethernetRX_MUSER_CU_test1> analyzed. Unit <ethernetRX_MUSER_CU_test1> generated.
+
+Analyzing Entity <fifo_control_unit> in library <work> (Architecture <behavioral>).
+Entity <fifo_control_unit> analyzed. Unit <fifo_control_unit> generated.
+
+Analyzing Entity <new_frame_buffer> in library <work> (Architecture <behavioral>).
+    Set user-defined property "INITP_00 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INITP_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INITP_02 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INITP_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INITP_04 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INITP_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INITP_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INITP_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_00 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_02 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_04 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_08 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_09 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_0A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_0B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_0C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_0D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_0E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_0F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_10 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_11 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_12 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_13 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_14 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_15 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_16 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_17 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_18 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_19 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_1A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_1B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_1C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_1D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_1E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_1F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_20 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_21 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_22 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_23 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_24 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_25 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_26 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_27 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_28 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_29 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_2A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_2B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_2C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_2D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_2E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_2F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_30 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_31 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_32 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_33 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_34 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_35 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_36 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_37 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_38 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_39 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_3A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_3B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_3C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_3D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_3E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_3F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_A =  0" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "INIT_B =  000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "SIM_COLLISION_CHECK =  ALL" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "SRVAL_A =  0" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "SRVAL_B =  000" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <RAMB16_S4_S9_inst> in unit <new_frame_buffer>.
+Entity <new_frame_buffer> analyzed. Unit <new_frame_buffer> generated.
+
+Analyzing Entity <new_eof_buffer> in library <work> (Architecture <behavioral>).
+    Set user-defined property "INIT_00 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_02 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_04 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_08 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_09 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_0A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_0B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_0C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_0D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_0E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_0F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_10 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_11 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_12 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_13 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_14 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_15 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_16 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_17 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_18 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_19 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_1A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_1B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_1C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_1D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_1E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_1F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_20 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_21 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_22 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_23 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_24 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_25 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_26 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_27 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_28 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_29 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_2A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_2B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_2C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_2D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_2E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_2F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_30 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_31 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_32 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_33 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_34 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_35 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_36 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_37 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_38 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_39 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_3A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_3B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_3C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_3D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_3E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_3F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_A =  0" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "INIT_B =  0" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "SIM_COLLISION_CHECK =  ALL" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "SRVAL_A =  0" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "SRVAL_B =  0" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <RAMB16_S1_S2_inst> in unit <new_eof_buffer>.
+Entity <new_eof_buffer> analyzed. Unit <new_eof_buffer> generated.
+
+Analyzing Entity <ICMP_detector> in library <work> (Architecture <behavioral>).
+Entity <ICMP_detector> analyzed. Unit <ICMP_detector> generated.
+
+Analyzing Entity <CUnit> in library <work> (Architecture <behavioral>).
+Entity <CUnit> analyzed. Unit <CUnit> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <ICMP_detector>.
+    Related source file is "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ICMP_detector.vhd".
+WARNING:Xst:1780 - Signal <test_i> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <saved> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <ICMP_detected>.
+    Found 11-bit up counter for signal <address_counter>.
+    Found 8-bit up counter for signal <reset_counter>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <ICMP_detector> synthesized.
+
+
+Synthesizing Unit <CUnit>.
+    Related source file is "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CUnit.vhd".
+WARNING:Xst:647 - Input <data_in> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1305 - Output <test<7:2>> is never assigned. Tied to value 000000.
+INFO:Xst:1799 - State finished is never reached in FSM <state>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 8                                              |
+    | Transitions        | 18                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 2-bit register for signal <test<1:0>>.
+    Found 11-bit up counter for signal <address_counter>.
+    Found 12-bit comparator greatequal for signal <state$cmp_ge0000> created at line 154.
+    Found 12-bit comparator less for signal <state$cmp_lt0000> created at line 151.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred   2 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <CUnit> synthesized.
+
+
+Synthesizing Unit <fifo_control_unit>.
+    Related source file is "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/fifo_control_unit.vhd".
+WARNING:Xst:1305 - Output <test> is never assigned. Tied to value 00000000.
+WARNING:Xst:646 - Signal <full_i> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <empty_i> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <doB_latched> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <EOF_latched> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <weA>.
+    Found 1-bit register for signal <full>.
+    Found 11-bit comparator equal for signal <empty$cmp_eq0000> created at line 208.
+    Found 1-bit register for signal <frame_started>.
+    Found 11-bit comparator equal for signal <full$cmp_eq0000> created at line 185.
+    Found 1-bit register for signal <read_add_simple>.
+    Found 11-bit register for signal <read_address_counter>.
+    Found 11-bit xor2 for signal <read_address_counter$xor0001> created at line 294.
+    Found 11-bit register for signal <read_address_counter_minus_one>.
+    Found 11-bit xor2 for signal <read_address_counter_minus_one$xor0001> created at line 361.
+    Found 1-bit register for signal <wea_i>.
+    Found 11-bit comparator not equal for signal <wea_i$cmp_ne0000> created at line 139.
+    Found 1-bit register for signal <write_add_simple>.
+    Found 12-bit register for signal <write_address_counter>.
+    Found 12-bit xor2 for signal <write_address_counter$xor0001> created at line 252.
+    Found 12-bit register for signal <write_address_counter_minus_one>.
+    Found 12-bit xor2 for signal <write_address_counter_minus_one$xor0001> created at line 328.
+    Summary:
+	inferred  52 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+Unit <fifo_control_unit> synthesized.
+
+
+Synthesizing Unit <new_frame_buffer>.
+    Related source file is "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_frame_buffer.vhd".
+Unit <new_frame_buffer> synthesized.
+
+
+Synthesizing Unit <new_eof_buffer>.
+    Related source file is "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_eof_buffer.vhd".
+Unit <new_eof_buffer> synthesized.
+
+
+Synthesizing Unit <ethernetRX_MUSER_CU_test1>.
+    Related source file is "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.vhf".
+WARNING:Xst:653 - Signal <XLXI_3_WEB_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_3_SSRB_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_3_SSRA_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_3_DIB_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00.
+WARNING:Xst:653 - Signal <XLXI_2_WEB_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_2_SSRB_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_2_SSRA_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_2_DIPB_openSignal<0>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_2_DIB_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
+Unit <ethernetRX_MUSER_CU_test1> synthesized.
+
+
+Synthesizing Unit <CU_test1>.
+    Related source file is "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.vhf".
+Unit <CU_test1> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 3
+ 11-bit up counter                                     : 2
+ 8-bit up counter                                      : 1
+# Registers                                            : 13
+ 1-bit register                                        : 9
+ 11-bit register                                       : 2
+ 12-bit register                                       : 2
+# Comparators                                          : 5
+ 11-bit comparator equal                               : 2
+ 11-bit comparator not equal                           : 1
+ 12-bit comparator greatequal                          : 1
+ 12-bit comparator less                                : 1
+# Xors                                                 : 4
+ 11-bit xor2                                           : 2
+ 12-bit xor2                                           : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <XLXI_5/state/FSM> on signal <state[1:3]> with sequential encoding.
+-----------------------------------
+ State                 | Encoding
+-----------------------------------
+ idle                  | 000
+ pop_on                | 001
+ enable_on             | 010
+ wait_for_next         | 011
+ unknown_wait_for_next | 101
+ unknown_pop_on        | 110
+ unknown_enable_on     | 111
+ reset_on              | 100
+ finished              | unreached
+-----------------------------------
+INFO:Xst:2261 - The FF/Latch <weA> in Unit <XLXI_1> is equivalent to the following FF/Latch, which will be removed : <wea_i> 
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Counters                                             : 3
+ 11-bit up counter                                     : 2
+ 8-bit up counter                                      : 1
+# Registers                                            : 55
+ Flip-Flops                                            : 55
+# Comparators                                          : 5
+ 11-bit comparator equal                               : 2
+ 11-bit comparator not equal                           : 1
+ 12-bit comparator greatequal                          : 1
+ 12-bit comparator less                                : 1
+# Xors                                                 : 4
+ 11-bit xor2                                           : 2
+ 12-bit xor2                                           : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <weA> in Unit <fifo_control_unit> is equivalent to the following FF/Latch, which will be removed : <wea_i> 
+
+Optimizing unit <CU_test1> ...
+
+Optimizing unit <CUnit> ...
+
+Optimizing unit <fifo_control_unit> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block CU_test1, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 79
+ Flip-Flops                                            : 79
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : CU_test1.ngr
+Top Level Output File Name         : CU_test1
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 17
+
+Cell Usage :
+# BELS                             : 242
+#      GND                         : 1
+#      INV                         : 6
+#      LUT1                        : 20
+#      LUT2                        : 22
+#      LUT2_L                      : 3
+#      LUT3                        : 40
+#      LUT3_D                      : 3
+#      LUT3_L                      : 2
+#      LUT4                        : 63
+#      LUT4_D                      : 6
+#      LUT4_L                      : 10
+#      MUXCY                       : 39
+#      MUXF5                       : 4
+#      VCC                         : 1
+#      XORCY                       : 22
+# FlipFlops/Latches                : 79
+#      FDE                         : 48
+#      FDR                         : 5
+#      FDRE                        : 25
+#      FDSE                        : 1
+# RAMS                             : 2
+#      RAMB16_S1_S2                : 1
+#      RAMB16_S4_S9                : 1
+# Clock Buffers                    : 2
+#      BUFGP                       : 2
+# IO Buffers                       : 15
+#      IBUF                        : 6
+#      OBUF                        : 9
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       96  out of   4656     2%  
+ Number of Slice Flip Flops:             79  out of   9312     0%  
+ Number of 4 input LUTs:                175  out of   9312     1%  
+ Number of IOs:                          17
+ Number of bonded IOBs:                  17  out of    232     7%  
+ Number of BRAMs:                         2  out of     20    10%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 53    |
+E_RX_CLK                           | BUFGP                  | 30    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 6.501ns (Maximum Frequency: 153.822MHz)
+   Minimum input arrival time before clock: 4.485ns
+   Maximum output required time after clock: 4.283ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 6.487ns (frequency: 154.154MHz)
+  Total number of paths / destination ports: 927 / 143
+-------------------------------------------------------------------------
+Delay:               6.487ns (Levels of Logic = 8)
+  Source:            XLXI_1/XLXI_1/read_address_counter_0 (FF)
+  Destination:       XLXI_1/XLXI_1/read_address_counter_minus_one_10 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: XLXI_1/XLXI_1/read_address_counter_0 to XLXI_1/XLXI_1/read_address_counter_minus_one_10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              9   0.591   0.824  XLXI_1/XLXI_1/read_address_counter_0 (XLXI_1/XLXI_1/read_address_counter_0)
+     LUT4:I3->O            1   0.704   0.000  XLXI_1/XLXI_1/Mcompar_empty_cmp_eq0000_lut<0> (XLXI_1/XLXI_1/Mcompar_empty_cmp_eq0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  XLXI_1/XLXI_1/Mcompar_empty_cmp_eq0000_cy<0> (XLXI_1/XLXI_1/Mcompar_empty_cmp_eq0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_1/XLXI_1/Mcompar_empty_cmp_eq0000_cy<1> (XLXI_1/XLXI_1/Mcompar_empty_cmp_eq0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_1/XLXI_1/Mcompar_empty_cmp_eq0000_cy<2> (XLXI_1/XLXI_1/Mcompar_empty_cmp_eq0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_1/XLXI_1/Mcompar_empty_cmp_eq0000_cy<3> (XLXI_1/XLXI_1/Mcompar_empty_cmp_eq0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_1/XLXI_1/Mcompar_empty_cmp_eq0000_cy<4> (XLXI_1/XLXI_1/Mcompar_empty_cmp_eq0000_cy<4>)
+     MUXCY:CI->O           6   0.459   0.748  XLXI_1/XLXI_1/Mcompar_empty_cmp_eq0000_cy<5> (XLXN_15)
+     LUT2:I1->O           23   0.704   1.202  XLXI_1/XLXI_1/read_address_counter_not00011 (XLXI_1/XLXI_1/read_address_counter_not0001)
+     FDE:CE                    0.555          XLXI_1/XLXI_1/read_address_counter_0
+    ----------------------------------------
+    Total                      6.487ns (3.713ns logic, 2.774ns route)
+                                       (57.2% logic, 42.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'E_RX_CLK'
+  Clock period: 6.501ns (frequency: 153.822MHz)
+  Total number of paths / destination ports: 848 / 82
+-------------------------------------------------------------------------
+Delay:               6.501ns (Levels of Logic = 3)
+  Source:            XLXI_1/XLXI_1/write_address_counter_8 (FF)
+  Destination:       XLXI_1/XLXI_1/write_address_counter_11 (FF)
+  Source Clock:      E_RX_CLK rising
+  Destination Clock: E_RX_CLK rising
+
+  Data Path: XLXI_1/XLXI_1/write_address_counter_8 to XLXI_1/XLXI_1/write_address_counter_11
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             11   0.591   0.937  XLXI_1/XLXI_1/write_address_counter_8 (XLXI_1/XLXI_1/write_address_counter_8)
+     LUT4:I3->O            1   0.704   0.595  XLXI_1/XLXI_1/wea_i_cmp_eq000026 (XLXI_1/XLXI_1/wea_i_cmp_eq000026)
+     LUT3:I0->O            2   0.704   0.451  XLXI_1/XLXI_1/wea_i_cmp_eq000028 (XLXI_1/XLXI_1/wea_i_cmp_eq0000)
+     LUT4:I3->O           25   0.704   1.260  XLXI_1/XLXI_1/write_add_simple_not0002 (XLXI_1/XLXI_1/write_add_simple_not0002)
+     FDE:CE                    0.555          XLXI_1/XLXI_1/write_add_simple
+    ----------------------------------------
+    Total                      6.501ns (3.258ns logic, 3.243ns route)
+                                       (50.1% logic, 49.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              4.439ns (Levels of Logic = 2)
+  Source:            REST (PAD)
+  Destination:       XLXI_5/address_counter_10 (FF)
+  Destination Clock: clk rising
+
+  Data Path: REST to XLXI_5/address_counter_10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   1.218   0.673  REST_IBUF (REST_IBUF)
+     LUT4:I3->O           11   0.704   0.933  XLXI_5/address_counter_or00001 (XLXI_5/address_counter_or0000)
+     FDRE:R                    0.911          XLXI_5/address_counter_0
+    ----------------------------------------
+    Total                      4.439ns (2.833ns logic, 1.606ns route)
+                                       (63.8% logic, 36.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'E_RX_CLK'
+  Total number of paths / destination ports: 35 / 35
+-------------------------------------------------------------------------
+Offset:              4.485ns (Levels of Logic = 2)
+  Source:            E_RX_DV (PAD)
+  Destination:       XLXI_1/XLXI_1/write_address_counter_11 (FF)
+  Destination Clock: E_RX_CLK rising
+
+  Data Path: E_RX_DV to XLXI_1/XLXI_1/write_address_counter_11
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   1.218   0.748  E_RX_DV_IBUF (E_RX_DV_IBUF)
+     LUT4:I1->O           25   0.704   1.260  XLXI_1/XLXI_1/write_add_simple_not0002 (XLXI_1/XLXI_1/write_add_simple_not0002)
+     FDE:CE                    0.555          XLXI_1/XLXI_1/write_add_simple
+    ----------------------------------------
+    Total                      4.485ns (2.477ns logic, 2.008ns route)
+                                       (55.2% logic, 44.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'E_RX_CLK'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.283ns (Levels of Logic = 1)
+  Source:            XLXI_1/XLXI_1/full (FF)
+  Destination:       full (PAD)
+  Source Clock:      E_RX_CLK rising
+
+  Data Path: XLXI_1/XLXI_1/full to full
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.591   0.420  XLXI_1/XLXI_1/full (XLXI_1/XLXI_1/full)
+     OBUF:I->O                 3.272          full_OBUF (full)
+    ----------------------------------------
+    Total                      4.283ns (3.863ns logic, 0.420ns route)
+                                       (90.2% logic, 9.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              4.283ns (Levels of Logic = 1)
+  Source:            XLXI_5/test_1 (FF)
+  Destination:       test<1> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: XLXI_5/test_1 to test<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             1   0.591   0.420  XLXI_5/test_1 (XLXI_5/test_1)
+     OBUF:I->O                 3.272          test_1_OBUF (test<1>)
+    ----------------------------------------
+    Total                      4.283ns (3.863ns logic, 0.420ns route)
+                                       (90.2% logic, 9.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 11.29 secs
+ 
+--> 
+
+Total memory usage is 280168 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   23 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

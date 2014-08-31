@@ -1,4 +1,4 @@
-Running: D:\programy\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/stupid_stupid_sch_tb_isim_beh.exe -prj C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/stupid_stupid_sch_tb_beh.prj work.stupid_stupid_sch_tb 
+Running: D:\programy\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ethernetRX_ethernetRX_sch_tb_isim_beh.exe -prj C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ethernetRX_ethernetRX_sch_tb_beh.prj work.ethernetRX_ethernetRX_sch_tb 
 ISim P.68d (signature 0x7708f090)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
@@ -6,11 +6,8 @@ Determining compilation order of HDL files
 Parsing VHDL file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_frame_buffer.vhd" into library work
 Parsing VHDL file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/new_eof_buffer.vhd" into library work
 Parsing VHDL file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/fifo_control_unit.vhd" into library work
-Parsing VHDL file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MAC_source.vhd" into library work
 Parsing VHDL file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ethernetRX.vhf" into library work
-Parsing VHDL file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU.vhd" into library work
-Parsing VHDL file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/stupid.vhf" into library work
-Parsing VHDL file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/stupid_test.vhd" into library work
+Parsing VHDL file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/rx_test_part1.vhd" into library work
 Parsing VHDL file "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MII_schem.vhf" into library work
 Starting static elaboration
 Completed static elaboration
@@ -25,19 +22,15 @@ Compiling package textio
 Compiling package vital_timing
 Compiling package vital_primitives
 Compiling package vpkg
-Compiling architecture ramb16_s4_s9_v of entity RAMB16_S4_S9 [\RAMB16_S4_S9:stupid_stupid_sch_...]
-Compiling architecture behavioral of entity new_frame_buffer [\new_frame_buffer:stupid_stupid_...]
-Compiling architecture ramb16_s1_s2_v of entity RAMB16_S1_S2 [\RAMB16_S1_S2:stupid_stupid_sch_...]
-Compiling architecture behavioral of entity new_eof_buffer [\new_eof_buffer:stupid_stupid_sc...]
-Compiling architecture vcc_v of entity VCC [vcc_default]
-Compiling architecture behavioral of entity ethernetRX_MUSER_stupid [\ethernetRX_MUSER_stupid:stupid_...]
-Compiling architecture behavioral of entity MAC_source [mac_source_default]
-Compiling architecture behavioral of entity CU [cu_default]
-Compiling architecture behavioral of entity stupid [\stupid:stupid_stupid_sch_tb:uut...]
-Compiling architecture behavioral of entity stupid_stupid_sch_tb
+Compiling architecture ramb16_s4_s9_v of entity RAMB16_S4_S9 [\RAMB16_S4_S9:ethernetrx_etherne...]
+Compiling architecture behavioral of entity new_frame_buffer [\new_frame_buffer:ethernetrx_eth...]
+Compiling architecture ramb16_s1_s2_v of entity RAMB16_S1_S2 [\RAMB16_S1_S2:ethernetrx_etherne...]
+Compiling architecture behavioral of entity new_eof_buffer [\new_eof_buffer:ethernetrx_ether...]
+Compiling architecture behavioral of entity ethernetRX [\ethernetRX:ethernetrx_ethernetr...]
+Compiling architecture behavioral of entity ethernetrx_ethernetrx_sch_tb
 Time Resolution for simulation is 1ps.
-Waiting for 10 sub-compilation(s) to finish...
-Compiled 31 VHDL Units
-Built simulation executable C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/stupid_stupid_sch_tb_isim_beh.exe
-Fuse Memory Usage: 66604 KB
-Fuse CPU Usage: 1591 ms
+Waiting for 4 sub-compilation(s) to finish...
+Compiled 23 VHDL Units
+Built simulation executable C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ethernetRX_ethernetRX_sch_tb_isim_beh.exe
+Fuse Memory Usage: 66512 KB
+Fuse CPU Usage: 1435 ms

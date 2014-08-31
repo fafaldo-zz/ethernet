@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/xst"
+elaborate
+-ifn CU.prj
+-ifmt mixed

@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2014-08-24T10:39:17</DateModified>
-  <ModuleName>new_schem</ModuleName>
+  <DateModified>2014-08-24T21:22:12</DateModified>
+  <ModuleName>CU_test1</ModuleName>
   <SummaryTimeStamp>2014-08-24T10:38:55</SummaryTimeStamp>
   <SavedFilePath>C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/iseconfig/ethernetTX.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b</ImplementationReportsDirectory>
-  <DateInitialized>2014-08-24T10:39:17</DateInitialized>
+  <ImplementationReportsDirectory>C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b\</ImplementationReportsDirectory>
+  <DateInitialized>2014-08-24T21:22:11</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>

@@ -1,2 +1,4 @@
 vhdtdtfi -lib work MAC_destination.vhd -prj ethernet -o MAC_destination.spl -module MAC_destination -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
 spl2sym -intstyle ise -family spartan3e MAC_destination.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MAC_destination.sym 
+vhdtdtfi -lib work MAC_destination.vhd -prj ethernet -o MAC_destination.spl -module MAC_destination -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w MAC_destination.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/MAC_destination.sym 

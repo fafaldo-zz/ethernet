@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1_CU_test1_sch_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="cu_test1_cu_test1_sch_tb" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="textio" />
+            <top_module name="vcomponents" />
+            <top_module name="vital_primitives" />
+            <top_module name="vital_timing" />
+            <top_module name="vpkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="20" />
+   <wvobject fp_name="/cu_test1_cu_test1_sch_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cu_test1_cu_test1_sch_tb/UUT/XLXI_5/data_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cu_test1_cu_test1_sch_tb/UUT/XLXI_5/empty" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">empty</obj_property>
+      <obj_property name="ObjectShortName">empty</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cu_test1_cu_test1_sch_tb/UUT/XLXI_5/eof" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">eof</obj_property>
+      <obj_property name="ObjectShortName">eof</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cu_test1_cu_test1_sch_tb/UUT/XLXI_5/icmp_recognized" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">icmp_recognized</obj_property>
+      <obj_property name="ObjectShortName">icmp_recognized</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cu_test1_cu_test1_sch_tb/UUT/XLXI_5/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cu_test1_cu_test1_sch_tb/UUT/XLXI_5/frame_reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">frame_reset</obj_property>
+      <obj_property name="ObjectShortName">frame_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cu_test1_cu_test1_sch_tb/UUT/XLXI_5/enable" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">enable</obj_property>
+      <obj_property name="ObjectShortName">enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cu_test1_cu_test1_sch_tb/UUT/XLXI_5/pop" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pop</obj_property>
+      <obj_property name="ObjectShortName">pop</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cu_test1_cu_test1_sch_tb/UUT/XLXI_5/state" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cu_test1_cu_test1_sch_tb/UUT/XLXI_5/next_state" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">next_state</obj_property>
+      <obj_property name="ObjectShortName">next_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cu_test1_cu_test1_sch_tb/UUT/XLXI_5/address_counter" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">address_counter[10:0]</obj_property>
+      <obj_property name="ObjectShortName">address_counter[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cu_test1_cu_test1_sch_tb/UUT/XLXI_3/data_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cu_test1_cu_test1_sch_tb/UUT/XLXI_3/enable" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">enable</obj_property>
+      <obj_property name="ObjectShortName">enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cu_test1_cu_test1_sch_tb/UUT/XLXI_3/icmp_detected" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">icmp_detected</obj_property>
+      <obj_property name="ObjectShortName">icmp_detected</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cu_test1_cu_test1_sch_tb/UUT/XLXI_3/address_counter" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">address_counter[10:0]</obj_property>
+      <obj_property name="ObjectShortName">address_counter[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cu_test1_cu_test1_sch_tb/UUT/XLXI_1/XLXI_1/addrb" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addrb[10:0]</obj_property>
+      <obj_property name="ObjectShortName">addrb[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cu_test1_cu_test1_sch_tb/UUT/XLXI_1/XLXI_1/addreofb" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addreofb[12:0]</obj_property>
+      <obj_property name="ObjectShortName">addreofb[12:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cu_test1_cu_test1_sch_tb/UUT/XLXI_1/XLXI_1/dob" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dob[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dob[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cu_test1_cu_test1_sch_tb/UUT/XLXI_1/XLXI_1/doeofb" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">doeofb[1:0]</obj_property>
+      <obj_property name="ObjectShortName">doeofb[1:0]</obj_property>
+   </wvobject>
+</wave_config>

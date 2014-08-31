@@ -1,10 +1,12 @@
 [Inputs]
 clk
-start
+empty
 EOF
+ICMP_recognized
 reset
 =data_in[7:0]=
 [Outputs]
+frame_reset
 enable
 POP
 [BiDir]

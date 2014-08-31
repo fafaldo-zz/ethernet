@@ -1,0 +1,159 @@
+xst -intstyle ise -ifn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.xst" -ofn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "PHY - Copy.ucf" -uc "GenIO - Copy.ucf" -p xc3s500e-fg320-4 CU_test1.ngc CU_test1.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CU_test1_map.ncd CU_test1.ngd CU_test1.pcf 
+par -w -intstyle ise -ol high -t 1 CU_test1_map.ncd CU_test1.ncd CU_test1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CU_test1.twx CU_test1.ncd -o CU_test1.twr CU_test1.pcf -ucf {PHY - Copy.ucf} -ucf {GenIO - Copy.ucf} 
+bitgen -intstyle ise -f CU_test1.ut CU_test1.ncd 
+xst -intstyle ise -ifn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.xst" -ofn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "PHY - Copy.ucf" -uc "GenIO - Copy.ucf" -p xc3s500e-fg320-4 CU_test1.ngc CU_test1.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CU_test1_map.ncd CU_test1.ngd CU_test1.pcf 
+par -w -intstyle ise -ol high -t 1 CU_test1_map.ncd CU_test1.ncd CU_test1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CU_test1.twx CU_test1.ncd -o CU_test1.twr CU_test1.pcf -ucf {PHY - Copy.ucf} -ucf {GenIO - Copy.ucf} 
+bitgen -intstyle ise -f CU_test1.ut CU_test1.ncd 
+xst -intstyle ise -ifn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.xst" -ofn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "PHY - Copy.ucf" -uc "GenIO - Copy.ucf" -p xc3s500e-fg320-4 CU_test1.ngc CU_test1.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CU_test1_map.ncd CU_test1.ngd CU_test1.pcf 
+par -w -intstyle ise -ol high -t 1 CU_test1_map.ncd CU_test1.ncd CU_test1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CU_test1.twx CU_test1.ncd -o CU_test1.twr CU_test1.pcf -ucf {PHY - Copy.ucf} -ucf {GenIO - Copy.ucf} 
+bitgen -intstyle ise -f CU_test1.ut CU_test1.ncd 
+xst -intstyle ise -ifn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.xst" -ofn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.syr" 
+xst -intstyle ise -ifn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.xst" -ofn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "PHY - Copy.ucf" -uc "GenIO - Copy.ucf" -p xc3s500e-fg320-4 CU_test1.ngc CU_test1.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CU_test1_map.ncd CU_test1.ngd CU_test1.pcf 
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CU_test1_map.ncd CU_test1.ngd CU_test1.pcf 
+par -w -intstyle ise -ol high -t 1 CU_test1_map.ncd CU_test1.ncd CU_test1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CU_test1.twx CU_test1.ncd -o CU_test1.twr CU_test1.pcf -ucf {PHY - Copy.ucf} -ucf {GenIO - Copy.ucf} 
+bitgen -intstyle ise -f CU_test1.ut CU_test1.ncd 
+xst -intstyle ise -ifn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.xst" -ofn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "PHY - Copy.ucf" -uc "GenIO - Copy.ucf" -p xc3s500e-fg320-4 CU_test1.ngc CU_test1.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CU_test1_map.ncd CU_test1.ngd CU_test1.pcf 
+par -w -intstyle ise -ol high -t 1 CU_test1_map.ncd CU_test1.ncd CU_test1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CU_test1.twx CU_test1.ncd -o CU_test1.twr CU_test1.pcf -ucf {PHY - Copy.ucf} -ucf {GenIO - Copy.ucf} 
+bitgen -intstyle ise -f CU_test1.ut CU_test1.ncd 
+xst -intstyle ise -ifn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.xst" -ofn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "PHY - Copy.ucf" -uc "GenIO - Copy.ucf" -p xc3s500e-fg320-4 CU_test1.ngc CU_test1.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CU_test1_map.ncd CU_test1.ngd CU_test1.pcf 
+par -w -intstyle ise -ol high -t 1 CU_test1_map.ncd CU_test1.ncd CU_test1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CU_test1.twx CU_test1.ncd -o CU_test1.twr CU_test1.pcf -ucf {PHY - Copy.ucf} -ucf {GenIO - Copy.ucf} 
+bitgen -intstyle ise -f CU_test1.ut CU_test1.ncd 
+xst -intstyle ise -ifn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.xst" -ofn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.syr" 
+xst -intstyle ise -ifn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.xst" -ofn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "PHY - Copy.ucf" -uc "GenIO - Copy.ucf" -p xc3s500e-fg320-4 CU_test1.ngc CU_test1.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CU_test1_map.ncd CU_test1.ngd CU_test1.pcf 
+par -w -intstyle ise -ol high -t 1 CU_test1_map.ncd CU_test1.ncd CU_test1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CU_test1.twx CU_test1.ncd -o CU_test1.twr CU_test1.pcf -ucf {PHY - Copy.ucf} -ucf {GenIO - Copy.ucf} 
+bitgen -intstyle ise -f CU_test1.ut CU_test1.ncd 
+xst -intstyle ise -ifn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.xst" -ofn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "PHY - Copy.ucf" -uc "GenIO - Copy.ucf" -p xc3s500e-fg320-4 CU_test1.ngc CU_test1.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CU_test1_map.ncd CU_test1.ngd CU_test1.pcf 
+par -w -intstyle ise -ol high -t 1 CU_test1_map.ncd CU_test1.ncd CU_test1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CU_test1.twx CU_test1.ncd -o CU_test1.twr CU_test1.pcf -ucf {PHY - Copy.ucf} -ucf {GenIO - Copy.ucf} 
+bitgen -intstyle ise -f CU_test1.ut CU_test1.ncd 
+xst -intstyle ise -ifn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.xst" -ofn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "PHY - Copy.ucf" -uc "GenIO - Copy.ucf" -p xc3s500e-fg320-4 CU_test1.ngc CU_test1.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CU_test1_map.ncd CU_test1.ngd CU_test1.pcf 
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CU_test1_map.ncd CU_test1.ngd CU_test1.pcf 
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CU_test1_map.ncd CU_test1.ngd CU_test1.pcf 
+par -w -intstyle ise -ol high -t 1 CU_test1_map.ncd CU_test1.ncd CU_test1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CU_test1.twx CU_test1.ncd -o CU_test1.twr CU_test1.pcf -ucf {PHY - Copy.ucf} -ucf {GenIO - Copy.ucf} 
+bitgen -intstyle ise -f CU_test1.ut CU_test1.ncd 
+xst -intstyle ise -ifn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.xst" -ofn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "PHY - Copy.ucf" -uc "GenIO - Copy.ucf" -p xc3s500e-fg320-4 CU_test1.ngc CU_test1.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CU_test1_map.ncd CU_test1.ngd CU_test1.pcf 
+par -w -intstyle ise -ol high -t 1 CU_test1_map.ncd CU_test1.ncd CU_test1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CU_test1.twx CU_test1.ncd -o CU_test1.twr CU_test1.pcf -ucf {PHY - Copy.ucf} -ucf {GenIO - Copy.ucf} 
+bitgen -intstyle ise -f CU_test1.ut CU_test1.ncd 
+xst -intstyle ise -ifn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.xst" -ofn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "PHY - Copy.ucf" -uc "GenIO - Copy.ucf" -p xc3s500e-fg320-4 CU_test1.ngc CU_test1.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CU_test1_map.ncd CU_test1.ngd CU_test1.pcf 
+par -w -intstyle ise -ol high -t 1 CU_test1_map.ncd CU_test1.ncd CU_test1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CU_test1.twx CU_test1.ncd -o CU_test1.twr CU_test1.pcf -ucf {PHY - Copy.ucf} -ucf {GenIO - Copy.ucf} 
+bitgen -intstyle ise -f CU_test1.ut CU_test1.ncd 
+xst -intstyle ise -ifn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.xst" -ofn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "PHY - Copy.ucf" -uc "GenIO - Copy.ucf" -p xc3s500e-fg320-4 CU_test1.ngc CU_test1.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CU_test1_map.ncd CU_test1.ngd CU_test1.pcf 
+par -w -intstyle ise -ol high -t 1 CU_test1_map.ncd CU_test1.ncd CU_test1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CU_test1.twx CU_test1.ncd -o CU_test1.twr CU_test1.pcf -ucf {PHY - Copy.ucf} -ucf {GenIO - Copy.ucf} 
+bitgen -intstyle ise -f CU_test1.ut CU_test1.ncd 
+xst -intstyle ise -ifn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.xst" -ofn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "PHY - Copy.ucf" -uc "GenIO - Copy.ucf" -p xc3s500e-fg320-4 CU_test1.ngc CU_test1.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CU_test1_map.ncd CU_test1.ngd CU_test1.pcf 
+par -w -intstyle ise -ol high -t 1 CU_test1_map.ncd CU_test1.ncd CU_test1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CU_test1.twx CU_test1.ncd -o CU_test1.twr CU_test1.pcf -ucf {PHY - Copy.ucf} -ucf {GenIO - Copy.ucf} 
+bitgen -intstyle ise -f CU_test1.ut CU_test1.ncd 
+xst -intstyle ise -ifn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.xst" -ofn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "PHY - Copy.ucf" -uc "GenIO - Copy.ucf" -p xc3s500e-fg320-4 CU_test1.ngc CU_test1.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CU_test1_map.ncd CU_test1.ngd CU_test1.pcf 
+par -w -intstyle ise -ol high -t 1 CU_test1_map.ncd CU_test1.ncd CU_test1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CU_test1.twx CU_test1.ncd -o CU_test1.twr CU_test1.pcf -ucf {PHY - Copy.ucf} -ucf {GenIO - Copy.ucf} 
+bitgen -intstyle ise -f CU_test1.ut CU_test1.ncd 
+xst -intstyle ise -ifn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.xst" -ofn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "PHY - Copy.ucf" -uc "GenIO - Copy.ucf" -p xc3s500e-fg320-4 CU_test1.ngc CU_test1.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CU_test1_map.ncd CU_test1.ngd CU_test1.pcf 
+par -w -intstyle ise -ol high -t 1 CU_test1_map.ncd CU_test1.ncd CU_test1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CU_test1.twx CU_test1.ncd -o CU_test1.twr CU_test1.pcf -ucf {PHY - Copy.ucf} -ucf {GenIO - Copy.ucf} 
+bitgen -intstyle ise -f CU_test1.ut CU_test1.ncd 
+xst -intstyle ise -ifn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.xst" -ofn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "PHY - Copy.ucf" -uc "GenIO - Copy.ucf" -p xc3s500e-fg320-4 CU_test1.ngc CU_test1.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CU_test1_map.ncd CU_test1.ngd CU_test1.pcf 
+par -w -intstyle ise -ol high -t 1 CU_test1_map.ncd CU_test1.ncd CU_test1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CU_test1.twx CU_test1.ncd -o CU_test1.twr CU_test1.pcf -ucf {PHY - Copy.ucf} -ucf {GenIO - Copy.ucf} 
+bitgen -intstyle ise -f CU_test1.ut CU_test1.ncd 
+xst -intstyle ise -ifn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.xst" -ofn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "PHY - Copy.ucf" -uc "GenIO - Copy.ucf" -p xc3s500e-fg320-4 CU_test1.ngc CU_test1.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CU_test1_map.ncd CU_test1.ngd CU_test1.pcf 
+par -w -intstyle ise -ol high -t 1 CU_test1_map.ncd CU_test1.ncd CU_test1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CU_test1.twx CU_test1.ncd -o CU_test1.twr CU_test1.pcf -ucf {PHY - Copy.ucf} -ucf {GenIO - Copy.ucf} 
+bitgen -intstyle ise -f CU_test1.ut CU_test1.ncd 
+xst -intstyle ise -ifn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.xst" -ofn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "PHY - Copy.ucf" -uc "GenIO - Copy.ucf" -p xc3s500e-fg320-4 CU_test1.ngc CU_test1.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CU_test1_map.ncd CU_test1.ngd CU_test1.pcf 
+par -w -intstyle ise -ol high -t 1 CU_test1_map.ncd CU_test1.ncd CU_test1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CU_test1.twx CU_test1.ncd -o CU_test1.twr CU_test1.pcf -ucf {PHY - Copy.ucf} -ucf {GenIO - Copy.ucf} 
+bitgen -intstyle ise -f CU_test1.ut CU_test1.ncd 
+xst -intstyle ise -ifn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.xst" -ofn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "PHY - Copy.ucf" -uc "GenIO - Copy.ucf" -p xc3s500e-fg320-4 CU_test1.ngc CU_test1.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CU_test1_map.ncd CU_test1.ngd CU_test1.pcf 
+par -w -intstyle ise -ol high -t 1 CU_test1_map.ncd CU_test1.ncd CU_test1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CU_test1.twx CU_test1.ncd -o CU_test1.twr CU_test1.pcf -ucf {PHY - Copy.ucf} -ucf {GenIO - Copy.ucf} 
+bitgen -intstyle ise -f CU_test1.ut CU_test1.ncd 
+xst -intstyle ise -ifn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.xst" -ofn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "PHY - Copy.ucf" -uc "GenIO - Copy.ucf" -p xc3s500e-fg320-4 CU_test1.ngc CU_test1.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CU_test1_map.ncd CU_test1.ngd CU_test1.pcf 
+par -w -intstyle ise -ol high -t 1 CU_test1_map.ncd CU_test1.ncd CU_test1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CU_test1.twx CU_test1.ncd -o CU_test1.twr CU_test1.pcf -ucf {PHY - Copy.ucf} -ucf {GenIO - Copy.ucf} 
+bitgen -intstyle ise -f CU_test1.ut CU_test1.ncd 
+xst -intstyle ise -ifn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.xst" -ofn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "PHY - Copy.ucf" -uc "GenIO - Copy.ucf" -p xc3s500e-fg320-4 CU_test1.ngc CU_test1.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CU_test1_map.ncd CU_test1.ngd CU_test1.pcf 
+par -w -intstyle ise -ol high -t 1 CU_test1_map.ncd CU_test1.ncd CU_test1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CU_test1.twx CU_test1.ncd -o CU_test1.twr CU_test1.pcf -ucf {PHY - Copy.ucf} -ucf {GenIO - Copy.ucf} 
+bitgen -intstyle ise -f CU_test1.ut CU_test1.ncd 
+xst -intstyle ise -ifn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.xst" -ofn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "PHY - Copy.ucf" -uc "GenIO - Copy.ucf" -p xc3s500e-fg320-4 CU_test1.ngc CU_test1.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CU_test1_map.ncd CU_test1.ngd CU_test1.pcf 
+par -w -intstyle ise -ol high -t 1 CU_test1_map.ncd CU_test1.ncd CU_test1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CU_test1.twx CU_test1.ncd -o CU_test1.twr CU_test1.pcf -ucf {PHY - Copy.ucf} -ucf {GenIO - Copy.ucf} 
+bitgen -intstyle ise -f CU_test1.ut CU_test1.ncd 
+xst -intstyle ise -ifn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.xst" -ofn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "PHY - Copy.ucf" -uc "GenIO - Copy.ucf" -p xc3s500e-fg320-4 CU_test1.ngc CU_test1.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CU_test1_map.ncd CU_test1.ngd CU_test1.pcf 
+xst -intstyle ise -ifn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.xst" -ofn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "PHY - Copy.ucf" -uc "GenIO - Copy.ucf" -p xc3s500e-fg320-4 CU_test1.ngc CU_test1.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CU_test1_map.ncd CU_test1.ngd CU_test1.pcf 
+par -w -intstyle ise -ol high -t 1 CU_test1_map.ncd CU_test1.ncd CU_test1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CU_test1.twx CU_test1.ncd -o CU_test1.twr CU_test1.pcf -ucf {PHY - Copy.ucf} -ucf {GenIO - Copy.ucf} 
+bitgen -intstyle ise -f CU_test1.ut CU_test1.ncd 
+xst -intstyle ise -ifn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.xst" -ofn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "PHY - Copy.ucf" -uc "GenIO - Copy.ucf" -p xc3s500e-fg320-4 CU_test1.ngc CU_test1.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CU_test1_map.ncd CU_test1.ngd CU_test1.pcf 
+par -w -intstyle ise -ol high -t 1 CU_test1_map.ncd CU_test1.ncd CU_test1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CU_test1.twx CU_test1.ncd -o CU_test1.twr CU_test1.pcf -ucf {PHY - Copy.ucf} -ucf {GenIO - Copy.ucf} 
+bitgen -intstyle ise -f CU_test1.ut CU_test1.ncd 
+xst -intstyle ise -ifn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.xst" -ofn "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "PHY - Copy.ucf" -uc "GenIO - Copy.ucf" -p xc3s500e-fg320-4 CU_test1.ngc CU_test1.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CU_test1_map.ncd CU_test1.ngd CU_test1.pcf 
+par -w -intstyle ise -ol high -t 1 CU_test1_map.ncd CU_test1.ncd CU_test1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CU_test1.twx CU_test1.ncd -o CU_test1.twr CU_test1.pcf -ucf {PHY - Copy.ucf} -ucf {GenIO - Copy.ucf} 
+bitgen -intstyle ise -f CU_test1.ut CU_test1.ncd 
+sch2sym -intstyle ise -family spartan3e -w -refsym CU_test1 C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.sch C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CU_test1.sym 

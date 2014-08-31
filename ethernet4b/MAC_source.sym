@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="MAC_source">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2014-8-24T9:4:21</timestamp>
+    <timestamp>2014-8-24T9:50:10</timestamp>
     <pin polarity="Input" x="0" y="-224" name="enable" />
     <pin polarity="Input" x="0" y="-160" name="reset" />
     <pin polarity="Input" x="0" y="-96" name="clk" />

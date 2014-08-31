@@ -1,7 +1,7 @@
 Release 14.6 Drc P.68d (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Sat Aug 23 23:25:31 2014
+Sat Aug 30 10:22:04 2014
 
 drc -z new_schem.ncd new_schem.pcf
 

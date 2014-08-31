@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.6
 --  \   \         Application : sch2hdl
 --  /   /         Filename : ethernetRX.vhf
--- /___/   /\     Timestamp : 08/24/2014 10:50:59
+-- /___/   /\     Timestamp : 08/30/2014 11:48:38
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -38,7 +38,6 @@ entity ethernetRX is
 end ethernetRX;
 
 architecture BEHAVIORAL of ethernetRX is
-   attribute BOX_TYPE   : string ;
    signal XLXN_4                 : std_logic;
    signal XLXN_5                 : std_logic;
    signal XLXN_6                 : std_logic_vector (11 downto 0);
@@ -54,7 +53,7 @@ architecture BEHAVIORAL of ethernetRX is
    signal XLXN_16                : std_logic_vector (0 downto 0);
    signal XLXN_17                : std_logic_vector (1 downto 0);
    signal XLXN_27                : std_logic_vector (7 downto 0);
-   signal XLXN_28                : std_logic;
+   signal XLXN_29                : std_logic;
    signal XLXI_2_DIB_openSignal  : std_logic_vector (7 downto 0);
    signal XLXI_2_DIPB_openSignal : std_logic_vector (0 downto 0);
    signal XLXI_2_SSRA_openSignal : std_logic;
@@ -79,6 +78,7 @@ architecture BEHAVIORAL of ethernetRX is
              weA      : out   std_logic; 
              EOFenA   : out   std_logic; 
              EOFweA   : out   std_logic; 
+             EOFenB   : out   std_logic; 
              empty    : out   std_logic; 
              full     : out   std_logic; 
              EOF      : out   std_logic; 
@@ -128,11 +128,6 @@ architecture BEHAVIORAL of ethernetRX is
              DOB   : out   std_logic_vector (1 downto 0));
    end component;
    
-   component VCC
-      port ( P : out   std_logic);
-   end component;
-   attribute BOX_TYPE of VCC : component is "BLACK_BOX";
-   
 begin
    XLXI_1 : fifo_control_unit
       port map (clk=>clk,
@@ -156,6 +151,7 @@ begin
                 enB=>XLXN_5,
                 EOF=>EOF,
                 EOFenA=>XLXN_12,
+                EOFenB=>XLXN_29,
                 EOFweA=>XLXN_13,
                 full=>full,
                 test=>open,
@@ -187,16 +183,13 @@ begin
                 DIA(0)=>XLXN_16(0),
                 DIB(1 downto 0)=>XLXI_3_DIB_openSignal(1 downto 0),
                 ENA=>XLXN_12,
-                ENB=>XLXN_28,
+                ENB=>XLXN_29,
                 SSRA=>XLXI_3_SSRA_openSignal,
                 SSRB=>XLXI_3_SSRB_openSignal,
                 WEA=>XLXN_13,
                 WEB=>XLXI_3_WEB_openSignal,
                 DOA=>open,
                 DOB(1 downto 0)=>XLXN_17(1 downto 0));
-   
-   XLXI_4 : VCC
-      port map (P=>XLXN_28);
    
 end BEHAVIORAL;
 

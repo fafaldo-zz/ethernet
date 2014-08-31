@@ -1,0 +1,20 @@
+vhdtdtfi -lib work CUnit.vhd -prj ethernet -o CUnit.spl -module CUnit -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w CUnit.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CUnit.sym 
+vhdtdtfi -lib work CUnit.vhd -prj ethernet -o CUnit.spl -module CUnit -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w CUnit.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CUnit.sym 
+vhdtdtfi -lib work CUnit.vhd -prj ethernet -o CUnit.spl -module CUnit -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w CUnit.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CUnit.sym 
+vhdtdtfi -lib work CUnit.vhd -prj ethernet -o CUnit.spl -module CUnit -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w CUnit.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CUnit.sym 
+vhdtdtfi -lib work CUnit.vhd -prj ethernet -o CUnit.spl -module CUnit -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w CUnit.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CUnit.sym 
+vhdtdtfi -lib work CUnit.vhd -prj ethernet -o CUnit.spl -module CUnit -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w CUnit.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CUnit.sym 
+vhdtdtfi -lib work CUnit.vhd -prj ethernet -o CUnit.spl -module CUnit -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w CUnit.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CUnit.sym 
+vhdtdtfi -lib work CUnit.vhd -prj ethernet -o CUnit.spl -module CUnit -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w CUnit.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CUnit.sym 
+vhdtdtfi -lib work CUnit.vhd -prj ethernet -o CUnit.spl -module CUnit -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w CUnit.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CUnit.sym 
+vhdtdtfi -lib work CUnit.vhd -prj ethernet -o CUnit.spl -module CUnit -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w CUnit.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/CUnit.sym 

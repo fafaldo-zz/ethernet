@@ -49,9 +49,9 @@ begin
 		if rising_edge(clk) then
 			if reset = '1' then
 				temp <= (others=>'0');
-			elsif address_counter = 8 then
+			elsif address_counter = 7 then
 				temp(47 downto 40) <= data_in;
-			elsif address_counter = 13 then
+			elsif address_counter = 8 then
 				temp(39 downto 32) <= data_in;
 			elsif address_counter = 9 then
 				temp(31 downto 24) <= data_in;

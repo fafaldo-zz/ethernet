@@ -43,17 +43,17 @@ begin
 		if rising_edge(clk) then
 			if reset = '1' then
 				destination_MAC <= (others=>'0');
-			elsif address_counter = 0 then
-				destination_MAC(47 downto 40) <= data_in;
 			elsif address_counter = 1 then
-				destination_MAC(39 downto 32) <= data_in;
+				destination_MAC(47 downto 40) <= data_in;
 			elsif address_counter = 2 then
-				destination_MAC(31 downto 24) <= data_in;
+				destination_MAC(39 downto 32) <= data_in;
 			elsif address_counter = 3 then
-				destination_MAC(23 downto 16) <= data_in;
+				destination_MAC(31 downto 24) <= data_in;
 			elsif address_counter = 4 then
-				destination_MAC(15 downto 8) <= data_in;
+				destination_MAC(23 downto 16) <= data_in;
 			elsif address_counter = 5 then
+				destination_MAC(15 downto 8) <= data_in;
+			elsif address_counter = 6 then
 				destination_MAC(7 downto 0) <= data_in;
 			end if;
 		end if;

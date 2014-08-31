@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="CUnit">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2014-8-30T9:59:9</timestamp>
+    <pin polarity="Input" x="0" y="-352" name="clk" />
+    <pin polarity="Input" x="0" y="-288" name="empty" />
+    <pin polarity="Input" x="0" y="-224" name="EOF" />
+    <pin polarity="Input" x="0" y="-160" name="ICMP_recognized" />
+    <pin polarity="Input" x="0" y="-96" name="reset" />
+    <pin polarity="Input" x="0" y="-32" name="data_in(7:0)" />
+    <pin polarity="Output" x="448" y="-352" name="frame_reset" />
+    <pin polarity="Output" x="448" y="-192" name="enable" />
+    <pin polarity="Output" x="448" y="-32" name="POP" />
+    <pin polarity="Output" x="448" y="32" name="test(7:0)" />
+    <graph>
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="224" y="-392" type="symbol" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-352" type="pin clk" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-288" type="pin empty" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-224" type="pin EOF" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-160" type="pin ICMP_recognized" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-96" type="pin reset" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-32" type="pin data_in(7:0)" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="376" y="-352" type="pin frame_reset" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="376" y="-192" type="pin enable" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="376" y="-32" type="pin POP" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="376" y="32" type="pin test(7:0)" />
+        <rect width="64" x="384" y="20" height="24" />
+        <line x2="448" y1="32" y2="32" x1="384" />
+        <line x2="0" y1="-352" y2="-352" x1="64" />
+        <line x2="0" y1="-288" y2="-288" x1="64" />
+        <line x2="0" y1="-224" y2="-224" x1="64" />
+        <line x2="0" y1="-160" y2="-160" x1="64" />
+        <line x2="0" y1="-96" y2="-96" x1="64" />
+        <rect width="64" x="0" y="-44" height="24" />
+        <line x2="0" y1="-32" y2="-32" x1="64" />
+        <line x2="448" y1="-352" y2="-352" x1="384" />
+        <line x2="448" y1="-192" y2="-192" x1="384" />
+        <line x2="448" y1="-32" y2="-32" x1="384" />
+        <rect width="320" x="64" y="-384" height="448" />
+    </graph>
+</symbol>

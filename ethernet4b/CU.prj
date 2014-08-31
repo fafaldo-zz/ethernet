@@ -1,0 +1,6 @@
+vhdl work "CU.vhd"
+vhdl work "MII_schem.vhf"
+vhdl work "MII_test3.vhf"
+vhdl work "new_schem.vhf"
+vhdl work "stupid.vhf"
+vhdl work "tx_schem.vhf"

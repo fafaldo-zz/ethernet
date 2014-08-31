@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/stupid_stupid_sch_tb_isim_beh.exe" -prj "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/stupid_stupid_sch_tb_beh.prj" "work.stupid_stupid_sch_tb" 
+-intstyle "ise" -incremental -o "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ethernetRX_ethernetRX_sch_tb_isim_beh.exe" -prj "C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ethernetRX_ethernetRX_sch_tb_beh.prj" "work.ethernetRX_ethernetRX_sch_tb" 

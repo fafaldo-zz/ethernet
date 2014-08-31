@@ -4,7 +4,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 D:\programy\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v
 3 -s 4 -n 3 -fastpaths -xml new_schem.twx new_schem.ncd -o new_schem.twr
-new_schem.pcf -ucf PHY - Copy.ucf -ucf GenIO - Copy.ucf
+new_schem.pcf -ucf PHY.ucf -ucf GenIO.ucf
 
 Design file:              new_schem.ncd
 Physical constraint file: new_schem.pcf
@@ -37,446 +37,444 @@ INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and
 Timing constraint: NET "CLK_BUFGP/IBUFG" PERIOD = 20 ns HIGH 50%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
- 2517 paths analyzed, 571 endpoints analyzed, 0 failing endpoints
+ 2480 paths analyzed, 544 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   9.241ns.
+ Minimum period is   7.808ns.
 --------------------------------------------------------------------------------
 
-Paths for end point XLXI_10/XLXI_1/read_address_counter_minus_one_1 (SLICE_X24Y41.CE), 11 paths
+Paths for end point XLXI_5/XLXI_115/XLXI_155/PixOut (SLICE_X66Y52.F4), 18 paths
 --------------------------------------------------------------------------------
-Slack (setup path):     10.759ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               XLXI_10/XLXI_1/read_address_counter_4 (FF)
-  Destination:          XLXI_10/XLXI_1/read_address_counter_minus_one_1 (FF)
+Slack (setup path):     12.192ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               XLXI_5/XLXI_146/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v2_init.ram/dp9x9.ram.A (RAM)
+  Destination:          XLXI_5/XLXI_115/XLXI_155/PixOut (FF)
   Requirement:          20.000ns
-  Data Path Delay:      9.210ns (Levels of Logic = 3)
-  Clock Path Skew:      -0.031ns (0.107 - 0.138)
+  Data Path Delay:      7.808ns (Levels of Logic = 4)
+  Clock Path Skew:      0.000ns
   Source Clock:         CLK_BUFGP rising at 0.000ns
   Destination Clock:    CLK_BUFGP rising at 20.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: XLXI_10/XLXI_1/read_address_counter_4 to XLXI_10/XLXI_1/read_address_counter_minus_one_1
+  Maximum Data Path: XLXI_5/XLXI_146/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v2_init.ram/dp9x9.ram.A to XLXI_5/XLXI_115/XLXI_155/PixOut
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X3Y49.YQ       Tcko                  0.587   XLXI_10/XLXI_1/read_address_counter<5>
-                                                       XLXI_10/XLXI_1/read_address_counter_4
-    SLICE_X13Y28.F4      net (fanout=9)        3.195   XLXI_10/XLXI_1/read_address_counter<4>
-    SLICE_X13Y28.COUT    Topcyf                1.162   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<3>
-                                                       XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_lut<2>
-                                                       XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<2>
-                                                       XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<3>
-    SLICE_X13Y29.CIN     net (fanout=1)        0.000   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<3>
-    SLICE_X13Y29.COUT    Tbyp                  0.118   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<5>
-                                                       XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<4>
-                                                       XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<5>
-    SLICE_X15Y37.G2      net (fanout=2)        1.174   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<5>
-    SLICE_X15Y37.Y       Tilo                  0.704   XLXI_10/XLXI_1/read_address_counter_not0001
-                                                       XLXI_10/XLXI_1/read_address_counter_not00011
-    SLICE_X24Y41.CE      net (fanout=18)       1.715   XLXI_10/XLXI_1/read_address_counter_not0001
-    SLICE_X24Y41.CLK     Tceck                 0.555   XLXI_10/XLXI_1/read_address_counter_minus_one<1>
-                                                       XLXI_10/XLXI_1/read_address_counter_minus_one_1
+    RAMB16_X1Y7.DOA7     Tbcko                 2.812   XLXI_5/XLXI_146/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v2_init.ram/dp9x9.ram
+                                                       XLXI_5/XLXI_146/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v2_init.ram/dp9x9.ram.A
+    SLICE_X55Y63.G3      net (fanout=1)        0.609   XLXI_5/XLXN_899<7>
+    SLICE_X55Y63.F5      Tif5                  0.875   XLXI_5/XLXI_115/XLXI_1/I_M03/O
+                                                       XLXI_5/XLXI_115/XLXI_1/I_M01/I_36_38
+                                                       XLXI_5/XLXI_115/XLXI_1/I_M03
+    SLICE_X55Y62.FXINB   net (fanout=1)        0.000   XLXI_5/XLXI_115/XLXI_1/I_M03/O
+    SLICE_X55Y62.Y       Tif6y                 0.521   XLXI_5/XLXI_115/XLXN_724
+                                                       XLXI_5/XLXI_115/XLXI_1/I_O
+    SLICE_X65Y63.F2      net (fanout=1)        0.453   XLXI_5/XLXI_115/XLXN_724
+    SLICE_X65Y63.X       Tilo                  0.704   XLXI_5/XLXI_115/XLXN_762
+                                                       XLXI_5/XLXI_115/XLXI_154
+    SLICE_X66Y52.F4      net (fanout=1)        0.942   XLXI_5/XLXI_115/XLXN_762
+    SLICE_X66Y52.CLK     Tfck                  0.892   XLXN_18
+                                                       XLXI_5/XLXI_115/XLXI_155/iPixOut103
+                                                       XLXI_5/XLXI_115/XLXI_155/PixOut
     -------------------------------------------------  ---------------------------
-    Total                                      9.210ns (3.126ns logic, 6.084ns route)
-                                                       (33.9% logic, 66.1% route)
+    Total                                      7.808ns (5.804ns logic, 2.004ns route)
+                                                       (74.3% logic, 25.7% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     11.528ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               XLXI_10/XLXI_1/read_address_counter_0 (FF)
-  Destination:          XLXI_10/XLXI_1/read_address_counter_minus_one_1 (FF)
+Slack (setup path):     12.216ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               XLXI_5/XLXI_146/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v2_init.ram/dp9x9.ram.A (RAM)
+  Destination:          XLXI_5/XLXI_115/XLXI_155/PixOut (FF)
   Requirement:          20.000ns
-  Data Path Delay:      8.441ns (Levels of Logic = 4)
-  Clock Path Skew:      -0.031ns (0.107 - 0.138)
+  Data Path Delay:      7.784ns (Levels of Logic = 4)
+  Clock Path Skew:      0.000ns
   Source Clock:         CLK_BUFGP rising at 0.000ns
   Destination Clock:    CLK_BUFGP rising at 20.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: XLXI_10/XLXI_1/read_address_counter_0 to XLXI_10/XLXI_1/read_address_counter_minus_one_1
+  Maximum Data Path: XLXI_5/XLXI_146/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v2_init.ram/dp9x9.ram.A to XLXI_5/XLXI_115/XLXI_155/PixOut
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X2Y48.YQ       Tcko                  0.652   XLXI_10/XLXI_1/read_address_counter<1>
+    RAMB16_X1Y7.DOA6     Tbcko                 2.812   XLXI_5/XLXI_146/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v2_init.ram/dp9x9.ram
+                                                       XLXI_5/XLXI_146/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v2_init.ram/dp9x9.ram.A
+    SLICE_X55Y63.G4      net (fanout=1)        0.585   XLXI_5/XLXN_899<6>
+    SLICE_X55Y63.F5      Tif5                  0.875   XLXI_5/XLXI_115/XLXI_1/I_M03/O
+                                                       XLXI_5/XLXI_115/XLXI_1/I_M01/I_36_38
+                                                       XLXI_5/XLXI_115/XLXI_1/I_M03
+    SLICE_X55Y62.FXINB   net (fanout=1)        0.000   XLXI_5/XLXI_115/XLXI_1/I_M03/O
+    SLICE_X55Y62.Y       Tif6y                 0.521   XLXI_5/XLXI_115/XLXN_724
+                                                       XLXI_5/XLXI_115/XLXI_1/I_O
+    SLICE_X65Y63.F2      net (fanout=1)        0.453   XLXI_5/XLXI_115/XLXN_724
+    SLICE_X65Y63.X       Tilo                  0.704   XLXI_5/XLXI_115/XLXN_762
+                                                       XLXI_5/XLXI_115/XLXI_154
+    SLICE_X66Y52.F4      net (fanout=1)        0.942   XLXI_5/XLXI_115/XLXN_762
+    SLICE_X66Y52.CLK     Tfck                  0.892   XLXN_18
+                                                       XLXI_5/XLXI_115/XLXI_155/iPixOut103
+                                                       XLXI_5/XLXI_115/XLXI_155/PixOut
+    -------------------------------------------------  ---------------------------
+    Total                                      7.784ns (5.804ns logic, 1.980ns route)
+                                                       (74.6% logic, 25.4% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     12.289ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               XLXI_5/XLXI_146/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v2_init.ram/dp9x9.ram.A (RAM)
+  Destination:          XLXI_5/XLXI_115/XLXI_155/PixOut (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      7.711ns (Levels of Logic = 4)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: XLXI_5/XLXI_146/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v2_init.ram/dp9x9.ram.A to XLXI_5/XLXI_115/XLXI_155/PixOut
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    RAMB16_X1Y7.DOA2     Tbcko                 2.812   XLXI_5/XLXI_146/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v2_init.ram/dp9x9.ram
+                                                       XLXI_5/XLXI_146/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v2_init.ram/dp9x9.ram.A
+    SLICE_X55Y62.G1      net (fanout=1)        0.512   XLXI_5/XLXN_899<2>
+    SLICE_X55Y62.F5      Tif5                  0.875   XLXI_5/XLXI_115/XLXN_724
+                                                       XLXI_5/XLXI_115/XLXI_1/I_M45/I_36_38
+                                                       XLXI_5/XLXI_115/XLXI_1/I_M47
+    SLICE_X55Y62.FXINA   net (fanout=1)        0.000   XLXI_5/XLXI_115/XLXI_1/I_M47/O
+    SLICE_X55Y62.Y       Tif6y                 0.521   XLXI_5/XLXI_115/XLXN_724
+                                                       XLXI_5/XLXI_115/XLXI_1/I_O
+    SLICE_X65Y63.F2      net (fanout=1)        0.453   XLXI_5/XLXI_115/XLXN_724
+    SLICE_X65Y63.X       Tilo                  0.704   XLXI_5/XLXI_115/XLXN_762
+                                                       XLXI_5/XLXI_115/XLXI_154
+    SLICE_X66Y52.F4      net (fanout=1)        0.942   XLXI_5/XLXI_115/XLXN_762
+    SLICE_X66Y52.CLK     Tfck                  0.892   XLXN_18
+                                                       XLXI_5/XLXI_115/XLXI_155/iPixOut103
+                                                       XLXI_5/XLXI_115/XLXI_155/PixOut
+    -------------------------------------------------  ---------------------------
+    Total                                      7.711ns (5.804ns logic, 1.907ns route)
+                                                       (75.3% logic, 24.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point XLXI_10/XLXI_1/read_address_counter_minus_one_4 (SLICE_X23Y49.CE), 11 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     12.565ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               XLXI_10/XLXI_1/read_address_counter_0 (FF)
+  Destination:          XLXI_10/XLXI_1/read_address_counter_minus_one_4 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      7.435ns (Levels of Logic = 4)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: XLXI_10/XLXI_1/read_address_counter_0 to XLXI_10/XLXI_1/read_address_counter_minus_one_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X13Y38.YQ      Tcko                  0.587   XLXI_10/XLXI_1/read_address_counter<1>
                                                        XLXI_10/XLXI_1/read_address_counter_0
-    SLICE_X13Y27.F1      net (fanout=8)        2.243   XLXI_10/XLXI_1/read_address_counter<0>
-    SLICE_X13Y27.COUT    Topcyf                1.162   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<1>
+    SLICE_X15Y35.F2      net (fanout=8)        1.451   XLXI_10/XLXI_1/read_address_counter<0>
+    SLICE_X15Y35.COUT    Topcyf                1.162   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<1>
                                                        XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_lut<0>
                                                        XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<0>
                                                        XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<1>
-    SLICE_X13Y28.CIN     net (fanout=1)        0.000   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<1>
-    SLICE_X13Y28.COUT    Tbyp                  0.118   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<3>
+    SLICE_X15Y36.CIN     net (fanout=1)        0.000   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<1>
+    SLICE_X15Y36.COUT    Tbyp                  0.118   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<3>
                                                        XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<2>
                                                        XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<3>
-    SLICE_X13Y29.CIN     net (fanout=1)        0.000   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<3>
-    SLICE_X13Y29.COUT    Tbyp                  0.118   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<5>
+    SLICE_X15Y37.CIN     net (fanout=1)        0.000   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<3>
+    SLICE_X15Y37.COUT    Tbyp                  0.118   empty_OBUF
                                                        XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<4>
                                                        XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<5>
-    SLICE_X15Y37.G2      net (fanout=2)        1.174   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<5>
-    SLICE_X15Y37.Y       Tilo                  0.704   XLXI_10/XLXI_1/read_address_counter_not0001
+    SLICE_X16Y36.G2      net (fanout=2)        0.678   empty_OBUF
+    SLICE_X16Y36.Y       Tilo                  0.759   XLXI_10/XLXI_1/read_address_counter_not0001
                                                        XLXI_10/XLXI_1/read_address_counter_not00011
-    SLICE_X24Y41.CE      net (fanout=18)       1.715   XLXI_10/XLXI_1/read_address_counter_not0001
-    SLICE_X24Y41.CLK     Tceck                 0.555   XLXI_10/XLXI_1/read_address_counter_minus_one<1>
-                                                       XLXI_10/XLXI_1/read_address_counter_minus_one_1
+    SLICE_X23Y49.CE      net (fanout=18)       2.007   XLXI_10/XLXI_1/read_address_counter_not0001
+    SLICE_X23Y49.CLK     Tceck                 0.555   XLXI_10/XLXI_1/read_address_counter_minus_one<4>
+                                                       XLXI_10/XLXI_1/read_address_counter_minus_one_4
     -------------------------------------------------  ---------------------------
-    Total                                      8.441ns (3.309ns logic, 5.132ns route)
-                                                       (39.2% logic, 60.8% route)
+    Total                                      7.435ns (3.299ns logic, 4.136ns route)
+                                                       (44.4% logic, 55.6% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     11.596ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               XLXI_10/XLXI_1/read_address_counter_3 (FF)
-  Destination:          XLXI_10/XLXI_1/read_address_counter_minus_one_1 (FF)
+Slack (setup path):     13.175ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               XLXI_10/XLXI_1/read_address_counter_1 (FF)
+  Destination:          XLXI_10/XLXI_1/read_address_counter_minus_one_4 (FF)
   Requirement:          20.000ns
-  Data Path Delay:      8.373ns (Levels of Logic = 4)
-  Clock Path Skew:      -0.031ns (0.107 - 0.138)
+  Data Path Delay:      6.825ns (Levels of Logic = 4)
+  Clock Path Skew:      0.000ns
   Source Clock:         CLK_BUFGP rising at 0.000ns
   Destination Clock:    CLK_BUFGP rising at 20.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: XLXI_10/XLXI_1/read_address_counter_3 to XLXI_10/XLXI_1/read_address_counter_minus_one_1
+  Maximum Data Path: XLXI_10/XLXI_1/read_address_counter_1 to XLXI_10/XLXI_1/read_address_counter_minus_one_4
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X2Y49.XQ       Tcko                  0.592   XLXI_10/XLXI_1/read_address_counter<3>
-                                                       XLXI_10/XLXI_1/read_address_counter_3
-    SLICE_X13Y27.G2      net (fanout=7)        2.396   XLXI_10/XLXI_1/read_address_counter<3>
-    SLICE_X13Y27.COUT    Topcyg                1.001   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<1>
-                                                       XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_lut<1>
-                                                       XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<1>
-    SLICE_X13Y28.CIN     net (fanout=1)        0.000   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<1>
-    SLICE_X13Y28.COUT    Tbyp                  0.118   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<3>
-                                                       XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<2>
-                                                       XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<3>
-    SLICE_X13Y29.CIN     net (fanout=1)        0.000   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<3>
-    SLICE_X13Y29.COUT    Tbyp                  0.118   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<5>
-                                                       XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<4>
-                                                       XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<5>
-    SLICE_X15Y37.G2      net (fanout=2)        1.174   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<5>
-    SLICE_X15Y37.Y       Tilo                  0.704   XLXI_10/XLXI_1/read_address_counter_not0001
-                                                       XLXI_10/XLXI_1/read_address_counter_not00011
-    SLICE_X24Y41.CE      net (fanout=18)       1.715   XLXI_10/XLXI_1/read_address_counter_not0001
-    SLICE_X24Y41.CLK     Tceck                 0.555   XLXI_10/XLXI_1/read_address_counter_minus_one<1>
-                                                       XLXI_10/XLXI_1/read_address_counter_minus_one_1
-    -------------------------------------------------  ---------------------------
-    Total                                      8.373ns (3.088ns logic, 5.285ns route)
-                                                       (36.9% logic, 63.1% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point XLXI_10/XLXI_1/read_address_counter_minus_one_0 (SLICE_X24Y41.CE), 11 paths
---------------------------------------------------------------------------------
-Slack (setup path):     10.759ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               XLXI_10/XLXI_1/read_address_counter_4 (FF)
-  Destination:          XLXI_10/XLXI_1/read_address_counter_minus_one_0 (FF)
-  Requirement:          20.000ns
-  Data Path Delay:      9.210ns (Levels of Logic = 3)
-  Clock Path Skew:      -0.031ns (0.107 - 0.138)
-  Source Clock:         CLK_BUFGP rising at 0.000ns
-  Destination Clock:    CLK_BUFGP rising at 20.000ns
-  Clock Uncertainty:    0.000ns
-
-  Maximum Data Path: XLXI_10/XLXI_1/read_address_counter_4 to XLXI_10/XLXI_1/read_address_counter_minus_one_0
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X3Y49.YQ       Tcko                  0.587   XLXI_10/XLXI_1/read_address_counter<5>
-                                                       XLXI_10/XLXI_1/read_address_counter_4
-    SLICE_X13Y28.F4      net (fanout=9)        3.195   XLXI_10/XLXI_1/read_address_counter<4>
-    SLICE_X13Y28.COUT    Topcyf                1.162   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<3>
-                                                       XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_lut<2>
-                                                       XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<2>
-                                                       XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<3>
-    SLICE_X13Y29.CIN     net (fanout=1)        0.000   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<3>
-    SLICE_X13Y29.COUT    Tbyp                  0.118   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<5>
-                                                       XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<4>
-                                                       XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<5>
-    SLICE_X15Y37.G2      net (fanout=2)        1.174   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<5>
-    SLICE_X15Y37.Y       Tilo                  0.704   XLXI_10/XLXI_1/read_address_counter_not0001
-                                                       XLXI_10/XLXI_1/read_address_counter_not00011
-    SLICE_X24Y41.CE      net (fanout=18)       1.715   XLXI_10/XLXI_1/read_address_counter_not0001
-    SLICE_X24Y41.CLK     Tceck                 0.555   XLXI_10/XLXI_1/read_address_counter_minus_one<1>
-                                                       XLXI_10/XLXI_1/read_address_counter_minus_one_0
-    -------------------------------------------------  ---------------------------
-    Total                                      9.210ns (3.126ns logic, 6.084ns route)
-                                                       (33.9% logic, 66.1% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     11.528ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               XLXI_10/XLXI_1/read_address_counter_0 (FF)
-  Destination:          XLXI_10/XLXI_1/read_address_counter_minus_one_0 (FF)
-  Requirement:          20.000ns
-  Data Path Delay:      8.441ns (Levels of Logic = 4)
-  Clock Path Skew:      -0.031ns (0.107 - 0.138)
-  Source Clock:         CLK_BUFGP rising at 0.000ns
-  Destination Clock:    CLK_BUFGP rising at 20.000ns
-  Clock Uncertainty:    0.000ns
-
-  Maximum Data Path: XLXI_10/XLXI_1/read_address_counter_0 to XLXI_10/XLXI_1/read_address_counter_minus_one_0
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X2Y48.YQ       Tcko                  0.652   XLXI_10/XLXI_1/read_address_counter<1>
-                                                       XLXI_10/XLXI_1/read_address_counter_0
-    SLICE_X13Y27.F1      net (fanout=8)        2.243   XLXI_10/XLXI_1/read_address_counter<0>
-    SLICE_X13Y27.COUT    Topcyf                1.162   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<1>
+    SLICE_X13Y38.XQ      Tcko                  0.591   XLXI_10/XLXI_1/read_address_counter<1>
+                                                       XLXI_10/XLXI_1/read_address_counter_1
+    SLICE_X15Y35.F4      net (fanout=7)        0.837   XLXI_10/XLXI_1/read_address_counter<1>
+    SLICE_X15Y35.COUT    Topcyf                1.162   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<1>
                                                        XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_lut<0>
                                                        XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<0>
                                                        XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<1>
-    SLICE_X13Y28.CIN     net (fanout=1)        0.000   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<1>
-    SLICE_X13Y28.COUT    Tbyp                  0.118   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<3>
+    SLICE_X15Y36.CIN     net (fanout=1)        0.000   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<1>
+    SLICE_X15Y36.COUT    Tbyp                  0.118   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<3>
                                                        XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<2>
                                                        XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<3>
-    SLICE_X13Y29.CIN     net (fanout=1)        0.000   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<3>
-    SLICE_X13Y29.COUT    Tbyp                  0.118   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<5>
+    SLICE_X15Y37.CIN     net (fanout=1)        0.000   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<3>
+    SLICE_X15Y37.COUT    Tbyp                  0.118   empty_OBUF
                                                        XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<4>
                                                        XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<5>
-    SLICE_X15Y37.G2      net (fanout=2)        1.174   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<5>
-    SLICE_X15Y37.Y       Tilo                  0.704   XLXI_10/XLXI_1/read_address_counter_not0001
+    SLICE_X16Y36.G2      net (fanout=2)        0.678   empty_OBUF
+    SLICE_X16Y36.Y       Tilo                  0.759   XLXI_10/XLXI_1/read_address_counter_not0001
                                                        XLXI_10/XLXI_1/read_address_counter_not00011
-    SLICE_X24Y41.CE      net (fanout=18)       1.715   XLXI_10/XLXI_1/read_address_counter_not0001
-    SLICE_X24Y41.CLK     Tceck                 0.555   XLXI_10/XLXI_1/read_address_counter_minus_one<1>
-                                                       XLXI_10/XLXI_1/read_address_counter_minus_one_0
+    SLICE_X23Y49.CE      net (fanout=18)       2.007   XLXI_10/XLXI_1/read_address_counter_not0001
+    SLICE_X23Y49.CLK     Tceck                 0.555   XLXI_10/XLXI_1/read_address_counter_minus_one<4>
+                                                       XLXI_10/XLXI_1/read_address_counter_minus_one_4
     -------------------------------------------------  ---------------------------
-    Total                                      8.441ns (3.309ns logic, 5.132ns route)
-                                                       (39.2% logic, 60.8% route)
+    Total                                      6.825ns (3.303ns logic, 3.522ns route)
+                                                       (48.4% logic, 51.6% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     11.596ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup path):     13.253ns (requirement - (data path - clock path skew + uncertainty))
   Source:               XLXI_10/XLXI_1/read_address_counter_3 (FF)
-  Destination:          XLXI_10/XLXI_1/read_address_counter_minus_one_0 (FF)
+  Destination:          XLXI_10/XLXI_1/read_address_counter_minus_one_4 (FF)
   Requirement:          20.000ns
-  Data Path Delay:      8.373ns (Levels of Logic = 4)
-  Clock Path Skew:      -0.031ns (0.107 - 0.138)
+  Data Path Delay:      6.747ns (Levels of Logic = 4)
+  Clock Path Skew:      0.000ns
   Source Clock:         CLK_BUFGP rising at 0.000ns
   Destination Clock:    CLK_BUFGP rising at 20.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: XLXI_10/XLXI_1/read_address_counter_3 to XLXI_10/XLXI_1/read_address_counter_minus_one_0
+  Maximum Data Path: XLXI_10/XLXI_1/read_address_counter_3 to XLXI_10/XLXI_1/read_address_counter_minus_one_4
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X2Y49.XQ       Tcko                  0.592   XLXI_10/XLXI_1/read_address_counter<3>
+    SLICE_X14Y38.XQ      Tcko                  0.592   XLXI_10/XLXI_1/read_address_counter<3>
                                                        XLXI_10/XLXI_1/read_address_counter_3
-    SLICE_X13Y27.G2      net (fanout=7)        2.396   XLXI_10/XLXI_1/read_address_counter<3>
-    SLICE_X13Y27.COUT    Topcyg                1.001   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<1>
+    SLICE_X15Y35.G1      net (fanout=7)        0.919   XLXI_10/XLXI_1/read_address_counter<3>
+    SLICE_X15Y35.COUT    Topcyg                1.001   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<1>
                                                        XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_lut<1>
                                                        XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<1>
-    SLICE_X13Y28.CIN     net (fanout=1)        0.000   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<1>
-    SLICE_X13Y28.COUT    Tbyp                  0.118   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<3>
+    SLICE_X15Y36.CIN     net (fanout=1)        0.000   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<1>
+    SLICE_X15Y36.COUT    Tbyp                  0.118   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<3>
                                                        XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<2>
                                                        XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<3>
-    SLICE_X13Y29.CIN     net (fanout=1)        0.000   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<3>
-    SLICE_X13Y29.COUT    Tbyp                  0.118   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<5>
+    SLICE_X15Y37.CIN     net (fanout=1)        0.000   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<3>
+    SLICE_X15Y37.COUT    Tbyp                  0.118   empty_OBUF
                                                        XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<4>
                                                        XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<5>
-    SLICE_X15Y37.G2      net (fanout=2)        1.174   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<5>
-    SLICE_X15Y37.Y       Tilo                  0.704   XLXI_10/XLXI_1/read_address_counter_not0001
+    SLICE_X16Y36.G2      net (fanout=2)        0.678   empty_OBUF
+    SLICE_X16Y36.Y       Tilo                  0.759   XLXI_10/XLXI_1/read_address_counter_not0001
                                                        XLXI_10/XLXI_1/read_address_counter_not00011
-    SLICE_X24Y41.CE      net (fanout=18)       1.715   XLXI_10/XLXI_1/read_address_counter_not0001
-    SLICE_X24Y41.CLK     Tceck                 0.555   XLXI_10/XLXI_1/read_address_counter_minus_one<1>
-                                                       XLXI_10/XLXI_1/read_address_counter_minus_one_0
+    SLICE_X23Y49.CE      net (fanout=18)       2.007   XLXI_10/XLXI_1/read_address_counter_not0001
+    SLICE_X23Y49.CLK     Tceck                 0.555   XLXI_10/XLXI_1/read_address_counter_minus_one<4>
+                                                       XLXI_10/XLXI_1/read_address_counter_minus_one_4
     -------------------------------------------------  ---------------------------
-    Total                                      8.373ns (3.088ns logic, 5.285ns route)
-                                                       (36.9% logic, 63.1% route)
+    Total                                      6.747ns (3.143ns logic, 3.604ns route)
+                                                       (46.6% logic, 53.4% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point XLXI_10/XLXI_1/read_address_counter_minus_one_2 (SLICE_X24Y40.CE), 11 paths
+Paths for end point XLXI_10/XLXI_1/read_address_counter_minus_one_7 (SLICE_X22Y46.CE), 11 paths
 --------------------------------------------------------------------------------
-Slack (setup path):     10.759ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               XLXI_10/XLXI_1/read_address_counter_4 (FF)
-  Destination:          XLXI_10/XLXI_1/read_address_counter_minus_one_2 (FF)
-  Requirement:          20.000ns
-  Data Path Delay:      9.210ns (Levels of Logic = 3)
-  Clock Path Skew:      -0.031ns (0.107 - 0.138)
-  Source Clock:         CLK_BUFGP rising at 0.000ns
-  Destination Clock:    CLK_BUFGP rising at 20.000ns
-  Clock Uncertainty:    0.000ns
-
-  Maximum Data Path: XLXI_10/XLXI_1/read_address_counter_4 to XLXI_10/XLXI_1/read_address_counter_minus_one_2
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X3Y49.YQ       Tcko                  0.587   XLXI_10/XLXI_1/read_address_counter<5>
-                                                       XLXI_10/XLXI_1/read_address_counter_4
-    SLICE_X13Y28.F4      net (fanout=9)        3.195   XLXI_10/XLXI_1/read_address_counter<4>
-    SLICE_X13Y28.COUT    Topcyf                1.162   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<3>
-                                                       XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_lut<2>
-                                                       XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<2>
-                                                       XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<3>
-    SLICE_X13Y29.CIN     net (fanout=1)        0.000   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<3>
-    SLICE_X13Y29.COUT    Tbyp                  0.118   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<5>
-                                                       XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<4>
-                                                       XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<5>
-    SLICE_X15Y37.G2      net (fanout=2)        1.174   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<5>
-    SLICE_X15Y37.Y       Tilo                  0.704   XLXI_10/XLXI_1/read_address_counter_not0001
-                                                       XLXI_10/XLXI_1/read_address_counter_not00011
-    SLICE_X24Y40.CE      net (fanout=18)       1.715   XLXI_10/XLXI_1/read_address_counter_not0001
-    SLICE_X24Y40.CLK     Tceck                 0.555   XLXI_10/XLXI_1/read_address_counter_minus_one<2>
-                                                       XLXI_10/XLXI_1/read_address_counter_minus_one_2
-    -------------------------------------------------  ---------------------------
-    Total                                      9.210ns (3.126ns logic, 6.084ns route)
-                                                       (33.9% logic, 66.1% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     11.528ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup path):     12.568ns (requirement - (data path - clock path skew + uncertainty))
   Source:               XLXI_10/XLXI_1/read_address_counter_0 (FF)
-  Destination:          XLXI_10/XLXI_1/read_address_counter_minus_one_2 (FF)
+  Destination:          XLXI_10/XLXI_1/read_address_counter_minus_one_7 (FF)
   Requirement:          20.000ns
-  Data Path Delay:      8.441ns (Levels of Logic = 4)
-  Clock Path Skew:      -0.031ns (0.107 - 0.138)
+  Data Path Delay:      7.432ns (Levels of Logic = 4)
+  Clock Path Skew:      0.000ns
   Source Clock:         CLK_BUFGP rising at 0.000ns
   Destination Clock:    CLK_BUFGP rising at 20.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: XLXI_10/XLXI_1/read_address_counter_0 to XLXI_10/XLXI_1/read_address_counter_minus_one_2
+  Maximum Data Path: XLXI_10/XLXI_1/read_address_counter_0 to XLXI_10/XLXI_1/read_address_counter_minus_one_7
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X2Y48.YQ       Tcko                  0.652   XLXI_10/XLXI_1/read_address_counter<1>
+    SLICE_X13Y38.YQ      Tcko                  0.587   XLXI_10/XLXI_1/read_address_counter<1>
                                                        XLXI_10/XLXI_1/read_address_counter_0
-    SLICE_X13Y27.F1      net (fanout=8)        2.243   XLXI_10/XLXI_1/read_address_counter<0>
-    SLICE_X13Y27.COUT    Topcyf                1.162   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<1>
+    SLICE_X15Y35.F2      net (fanout=8)        1.451   XLXI_10/XLXI_1/read_address_counter<0>
+    SLICE_X15Y35.COUT    Topcyf                1.162   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<1>
                                                        XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_lut<0>
                                                        XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<0>
                                                        XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<1>
-    SLICE_X13Y28.CIN     net (fanout=1)        0.000   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<1>
-    SLICE_X13Y28.COUT    Tbyp                  0.118   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<3>
+    SLICE_X15Y36.CIN     net (fanout=1)        0.000   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<1>
+    SLICE_X15Y36.COUT    Tbyp                  0.118   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<3>
                                                        XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<2>
                                                        XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<3>
-    SLICE_X13Y29.CIN     net (fanout=1)        0.000   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<3>
-    SLICE_X13Y29.COUT    Tbyp                  0.118   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<5>
+    SLICE_X15Y37.CIN     net (fanout=1)        0.000   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<3>
+    SLICE_X15Y37.COUT    Tbyp                  0.118   empty_OBUF
                                                        XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<4>
                                                        XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<5>
-    SLICE_X15Y37.G2      net (fanout=2)        1.174   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<5>
-    SLICE_X15Y37.Y       Tilo                  0.704   XLXI_10/XLXI_1/read_address_counter_not0001
+    SLICE_X16Y36.G2      net (fanout=2)        0.678   empty_OBUF
+    SLICE_X16Y36.Y       Tilo                  0.759   XLXI_10/XLXI_1/read_address_counter_not0001
                                                        XLXI_10/XLXI_1/read_address_counter_not00011
-    SLICE_X24Y40.CE      net (fanout=18)       1.715   XLXI_10/XLXI_1/read_address_counter_not0001
-    SLICE_X24Y40.CLK     Tceck                 0.555   XLXI_10/XLXI_1/read_address_counter_minus_one<2>
-                                                       XLXI_10/XLXI_1/read_address_counter_minus_one_2
+    SLICE_X22Y46.CE      net (fanout=18)       2.004   XLXI_10/XLXI_1/read_address_counter_not0001
+    SLICE_X22Y46.CLK     Tceck                 0.555   XLXI_10/XLXI_1/read_address_counter_minus_one<7>
+                                                       XLXI_10/XLXI_1/read_address_counter_minus_one_7
     -------------------------------------------------  ---------------------------
-    Total                                      8.441ns (3.309ns logic, 5.132ns route)
-                                                       (39.2% logic, 60.8% route)
+    Total                                      7.432ns (3.299ns logic, 4.133ns route)
+                                                       (44.4% logic, 55.6% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     11.596ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               XLXI_10/XLXI_1/read_address_counter_3 (FF)
-  Destination:          XLXI_10/XLXI_1/read_address_counter_minus_one_2 (FF)
+Slack (setup path):     13.178ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               XLXI_10/XLXI_1/read_address_counter_1 (FF)
+  Destination:          XLXI_10/XLXI_1/read_address_counter_minus_one_7 (FF)
   Requirement:          20.000ns
-  Data Path Delay:      8.373ns (Levels of Logic = 4)
-  Clock Path Skew:      -0.031ns (0.107 - 0.138)
+  Data Path Delay:      6.822ns (Levels of Logic = 4)
+  Clock Path Skew:      0.000ns
   Source Clock:         CLK_BUFGP rising at 0.000ns
   Destination Clock:    CLK_BUFGP rising at 20.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: XLXI_10/XLXI_1/read_address_counter_3 to XLXI_10/XLXI_1/read_address_counter_minus_one_2
+  Maximum Data Path: XLXI_10/XLXI_1/read_address_counter_1 to XLXI_10/XLXI_1/read_address_counter_minus_one_7
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X2Y49.XQ       Tcko                  0.592   XLXI_10/XLXI_1/read_address_counter<3>
-                                                       XLXI_10/XLXI_1/read_address_counter_3
-    SLICE_X13Y27.G2      net (fanout=7)        2.396   XLXI_10/XLXI_1/read_address_counter<3>
-    SLICE_X13Y27.COUT    Topcyg                1.001   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<1>
-                                                       XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_lut<1>
+    SLICE_X13Y38.XQ      Tcko                  0.591   XLXI_10/XLXI_1/read_address_counter<1>
+                                                       XLXI_10/XLXI_1/read_address_counter_1
+    SLICE_X15Y35.F4      net (fanout=7)        0.837   XLXI_10/XLXI_1/read_address_counter<1>
+    SLICE_X15Y35.COUT    Topcyf                1.162   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<1>
+                                                       XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_lut<0>
+                                                       XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<0>
                                                        XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<1>
-    SLICE_X13Y28.CIN     net (fanout=1)        0.000   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<1>
-    SLICE_X13Y28.COUT    Tbyp                  0.118   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<3>
+    SLICE_X15Y36.CIN     net (fanout=1)        0.000   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<1>
+    SLICE_X15Y36.COUT    Tbyp                  0.118   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<3>
                                                        XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<2>
                                                        XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<3>
-    SLICE_X13Y29.CIN     net (fanout=1)        0.000   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<3>
-    SLICE_X13Y29.COUT    Tbyp                  0.118   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<5>
+    SLICE_X15Y37.CIN     net (fanout=1)        0.000   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<3>
+    SLICE_X15Y37.COUT    Tbyp                  0.118   empty_OBUF
                                                        XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<4>
                                                        XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<5>
-    SLICE_X15Y37.G2      net (fanout=2)        1.174   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<5>
-    SLICE_X15Y37.Y       Tilo                  0.704   XLXI_10/XLXI_1/read_address_counter_not0001
+    SLICE_X16Y36.G2      net (fanout=2)        0.678   empty_OBUF
+    SLICE_X16Y36.Y       Tilo                  0.759   XLXI_10/XLXI_1/read_address_counter_not0001
                                                        XLXI_10/XLXI_1/read_address_counter_not00011
-    SLICE_X24Y40.CE      net (fanout=18)       1.715   XLXI_10/XLXI_1/read_address_counter_not0001
-    SLICE_X24Y40.CLK     Tceck                 0.555   XLXI_10/XLXI_1/read_address_counter_minus_one<2>
-                                                       XLXI_10/XLXI_1/read_address_counter_minus_one_2
+    SLICE_X22Y46.CE      net (fanout=18)       2.004   XLXI_10/XLXI_1/read_address_counter_not0001
+    SLICE_X22Y46.CLK     Tceck                 0.555   XLXI_10/XLXI_1/read_address_counter_minus_one<7>
+                                                       XLXI_10/XLXI_1/read_address_counter_minus_one_7
     -------------------------------------------------  ---------------------------
-    Total                                      8.373ns (3.088ns logic, 5.285ns route)
-                                                       (36.9% logic, 63.1% route)
+    Total                                      6.822ns (3.303ns logic, 3.519ns route)
+                                                       (48.4% logic, 51.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     13.256ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               XLXI_10/XLXI_1/read_address_counter_3 (FF)
+  Destination:          XLXI_10/XLXI_1/read_address_counter_minus_one_7 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      6.744ns (Levels of Logic = 4)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: XLXI_10/XLXI_1/read_address_counter_3 to XLXI_10/XLXI_1/read_address_counter_minus_one_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X14Y38.XQ      Tcko                  0.592   XLXI_10/XLXI_1/read_address_counter<3>
+                                                       XLXI_10/XLXI_1/read_address_counter_3
+    SLICE_X15Y35.G1      net (fanout=7)        0.919   XLXI_10/XLXI_1/read_address_counter<3>
+    SLICE_X15Y35.COUT    Topcyg                1.001   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<1>
+                                                       XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_lut<1>
+                                                       XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<1>
+    SLICE_X15Y36.CIN     net (fanout=1)        0.000   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<1>
+    SLICE_X15Y36.COUT    Tbyp                  0.118   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<3>
+                                                       XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<2>
+                                                       XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<3>
+    SLICE_X15Y37.CIN     net (fanout=1)        0.000   XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<3>
+    SLICE_X15Y37.COUT    Tbyp                  0.118   empty_OBUF
+                                                       XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<4>
+                                                       XLXI_10/XLXI_1/Mcompar_empty_cmp_eq0000_cy<5>
+    SLICE_X16Y36.G2      net (fanout=2)        0.678   empty_OBUF
+    SLICE_X16Y36.Y       Tilo                  0.759   XLXI_10/XLXI_1/read_address_counter_not0001
+                                                       XLXI_10/XLXI_1/read_address_counter_not00011
+    SLICE_X22Y46.CE      net (fanout=18)       2.004   XLXI_10/XLXI_1/read_address_counter_not0001
+    SLICE_X22Y46.CLK     Tceck                 0.555   XLXI_10/XLXI_1/read_address_counter_minus_one<7>
+                                                       XLXI_10/XLXI_1/read_address_counter_minus_one_7
+    -------------------------------------------------  ---------------------------
+    Total                                      6.744ns (3.143ns logic, 3.601ns route)
+                                                       (46.6% logic, 53.4% route)
 
 --------------------------------------------------------------------------------
 
 Hold Paths: NET "CLK_BUFGP/IBUFG" PERIOD = 20 ns HIGH 50%;
 --------------------------------------------------------------------------------
 
-Paths for end point XLXI_10/XLXI_2/RAMB16_S4_S9_inst.B (RAMB16_X0Y3.ADDRB13), 1 path
+Paths for end point XLXI_5/XLXI_115/XLXI_151/O (SLICE_X65Y67.BY), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      1.053ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               XLXI_10/XLXI_1/read_address_counter_10 (FF)
-  Destination:          XLXI_10/XLXI_2/RAMB16_S4_S9_inst.B (RAM)
+Slack (hold path):      0.959ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               XLXI_5/XLXI_115/XLXI_151/Q (FF)
+  Destination:          XLXI_5/XLXI_115/XLXI_151/O (FF)
   Requirement:          0.000ns
-  Data Path Delay:      1.080ns (Levels of Logic = 0)
-  Clock Path Skew:      0.027ns (0.055 - 0.028)
+  Data Path Delay:      0.960ns (Levels of Logic = 0)
+  Clock Path Skew:      0.001ns (0.005 - 0.004)
   Source Clock:         CLK_BUFGP rising at 20.000ns
   Destination Clock:    CLK_BUFGP rising at 20.000ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path: XLXI_10/XLXI_1/read_address_counter_10 to XLXI_10/XLXI_2/RAMB16_S4_S9_inst.B
+  Minimum Data Path: XLXI_5/XLXI_115/XLXI_151/Q to XLXI_5/XLXI_115/XLXI_151/O
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X13Y35.XQ      Tcko                  0.473   XLXI_10/XLXI_1/read_address_counter<10>
-                                                       XLXI_10/XLXI_1/read_address_counter_10
-    RAMB16_X0Y3.ADDRB13  net (fanout=7)        0.738   XLXI_10/XLXI_1/read_address_counter<10>
-    RAMB16_X0Y3.CLKB     Tbcka       (-Th)     0.131   XLXI_10/XLXI_2/RAMB16_S4_S9_inst
-                                                       XLXI_10/XLXI_2/RAMB16_S4_S9_inst.B
+    SLICE_X65Y65.YQ      Tcko                  0.470   XLXI_5/XLXI_115/XLXI_151/Q
+                                                       XLXI_5/XLXI_115/XLXI_151/Q
+    SLICE_X65Y67.BY      net (fanout=1)        0.355   XLXI_5/XLXI_115/XLXI_151/Q
+    SLICE_X65Y67.CLK     Tckdi       (-Th)    -0.135   XLXI_5/XLXI_115/XLXI_151/O
+                                                       XLXI_5/XLXI_115/XLXI_151/O
     -------------------------------------------------  ---------------------------
-    Total                                      1.080ns (0.342ns logic, 0.738ns route)
-                                                       (31.7% logic, 68.3% route)
+    Total                                      0.960ns (0.605ns logic, 0.355ns route)
+                                                       (63.0% logic, 37.0% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point XLXI_5/XLXI_115/XLXI_155/cntCol_4 (SLICE_X67Y55.CE), 1 path
+Paths for end point XLXI_4/state_FSM_FFd3 (SLICE_X32Y37.BX), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      1.081ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               XLXI_5/XLXI_115/XLXI_155/ActiveX (FF)
-  Destination:          XLXI_5/XLXI_115/XLXI_155/cntCol_4 (FF)
+Slack (hold path):      1.087ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               XLXI_4/state_FSM_FFd4 (FF)
+  Destination:          XLXI_4/state_FSM_FFd3 (FF)
   Requirement:          0.000ns
-  Data Path Delay:      1.079ns (Levels of Logic = 0)
-  Clock Path Skew:      -0.002ns (0.011 - 0.013)
-  Source Clock:         CLK_BUFGP rising at 20.000ns
-  Destination Clock:    CLK_BUFGP rising at 20.000ns
-  Clock Uncertainty:    0.000ns
-
-  Minimum Data Path: XLXI_5/XLXI_115/XLXI_155/ActiveX to XLXI_5/XLXI_115/XLXI_155/cntCol_4
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X67Y52.YQ      Tcko                  0.470   XLXI_5/XLXI_115/XLXI_155/ActiveX
-                                                       XLXI_5/XLXI_115/XLXI_155/ActiveX
-    SLICE_X67Y55.CE      net (fanout=5)        0.540   XLXI_5/XLXI_115/XLXI_155/ActiveX
-    SLICE_X67Y55.CLK     Tckce       (-Th)    -0.069   XLXI_5/XLXI_115/XLXI_155/cntCol<4>
-                                                       XLXI_5/XLXI_115/XLXI_155/cntCol_4
-    -------------------------------------------------  ---------------------------
-    Total                                      1.079ns (0.539ns logic, 0.540ns route)
-                                                       (50.0% logic, 50.0% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point XLXI_5/I_ModeCtrl/cntMod30_0 (SLICE_X54Y38.BX), 1 path
---------------------------------------------------------------------------------
-Slack (hold path):      1.111ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               XLXI_5/I_ModeCtrl/cntMod30_0 (FF)
-  Destination:          XLXI_5/I_ModeCtrl/cntMod30_0 (FF)
-  Requirement:          0.000ns
-  Data Path Delay:      1.111ns (Levels of Logic = 0)
+  Data Path Delay:      1.087ns (Levels of Logic = 0)
   Clock Path Skew:      0.000ns
   Source Clock:         CLK_BUFGP rising at 20.000ns
   Destination Clock:    CLK_BUFGP rising at 20.000ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path: XLXI_5/I_ModeCtrl/cntMod30_0 to XLXI_5/I_ModeCtrl/cntMod30_0
+  Minimum Data Path: XLXI_4/state_FSM_FFd4 to XLXI_4/state_FSM_FFd3
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X54Y38.XQ      Tcko                  0.474   XLXI_5/I_ModeCtrl/cntMod30<0>
-                                                       XLXI_5/I_ModeCtrl/cntMod30_0
-    SLICE_X54Y38.BX      net (fanout=7)        0.503   XLXI_5/I_ModeCtrl/cntMod30<0>
-    SLICE_X54Y38.CLK     Tckdi       (-Th)    -0.134   XLXI_5/I_ModeCtrl/cntMod30<0>
-                                                       XLXI_5/I_ModeCtrl/cntMod30_0
+    SLICE_X32Y37.YQ      Tcko                  0.522   XLXI_4/state_FSM_FFd3
+                                                       XLXI_4/state_FSM_FFd4
+    SLICE_X32Y37.BX      net (fanout=3)        0.431   XLXI_4/state_FSM_FFd4
+    SLICE_X32Y37.CLK     Tckdi       (-Th)    -0.134   XLXI_4/state_FSM_FFd3
+                                                       XLXI_4/state_FSM_FFd3
     -------------------------------------------------  ---------------------------
-    Total                                      1.111ns (0.608ns logic, 0.503ns route)
-                                                       (54.7% logic, 45.3% route)
+    Total                                      1.087ns (0.656ns logic, 0.431ns route)
+                                                       (60.3% logic, 39.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point XLXI_10/XLXI_2/RAMB16_S4_S9_inst.B (RAMB16_X0Y4.ADDRB3), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.112ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               XLXI_10/XLXI_1/read_address_counter_0 (FF)
+  Destination:          XLXI_10/XLXI_2/RAMB16_S4_S9_inst.B (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      1.146ns (Levels of Logic = 0)
+  Clock Path Skew:      0.034ns (0.067 - 0.033)
+  Source Clock:         CLK_BUFGP rising at 20.000ns
+  Destination Clock:    CLK_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: XLXI_10/XLXI_1/read_address_counter_0 to XLXI_10/XLXI_2/RAMB16_S4_S9_inst.B
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X13Y38.YQ      Tcko                  0.470   XLXI_10/XLXI_1/read_address_counter<1>
+                                                       XLXI_10/XLXI_1/read_address_counter_0
+    RAMB16_X0Y4.ADDRB3   net (fanout=8)        0.807   XLXI_10/XLXI_1/read_address_counter<0>
+    RAMB16_X0Y4.CLKB     Tbcka       (-Th)     0.131   XLXI_10/XLXI_2/RAMB16_S4_S9_inst
+                                                       XLXI_10/XLXI_2/RAMB16_S4_S9_inst.B
+    -------------------------------------------------  ---------------------------
+    Total                                      1.146ns (0.339ns logic, 0.807ns route)
+                                                       (29.6% logic, 70.4% route)
 
 --------------------------------------------------------------------------------
 
@@ -488,7 +486,7 @@ Slack: 16.824ns (period - (min low pulse limit / (low pulse / period)))
   Low pulse limit: 1.588ns (Tbpwl)
   Physical resource: XLXI_5/XLXI_3/CLKA
   Logical resource: XLXI_5/XLXI_3.A/CLKA
-  Location pin: RAMB16_X1Y4.CLKA
+  Location pin: RAMB16_X1Y6.CLKA
   Clock network: CLK_BUFGP
 --------------------------------------------------------------------------------
 Slack: 16.824ns (period - (min high pulse limit / (high pulse / period)))
@@ -497,7 +495,7 @@ Slack: 16.824ns (period - (min high pulse limit / (high pulse / period)))
   High pulse limit: 1.588ns (Tbpwh)
   Physical resource: XLXI_5/XLXI_3/CLKA
   Logical resource: XLXI_5/XLXI_3.A/CLKA
-  Location pin: RAMB16_X1Y4.CLKA
+  Location pin: RAMB16_X1Y6.CLKA
   Clock network: CLK_BUFGP
 --------------------------------------------------------------------------------
 Slack: 16.824ns (period - min period limit)
@@ -505,7 +503,7 @@ Slack: 16.824ns (period - min period limit)
   Min period limit: 3.176ns (314.861MHz) (Tbp)
   Physical resource: XLXI_5/XLXI_3/CLKA
   Logical resource: XLXI_5/XLXI_3.A/CLKA
-  Location pin: RAMB16_X1Y4.CLKA
+  Location pin: RAMB16_X1Y6.CLKA
   Clock network: CLK_BUFGP
 --------------------------------------------------------------------------------
 
@@ -522,7 +520,7 @@ Clock to Setup on destination clock CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    9.241|         |         |         |
+CLK            |    7.808|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
@@ -531,16 +529,16 @@ Timing summary:
 
 Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
 
-Constraints cover 2517 paths, 0 nets, and 986 connections
+Constraints cover 2480 paths, 0 nets, and 953 connections
 
 Design statistics:
-   Minimum period:   9.241ns{1}   (Maximum frequency: 108.213MHz)
+   Minimum period:   7.808ns{1}   (Maximum frequency: 128.074MHz)
 
 
 ------------------------------------Footnotes-----------------------------------
 1)  The minimum period statistic assumes all single cycle delays.
 
-Analysis completed Sat Aug 23 23:25:25 2014 
+Analysis completed Sat Aug 30 10:21:51 2014 
 --------------------------------------------------------------------------------
 
 Trace Settings:

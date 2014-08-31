@@ -22,13 +22,14 @@ entity fifo_control_unit is
 	 
 	 EOFenA : out std_logic;
 	 EOFweA : out std_logic;
+	 EOFenB : out std_logic;
 	 addrEOFA : out std_logic_vector(13 downto 0);
 	 addrEOFB : out std_logic_vector(12 downto 0);
 	 diEOFA : out std_logic_vector(0 downto 0);
 	 doEOFB : in std_logic_vector(1 downto 0);
 	 
-	 empty  : out std_logic;
-	 full   : out std_logic;
+	 empty  : out std_logic := '1';
+	 full   : out std_logic := '0';
 	 data_out : out std_logic_vector(7 downto 0);
 	 EOF    : out std_logic;
 	 clk    : in std_logic;
@@ -46,9 +47,9 @@ architecture behavioral of fifo_control_unit is
 	signal write_address_counter : std_logic_vector(11 downto 0) := "000000000000";
 	signal read_address_counter : std_logic_vector(10 downto 0) := (others=>'0');
   
-	signal empty_i : std_logic;
-	signal full_i : std_logic;
---	signal wea_i : std_logic;
+	signal empty_i : std_logic := '1';
+	signal full_i : std_logic := '0';
+	signal wea_i : std_logic;
 	
 --	signal first_received : std_logic := '0';
 --	signal second_received : std_logic := '0';
@@ -87,7 +88,7 @@ begin
 	diA <= Rx_D;
 	--data_out <= doB_latched;
 	data_out <= doB when read_add_simple = '0' else doB(3 downto 0) & doB(7 downto 4);
-	EOF <= EOF_latched(0) or EOF_latched(1);
+	EOF <= doEOFB(0) or doEOFB(1);
 	
 	
 	--
@@ -96,10 +97,17 @@ begin
 	addrEOFA <= "00" & write_address_counter_minus_one;
 	addrEOFB <= "00" & read_address_counter;
 	
-	EOFenA <= '1';
-	EOFweA <= '1' when (Rx_DV = '0' and frame_started = '1') else '0';
+--	EOFenA <= '1';
+--	EOFweA <= '1' when (Rx_DV = '0' and frame_started = '1') else '0';
+--	EOFenB <= POP;
+--	
+--	diEOFA <= "1";
+
+	EOFenA <= '1' when ((Rx_DV = '0' and frame_started = '1') or Rx_DV = '1') else '0';
+	EOFweA <= '1' when ((Rx_DV = '0' and frame_started = '1') or (wea_i = '1' and frame_started = '1')) else '0';
+	EOFenB <= POP;
 	
-	diEOFA <= "1";
+	diEOFA <= "1" when (Rx_DV = '0' and frame_started = '1') else "0";
 	
 	
 	--
@@ -130,10 +138,10 @@ begin
 		if rising_edge(Rx_Clk) then
 			if (write_address_counter(11 downto 1) = 0 and read_address_counter = 0) or write_address_counter(11 downto 1) /= read_address_counter_minus_one then
 				weA <= '1';
---				wea_i <= '1';
+				wea_i <= '1';
 			else
 				weA <= '0';
---				wea_i <= '0';
+				wea_i <= '0';
 			end if;
 		end if;
 	end process;
@@ -184,18 +192,21 @@ begin
 		end if;
 	end process;
 	
-	process (clk)
-	begin
-		if rising_edge(clk) then
-			if read_address_counter = write_address_counter(11 downto 1) then
-				empty <= '1';
-				empty_i <= '1';
-			else
-				empty <= '0';
-				empty_i <= '0';
-			end if;
-		end if;
-	end process;
+--	process (clk)
+--	begin
+--		if rising_edge(clk) then
+--			if read_address_counter = write_address_counter(11 downto 1) then
+--				empty <= '1';
+--				empty_i <= '1';
+--			else
+--				empty <= '0';
+--				empty_i <= '0';
+--			end if;
+--		end if;
+--	end process;
+	
+	empty <= '1' when read_address_counter = write_address_counter(11 downto 1) else '0';
+	empty_i <= '1' when read_address_counter = write_address_counter(11 downto 1) else '0';
 	
 	
 	--

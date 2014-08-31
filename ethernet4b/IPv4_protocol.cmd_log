@@ -1,0 +1,2 @@
+vhdtdtfi -lib work IPv4_protocol.vhd -prj ethernet -o IPv4_protocol.spl -module IPv4_protocol -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w IPv4_protocol.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/IPv4_protocol.sym 

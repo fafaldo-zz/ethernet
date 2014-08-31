@@ -88,3 +88,31 @@ vhdtdtfi -lib work fifo_control_unit.vhd -prj ethernet -o fifo_control_unit.spl 
 spl2sym -intstyle ise -family spartan3e -w fifo_control_unit.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/fifo_control_unit.sym 
 vhdtdtfi -lib work fifo_control_unit.vhd -prj ethernet -o fifo_control_unit.spl -module fifo_control_unit -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
 spl2sym -intstyle ise -family spartan3e -w fifo_control_unit.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/fifo_control_unit.sym 
+vhdtdtfi -lib work fifo_control_unit.vhd -prj ethernet -o fifo_control_unit.spl -module fifo_control_unit -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w fifo_control_unit.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/fifo_control_unit.sym 
+vhdtdtfi -lib work fifo_control_unit.vhd -prj ethernet -o fifo_control_unit.spl -module fifo_control_unit -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w fifo_control_unit.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/fifo_control_unit.sym 
+vhdtdtfi -lib work fifo_control_unit.vhd -prj ethernet -o fifo_control_unit.spl -module fifo_control_unit -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w fifo_control_unit.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/fifo_control_unit.sym 
+vhdtdtfi -lib work fifo_control_unit.vhd -prj ethernet -o fifo_control_unit.spl -module fifo_control_unit -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w fifo_control_unit.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/fifo_control_unit.sym 
+vhdtdtfi -lib work fifo_control_unit.vhd -prj ethernet -o fifo_control_unit.spl -module fifo_control_unit -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w fifo_control_unit.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/fifo_control_unit.sym 
+vhdtdtfi -lib work fifo_control_unit.vhd -prj ethernet -o fifo_control_unit.spl -module fifo_control_unit -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w fifo_control_unit.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/fifo_control_unit.sym 
+vhdtdtfi -lib work fifo_control_unit.vhd -prj ethernet -o fifo_control_unit.spl -module fifo_control_unit -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w fifo_control_unit.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/fifo_control_unit.sym 
+vhdtdtfi -lib work fifo_control_unit.vhd -prj ethernet -o fifo_control_unit.spl -module fifo_control_unit -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w fifo_control_unit.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/fifo_control_unit.sym 
+vhdtdtfi -lib work fifo_control_unit.vhd -prj ethernet -o fifo_control_unit.spl -module fifo_control_unit -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w fifo_control_unit.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/fifo_control_unit.sym 
+vhdtdtfi -lib work fifo_control_unit.vhd -prj ethernet -o fifo_control_unit.spl -module fifo_control_unit -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w fifo_control_unit.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/fifo_control_unit.sym 
+vhdtdtfi -lib work fifo_control_unit.vhd -prj ethernet -o fifo_control_unit.spl -module fifo_control_unit -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w fifo_control_unit.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/fifo_control_unit.sym 
+vhdtdtfi -lib work fifo_control_unit.vhd -prj ethernet -o fifo_control_unit.spl -module fifo_control_unit -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w fifo_control_unit.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/fifo_control_unit.sym 
+vhdtdtfi -lib work fifo_control_unit.vhd -prj ethernet -o fifo_control_unit.spl -module fifo_control_unit -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w fifo_control_unit.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/fifo_control_unit.sym 
+vhdtdtfi -lib work fifo_control_unit.vhd -prj ethernet -o fifo_control_unit.spl -module fifo_control_unit -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w fifo_control_unit.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/fifo_control_unit.sym 

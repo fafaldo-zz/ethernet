@@ -1,0 +1,34 @@
+vhdtdtfi -lib work ICMP_detector.vhd -prj ethernet -o ICMP_detector.spl -module ICMP_detector -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w ICMP_detector.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ICMP_detector.sym 
+vhdtdtfi -lib work ICMP_detector.vhd -prj ethernet -o ICMP_detector.spl -module ICMP_detector -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w ICMP_detector.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ICMP_detector.sym 
+vhdtdtfi -lib work ICMP_detector.vhd -prj ethernet -o ICMP_detector.spl -module ICMP_detector -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w ICMP_detector.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ICMP_detector.sym 
+vhdtdtfi -lib work ICMP_detector.vhd -prj ethernet -o ICMP_detector.spl -module ICMP_detector -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w ICMP_detector.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ICMP_detector.sym 
+vhdtdtfi -lib work ICMP_detector.vhd -prj ethernet -o ICMP_detector.spl -module ICMP_detector -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w ICMP_detector.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ICMP_detector.sym 
+vhdtdtfi -lib work ICMP_detector.vhd -prj ethernet -o ICMP_detector.spl -module ICMP_detector -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w ICMP_detector.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ICMP_detector.sym 
+vhdtdtfi -lib work ICMP_detector.vhd -prj ethernet -o ICMP_detector.spl -module ICMP_detector -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w ICMP_detector.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ICMP_detector.sym 
+vhdtdtfi -lib work ICMP_detector.vhd -prj ethernet -o ICMP_detector.spl -module ICMP_detector -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w ICMP_detector.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ICMP_detector.sym 
+vhdtdtfi -lib work ICMP_detector.vhd -prj ethernet -o ICMP_detector.spl -module ICMP_detector -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w ICMP_detector.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ICMP_detector.sym 
+vhdtdtfi -lib work ICMP_detector.vhd -prj ethernet -o ICMP_detector.spl -module ICMP_detector -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w ICMP_detector.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ICMP_detector.sym 
+vhdtdtfi -lib work ICMP_detector.vhd -prj ethernet -o ICMP_detector.spl -module ICMP_detector -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w ICMP_detector.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ICMP_detector.sym 
+vhdtdtfi -lib work ICMP_detector.vhd -prj ethernet -o ICMP_detector.spl -module ICMP_detector -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w ICMP_detector.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ICMP_detector.sym 
+vhdtdtfi -lib work ICMP_detector.vhd -prj ethernet -o ICMP_detector.spl -module ICMP_detector -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w ICMP_detector.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ICMP_detector.sym 
+vhdtdtfi -lib work ICMP_detector.vhd -prj ethernet -o ICMP_detector.spl -module ICMP_detector -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w ICMP_detector.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ICMP_detector.sym 
+vhdtdtfi -lib work ICMP_detector.vhd -prj ethernet -o ICMP_detector.spl -module ICMP_detector -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w ICMP_detector.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ICMP_detector.sym 
+vhdtdtfi -lib work ICMP_detector.vhd -prj ethernet -o ICMP_detector.spl -module ICMP_detector -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w ICMP_detector.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ICMP_detector.sym 
+vhdtdtfi -lib work ICMP_detector.vhd -prj ethernet -o ICMP_detector.spl -module ICMP_detector -template D:/programy/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w ICMP_detector.spl C:/Users/fafik/Dropbox/infa/git/ethernet/ethernet4b/ICMP_detector.sym 

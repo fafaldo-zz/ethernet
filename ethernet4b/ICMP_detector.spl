@@ -1,0 +1,9 @@
+[Inputs]
+enable
+reset
+clk
+=data_in[7:0]=
+[Outputs]
+ICMP_detected
+=test[7:0]=
+[BiDir]

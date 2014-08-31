@@ -1,0 +1,29 @@
+Command line:
+   ethernetRX_ethernetRX_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  9724
+
+Sat Aug 30 21:38:11 2014
+
+
+ Elaboration Time: 0.156001 sec
+
+ Current Memory Usage: 1313.92 Meg
+
+ Total Signals          : 195
+ Total Nets             : 338
+ Total Signal Drivers   : 126
+ Total Blocks           : 84
+ Total Primitive Blocks : 76
+ Total Processes        : 120
+ Total Traceable Variables  : 484
+ Total Scalar Nets and Variables : 40582
+Total Line Count : 764
+
+ Total Simulation Time: 0.171601 sec
+
+ Current Memory Usage: 1471.17 Meg
+
+Sat Aug 30 21:38:49 2014
+
